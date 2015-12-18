@@ -1,0 +1,263 @@
+\chapter{Discrete exterior calculus on regular grids}
+\label{ch:grids}
+
+As we have seen in Section \ref{sec:SimplicialComplex}, the original version of DEC uses simplicial complexes to discretize the simulation domain. 
+The quality of the dual mesh is closely related to the \newword{well-centeredness} of the primal mesh.
+A triangle is called \newword{well-centered} if its circumcenter is located inside the triangle.
+\newword{Well-centeredness} as a global mesh property is defined by \myciteS{HI01}.
+The property measures in a continuous fashion the quality of the mesh w.r.t. how many triangles are well-centered.
+
+Unfortunately, it is very complicated to create a good well-centered mesh.
+Therefore, we will present an alternative discretization for DEC in this chapter based on \newword{regular grids}.
+As in the previous chapters, we will again restrict to the two dimensional case.
+Regular grids divide the domain in equally shaped rectangles. 
+Figure \ref{fig:RegGrid} shows an example of a regular grid containing a hole in its center.
+
+\begin{figure}[htbp]
+	\centering
+ 	\input{pics/tikz/regGrid}
+	\caption{A regular grid containing a hole in its center.}
+	\label{fig:RegGrid}
+\end{figure}	
+
+A rectangle is trivially well-centered. Hence, the dual mesh of a regular grid is always well shaped.
+Another advantage of the discretization is the regularity, which enables fast structural operations, e.g., locating a position or tracing particles.
+The formal definition of a regular grid is as follows:
+
+\begin{definition}[Regular grid]
+A \newdef{regular grid} of size $n,m \in \N$ is a tuple of the  following form:
+
+\begin{equation}
+R:=(n,m,g)
+\end{equation}
+
+where $g$ is defined as:
+
+\begin{equation}
+g : \{ 0 , ... , n - 1 \} \times\{ 0 , ... , m - 1 \} \rightarrow \{0,1\}
+\end{equation}
+
+\end{definition}
+
+The tuple $(n,m,g)$ defines a regular grid with $n \times m$ cells.
+$g$ removes cells by flagging them with $0's$ in order to enable non-trivial domains, i.e., domains with obstacles.
+
+\HeaderTwo{Chains and forms}
+
+In order to define DEC on regular grids, we first have to define chains and forms.
+The discrete forms are the cochains, i.e., linear functions which assign real numbers to chains.
+Therefore, it is essential and sufficient to define chains on regular grids.
+
+\myparagraph{Chains}
+A chain is defined as a weighted sum of simplices of a specific dimension (see Section \ref{sec:SimplicialComplex}).
+However, regular grids are not composed of simplices, as they consists of rectangles instead of triangles.
+On regular grids, we solve this, by defining 2-chains to be weighted sums of rectangles.
+
+\HeaderTwo{Discrete Exterior derivative}
+
+The discrete exterior derivative is just the adjoint of the boundary operator as we have seen in Section \ref{sec:DECDerivative}.
+Therefore, we have to setup the boundary operators for edges and faces in order to define the exterior derivative.
+Now, vertices, edges and faces (rectangles) are denoted by $V$, $E$ and $F$ respectively.
+
+\myparagraph{Edges}
+The boundary operator for edges can be represented as a matrix $\partial_1 \in \R^{|V|\times|E|}$.
+An edge $e \in E$ points from some start vertex $v_0 \in V$ to an end vertex $v_1 \in V$.
+The associated column in $\partial_1$ contains a $-1$ for $v_0$ and $1$ for $v_1$.
+The discrete exterior derivative for vertices is then defined as $\partial_1^T$.
+
+\myparagraph{Faces}
+Faces are assumed to be counter-clockwise (CCW) oriented and induce an orientation onto their boundary edges, as illustrated in Figure \ref{fig:GridInducedOrientation}.
+In a regular grid every edge is either parallel to the X- or Y-axis and is assumed to be oriented into the positive direction of its corresponding axis (see Figure \ref{fig:GlobalEdgeOrientation}).
+
+\begin{figure}[h!]
+	\begin{minipage}[b]{0.5 \linewidth}
+		\centering
+		\subfigure[The orientation of primal edges induced through the primal faces.]{
+			      \input{pics/tikz/gridinducedorientation}
+			      \label{fig:GridInducedOrientation}}
+	\end{minipage}
+	\begin{minipage}[b]{0.5 \linewidth}
+		\centering
+		\subfigure[The global orientation of the primal edges.]{
+			      \input{pics/tikz/gridglobalorientation}
+			      \label{fig:GlobalEdgeOrientation}}
+	\end{minipage}	
+\caption[Induced and global orientation of primal edges.]{}
+\end{figure}
+
+For a face $f \in F$, the corresponding column vector $c \in \R^{|E|}$ of the boundary matrix $\partial_2 \in \R^{|E|\times|F|}$ flags
+boundary edges with $1$ or $-1$ if the induced orientation matches with the global.
+
+\newpage
+\HeaderTwo{Deriving vector fields from 1-forms on regular grids}
+In Subsection \ref{ssec:TimeIntegration}, we constructed a velocity field from its associated form based representation.% in order to perform particle tracing.
+We will do this on regular grids by computing a vector for each primal face (dual vertex) and apply a bilinear interpolation to each dual cell.
+
+\begin{figure}[h!]
+	\centering
+ 	\input{pics/tikz/regGridInt}
+	%\caption{The velocity vector $\mathbf{u}$ located at the center is reconstructed from the given boundary fluxes $U_1^x$, $U_2^x$, $U_1^y$ and $U_2^y$.}
+	\caption[Velocity field reconstruction]{The velocity vector located at the center is reconstructed from the given boundary fluxes.}
+	\label{fig:RegGridInt}
+\end{figure}
+
+Figure \ref{fig:RegGridInt} illustrates the reconstruction of a vector from a 1-form with values $U_1^x$, $U_2^x$, $U_1^y$ and $U_2^y$ that are defined on the boundary edges. 
+The velocity vector $\mathbf{u}$ located at the center is defined as:
+
+\begin{equation}
+\label{eq:RedGridVelVector}
+u_x := - \frac{U_1^x + U_2^x}{ 2 }  \text{ , } u_y := \frac{U_1^y + U_2^y}{ 2 }
+\end{equation}
+
+\newpage
+\HeaderTwo{Dual mesh}
+
+%The dual mesh is the discrete counterpart of the metric and is connected to the primal mesh through the discrete hodge star.
+We defined the dual mesh to be the Voronoi diagram of the underlying vertices in Section \ref{sec:DualComplex}.
+Obviously, the Voronoi diagram of a regular grid is again a regular grid, which is just the shifted original grid as depicted in Figure \ref{fig:RegGridDual}.
+
+\begin{figure}[htbp]
+	\centering
+ 	\input{pics/tikz/regGridDual}
+	\caption{The dual mesh is the shifted primal regular grid.}
+	\label{fig:RegGridDual}
+\end{figure}
+
+\HeaderThree{Compatibility of hodge star and interpolation}
+\label{ssec:ModifiedHodge}
+In Subsection \ref{ssec:TimeIntegration} we advected the vorticity along the velocity field to derive the vorticity of the next step.
+To apply Kelvins Circulation theorem, linear interpolation has been used in order to evaluate the circulation along the boundaries of the dual faces.
+However, interpolation is not a concept of DEC. Therefore, it is not self-evident that our interpolation on regular grids is compatible with DEC operators.
+Let us denote the advection process as a function of the following form:
+
+\begin{equation}
+\adv : \R^+ \times \{ \VelocityForm \in \DiffForms^P_1(R) : d \VelocityForm = 0 \} \rightarrow \DiffForms^D_2(R), 
+(\Delta t,\VelocityForm) \mapsto \adv(\Delta t,\VelocityForm)
+\end{equation}
+
+$\adv$ takes a divergence free velocity form $\VelocityForm$ as input and advects its vorticity $\Delta t$ seconds along the velocity field.
+The operator implicitly computes the vorticity for a given velocity form based on Stokes theorem.
+We can now define the curl operator as the limit of the $\adv$ function as $\Delta t$ goes to $0$.
+
+\begin{definition}
+The \newdef{interpolation curl} operator is defined as:
+
+\begin{equation}
+C_I :  \{ \VelocityForm \in \Omega^P_1(R) : d \VelocityForm = 0 \} \rightarrow \DiffForms^D_2(R) , C_I(\VelocityForm) := \lim_{\Delta t \rightarrow 0} \adv(\Delta t,\VelocityForm)
+\end{equation}
+
+\end{definition}
+
+As our new operator derives vorticity, it should be equivalent with the DEC version defined in Section \ref{sec:VortToVel}.
+To compute the vorticity of a dual face, both operators sum up the oriented circulations along the dual boundary edges.
+To evaluate the circulation along a dual edge, DEC uses the hodge star. 
+$C_I$ on the other hand, evaluates the velocity field at the dual vertices and integrates linearly on each dual edge.
+
+\paragraph*{}
+We denote the associated velocity vectors of the dual vertices $A$ and $B$ from Figure \ref{fig:IntCirculation} as $\mathbf{A^u}$ and $\mathbf{B^u}$, respectively.
+
+\begin{figure}[h!]
+	\centering
+ 	\input{pics/tikz/intCirculation}
+	\caption[Circulation along a dual edge]{$A$ and $B$ are the vertices of the blue dual edge in the middle. The fluxes through the primal edges are identified by $U^x_i$.}
+	\label{fig:IntCirculation}
+\end{figure}
+
+The circulation along the dual edge is then defined as:
+
+\begin{equation}
+c := ( B - A )^T \cdot \frac{\mathbf{A^u} + \mathbf{B^u}}{2}
+\end{equation}
+
+The edge is parallel to the X-axis and hence the equation can be simplified to:
+
+\begin{equation}
+c = ( B_x - A_x ) \cdot \frac{A^u_x + B^u_x}{2}
+\end{equation}
+
+As $B_x - A_x$ is $1$, $A^u_x$ and $B^u_x$ can be defined in terms of the fluxes $U_i^x$:
+
+\begin{eqnarray}
+A^u_x = \frac{U_0^x + U_1^x}{2} \\
+B^u_x = \frac{U_1^x + U_2^x}{2}
+\end{eqnarray}
+
+Finally, the circulation along the dual edge is:
+
+\begin{equation}
+\label{eq:IntHodge}
+c = \frac{1}{4}( U_0^x + 2 \cdot U_1^x + U_2^x )
+\end{equation}
+
+Based on the hodge star $*_1$, the circulation is defined as $c := U_1^x $.
+Hence, the interpolation is not directly compatible with DEC.
+
+\paragraph*{}
+We take \myeqref{eq:IntHodge} as definition for a smoother hodge-start in order to solve the compatibility issue.
+%A more detailed discussion of the smooth hodge-star is given in Appendix \ref{ap:SPDHodgeStar}.
+
+
+
+
+
+
+
+
+\section{Smooth hodge star}
+\label{sec:SPDHodgeStar}
+In this section we consider a regular grid $R:=(n,m,g)$ and redefine the hodge star $*_1$ in order to make it compatible with the bilinear interpolation.
+We refer to the modified version as \newword{smooth hodge star} that is derived from the advection operator.
+As a consequence, the hodge star becomes smoother because it takes also the neighboring edges into account.
+
+\begin{definition}[Component]
+A collection of cells in $R$ is called \newdef{component} if the cells satisfy the following conditions:
+\begin{itemize}
+\item All cells are located in the same row or column.
+\item The cells are all connected, i.e., they are not separated through a hole.
+\item It is not possible to add a new cell s.t. the collection still satisfies the previous two conditions.
+\end{itemize}
+\end{definition}
+
+The components are just the rows and columns in a rectangular shaped domain without holes.
+The smooth hodge star is closed in a component w.r.t. its transversely aligned primal edges.
+First, we will discuss the new hodge star in a single component and later extend it to the whole complex.
+
+\paragraph*{}
+To simplify matters, we consider a component of just three cells aligned parallel to the X-axis as illustrated in the following figure:
+
+\begin{figure}[htbp]
+	\centering
+ 	\input{pics/tikz/regGridComponent}
+	\caption[A component of three cells.]{A component of three cells. Components are the largest connected parts in a row or column.}
+	\label{fig:RegGridComponent}
+\end{figure}	
+
+The associated smooth hodge star has the following form:
+\begin{equation}
+\frac{1}{4} \cdot
+\begin{pmatrix} 2 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & 1 & 2  \end{pmatrix} 
+\end{equation}
+
+The generalized shape defined on a component of the smooth hodge star is:
+\begin{equation}
+\frac{1}{4} \cdot
+\begin{pmatrix} 2 & 1 & & & \\ 1 & 2 & 1 & & \\  & \ddots & \ddots & \ddots & \\  &  & 1 & 2 & 1 \\ & & & 2 & 1  \end{pmatrix} 
+\end{equation}
+
+A vertically oriented component leads to an equivalent matrix.
+The determinant of a component of size $n$ is $\frac{1}{4} \cdot (n+1)$.
+Following Sylvester’s criterion(\myciteS{G01}), the smooth hodge-star defined on a component is a symmetric and positive definite matrix (spd).
+
+\paragraph*{}
+Now, we extend the smooth hodge star from a single component to the whole complex.
+Let $m \in \N$ be the number of primal or dual edges.
+Every primal edge is located in exactly one component. 
+Therefore, we can choose a permutation matrix $P \in \R^{ m \times m }$ s.t. all transversely aligned edges within a component are successively ordered. 
+Thus, the complete smooth hodge star ${S_1}'$ with the induced order from $P$ is a block diagonal matrix.
+Each block corresponds to a smooth hodge star defined on a single component. Hence, the whole matrix ${S_1}'$ is spd.
+Based on the original order of edges, the smooth hodge star is defined as $S_1 := P^T \cdot {S_1}' \cdot P$.
+Obviously, $S_1$ is also spd.
+
+\paragraph*{}
+We carefully translated the necessary concepts of DEC to regular grids.
+Furthermore, we introduced a smoother hodge-star for edges to ensure vorticity conservation, i.e., make the interpolation compatible with DEC.

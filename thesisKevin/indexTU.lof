@@ -1,0 +1,102 @@
+\select@language {ngerman}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Predictor-Corrector scheme}}{12}{figure.3.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the possible feature pairs, VF and EE, for CCD.}}{14}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vertex-face case}}}{14}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Edge-edge case}}}{14}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 2D Illustration of AABB to accelerate CCD by example of a triangle and a vertex.}}{16}{figure.4.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 2D Illustration of the resolution force computation for CPF and DPF in the VF case.}}{19}{figure.5.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 2D-Illustration of a VF collision, which is considered colliding after it is already resolved}}{23}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces 2D-Illustration of a hooked VF collision with tangential forces induced by the CPF algorithm.}}{24}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces 2D-Illustration of a VF collision causing impulses at implausible positions.}}{25}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces 2D-Illustration of an incorrect VF collision resolution artifact}}{25}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces 2D-Illustration of the classification circle.}}{27}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparison of the contact categorization with normals and normal spans.}}{28}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces 2D-Illustration of the vertex normal span $\mathbf {N_v}$ of the vertex v.}}{28}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparison of the contact categorization with normals and normal spans for VF collisions with the vertex in an acute-angled, right-angled and obtuse-angled corner.}}{29}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Illustration of limitation to of the algorithm to non-deep contacts.}}{30}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces 2D-Illustration of a barycentric redefinition. Dots indicate the vertices, the red ones are colliding.}}{31}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Example of a barycentric redefinition in a simulation.}}{32}{figure.6.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {before the redefinition}}}{32}{figure.6.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {after the redefinition}}}{32}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces 2D-Illustration of the redefinition for a hooked collision.}}{34}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces 2D-Illustration of the redefinition for a hooked collision.}}{35}{figure.6.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The position over time of a particle m=1.0kg dropped from h=0.1m on a plane with continuous (a, b) and discrete (c, d) penalty forces}}{38}{figure.7.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPF with $\Delta t=0.14s$}}}{38}{figure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CPF with $\Delta t=0.17s$}}}{38}{figure.7.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {DPF with $\Delta t=0.11s$}}}{38}{figure.7.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {DPF with $\Delta t=0.13s$}}}{38}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The position over time of a particle dropped on a plane with continuous and discrete penalty forces with the same time step $\Delta t=0.01$ and penalty stiffness $k=1000$}}{39}{figure.7.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Movement of the particle}}}{39}{figure.7.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Forces during the first collision}}}{39}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Illustration of discretizations of the deformable bar on the rigid cube.}}{40}{figure.7.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {3D flat shaded}}}{40}{figure.7.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {3D wireframe}}}{40}{figure.7.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2D from top}}}{40}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Comparison of the repulsion force between a deformable bar and a rigid cube with varying time steps $\Delta t$ and and constant penalty coefficients $k=5000$.}}{40}{figure.7.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Repulsion force with DPF }}}{40}{figure.7.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Repulsion force with CPF}}}{40}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The repulsion force between a deformable bar and a rigid cube with varying time steps dt and penalty coefficients k.}}{41}{figure.7.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\Delta $t=0.005, k=20000}}}{41}{figure.7.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\Delta $t=0.01, k=5000}}}{41}{figure.7.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\Delta $t=0.02, k=1250}}}{41}{figure.7.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\Delta $t=0.04, k=500}}}{41}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces The average of the summed penetration depth per time step for a deformable bar dropped on a rigid cube with varying time steps an penalty coefficients.}}{42}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The penetration depth for CPF and DPF with varying penalty coefficients and constant time step $\Delta t=0.01s$.}}{43}{figure.7.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPF}}}{43}{figure.7.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DPF}}}{43}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces A rigid cube sliding on a deformable bar without the collision redefinition algorithm and without friction.}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=0.00s}}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=0.50s}}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {t=1.00s}}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {t=1.50s}}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {t=2.00s}}}{44}{figure.7.8}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {t=2.50s}}}{44}{figure.7.8}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces A rigid cube sliding on a deformable bar with the collision redefinition algorithm and without friction.}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=0.00s}}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=0.50s}}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {t=1.00s}}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {t=1.50s}}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {t=2.00s}}}{44}{figure.7.9}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {t=2.50s}}}{44}{figure.7.9}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces A rigid cube sliding on a deformable bar without the collision redefinition algorithm and without friction.}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=0.00s}}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=0.50s}}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {t=1.00s}}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {t=1.50s}}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {t=2.00s}}}{45}{figure.7.10}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {t=2.50s}}}{45}{figure.7.10}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces A rigid cube sliding on a deformable barwith the collision redefinition algorithm and without friction.}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=0.00s}}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=0.50s}}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {t=1.00s}}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {t=1.50s}}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {t=2.00s}}}{45}{figure.7.11}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {t=2.50s}}}{45}{figure.7.11}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Contact force for a rigid cube sliding on a deformable bar}}{46}{figure.7.12}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces A deformable bunny is dropped in a rigid bowl, which is dropped on a static plane.}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=0.00s}}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=0.50s}}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {t=1.00s}}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {t=1.50s}}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {t=2.00s}}}{46}{figure.7.13}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {t=2.50s}}}{46}{figure.7.13}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Inverted tetrahedrons (marked red) occur when the deformable bunny collides with the rigid bowl.}}{47}{figure.7.14}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Position and velocity over time of a rigid cube sliding on a slope with different static friction coefficients $\mu _s$.}}{48}{figure.7.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {static friction coefficients $\mu _s=0.3$}}}{48}{figure.7.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {static friction coefficients $\mu _s=0.4$}}}{48}{figure.7.15}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces A rigid cube sliding from the right to the left on a deformable bar with two friction coefficient combinations.}}{49}{figure.7.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\mu _s=0.8$, $\mu _d=0.1$, $t=0.2s$}}}{49}{figure.7.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\mu _s=0.8$, $\mu _d=0.1$, $t=20.0s$}}}{49}{figure.7.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\mu _s=0.3$, $\mu _d=0.05$, $t=0.35s$}}}{49}{figure.7.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\mu _s=0.3$, $\mu _d=0.05$, $t=20.0s$}}}{49}{figure.7.16}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Composition of the computation time for one feature pair}}{50}{figure.7.17}
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Comparison of the computation time for one impulse with CPF and DPF}}{51}{figure.7.18}
+\addvspace {10\p@ }

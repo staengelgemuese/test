@@ -1,0 +1,184 @@
+\HeaderOne{Boundary fluxes}
+\label{ch:boundaryFluxes}
+In this chapter we analyze and discuss the boundary of the simulation domain in more detail.
+We explicitly set the flow at each boundary edge for, e.g., simulating a wind tunnel.
+As our velocity form is divergence free, the sum of the boundary fluxes has to be zero.
+Lets examine the three steps of our algorithm (see Section \ref{sec:SimpleAlgorithm}).
+The first step, i.e., vorticity advection, can easily be adapted to boundary fluxes by handling particles which leave the simulation domain. 
+This can be solved in many ways, e.g., by clamping the particles to the simulation domain.
+In the second step, we add the external forces.
+External forces are composed of boundary fluxes (harmonic part) and inner vorticities.
+In the velocity recovery step, we implicitly add the harmonic external forces by defining appropriate boundary conditions for the associated equations.
+
+\paragraph*{}
+In the first part of this chapter, we derive a unique characterization of the velocities in terms of inner vorticities and given boundary fluxes.
+Based on this characterization, we construct the equations which we need to solve to recover the velocities.
+
+\HeaderTwo{Vorticity based characterization of the velocity}
+\label{sec:VorticityRepresentation}
+Now, we will prove that a divergence free velocity form $\VelocityForm$ is uniquely characterized through the inner vorticities and given boundary fluxes.
+We assume, that the domain is contractible and denote it by $K$.
+The vector space of all divergence free 1P-forms in $K$ is defined as:
+
+\begin{equation}
+R := \ker d_1 = \{ \VelocityForm \in \DiffForms^P_1(K) : d_1 \VelocityForm = 0 \}
+\end{equation}
+
+Let $N \in \N$ be the number of boundary edges in the complex $K$ and suppose $\Gamma_B : R \rightarrow \R^N$ is a projective mapping s.t. ${\Gamma_B}_j$ maps the flux of the j-th boundary edge to $\R$.
+$\Gamma_B$ is a linear function and describes the boundary flux configuration for a given divergence free velocity form $\VelocityForm \in R$. 
+%The curl operator has been defined in Section \ref{sec:FluidEquations} as $C := d_0^T *_1$.
+Similarly to the boundary fluxes, we extract the inner vorticities with a linear function
+$\Gamma_I : R \rightarrow \R^M$, where $M \in \N$ is the number of inner dual faces.
+Combining both linear operators leads to the following definition:
+
+\begin{equation}
+\bigotimes : R \rightarrow \R^N \times \R^M , \bigotimes(\VelocityForm) := (\Gamma_B(U),\Gamma_I(U))
+\end{equation}
+
+$\bigotimes$ maps linearly a given velocity form to its \newword{configuration space} $\R^N \times \R^M$.
+Our uniqueness statement is true if and only if $\bigotimes$ is injective, which is equivalent to $\ker \bigotimes = \{0\}$.
+
+\newpage
+\HeaderThree{Proof}
+We prove the theorem by contradiction. Suppose there exists a velocity form $\VelocityForm \in \ker \bigotimes$ s.t. $\VelocityForm \neq 0$. 
+That means, $\VelocityForm$ has no boundary fluxes and no interior vorticities but contains inner fluxes.
+We will show, that there exists a dual loop whose circulation is not zero. Since the topology is contractible,
+every dual loop is the boundary of a chain of dual faces (see Figure \ref{fig:DualLoop}).
+By Stokes Theorem, there exists a dual face inside the dual loop whose vorticity is non-zero. 
+But this contradicts the assumption that all the inner vorticities in $\VelocityForm$ are zero, i.e., $\Gamma_I(\VelocityForm)=0$.
+It remains to construct the desired dual loop.
+A face with an incoming flow must have an outgoing and vice versa, as the velocity form is divergence free.
+%A face with an incoming flow contains an outgoing flow and likewise exists an incoming flow if there is an outgoing flow. 
+This is a consequence of the divergence free property and the basis for our dual loop construction.
+Let $f_0$ be a primal face which contains an outgoing and therefore an incoming flow. 
+Choose a boundary edge $e_0$ of $f_0$ with outgoing flow and assume $d_0$ to be its associated dual edge. 
+We leave the face $f_0$ through the edge $e_0$ and enter a new face.
+We denote that face with $f_1$.
+Again, $f_1$ contains an incoming and thus an outgoing flow.
+We cannot leave the domain as we have zero boundary fluxes.
+Therefore, we eventually encounter an already visited face if we repeat the process.
+The resulting sequence of dual edges $d_0 , ... , d_n$ spans a dual loop.
+Since we moved along outgoing flows, the total circulation of the dual loop is positive.
+\begin{flushright}
+$\square$
+\end{flushright}
+
+\begin{figure}[h!]
+	\begin{minipage}[b]{0.5 \linewidth}
+		\centering
+		\subfigure[]{
+			      \input{pics/tikz/regGridDualLoop}}
+	\end{minipage}
+	\begin{minipage}[b]{0.5 \linewidth}
+		\centering
+		\subfigure[]{
+			      \input{pics/tikz/meshDualLoop}}
+	\end{minipage}	
+	\caption[A dual loop in a regular grid and simplicial complex]
+			{(a) is a dual loop in a regular grid and (b) in a simplicial complex. The loops are the boundary of a chain of dual faces.}
+	\label{fig:DualLoop}
+\end{figure}
+
+\newpage
+\HeaderTwo{Implementing boundary conditions}
+From the previous section, we know that a velocity form is uniquely described through inner vorticities and given boundary fluxes.
+In this section, we will discuss how to construct a sparse symmetric system of linear equations which is based on the vorticity
+and boundary flux configuration.
+
+\HeaderThree{Some formal notations}
+The different simplices in a complex are combined in the set:
+
+\begin{equation}
+\SimplicesTypes := \{ \SimplexFace,\SimplexEdge,\SimplexVertex \}
+\end{equation}
+
+where ($\SimplexFace$=Faces,$\SimplexEdge$=Edges,$\SimplexVertex$=Vertices).
+We define three types of diagonal matrices for each simplex type, to distinguish boundary elements from interior ones.
+For $\SimplexType \in \SimplicesTypes$ we define the \newdef{interior matrix} as:
+
+\begin{equation}
+\InteriorMatrix^\SimplexType_{ii} := \begin{cases} 1 & \text{if i-th simplex of type } \SimplexType \text{ is not a boundary element} \\
+						  0 & \text{otherwise} \end{cases}
+\end{equation}
+
+Similarly, the \newdef{boundary matrix} is defined as:
+
+\begin{equation}
+\BoundaryMatrix^\SimplexType_{ii} := \begin{cases} 1 & \text{if i-th simplex of type } \SimplexType \text{ is a boundary element} \\
+						  0 & \text{otherwise} \end{cases}
+\end{equation}
+
+For each simplex type $\SimplexType \in \SimplicesTypes$, we define an identity matrix and denote it by $\IdentityMatrix^\SimplexType$.
+The equation $\IdentityMatrix^\SimplexType = \InteriorMatrix^\SimplexType + \BoundaryMatrix^\SimplexType$ is an obvious consequence of our defined matrices.
+
+\HeaderThree{Constraints}
+A divergence free velocity form $\VelocityForm \in \DiffForms^P_1(K)$, whose boundary fluxes are
+$B_F \in \DiffForms^P_1(K)$ and its inner vorticities are equal to $\VorticityForm \in \DiffForms^D_2(K)$,
+satisfies the following constraints:
+
+\begin{itemize}
+\item \textbf{Boundary fluxes: } $\BoundaryMatrix^\SimplexEdge \VelocityForm = B_F$
+\item \textbf{Inner vorticities: } $\InteriorMatrix^\SimplexVertex \DECCurl \VelocityForm = \InteriorMatrix^\SimplexVertex \VorticityForm$
+\item \textbf{Divergence free: } $d \VelocityForm = 0$
+\end{itemize}
+
+
+\HeaderThree{Sparse symmetric system of linear equations}
+In Section \ref{sec:VortToVel}, we combined the \textbf{inner vorticities} and \textbf{divergence free} constraints by searching a \newword{potential} $\Phi$
+of $\VelocityForm$. We modify the constraints in order to implement this approach and end up with the following equations:
+
+\begin{eqnarray}
+\label{eq:BoundaryFluxes} 
+\BoundaryMatrix^\SimplexEdge d \Phi = B_F \\
+\label{eq:InnerVorticityPotential}
+\InteriorMatrix^\SimplexVertex \DECLaplace \Phi =\InteriorMatrix^\SimplexVertex \VorticityForm \\
+\VelocityForm = d \Phi
+\end{eqnarray}
+
+$\BoundaryMatrix^\SimplexEdge d \Phi = B_F$ are Neumann-boundary conditions w.r.t. the exterior derivative operator $d$.
+The operator $\DECLaplace$ has been defined in Section \ref{sec:VortToVel} as $\DECLaplace := \DECCurl d$.
+Instead of directly computing the velocity form $\VelocityForm$, we need to compute a potential $\Phi$.
+We change the Neumann-boundary conditions into Dirichlet boundary conditions by eliminating the derivative operator in \myeqref{eq:BoundaryFluxes}.
+For a 0P-form $\Theta \in \DiffForms_0^P(K)$ which satisfies
+
+\begin{equation}
+\BoundaryMatrix^\SimplexEdge d \Theta = B_F
+\end{equation}
+
+we can reformulate \myeqref{eq:BoundaryFluxes} as
+
+\begin{equation}
+\label{eq:BForcePotential}
+\BoundaryMatrix^\SimplexVertex \Phi = \BoundaryMatrix^\SimplexVertex \Theta
+\end{equation}
+
+$\Theta$ can be computed by integrating $B_F$ on the boundary.
+\myeqref{eq:BForcePotential} establishes our Dirichlet boundary conditions.
+\myeqref{eq:BForcePotential} and \myeqref{eq:InnerVorticityPotential} can be combined as
+the images of $\InteriorMatrix^\SimplexVertex \DECLaplace$ and $\BoundaryMatrix^\SimplexVertex$ are distinct. 
+Hence, we get:
+
+\begin{eqnarray}
+(\InteriorMatrix^\SimplexVertex \DECLaplace + \BoundaryMatrix^\SimplexVertex) \Phi = \InteriorMatrix^\SimplexVertex \VorticityForm + \BoundaryMatrix^\SimplexVertex \Theta \\
+\VelocityForm = d \Phi
+\end{eqnarray}
+
+But, $\InteriorMatrix^\SimplexVertex \DECLaplace + \BoundaryMatrix^\SimplexVertex$ is not symmetric because of $\InteriorMatrix^\SimplexVertex \DECLaplace$. 
+Therefore, it is not suited for an efficient solver like CG.
+We use the identity $\IdentityMatrix^\SimplexVertex = \InteriorMatrix^\SimplexVertex + \BoundaryMatrix^\SimplexVertex$ to split
+$\InteriorMatrix^\SimplexVertex \DECLaplace$ into the term $\InteriorMatrix^\SimplexVertex \DECLaplace \InteriorMatrix^\SimplexVertex + \InteriorMatrix^\SimplexVertex \DECLaplace \BoundaryMatrix^\SimplexVertex$
+and moreover we know
+$\InteriorMatrix^\SimplexVertex \DECLaplace \BoundaryMatrix^\SimplexVertex \Phi = \InteriorMatrix^\SimplexVertex \DECLaplace \BoundaryMatrix^\SimplexVertex \Theta$.
+Finally, \myeqref{eq:VortVelFinished} is a symmetric sparse system of linear equations.
+
+\begin{equation}
+\label{eq:VortVelFinished}
+(\InteriorMatrix^\SimplexVertex \DECLaplace \InteriorMatrix^\SimplexVertex + \BoundaryMatrix^\SimplexVertex) \Phi = \InteriorMatrix^\SimplexVertex \VorticityForm + \BoundaryMatrix^\mathcal{V} \Theta - \InteriorMatrix^\SimplexVertex \DECLaplace \BoundaryMatrix^\SimplexVertex \Theta
+\end{equation}
+
+We solve the equation for $\Phi$ and get the velocity form by computing $d \Phi$.
+
+\newpage
+
+Now, we can explicitly set the flow which goes through the boundary of our simulation domain.
+The simulation domain is not closed anymore and we are able to simulate for example a wind tunnel.

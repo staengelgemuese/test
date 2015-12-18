@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="636.01862"
+   height="358.62732"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="simulationLoop.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="145.06174"
+     inkscape:cy="121.4447"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="100.89751px"
+       originy="-745.74845px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(100.89751,52.01359)">
+    <text
+       xml:space="preserve"
+       x="-90"
+       y="-21.302416"
+       id="text2989"
+       style="font-size:23.77639771px;text-align:start;text-anchor:start"><tspan
+         sodipodi:role="line"
+         x="-90"
+         y="-21.302416"
+         id="tspan2993">Predict new candidate velocieties v<tspan
+   style="font-size:15.45487499px;text-align:start;text-anchor:start;baseline-shift:sub"
+   id="tspan2997">p</tspan><tspan
+   style="font-size:15.45487499px;text-align:start;text-anchor:start;baseline-shift:super"
+   id="tspan2999">n+1 </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       x="-90"
+       y="18.324919"
+       id="text2989-1"
+       style="font-size:23.77639771px"><tspan
+         sodipodi:role="line"
+         x="-90"
+         y="18.324919"
+         id="tspan3036">Check linear trajectories for collisions</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-90"
+       y="57.952244"
+       id="text3055"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3057"
+         x="-90"
+         y="57.952244">Repeat until no new collisions appear (max. 5 Iterations)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-50.372665"
+       y="97.579567"
+       id="text3059"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3061"
+         x="-50.372665"
+         y="97.579567">Compute repulsion impulses for unhandled collisions</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-50.372665"
+       y="137.20691"
+       id="text3063"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3065"
+         x="-50.372665"
+         y="137.20691">Apply impulses → update v<tspan
+   style="font-size:15.45487499px;baseline-shift:sub"
+   id="tspan3067">p</tspan><tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3069">n+1 </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       x="-50.372665"
+       y="176.83423"
+       id="text2989-1-9"
+       style="font-size:23.77639771px"><tspan
+         sodipodi:role="line"
+         x="-50.372665"
+         y="176.83423"
+         id="tspan3036-4">Check new linear trajectories for collisions</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-90"
+       y="216.46156"
+       id="text3092"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3094"
+         x="-90"
+         y="216.46156">New velocity v<tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3096">n+1</tspan>=v<tspan
+   style="font-size:15.45487499px;baseline-shift:sub"
+   id="tspan3098">p</tspan><tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3100">n+1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-90"
+       y="256.08887"
+       id="text3092-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3094-8"
+         x="-90"
+         y="256.08887">Update position x<tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3132">n+1</tspan>=x<tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3134">n</tspan>+ Δt v<tspan
+   style="font-size:15.45487499px;baseline-shift:super"
+   id="tspan3136">n+1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.77639771px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-90"
+       y="295.71622"
+       id="text3092-8-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3094-8-1"
+         x="-90"
+         y="295.71622">Rendering</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,-51.022907 0,356.645957"
+       id="path3170"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,305.62305 634.037271,0"
+       id="path3172"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,-51.022907 634.037271,0 0,356.645957"
+       id="path3174"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,-11.395579 634.037271,0"
+       id="path3176"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,28.231754 634.037271,0"
+       id="path3178"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,186.74106 634.037271,0"
+       id="path3180"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -60.279505,186.74106 0,-118.88198 594.409945,0"
+       id="path3182"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,226.36838 634.037271,0"
+       id="path3184"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.906831,265.99572 634.037271,0"
+       id="path3186"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -60.279505,107.48641 594.409945,0"
+       id="path3188"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.98136652px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -60.279505,147.11373 594.409945,0"
+       id="path3190"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

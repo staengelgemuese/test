@@ -1,0 +1,3980 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.10)  12 NOV 2015 12:42
+entering extended mode
+**indexTU2.tex
+(indexTU2.tex
+LaTeX2e <2015/10/01> patch level 1
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files\tuddesign\tex\latex\tuddesign\tudreport.cls"
+Document Class: tudreport 2009/11/17 1.13 Clemens von Loewenich's and Joe Werne
+r's TUD-Design package
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
+\XKV@depth=\count79
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+Class tudreport Info: Option `paper=a4report' selected. on input line 142.
+Class tudreport Info: Unknown option 'english`. Pass to KOMA-Script class. on i
+nput line 144.
+Class tudreport Info: Unknown option 'bibliography=totoc`. Pass to KOMA-Script 
+class. on input line 144.
+Class tudreport Info: Unknown option 'twoside`. Pass to KOMA-Script class. on i
+nput line 144.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrreprt.cls
+Document Class: scrreprt 2015/10/03 v3.19a KOMA-Script document class (report)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+
+Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 125.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 126.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 127.
+Package tocbasic Info: defining new hook before heading of `' on input line 158
+8.
+Class scrreprt Info: File `scrsize11pt.clo' used instead of
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 224
+8.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.c
+lo
+File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
+t)
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
+
+Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count80
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+\footheight=\skip45
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1509.
+)
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+LaTeX Info: Redefining \textsubscript on input line 4652.
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count88
+\c@table=\count89
+\bibindent=\dimen102
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count90
+\calc@Bcount=\count91
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count92
+\calc@Cskip=\skip50
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.sty"
+Package: tudcolours 2009/03/12 1.9 Clemens von Loewenich's and Joe Werner's TUD
+-Design package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `override' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count93
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.cfg"
+File: tudcolours.cfg 2008/12/03
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.def"
+File: tudcolours.def 2008/12/03
+))
+("C:\Program Files\tuddesign\tex\latex\tuddesign\report\tudreprt_fonts.sty"
+Package: tudreprt_fonts 2009/00/18 1.11 Clemens von Loewenich's and Joe Werner'
+s TUD-Design package
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudfonts.sty"
+Package: tudfonts 2009/09/18 1.12 Clemens von Loewenich's and Joe Werner's TUD-
+Design package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+Package textcomp Info: Changing ? sub-encoding to TS1/4 on input line 80.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mathdesign.sty
+Package: mathdesign 2013/08/29 v2.31 Math Design Project
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\mdbch.cf
+g)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\mdbch.st
+y
+Package: mdbch 2013/08/29 v2.31 bitstream bitstream charter + mdbch (Math Desig
+n Project)
+ (D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdfont.def
+File: mdfont.def 2013/08/29 v2.31 (Math Design Project)
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdsffont.def
+File: mdsffont.def 2013/08/29 v2.31 (Math Design Project)
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdttfont.def
+File: mdttfont.def 2013/08/29 v2.31 (Math Design Project)
+)
+\symmdcal=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mdcal' in version `bold'
+(Font)                  OMS/mdbch/m/n --> OMS/mdbch/b/n on input line 97.
+\symmdscr=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `mdscr' in version `bold'
+(Font)                  OMS/mdbch/m/n --> OMS/mdbch/b/n on input line 103.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/xmdeuf/m/n --> U/xmdeuf/b/n on input line 110.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/mdbch/m/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/mdbch/m/it on input line 122.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/mdbch/m/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/mdbch/m/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/mdbch/b/n on input line 126.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/mdbch/b/it on input line 127.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/mdbch/b/n on input line 128.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/mdbch/b/n on input line 129.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/mdbch/m/n --> T1/mdbch/m/n on input line 131.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/mdbch/b/n on input line 132.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/mdbch/m/it on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 134.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 135.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/mdbch/b/n --> T1/mdbch/b/n on input line 137.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/mdbch/b/n on input line 138.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/mdbch/b/it on input line 139.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> T1/cmss/b/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/b/n on input line 141.
+\symlettersupright=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lettersupright' in version `bold'
+(Font)                  OML/mdbch/m/n --> OML/mdbch/b/n on input line 144.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 145.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
+(Font)                  OMS/mdbch/m/n --> OMS/mdbch/m/n on input line 167.
+LaTeX Font Info:    Try loading font information for T1+mdbch on input line 186
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\t1mdbch.
+fd
+File: t1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for T1/mdbch.
+)
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 186.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 449.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 450.
+\symmathdesignA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `mathdesignA' in version `bold'
+(Font)                  MDA/mdbch/m/n --> MDA/mdbch/b/n on input line 491.
+\symmathdesignB=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `mathdesignB' in version `bold'
+(Font)                  MDB/mdbch/m/n --> MDB/mdbch/b/n on input line 498.
+\@emptytoks=\toks16
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 532.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 533.
+\rulethickness=\skip51
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)))
+\symutopiasymbol=\mathgroup9
+LaTeX Font Info:    Overwriting math alphabet `\mathmb' in version `normal'
+(Font)                  T1/5ch/mb/n --> T1/5ch/mb/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathmb' in version `bold'
+(Font)                  T1/5ch/mb/n --> T1/5ch/mb/n on input line 35.
+LaTeX Info: Redefining \em on input line 37.
+\fontheight=\skip52
+\fontdepth=\skip53
+\fontstrutbox=\box27
+LaTeX Info: Redefining \LaTeX on input line 108.
+)
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 239.
+)
+\TUD@headfootsep=\skip54
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudpage.sty"
+Package: tudpage 2009/08/11 1.10 Clemens von Loewenich's and Joe Werner's TUD-D
+esign package
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudpaper.sty"
+Package: tudpaper 2009/01/28 1.9 Clemens von Loewenich's and Joe Werner's TUD-D
+esign package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)))
+\TUD@logo@height=\skip55
+\TUD@logo@leftskip=\skip56
+\TUD@sep@top=\skip57
+\TUD@sep@left=\skip58
+\TUD@sep@right=\skip59
+\TUD@sep@bottom=\skip60
+\TUD@titlepos=\skip61
+\TUD@titlebox@sep@left=\skip62
+\TUD@titlebox@sep@right=\skip63
+\TUD@titlebox@sep@bottom=\skip64
+\TUD@subtitlebox@sep=\skip65
+\TUD@textwidth=\skip66
+\TUD@cols@width=\skip67
+\TUD@cols@sep=\skip68
+\c@TUD@cols@n=\count94
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudrules.sty"
+Package: tudrules 2008/10/09 1.6 Clemens von Loewenich's and Joe Werner's TUD-D
+esign package
+\TUD@indentbar@height=\skip69
+\TUD@indentbar@depth=\skip70
+\TUD@indentbar@totalheight=\skip71
+\@TUD@indentbar@width=\skip72
+\@TUD@largeruleheight=\skip73
+\@TUD@smallruleheight=\skip74
+\@TUD@rulesep=\skip75
+\@TUD@ruleheight=\skip76
+)
+\TUD@indentbarheight=\skip77
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
+\Gm@bindingoffset=\dimen107
+\Gm@wd@mp=\dimen108
+\Gm@odd@mp=\dimen109
+\Gm@even@mp=\dimen110
+\Gm@layoutwidth=\dimen111
+\Gm@layoutheight=\dimen112
+\Gm@layouthoffset=\dimen113
+\Gm@layoutvoffset=\dimen114
+\Gm@dimlist=\toks17
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")))
+\TUD@footparindent=\skip78
+
+
+Class scrreprt Warning: Usage of package `fancyhdr' together
+(scrreprt)              with a KOMA-Script class is not recommended.
+(scrreprt)              I'd suggest to use 
+(scrreprt)              package `scrlayer-scrpage'.
+(scrreprt)              Nevertheless, using requested
+(scrreprt)              package `fancyhdr' on input line 47.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip79
+\f@ncyO@elh=\skip80
+\f@ncyO@erh=\skip81
+\f@ncyO@olh=\skip82
+\f@ncyO@orh=\skip83
+\f@ncyO@elf=\skip84
+\f@ncyO@erf=\skip85
+\f@ncyO@olf=\skip86
+\f@ncyO@orf=\skip87
+))
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudheading.sty"
+Package: tudheading 2009/12/31 1.17 Clemens von Loewenich's and Joe Werner's TU
+D-Design package
+
+
+Class scrreprt Warning: Usage of package `titlesec' together
+(scrreprt)              with a KOMA-Script class is not recommended.
+(scrreprt)              I'd suggest to use the package only
+(scrreprt)              if you really need it, because it breaks several
+(scrreprt)              KOMA-Script features, i.e., option `headings' and
+(scrreprt)              the extended optional argument of the section
+(scrreprt)              commands.
+(scrreprt)              Nevertheless, using requested
+(scrreprt)              package `titlesec' on input line 12.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip88
+\aftertitleunit=\skip89
+\ttl@plus=\dimen115
+\ttl@minus=\dimen116
+\ttl@toksa=\toks18
+\titlewidth=\dimen117
+\titlewidthlast=\dimen118
+\titlewidthfirst=\dimen119
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+)
+
+Package scrreprt Warning: Activating an ugly workaround for a missing
+(scrreprt)                feature of package `titlesec` on input line 12.
+
+\c@seclinedepth=\count98
+\TUD@chapter@diff@height=\skip90
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 24.28816pt on input line 75.
+\@TUD@above@headskip=\skip91
+\@TUD@below@headskip=\skip92
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudheading.def"
+File: tudheading.def 2009/07/14
+\TUD@part@tmp@height=\skip93
+\TUD@part@tmp@depth=\skip94
+\@TUD@partbox=\box29
+)
+\TUD@parind=\skip95
+\TUD@chapind=\skip96
+\TUD@secind=\skip97
+\TUD@subsecind=\skip98
+\TUD@subsubsecind=\skip99
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\block.tss
+File: block.tss 2011/12/15
+))
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudredef.sty"
+Package: tudredef 2010/04/10 1.2 Clemens von Loewenich's and Joe Werner's TUD-D
+esign package
+\TUD@abstract@count=\count99
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\report\tudreprt_title.sty"
+Package: tudreprt_title 2014/09/20 1.12 Clemens von Loewenich's and Joe Werner'
+s TUD-Design package
+\TUD@sponsorlogo=\box30
+\TUD@titleskip=\skip100
+))
+(mypackages.sty ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty
+"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+Now handling font encoding MDA ...
+... no UTF-8 mapping file for font encoding MDA
+Now handling font encoding MDB ...
+... no UTF-8 mapping file for font encoding MDB
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen120
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count102
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count103
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count104
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count108
+\c@bookmark@seq@number=\count109
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip101
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip102
+
+For additional information on amsmath, use the `?' option.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen124
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen125
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count110
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count111
+\leftroot@=\count112
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count113
+\DOTSCASE@=\count114
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen126
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
+\dotsspace@=\muskip11
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
+\tag@help=\toks22
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
+\andhelp@=\toks23
+\eqnshift@=\dimen127
+\alignsep@=\dimen128
+\tagshift@=\dimen129
+\tagwidth@=\dimen130
+\totwidth@=\dimen131
+\lineht@=\dimen132
+\@envbody=\toks24
+\multlinegap=\skip103
+\multlinetaggap=\skip104
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip105
+\bibsep=\skip106
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count122
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count123
+\l_MT_multwidth_dim=\dimen133
+\origjot=\skip107
+\l_MT_shortvdotswithinadjustabove_dim=\dimen134
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen135
+\l_MT_above_intertext_sep=\dimen136
+\l_MT_below_intertext_sep=\dimen137
+\l_MT_above_shortintertext_sep=\dimen138
+\l_MT_below_shortintertext_sep=\dimen139
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2015/08/03 3.9m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2015/08/03 3.9m Babel common definitions
+\babel@savecnt=\count124
+\U@D=\dimen140
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf"
+Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf"
+Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+\l@naustrian = a dialect from \language\l@ngerman 
+\l@nswissgerman = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 88.
+))
+
+Package babel Warning: Last declared language option is `english,
+(babel)                but the last processed one was `ngerman'.
+(babel)                The main language cannot be set as both a global
+(babel)                and a package option. Use `main=english' as
+(babel)                option. Reported on input line 315.
+
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count125
+\float@exts=\toks26
+\float@box=\box33
+\@float@everytoks=\toks27
+\@floatcapt=\box34
+)
+\@float@every@algorithm=\toks28
+\c@algorithm=\count126
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count127
+\c@ALC@line=\count128
+\c@ALC@rem=\count129
+\c@ALC@depth=\count130
+\ALC@tlm=\skip108
+\algorithmicindent=\skip109
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip110
+\subfigcapskip=\skip111
+\subfigcaptopadj=\dimen141
+\subfigbottomskip=\skip112
+\subfigcapmargin=\dimen142
+\subfiglabelskip=\skip113
+\c@subfigure=\count131
+\c@lofdepth=\count132
+\c@subtable=\count133
+\c@lotdepth=\count134
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip114
+\subfig@bottom=\skip115
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
+x"
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen143
+\pgfutil@tempdimb=\dimen144
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
+sts.tex"))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+"
+\pgfutil@abb=\box35
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+"
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
+ode.tex"
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen145
+\pgf@y=\dimen146
+\pgf@xa=\dimen147
+\pgf@ya=\dimen148
+\pgf@xb=\dimen149
+\pgf@yb=\dimen150
+\pgf@xc=\dimen151
+\pgf@yc=\dimen152
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count135
+\c@pgf@countb=\count136
+\c@pgf@countc=\count137
+\c@pgf@countd=\count138
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.d
+ef"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-p
+df.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
+code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count139
+\pgfsyssoftpath@bigbuffer@items=\count140
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
+code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+"
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count141
+\pgfmath@box=\box36
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
+tex"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
+.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
+nometric.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
+m.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
+rison.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
+code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
+.code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
+code.tex")
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
+erarithmetics.code.tex")))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count142
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
+de.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen154
+\pgf@picmaxx=\dimen155
+\pgf@picminy=\dimen156
+\pgf@picmaxy=\dimen157
+\pgf@pathminx=\dimen158
+\pgf@pathmaxx=\dimen159
+\pgf@pathminy=\dimen160
+\pgf@pathmaxy=\dimen161
+\pgf@xx=\dimen162
+\pgf@xy=\dimen163
+\pgf@yx=\dimen164
+\pgf@yy=\dimen165
+\pgf@zx=\dimen166
+\pgf@zy=\dimen167
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
+ruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen168
+\pgf@path@lasty=\dimen169
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
+.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen170
+\pgf@shorten@start@additional=\dimen171
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
+de.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box37
+\pgf@hbox=\box38
+\pgf@layerbox@main=\box39
+\pgf@picture@serial@count=\count143
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
+ate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen172
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
+ations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen173
+\pgf@pt@y=\dimen174
+\pgf@pt@temp=\dimen175
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
+e.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.c
+ode.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathproce
+ssing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
+de.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen176
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
+e.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen177
+\pgf@sys@shading@range@num=\count144
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
+e.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
+code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box40
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
+de.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretranspare
+ncy.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.
+code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
+e.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box41
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
+tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen178
+\pgf@nodesepend=\dimen179
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+)) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen180
+\pgffor@skip=\dimen181
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
+e.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
+dlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count145
+\pgfplotmarksize=\dimen182
+)
+\tikz@lastx=\dimen183
+\tikz@lasty=\dimen184
+\tikz@lastxsaved=\dimen185
+\tikz@lastysaved=\dimen186
+\tikzleveldistance=\dimen187
+\tikzsiblingdistance=\dimen188
+\tikz@figbox=\box42
+\tikz@figbox@bg=\box43
+\tikz@tempbox=\box44
+\tikz@tempbox@bg=\box45
+\tikztreelevel=\count146
+\tikznumberofchildren=\count147
+\tikznumberofcurrentchild=\count148
+\tikz@fig@count=\count149
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
+e.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count150
+\pgfmatrixcurrentcolumn=\count151
+\pgf@matrix@numberofcolumns=\count152
+)
+\tikz@expandcount=\count153
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
+code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen189
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryautomata.code.tex"
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
+shapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box46
+\pgfnodeparttwobox=\box47
+\pgfnodepartthreebox=\box48
+\pgfnodepartfourbox=\box49
+\pgfnodeparttwentybox=\box50
+\pgfnodepartnineteenbox=\box51
+\pgfnodeparteighteenbox=\box52
+\pgfnodepartseventeenbox=\box53
+\pgfnodepartsixteenbox=\box54
+\pgfnodepartfifteenbox=\box55
+\pgfnodepartfourteenbox=\box56
+\pgfnodepartthirteenbox=\box57
+\pgfnodeparttwelvebox=\box58
+\pgfnodepartelevenbox=\box59
+\pgfnodeparttenbox=\box60
+\pgfnodepartninebox=\box61
+\pgfnodeparteightbox=\box62
+\pgfnodepartsevenbox=\box63
+\pgfnodepartsixbox=\box64
+\pgfnodepartfivebox=\box65
+)))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarypatterns.code.tex"
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibrarypattern
+s.code.tex"
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+)) (mycommands.sty
+\c@theorem=\count154
+\c@example=\count155
+\c@definition=\count156
+)
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\esvect\esvect.sty
+Package: esvect 
+\symesvector=\mathgroup10
+))
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks41
+\labelindent=\skip116
+\enit@outerparindent=\dimen190
+\enit@toks=\toks42
+\enit@inbox=\box66
+\enitdp@description=\count157
+)
+(titlepage.tex)
+No file indexTU2.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for MDA+cmr on input line 35.
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdacmr.fd
+File: mdacmr.fd 
+)
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for MDB+cmr on input line 35.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbcmr.fd
+File: mdbcmr.fd 
+)
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for T1+5ch on input line 35.
+
+("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\t15ch.fd"
+File: t15ch.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5ch.
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count158
+\scratchdimen=\dimen191
+\scratchbox=\box67
+\nofMPsegments=\count159
+\nofMParguments=\count160
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen192
+\MPnumerator=\count162
+\makeMPintoPDFobject=\count163
+\everyMPtoPDFconversion=\toks44
+)
+\AtBeginShipoutBox=\box68
+
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot includemp twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=698.49777pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-29.59087pt
+* \headheight=16.56445pt
+* \headsep=15.2pt
+* \topskip=11.0pt
+* \footskip=15.2pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=11.95013pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\TUD@part@topskip=\skip117
+Package hyperref Info: Link coloring OFF on input line 35.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count164
+)
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+\@outlinefile=\write4
+
+ABD: EveryShipout initializing macros
+\@TUD@tmp@baselineskip=\skip118
+\@TUD@tmp@parwidth=\skip119
+\TUD@titleboxheight=\skip120
+\TUD@titleboxdepth=\skip121
+\TUD@subtitleboxheight=\skip122
+\TUD@subtitleboxdepth=\skip123
+\TUD@logoboxheight=\skip124
+\TUD@logoboxwidth=\skip125
+\TUD@colorbackheight=\skip126
+\TUD@colorbacktitleheight=\skip127
+\TUD@instboxheight=\skip128
+\TUD@instboxdepth=\skip129
+\TUD@instboxwidth=\skip130
+\TUD@instlogoheight=\skip131
+\TUD@instlogowidth=\skip132
+\TUD@sponsorheight=\skip133
+\TUD@titlebox=\box69
+\TUD@subtitlebox=\box70
+\TUD@logobox=\box71
+\TUD@instbox=\box72
+\TUD@sponsorbox=\box73
+\TUD@tmp@height=\skip134
+\TUD@tmp@depth=\skip135
+LaTeX Font Info:    Try loading font information for T1+5fp on input line 46.
+
+("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\frontpage\t15fp.fd
+"
+File: t15fp.fd 2009/08/06 Fontinst v1.927 font definitions for T1/5fp.
+)
+LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\ot1mdbch
+.fd
+File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
+)
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for OML+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\omlmdbch
+.fd
+File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
+)
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\omsmdbch
+.fd
+File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
+)
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\omxmdbch
+.fd
+File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
+)
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\mdamdbch
+.fd
+File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
+)
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdbch\mdbmdbch
+.fd
+File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
+)
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 12.00008pt on input line 46.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 8.44806pt on input line 46.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.20004pt on input line 46.
+LaTeX Font Info:    Try loading font information for OML+mdput on input line 46
+.
+
+(D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdput\omlmdput
+.fd
+File: omlmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdput.
+)
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 11.75003pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 8.27202pt on input line 46.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 7.05002pt on input line 46.
+LaTeX Font Info:    Try loading font information for U+esvect on input line 46.
+
+ (D:\Users\stange\AppData\Roaming\MiKTeX\2.9\tex\latex\esvect\uesvect.fd
+File: uesvect.fd 
+)
+
+LaTeX Font Warning: Font shape `U/esvect/m/n' in size <12.5> not available
+(Font)              size <12> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `U/esvect/m/n' in size <7.5> not available
+(Font)              size <7> substituted on input line 46.
+
+\@TUD@titlelines=\count165
+
+Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 4
+6.
+
+<tud_logo.pdf, id=6, 157.58875pt x 63.23625pt>
+File: tud_logo.pdf Graphic file (type pdf)
+ <use tud_logo.pdf>
+Package pdftex.def Info: tud_logo.pdf used on input line 46.
+(pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
+File: tud_logo.pdf Graphic file (type pdf)
+
+<use tud_logo.pdf>
+Package pdftex.def Info: tud_logo.pdf used on input line 46.
+(pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
+ [-1
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!{D:/Users/stange/AppData/Local/MiKTeX/2.9/pdftex/config
+/pdftex.map} <C:/Program Files/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf>
+]
+LaTeX Font Info:    Try loading font information for T1+5sf on input line 46.
+ ("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\stafford\t15sf.fd
+"
+File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+
+ []
+
+[0
+
+] (declarationOfHonor.tex) [1
+
+
+
+] (abstract.tex
+
+Package natbib Warning: Citation `TANG2012' on page ii undefined on input line 
+13.
+
+
+Package natbib Warning: Citation `BRIDSON2002' on page ii undefined on input li
+ne 15.
+
+
+Package natbib Warning: Citation `PROVOT1997' on page ii undefined on input lin
+e 15.
+
+
+Package natbib Warning: Citation `TANG2012' on page ii undefined on input line 
+15.
+
+) [2
+
+
+
+]
+\tf@toc=\write5
+ [3
+
+
+]
+\tf@lof=\write6
+ [4
+
+]
+\tf@lot=\write7
+
+
+Class scrreprt Warning: \float@listhead detected!
+(scrreprt)              Implementation of \float@listhead became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Maybe implementation of \float@listhead will
+(scrreprt)              be removed from KOMA-Script soon.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@listhead interface  on input line 57.
+
+
+[5
+
+]
+\tf@loa=\write8
+ [6
+
+] (body.tex (intro.tex
+chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
+
+Package natbib Warning: Citation `TANG2012' on page vii undefined on input line
+ 11.
+
+
+Package natbib Warning: Citation `TANG2012' on page vii undefined on input line
+ 15.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page vii undefined on input li
+ne 15.
+
+
+LaTeX Warning: Reference `ch:SimPhys' on page vii undefined on input line 22.
+
+
+LaTeX Warning: Reference `ch:CollisionDetection' on page vii undefined on input
+ line 23.
+
+
+LaTeX Warning: Reference `ch:DiscretePenaltyForces' on page vii undefined on in
+put line 23.
+
+
+LaTeX Warning: Reference `ch:RobustHandlingofSlidingContacts' on page vii undef
+ined on input line 23.
+
+
+LaTeX Warning: Reference `ch:results' on page vii undefined on input line 24.
+
+
+LaTeX Warning: Reference `ch:discussion' on page vii undefined on input line 24
+.
+
+[7
+
+
+]
+chapter 2.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 31.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 31.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 31.
+
+Package natbib Warning: Citation `BENDER2007' on page viii undefined on input l
+ine 33.
+
+
+Package natbib Warning: Citation `LIU2013' on page viii undefined on input line
+ 35.
+
+
+Package natbib Warning: Citation `MUELLER2005' on page viii undefined on input 
+line 35.
+
+
+Package natbib Warning: Citation `MUELLER2004' on page viii undefined on input 
+line 35.
+
+
+Package natbib Warning: Citation `WEBER2011' on page viii undefined on input li
+ne 37.
+
+
+Package natbib Warning: Citation `WEBER2011' on page viii undefined on input li
+ne 37.
+
+
+Package natbib Warning: Citation `WEBER2013' on page viii undefined on input li
+ne 38.
+
+
+Package natbib Warning: Citation `LIN1998' on page viii undefined on input line
+ 42.
+
+
+Package natbib Warning: Citation `TESCHNER2005' on page viii undefined on input
+ line 42.
+
+
+Package natbib Warning: Citation `PROVOT1997' on page viii undefined on input l
+ine 44.
+
+
+Package natbib Warning: Citation `BENDER2007' on page viii undefined on input l
+ine 48.
+
+
+Package natbib Warning: Citation `MOORE1988' on page viii undefined on input li
+ne 48.
+
+[8
+
+]
+
+Package natbib Warning: Citation `TANG2012' on page ix undefined on input line 
+56.
+
+
+Package natbib Warning: Citation `KEISER2004' on page ix undefined on input lin
+e 59.
+
+
+Package natbib Warning: Citation `ZHANG2014' on page ix undefined on input line
+ 59.
+
+
+Package natbib Warning: Citation `TANG2012' on page ix undefined on input line 
+59.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page ix undefined on input lin
+e 62.
+
+
+Package natbib Warning: Citation `BRIDSON2002' on page ix undefined on input li
+ne 65.
+
+
+Package natbib Warning: Citation `WEBER2011' on page ix undefined on input line
+ 67.
+
+
+Package natbib Warning: Citation `PROVOT1997' on page ix undefined on input lin
+e 67.
+
+
+Package natbib Warning: Citation `TANG2012' on page ix undefined on input line 
+67.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page ix undefined on input lin
+e 67.
+
+
+Package natbib Warning: Citation `BRIDSON2002' on page ix undefined on input li
+ne 67.
+
+) [9] (physical_principles.tex
+chapter 3.
+
+Package natbib Warning: Citation `BENDER2007' on page x undefined on input line
+ 14.
+
+
+Package natbib Warning: Citation `BENDER2007' on page x undefined on input line
+ 19.
+
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
+(Font)              scaled to size 12.00008pt on input line 21.
+LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
+(Font)              scaled to size 8.44806pt on input line 21.
+LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
+(Font)              scaled to size 7.20004pt on input line 21.
+[10
+
+
+
+]
+
+Package natbib Warning: Citation `BENDER2007' on page xi undefined on input lin
+e 53.
+
+
+LaTeX Warning: Reference `eq::dR_R' on page xi undefined on input line 54.
+
+
+LaTeX Warning: Reference `eq::dR_q' on page xi undefined on input line 54.
+
+
+Package natbib Warning: Citation `COUMANS2006' on page xi undefined on input li
+ne 75.
+
+
+Package natbib Warning: Citation `WEBER2011' on page xi undefined on input line
+ 79.
+
+
+Package natbib Warning: Citation `MUELLER2004' on page xi undefined on input li
+ne 79.
+
+[11]
+
+LaTeX Warning: Reference `eq::defbodies_lag' on page xii undefined on input lin
+e 86.
+
+
+Package natbib Warning: Citation `COOK1994' on page xii undefined on input line
+ 98.
+
+
+LaTeX Warning: Reference `eq::defbodies_lag' on page xii undefined on input lin
+e 114.
+
+
+Package natbib Warning: Citation `WEBER2011' on page xii undefined on input lin
+e 114.
+
+[12]
+
+LaTeX Warning: Reference `sec:RigidBodyDynamics' on page xiii undefined on inpu
+t line 127.
+
+
+LaTeX Warning: Reference `sec:DeformaleBodyDynamics' on page xiii undefined on 
+input line 127.
+
+
+Package natbib Warning: Citation `TANG2012' on page xiii undefined on input lin
+e 129.
+
+
+LaTeX Warning: Reference `sec:RigidBodyDynamics' on page xiii undefined on inpu
+t line 131.
+
+
+LaTeX Warning: Reference `eq::impulse' on page xiii undefined on input line 132
+.
+
+
+Package natbib Warning: Citation `TANG2012' on page xiii undefined on input lin
+e 133.
+
+
+Package natbib Warning: Citation `BRIDSON2002' on page xiii undefined on input 
+line 145.
+
+
+LaTeX Warning: Reference `fig:pre_corr' on page xiii undefined on input line 14
+6.
+
+
+LaTeX Warning: File `pics/pdf/pre_corr.pdf' not found on input line 149.
+
+
+! Package pdftex.def Error: File `pics/pdf/pre_corr.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...dth=0.9\textwidth]{pics/pdf/pre_corr.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 149.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\t1txtt.fd"
+File: t1txtt.fd 2000/12/15 v3.1
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]) [14] [15pdfTeX warning (ext4): destination with the same identifier (name
+{figure.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 \include{physical_principles}
+                                 ] (collision_detection.tex
+chapter 4.
+
+Package natbib Warning: Citation `BENDER2007' on page xvi undefined on input li
+ne 12.
+
+
+Package natbib Warning: Citation `MOLLER1997' on page xvi undefined on input li
+ne 15.
+
+
+Package natbib Warning: Citation `Akenine-Moller2002' on page xvi undefined on 
+input line 15.
+
+
+LaTeX Warning: Reference `eq::dcd-tv' on page xvi undefined on input line 31.
+
+
+LaTeX Warning: Reference `eq::dcd-tv' on page xvi undefined on input line 33.
+
+[16
+
+
+
+]
+
+Package natbib Warning: Citation `PROVOT1997' on page xvii undefined on input l
+ine 48.
+
+
+LaTeX Warning: Reference `fig::asd' on page xvii undefined on input line 50.
+
+<pics/pdf/ccd_vf.pdf, id=162, 116.80043pt x 88.06653pt>
+File: pics/pdf/ccd_vf.pdf Graphic file (type pdf)
+
+<use pics/pdf/ccd_vf.pdf>
+Package pdftex.def Info: pics/pdf/ccd_vf.pdf used on input line 58.
+(pdftex.def)             Requested size: 124.4808pt x 93.85934pt.
+
+<pics/pdf/ccd_ee.pdf, id=163, 80.39746pt x 56.89648pt>
+File: pics/pdf/ccd_ee.pdf Graphic file (type pdf)
+
+<use pics/pdf/ccd_ee.pdf>
+Package pdftex.def Info: pics/pdf/ccd_ee.pdf used on input line 63.
+(pdftex.def)             Requested size: 124.4808pt x 88.10092pt.
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 55--65
+[][] [] 
+ []
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 \end{equation}
+                    <./pics/pdf/ccd_vf.pdf> <./pics/pdf/ccd_ee.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/ccd_ee.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `eq::ccd-vf' on page xviii undefined on input line 86.
+
+
+
+LaTeX Warning: Reference `eq::ccd-ee' on page xviii undefined on input line 106
+.
+
+
+Package natbib Warning: Citation `HUTTER2007' on page xviii undefined on input 
+line 109.
+
+
+Package natbib Warning: Citation `PROVOT1997' on page xviii undefined on input 
+line 111.
+
+
+LaTeX Warning: Reference `fig:ccd_aabb' on page xviii undefined on input line 1
+11.
+
+<pics/pdf/ccd_aabb.pdf, id=192, 185.80981pt x 80.47496pt>
+File: pics/pdf/ccd_aabb.pdf Graphic file (type pdf)
+
+<use pics/pdf/ccd_aabb.pdf>
+Package pdftex.def Info: pics/pdf/ccd_aabb.pdf used on input line 114.
+(pdftex.def)             Requested size: 348.54475pt x 150.97856pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `TESCHNER2005' on page xviii undefined on inpu
+t line 120.
+
+) [18] [19pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 \include{collision_detection}
+                                  <./pics/pdf/ccd_aabb.pdf>]
+(discrete_penalty.tex
+chapter 5.
+
+Package natbib Warning: Citation `BENDER2007' on page xx undefined on input lin
+e 7.
+
+
+Package natbib Warning: Citation `TANG2012' on page xx undefined on input line 
+11.
+
+
+Package natbib Warning: Citation `GROSS2011' on page xx undefined on input line
+ 16.
+
+
+LaTeX Warning: Reference `sec::stability' on page xx undefined on input line 22
+.
+
+
+Package natbib Warning: Citation `WEBER2012' on page xx undefined on input line
+ 24.
+
+[20
+
+
+
+]
+
+LaTeX Warning: Reference `sec:InteractingRigDef' on page xxi undefined on input
+ line 39.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxi undefined on input line
+ 44.
+
+
+LaTeX Warning: Reference `sec:CCD' on page xxi undefined on input line 48.
+
+[21]
+
+LaTeX Warning: Reference `fig:impulseComputationCPFDPF' on page xxii undefined 
+on input line 70.
+
+
+LaTeX Warning: Reference `fig:impulseComputationCPFDPF' on page xxii undefined 
+on input line 70.
+
+
+LaTeX Warning: Reference `fig:impulseComputationCPFDPF' on page xxii undefined 
+on input line 70.
+
+
+LaTeX Warning: Reference `fig:impulseComputationCPFDPF' on page xxii undefined 
+on input line 70.
+
+<pics/pdf/impulseComputationCPFDPF.pdf, id=245, 193.52301pt x 118.8209pt>
+File: pics/pdf/impulseComputationCPFDPF.pdf Graphic file (type pdf)
+
+<use pics/pdf/impulseComputationCPFDPF.pdf>
+Package pdftex.def Info: pics/pdf/impulseComputationCPFDPF.pdf used on input li
+ne 74.
+(pdftex.def)             Requested size: 348.54475pt x 214.02611pt.
+
+
+LaTeX Warning: Reference `eq::CPF_impulse' on page xxii undefined on input line
+ 81.
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 \end{equation}
+                    <./pics/pdf/impulseComputationCPFDPF.pdf>]
+
+Package natbib Warning: Citation `TANG2012' on page xxiii undefined on input li
+ne 105.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxiii undefined on input li
+ne 108.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxiii undefined on input li
+ne 113.
+
+
+LaTeX Warning: Reference `eq::CPF_impulse' on page xxiii undefined on input lin
+e 117.
+
+[23]
+
+Package natbib Warning: Citation `YAMANE2006' on page xxiv undefined on input l
+ine 162.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page xxiv undefined on input l
+ine 163.
+
+[24]) [25] (continuous_penalty.tex) (cpf_sliding_contacts.tex
+chapter 6.
+
+Package natbib Warning: Citation `TANG2012' on page xxvi undefined on input lin
+e 3.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxvi undefined on input lin
+e 7.
+
+
+<pics/pdf/slidingVertexArtifactUnresolvedCollision.pdf, id=313, 179.58292pt x 5
+5.19821pt>
+File: pics/pdf/slidingVertexArtifactUnresolvedCollision.pdf Graphic file (type 
+pdf)
+ <use pics/pdf/slidingVertexArtifactUnresolvedCollision.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexArtifactUnresolvedCollision.pdf 
+used on input line 14.
+(pdftex.def)             Requested size: 373.44243pt x 114.79689pt.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxvi undefined on input lin
+e 19.
+
+
+LaTeX Warning: Reference `fig:slidingVertexArtifactUnresolvedCollision' on page
+ xxvi undefined on input line 22.
+
+[26
+
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.28 ...ificial Collisions Through Discretization}
+                                                   <./pics/pdf/slidingVertexArt
+ifactUnresolvedCollision.pdf>]
+
+LaTeX Warning: Reference `fig:slidingVertexArtifactDiscretizationForces' on pag
+e xxvii undefined on input line 33.
+
+
+<pics/pdf/slidingVertexArtifactDiscretizationForces.pdf, id=330, 119.75533pt x 
+25.62468pt>
+File: pics/pdf/slidingVertexArtifactDiscretizationForces.pdf Graphic file (type
+ pdf)
+ <use pics/pdf/slidingVertexArtifactDiscretizationForces.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexArtifactDiscretizationForces.pdf
+ used on input line 40.
+(pdftex.def)             Requested size: 473.02556pt x 101.21977pt.
+
+
+Package natbib Warning: Citation `TANG2012' on page xxvii undefined on input li
+ne 50.
+
+
+LaTeX Warning: Reference `fig:slidingVertexArtifactImplausibleForces' on page x
+xvii undefined on input line 53.
+
+
+<pics/pdf/slidingVertexArtifactImplausibleForces.pdf, id=331, 70.00784pt x 59.1
+4389pt>
+File: pics/pdf/slidingVertexArtifactImplausibleForces.pdf Graphic file (type pd
+f)
+ <use pics/pdf/slidingVertexArtifactImplausibleForces.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexArtifactImplausibleForces.pdf us
+ed on input line 57.
+(pdftex.def)             Requested size: 199.16626pt x 168.2775pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.65 F
+      urthermore, the implausible feature pairs can lead to wrong resolution...
+ <./pics/pdf/slidingVertexArtifactDiscretizationForces.pdf>]
+
+LaTeX Warning: Reference `fig:slidingVertexSmallRotation' on page xxviii undefi
+ned on input line 65.
+
+
+LaTeX Warning: Reference `sec:CCDandPenetrationDepth' on page xxviii undefined 
+on input line 65.
+
+<pics/pdf/slidingVertexSmallRotation.pdf, id=347, 73.43289pt x 53.73648pt>
+File: pics/pdf/slidingVertexSmallRotation.pdf Graphic file (type pdf)
+
+<use pics/pdf/slidingVertexSmallRotation.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexSmallRotation.pdf used on input 
+line 68.
+(pdftex.def)             Requested size: 199.16626pt x 145.766pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 \section{CPF Extensions}
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.6.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 \section{CPF Extensions}
+                              <./pics/pdf/slidingVertexArtifactImplausibleForce
+s.pdf> <./pics/pdf/slidingVertexSmallRotation.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/slidingVertexSmallRotation.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `ss:DiscretizationCollisonForces' on page xxix undefin
+ed on input line 95.
+
+
+LaTeX Warning: Reference `fig:slidingVertexArtifactDiscretizationForces' on pag
+e xxix undefined on input line 99.
+
+[29]
+
+LaTeX Warning: Reference `fig::classification' on page xxx undefined on input l
+ine 110.
+
+
+LaTeX Warning: File `pics/pdf/classification.pdf' not found on input line 113.
+
+
+! Package pdftex.def Error: File `pics/pdf/classification.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 ...4\textwidth]{pics/pdf/classification.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<pics/pdf/anglesOfAttack.pdf, id=377, 60.5642pt x 29.06102pt>
+File: pics/pdf/anglesOfAttack.pdf Graphic file (type pdf)
+
+<use pics/pdf/anglesOfAttack.pdf>
+Package pdftex.def Info: pics/pdf/anglesOfAttack.pdf used on input line 119.
+(pdftex.def)             Requested size: 273.8593pt x 131.41145pt.
+
+
+LaTeX Warning: Reference `fig::anglesOfAttack' on page xxx undefined on input l
+ine 125.
+
+
+LaTeX Warning: Reference `fig::vertexNormalSpan' on page xxx undefined on input
+ line 129.
+
+<pics/pdf/vertexNormalSpan.pdf, id=378, 89.133pt x 56.89777pt>
+File: pics/pdf/vertexNormalSpan.pdf Graphic file (type pdf)
+
+<use pics/pdf/vertexNormalSpan.pdf>
+Package pdftex.def Info: pics/pdf/vertexNormalSpan.pdf used on input line 132.
+(pdftex.def)             Requested size: 199.16626pt x 127.14796pt.
+
+
+LaTeX Warning: Reference `fig::vertexNormalSpanComp' on page xxx undefined on i
+nput line 137.
+
+<pics/pdf/stupidNormals2.pdf, id=379, 57.34998pt x 34.08736pt>
+File: pics/pdf/stupidNormals2.pdf Graphic file (type pdf)
+
+<use pics/pdf/stupidNormals2.pdf>
+Package pdftex.def Info: pics/pdf/stupidNormals2.pdf used on input line 140.
+(pdftex.def)             Requested size: 323.64706pt x 192.3873pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      ]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `SERNA2009B' on page xxxi undefined on input l
+ine 152.
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.6.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.159 \end{equation}
+                     with the normal span of the vertex $\mathbf{N_{v}}$ and...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.7}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.159 \end{equation}
+                     with the normal span of the vertex $\mathbf{N_{v}}$ and...
+ <./pics/pdf/anglesOfAttack.pdf> <./pics/pdf/vertexNormalSpan.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/vertexNormalSpan.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `ss::redef' on page xxxii undefined on input line 170.
+
+
+
+LaTeX Warning: Reference `ss::sliding' on page xxxii undefined on input line 17
+0.
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.6.8
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.174 T
+       his collision definition is limited to non-deep intersections, since ...
+ <./pics/pdf/stupidNormals2.pdf>]
+
+LaTeX Warning: Reference `fig::limitCategory' on page xxxiii undefined on input
+ line 174.
+
+<pics/pdf/limitCategory.pdf, id=438, 48.04138pt x 22.09256pt>
+File: pics/pdf/limitCategory.pdf Graphic file (type pdf)
+
+<use pics/pdf/limitCategory.pdf>
+Package pdftex.def Info: pics/pdf/limitCategory.pdf used on input line 177.
+(pdftex.def)             Requested size: 373.44243pt x 171.76869pt.
+
+
+Package natbib Warning: Citation `BARAFF2003' on page xxxiii undefined on input
+ line 184.
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.6.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.193 F
+       or VF collisions the assumption holds that as long as a vertex inters...
+ <./pics/pdf/limitCategory.pdf>]
+
+LaTeX Warning: Reference `fig::slidingVertexArtifactImplausibleForcesRedef' on 
+page xxxiv undefined on input line 194.
+
+
+LaTeX Warning: Reference `fig::svf_redef' on page xxxiv undefined on input line
+ 194.
+
+
+<pics/pdf/slidingVertexArtifactImplausibleForcesRedef.pdf, id=453, 71.52289pt x
+ 60.98785pt>
+File: pics/pdf/slidingVertexArtifactImplausibleForcesRedef.pdf Graphic file (ty
+pe pdf)
+ <use pics/pdf/slidingVertexArtifactImplausibleForcesRedef.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexArtifactImplausibleForcesRedef.p
+df used on input line 204.
+(pdftex.def)             Requested size: 199.16626pt x 169.84627pt.
+
+<pics/png/svf_redef_1.jpg, id=454, 266.9975pt x 302.12875pt>
+File: pics/png/svf_redef_1.jpg Graphic file (type jpg)
+
+<use pics/png/svf_redef_1.jpg>
+Package pdftex.def Info: pics/png/svf_redef_1.jpg used on input line 214.
+(pdftex.def)             Requested size: 99.58313pt x 112.68484pt.
+
+Underfull \hbox (badness 3792) in paragraph at lines 214--214
+[]\T1/5ch/m/n/12 (a) \T1/5fp/m/n/12 be-fore the re-
+ []
+
+<pics/png/svf_redef_2.jpg, id=455, 266.9975pt x 302.12875pt>
+File: pics/png/svf_redef_2.jpg Graphic file (type jpg)
+
+<use pics/png/svf_redef_2.jpg>
+Package pdftex.def Info: pics/png/svf_redef_2.jpg used on input line 219.
+(pdftex.def)             Requested size: 99.58313pt x 112.68484pt.
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 211--221
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `alg::VertexFaceFeaturePairRedefinition' on page xxxiv
+ undefined on input line 227.
+
+
+LaTeX Warning: Reference `ss::ContactCategorization' on page xxxiv undefined on
+ input line 234.
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1
+0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.236 T
+       o handle concave faces, we need to extend the algorithm. <./pics/pdf/sli
+dingVertexArtifactImplausibleForcesRedef.pdf>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 254.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.300 
+       <./pics/png/svf_redef_1.jpg> <./pics/png/svf_redef_2.jpg>] [36]
+
+LaTeX Warning: Reference `ss::ContactCategorization' on page xxxvii undefined o
+n input line 304.
+
+
+LaTeX Warning: Reference `fig::slidingVertexArtifactDiscretizationForcesRedef' 
+on page xxxvii undefined on input line 312.
+
+
+LaTeX Warning: Reference `ss::redef' on page xxxvii undefined on input line 313
+.
+
+
+LaTeX Warning: Reference `ss::redef' on page xxxvii undefined on input line 314
+.
+
+
+LaTeX Warning: Reference `alg::VertexFaceFeaturePairRedefinition' on page xxxvi
+i undefined on input line 316.
+
+
+<pics/pdf/slidingVertexArtifactDiscretizationForcesRedef.pdf, id=516, 58.80855p
+t x 18.58206pt>
+File: pics/pdf/slidingVertexArtifactDiscretizationForcesRedef.pdf Graphic file 
+(type pdf)
+
+<use pics/pdf/slidingVertexArtifactDiscretizationForcesRedef.pdf>
+Package pdftex.def Info: pics/pdf/slidingVertexArtifactDiscretizationForcesRede
+f.pdf used on input line 320.
+(pdftex.def)             Requested size: 348.54475pt x 110.18233pt.
+
+
+LaTeX Warning: Reference `fig::slidingVertexArtifactDiscretizationForcesRedefAl
+go' on page xxxvii undefined on input line 325.
+
+
+LaTeX Warning: File `pics/pdf/slidingVertexArtifactDiscretizationForcesRedefAlg
+o.pdf' not found on input line 329.
+
+
+! Package pdftex.def Error: File `pics/pdf/slidingVertexArtifactDiscretizationF
+orcesRedefAlgo.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 ...rtifactDiscretizationForcesRedefAlgo.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.332 \end{figure}
+                   <./pics/pdf/slidingVertexArtifactDiscretizationForcesRedef.p
+df>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [38] [39pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.6.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.12 \include{cpf_sliding_contacts}
+                                   ] (results.tex
+chapter 7.
+[40
+
+
+
+]
+
+LaTeX Warning: Reference `sec:DiscretePF' on page xli undefined on input line 4
+8.
+
+
+LaTeX Warning: Reference `sec:ContinuousPenaltyForces' on page xli undefined on
+ input line 74.
+
+
+LaTeX Warning: Reference `fig::particle_multdt' on page xli undefined on input 
+line 104.
+
+<pics/pdf/particle_cpf_k100dt014.pdf, id=549, 578.16pt x 433.62pt>
+File: pics/pdf/particle_cpf_k100dt014.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_cpf_k100dt014.pdf>
+Package pdftex.def Info: pics/pdf/particle_cpf_k100dt014.pdf used on input line
+ 113.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+<pics/pdf/particle_cpf_k100dt017.pdf, id=550, 578.16pt x 433.62pt>
+File: pics/pdf/particle_cpf_k100dt017.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_cpf_k100dt017.pdf>
+Package pdftex.def Info: pics/pdf/particle_cpf_k100dt017.pdf used on input line
+ 118.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 118--119
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 110--120
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--120
+
+ []
+
+<pics/pdf/particle_dpf_k100dt011.pdf, id=551, 578.16pt x 433.62pt>
+File: pics/pdf/particle_dpf_k100dt011.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_dpf_k100dt011.pdf>
+Package pdftex.def Info: pics/pdf/particle_dpf_k100dt011.pdf used on input line
+ 124.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+<pics/pdf/particle_dpf_k100dt013.pdf, id=552, 578.16pt x 433.62pt>
+File: pics/pdf/particle_dpf_k100dt013.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_dpf_k100dt013.pdf>
+Package pdftex.def Info: pics/pdf/particle_dpf_k100dt013.pdf used on input line
+ 129.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 129--130
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 121--131
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig::particle_samedt' on page xli undefined on input 
+line 137.
+
+
+LaTeX Warning: Reference `fig::particle_samedt' on page xli undefined on input 
+line 138.
+
+
+LaTeX Warning: Reference `sec:CPFGENERAL' on page xli undefined on input line 1
+41.
+
+[41] [42pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.7.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.142 
+       <./pics/pdf/particle_cpf_k100dt014.pdf> <./pics/pdf/particle_cpf_k100dt0
+17.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/particle_cpf_k100dt017.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <./pics/pdf/particle_dpf_k100dt011.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/particle_dpf_k100dt011.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <./pics/pdf/particle_dpf_k100dt013.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/particle_dpf_k100dt013.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] <pics/pdf/particle_k1000dt001.pdf, id=701, 578.16pt x 433.62pt>
+File: pics/pdf/particle_k1000dt001.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_k1000dt001.pdf>
+Package pdftex.def Info: pics/pdf/particle_k1000dt001.pdf used on input line 14
+9.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 149--150
+ [][] 
+ []
+
+<pics/pdf/particle_k1000dt001_f.pdf, id=702, 619.71527pt x 444.4605pt>
+File: pics/pdf/particle_k1000dt001_f.pdf Graphic file (type pdf)
+
+<use pics/pdf/particle_k1000dt001_f.pdf>
+Package pdftex.def Info: pics/pdf/particle_k1000dt001_f.pdf used on input line 
+154.
+(pdftex.def)             Requested size: 248.96162pt x 178.55418pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 154--155
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 146--156
+[][] [] 
+ []
+
+
+LaTeX Warning: Reference `sec:compCost' on page xliii undefined on input line 1
+62.
+
+
+LaTeX Warning: Reference `fig::defCubeVsBar' on page xliii undefined on input l
+ine 166.
+
+
+LaTeX Warning: Reference `sec::stability' on page xliii undefined on input line
+ 166.
+
+<pics/png/barvscube_rend.png, id=703, 591.20876pt x 626.34pt>
+File: pics/png/barvscube_rend.png Graphic file (type png)
+
+<use pics/png/barvscube_rend.png>
+Package pdftex.def Info: pics/png/barvscube_rend.png used on input line 172.
+(pdftex.def)             Requested size: 156.09929pt x 165.36765pt.
+
+<pics/png/barvscube_wf.png, id=704, 591.20876pt x 626.34pt>
+File: pics/png/barvscube_wf.png Graphic file (type png)
+
+<use pics/png/barvscube_wf.png>
+Package pdftex.def Info: pics/png/barvscube_wf.png used on input line 177.
+(pdftex.def)             Requested size: 156.09929pt x 165.36765pt.
+
+<pics/pdf/cube_bar_discretization.pdf, id=705, 130.88899pt x 130.88899pt>
+File: pics/pdf/cube_bar_discretization.pdf Graphic file (type pdf)
+
+<use pics/pdf/cube_bar_discretization.pdf>
+Package pdftex.def Info: pics/pdf/cube_bar_discretization.pdf used on input lin
+e 182.
+(pdftex.def)             Requested size: 156.09929pt x 156.11533pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pics/pdf/cubeBlockBM_dt_dpf.pdf, id=706, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBlockBM_dt_dpf.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBlockBM_dt_dpf.pdf>
+Package pdftex.def Info: pics/pdf/cubeBlockBM_dt_dpf.pdf used on input line 193
+.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 193--194
+ [][] 
+ []
+
+<pics/pdf/cubeBlockBM_dt_cpf.pdf, id=707, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBlockBM_dt_cpf.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBlockBM_dt_cpf.pdf>
+Package pdftex.def Info: pics/pdf/cubeBlockBM_dt_cpf.pdf used on input line 198
+.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 198--199
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 190--200
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig::BlockBM_dt' on page xliii undefined on input lin
+e 206.
+
+
+LaTeX Warning: Reference `fig::BlockBM_dt' on page xliii undefined on input lin
+e 207.
+
+
+LaTeX Warning: Reference `fig::BlockBM_dt' on page xliii undefined on input lin
+e 207.
+
+[43pdfTeX warning (ext4): destination with the same identifier (name{figure.7.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.211 
+       <./pics/pdf/particle_k1000dt001.pdf> <./pics/pdf/particle_k1000dt001_f.p
+df
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/particle_k1000dt001_f.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `fig::defCubeVsBar' on page xliv undefined on input li
+ne 213.
+
+
+LaTeX Warning: Reference `fig::defBar_vs_RigCubeBM' on page xliv undefined on i
+nput line 219.
+
+<pics/pdf/cubeBM_t0005.pdf, id=778, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBM_t0005.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBM_t0005.pdf>
+Package pdftex.def Info: pics/pdf/cubeBM_t0005.pdf used on input line 225.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 225--226
+ [][] 
+ []
+
+<pics/pdf/cubeBM_t001.pdf, id=779, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBM_t001.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBM_t001.pdf>
+Package pdftex.def Info: pics/pdf/cubeBM_t001.pdf used on input line 230.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 230--231
+ [][] 
+ []
+
+<pics/pdf/cubeBM_t002.pdf, id=780, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBM_t002.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBM_t002.pdf>
+Package pdftex.def Info: pics/pdf/cubeBM_t002.pdf used on input line 235.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 235--236
+ [][] 
+ []
+
+<pics/pdf/cubeBM_t004.pdf, id=781, 578.16pt x 433.62pt>
+File: pics/pdf/cubeBM_t004.pdf Graphic file (type pdf)
+
+<use pics/pdf/cubeBM_t004.pdf>
+Package pdftex.def Info: pics/pdf/cubeBM_t004.pdf used on input line 240.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 240--241
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 222--242
+[][] [] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 222--242
+[] [] 
+ []
+
+<pics/pdf/defBar_vs_RigCubeBM_depth.pdf, id=782, 578.16pt x 433.62pt>
+File: pics/pdf/defBar_vs_RigCubeBM_depth.pdf Graphic file (type pdf)
+
+<use pics/pdf/defBar_vs_RigCubeBM_depth.pdf>
+Package pdftex.def Info: pics/pdf/defBar_vs_RigCubeBM_depth.pdf used on input l
+ine 248.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+
+LaTeX Warning: Reference `fig::defBar_vs_RigCubeBM_depth' on page xliv undefine
+d on input line 253.
+
+
+LaTeX Warning: Reference `sec:CPFGENERAL' on page xliv undefined on input line 
+253.
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.7.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.254 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+7.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.254 
+       <./pics/png/barvscube_rend.png (PNG copy)> <./pics/png/barvscube_wf.png 
+(PNG copy)> <./pics/pdf/cube_bar_discretization.pdf> <./pics/pdf/cubeBlockBM_dt
+_dpf.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/cubeBlockBM_dt_dpf.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./pics/pdf/cubeBlockBM_dt_cpf.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/cubeBlockBM_dt_cpf.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.255 W
+       e have shown that the penetration depth for CPF is larger than for DP...
+ <./pics/pdf/cubeBM_t0005.pdf> <./pics/pdf/cubeBM_t001.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/cubeBM_t001.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./pics/pdf/cubeBM_t002.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/cubeBM_t002.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./pics/pdf/cubeBM_t004.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/cubeBM_t004.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] <pics/pdf/pendepth_cpf.pdf, id=1041, 578.16pt x 433.62pt>
+File: pics/pdf/pendepth_cpf.pdf Graphic file (type pdf)
+
+<use pics/pdf/pendepth_cpf.pdf>
+Package pdftex.def Info: pics/pdf/pendepth_cpf.pdf used on input line 261.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 261--262
+ [][] 
+ []
+
+<pics/pdf/pendepth_dpf.pdf, id=1042, 578.16pt x 433.62pt>
+File: pics/pdf/pendepth_dpf.pdf Graphic file (type pdf)
+
+<use pics/pdf/pendepth_dpf.pdf>
+Package pdftex.def Info: pics/pdf/pendepth_dpf.pdf used on input line 266.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 266--267
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 258--268
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig::pendepth_comp' on page xlvi undefined on input l
+ine 272.
+
+
+Package natbib Warning: Citation `TANG2012' on page xlvi undefined on input lin
+e 277.
+
+
+LaTeX Warning: Reference `sec::CPFExtensions' on page xlvi undefined on input l
+ine 283.
+
+
+LaTeX Warning: Reference `fig::redef_collsVFwo' on page xlvi undefined on input
+ line 283.
+
+
+LaTeX Warning: Reference `fig::redef_collsEE' on page xlvi undefined on input l
+ine 283.
+
+
+LaTeX Warning: Reference `fig::redef_collsEEwo' on page xlvi undefined on input
+ line 285.
+
+
+LaTeX Warning: Reference `fig::redef_collsVFwo' on page xlvi undefined on input
+ line 285.
+
+
+LaTeX Warning: Reference `fig::redef_collsVFwo' on page xlvi undefined on input
+ line 285.
+
+
+LaTeX Warning: Reference `fig::redef_collsVFwo' on page xlvi undefined on input
+ line 285.
+
+
+LaTeX Warning: Reference `fig::redef_collsVF' on page xlvi undefined on input l
+ine 286.
+
+
+LaTeX Warning: Reference `fig::redef_collsVF' on page xlvi undefined on input l
+ine 286.
+
+[46pdfTeX warning (ext4): destination with the same identifier (name{figure.7.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.287 
+       <./pics/pdf/defBar_vs_RigCubeBM_depth.pdf>]
+<pics/png/redef_vf01wo.png, id=1084, 936.49875pt x 624.3325pt>
+File: pics/png/redef_vf01wo.png Graphic file (type png)
+
+<use pics/png/redef_vf01wo.png>
+Package pdftex.def Info: pics/png/redef_vf01wo.png used on input line 292.
+(pdftex.def)             Requested size: 149.37848pt x 99.58086pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 292--293
+ [][] 
+ []
+
+<pics/png/redef_vf02wo.png, id=1085, 702.37407pt x 468.24937pt>
+File: pics/png/redef_vf02wo.png Graphic file (type png)
+
+<use pics/png/redef_vf02wo.png>
+Package pdftex.def Info: pics/png/redef_vf02wo.png used on input line 297.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 297--298
+ [][] 
+ []
+
+<pics/png/redef_vf03wo.png, id=1087, 702.37407pt x 468.24937pt>
+File: pics/png/redef_vf03wo.png Graphic file (type png)
+
+<use pics/png/redef_vf03wo.png>
+Package pdftex.def Info: pics/png/redef_vf03wo.png used on input line 302.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 302--303
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--304
+
+ []
+
+<pics/png/redef_vf04wo.png, id=1088, 936.49875pt x 624.3325pt>
+File: pics/png/redef_vf04wo.png Graphic file (type png)
+
+<use pics/png/redef_vf04wo.png>
+Package pdftex.def Info: pics/png/redef_vf04wo.png used on input line 308.
+(pdftex.def)             Requested size: 149.37848pt x 99.58086pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 308--309
+ [][] 
+ []
+
+<pics/png/redef_vf05wo.png, id=1089, 936.49875pt x 624.3325pt>
+File: pics/png/redef_vf05wo.png Graphic file (type png)
+
+<use pics/png/redef_vf05wo.png>
+Package pdftex.def Info: pics/png/redef_vf05wo.png used on input line 313.
+(pdftex.def)             Requested size: 149.37848pt x 99.58086pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 313--314
+ [][] 
+ []
+
+<pics/png/redef_vf06wo.png, id=1090, 702.37407pt x 468.24937pt>
+File: pics/png/redef_vf06wo.png Graphic file (type png)
+
+<use pics/png/redef_vf06wo.png>
+Package pdftex.def Info: pics/png/redef_vf06wo.png used on input line 318.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 318--319
+ [][] 
+ []
+
+<pics/png/redef_vf01.png, id=1091, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf01.png Graphic file (type png)
+
+<use pics/png/redef_vf01.png>
+Package pdftex.def Info: pics/png/redef_vf01.png used on input line 328.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 328--329
+ [][] 
+ []
+
+<pics/png/redef_vf02.png, id=1092, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf02.png Graphic file (type png)
+
+<use pics/png/redef_vf02.png>
+Package pdftex.def Info: pics/png/redef_vf02.png used on input line 333.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 333--334
+ [][] 
+ []
+
+<pics/png/redef_vf03.png, id=1093, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf03.png Graphic file (type png)
+
+<use pics/png/redef_vf03.png>
+Package pdftex.def Info: pics/png/redef_vf03.png used on input line 338.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 338--339
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--340
+
+ []
+
+<pics/png/redef_vf04.png, id=1094, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf04.png Graphic file (type png)
+
+<use pics/png/redef_vf04.png>
+Package pdftex.def Info: pics/png/redef_vf04.png used on input line 344.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 344--345
+ [][] 
+ []
+
+<pics/png/redef_vf05.png, id=1095, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf05.png Graphic file (type png)
+
+<use pics/png/redef_vf05.png>
+Package pdftex.def Info: pics/png/redef_vf05.png used on input line 349.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 349--350
+ [][] 
+ []
+
+<pics/png/redef_vf06.png, id=1096, 933.4875pt x 668.4975pt>
+File: pics/png/redef_vf06.png Graphic file (type png)
+
+<use pics/png/redef_vf06.png>
+Package pdftex.def Info: pics/png/redef_vf06.png used on input line 354.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 354--355
+ [][] 
+ []
+
+<pics/png/redef_ee01wo.png, id=1097, 936.49875pt x 624.3325pt>
+File: pics/png/redef_ee01wo.png Graphic file (type png)
+
+<use pics/png/redef_ee01wo.png>
+Package pdftex.def Info: pics/png/redef_ee01wo.png used on input line 364.
+(pdftex.def)             Requested size: 149.37848pt x 99.58086pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 364--365
+ [][] 
+ []
+
+<pics/png/redef_ee02wo.png, id=1098, 702.37407pt x 468.24937pt>
+File: pics/png/redef_ee02wo.png Graphic file (type png)
+
+<use pics/png/redef_ee02wo.png>
+Package pdftex.def Info: pics/png/redef_ee02wo.png used on input line 369.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 369--370
+ [][] 
+ []
+
+<pics/png/redef_ee03wo.png, id=1099, 702.37407pt x 468.24937pt>
+File: pics/png/redef_ee03wo.png Graphic file (type png)
+
+<use pics/png/redef_ee03wo.png>
+Package pdftex.def Info: pics/png/redef_ee03wo.png used on input line 374.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 374--375
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--376
+
+ []
+
+<pics/png/redef_ee04wo.png, id=1100, 702.37407pt x 468.24937pt>
+File: pics/png/redef_ee04wo.png Graphic file (type png)
+
+<use pics/png/redef_ee04wo.png>
+Package pdftex.def Info: pics/png/redef_ee04wo.png used on input line 380.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 380--381
+ [][] 
+ []
+
+<pics/png/redef_ee05wo.png, id=1101, 702.37407pt x 468.24937pt>
+File: pics/png/redef_ee05wo.png Graphic file (type png)
+
+<use pics/png/redef_ee05wo.png>
+Package pdftex.def Info: pics/png/redef_ee05wo.png used on input line 385.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 385--386
+ [][] 
+ []
+
+<pics/png/redef_ee06wo.png, id=1102, 702.37407pt x 468.24937pt>
+File: pics/png/redef_ee06wo.png Graphic file (type png)
+
+<use pics/png/redef_ee06wo.png>
+Package pdftex.def Info: pics/png/redef_ee06wo.png used on input line 390.
+(pdftex.def)             Requested size: 149.37848pt x 99.58562pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 390--391
+ [][] 
+ []
+
+<pics/png/redef_ee01.png, id=1103, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee01.png Graphic file (type png)
+
+<use pics/png/redef_ee01.png>
+Package pdftex.def Info: pics/png/redef_ee01.png used on input line 400.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+<pics/png/redef_ee02.png, id=1104, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee02.png Graphic file (type png)
+
+<use pics/png/redef_ee02.png>
+Package pdftex.def Info: pics/png/redef_ee02.png used on input line 405.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 405--406
+ [][] 
+ []
+
+<pics/png/redef_ee03.png, id=1105, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee03.png Graphic file (type png)
+
+<use pics/png/redef_ee03.png>
+Package pdftex.def Info: pics/png/redef_ee03.png used on input line 410.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 410--411
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--412
+
+ []
+
+<pics/png/redef_ee04.png, id=1106, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee04.png Graphic file (type png)
+
+<use pics/png/redef_ee04.png>
+Package pdftex.def Info: pics/png/redef_ee04.png used on input line 416.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 416--417
+ [][] 
+ []
+
+<pics/png/redef_ee05.png, id=1107, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee05.png Graphic file (type png)
+
+<use pics/png/redef_ee05.png>
+Package pdftex.def Info: pics/png/redef_ee05.png used on input line 421.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 421--422
+ [][] 
+ []
+
+<pics/png/redef_ee06.png, id=1108, 933.4875pt x 668.4975pt>
+File: pics/png/redef_ee06.png Graphic file (type png)
+
+<use pics/png/redef_ee06.png>
+Package pdftex.def Info: pics/png/redef_ee06.png used on input line 426.
+(pdftex.def)             Requested size: 149.37848pt x 106.97198pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 426--427
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig::force_redef' on page xlvii undefined on input li
+ne 432.
+
+<pics/pdf/slidingCube_redef_dt.pdf, id=1109, 578.16pt x 433.62pt>
+File: pics/pdf/slidingCube_redef_dt.pdf Graphic file (type pdf)
+
+<use pics/pdf/slidingCube_redef_dt.pdf>
+Package pdftex.def Info: pics/pdf/slidingCube_redef_dt.pdf used on input line 4
+36.
+(pdftex.def)             Requested size: 298.75697pt x 224.06776pt.
+
+<pics/png/bunny01.png, id=1110, 526.96875pt x 566.115pt>
+File: pics/png/bunny01.png Graphic file (type png)
+
+<use pics/png/bunny01.png>
+Package pdftex.def Info: pics/png/bunny01.png used on input line 444.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 444--445
+ [][] 
+ []
+
+<pics/png/bunny02.png, id=1111, 526.96875pt x 566.115pt>
+File: pics/png/bunny02.png Graphic file (type png)
+
+<use pics/png/bunny02.png>
+Package pdftex.def Info: pics/png/bunny02.png used on input line 449.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 449--450
+ [][] 
+ []
+
+<pics/png/bunny03.png, id=1112, 526.96875pt x 566.115pt>
+File: pics/png/bunny03.png Graphic file (type png)
+
+<use pics/png/bunny03.png>
+Package pdftex.def Info: pics/png/bunny03.png used on input line 454.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 454--455
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--456
+
+ []
+
+<pics/png/bunny04.png, id=1113, 526.96875pt x 566.115pt>
+File: pics/png/bunny04.png Graphic file (type png)
+
+<use pics/png/bunny04.png>
+Package pdftex.def Info: pics/png/bunny04.png used on input line 460.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 460--461
+ [][] 
+ []
+
+<pics/png/bunny05.png, id=1114, 526.96875pt x 566.115pt>
+File: pics/png/bunny05.png Graphic file (type png)
+
+<use pics/png/bunny05.png>
+Package pdftex.def Info: pics/png/bunny05.png used on input line 465.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 465--466
+ [][] 
+ []
+
+<pics/png/bunny06.png, id=1115, 526.96875pt x 566.115pt>
+File: pics/png/bunny06.png Graphic file (type png)
+
+<use pics/png/bunny06.png>
+Package pdftex.def Info: pics/png/bunny06.png used on input line 470.
+(pdftex.def)             Requested size: 159.3863pt x 171.22656pt.
+
+Overfull \hbox (1.74272pt too wide) in paragraph at lines 470--471
+ [][] 
+ []
+
+<pics/png/bunny_inverted.png, id=1116, 970.62625pt x 627.34375pt>
+File: pics/png/bunny_inverted.png Graphic file (type png)
+
+<use pics/png/bunny_inverted.png>
+Package pdftex.def Info: pics/png/bunny_inverted.png used on input line 478.
+(pdftex.def)             Requested size: 199.16626pt x 128.72116pt.
+
+
+LaTeX Warning: Reference `fig::bunnyBowl' on page xlvii undefined on input line
+ 484.
+
+
+LaTeX Warning: Reference `fig::bunny_inverted' on page xlvii undefined on input
+ line 486.
+
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+               <./pics/pdf/pendepth_cpf.pdf> <./pics/pdf/pendepth_dpf.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/pendepth_dpf.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>] [48pdfTeX warning (ext4): destination with the same identifier (name{figure.
+7.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.7.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+               <./pics/png/redef_vf01wo.png (PNG copy)> <./pics/png/redef_vf02w
+o.png> <./pics/png/redef_vf03wo.png> <./pics/png/redef_vf04wo.png (PNG copy)> <
+./pics/png/redef_vf05wo.png (PNG copy)> <./pics/png/redef_vf06wo.png> <./pics/p
+ng/redef_vf01.png (PNG copy)> <./pics/png/redef_vf02.png (PNG copy)> <./pics/pn
+g/redef_vf03.png (PNG copy)> <./pics/png/redef_vf04.png (PNG copy)> <./pics/png
+/redef_vf05.png (PNG copy)> <./pics/png/redef_vf06.png (PNG copy)>] [49pdfTeX w
+arning (ext4): destination with the same identifier (name{figure.7.10}) has bee
+n already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.7.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+               <./pics/png/redef_ee01wo.png (PNG copy)> <./pics/png/redef_ee02w
+o.png> <./pics/png/redef_ee03wo.png> <./pics/png/redef_ee04wo.png> <./pics/png/
+redef_ee05wo.png> <./pics/png/redef_ee06wo.png> <./pics/png/redef_ee01.png (PNG
+ copy)> <./pics/png/redef_ee02.png (PNG copy)> <./pics/png/redef_ee03.png (PNG 
+copy)> <./pics/png/redef_ee04.png (PNG copy)> <./pics/png/redef_ee05.png (PNG c
+opy)> <./pics/png/redef_ee06.png (PNG copy)>] [50pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.7.12}) has been already used, duplic
+ate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.7.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 \newpage
+               <./pics/pdf/slidingCube_redef_dt.pdf> <./pics/png/bunny01.png (P
+NG copy)> <./pics/png/bunny02.png (PNG copy)> <./pics/png/bunny03.png (PNG copy
+)> <./pics/png/bunny04.png (PNG copy)> <./pics/png/bunny05.png (PNG copy)> <./p
+ics/png/bunny06.png (PNG copy)>]
+<pics/pdf/block_fric_dyn.pdf, id=1382, 578.16pt x 433.62pt>
+File: pics/pdf/block_fric_dyn.pdf Graphic file (type pdf)
+
+<use pics/pdf/block_fric_dyn.pdf>
+Package pdftex.def Info: pics/pdf/block_fric_dyn.pdf used on input line 501.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 501--502
+ [][] 
+ []
+
+<pics/pdf/block_fric_stat.pdf, id=1383, 578.16pt x 433.62pt>
+File: pics/pdf/block_fric_stat.pdf Graphic file (type pdf)
+
+<use pics/pdf/block_fric_stat.pdf>
+Package pdftex.def Info: pics/pdf/block_fric_stat.pdf used on input line 506.
+(pdftex.def)             Requested size: 248.96162pt x 186.71762pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 506--507
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 498--508
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig::friction_dynstat' on page li undefined on input 
+line 512.
+
+<pics/png/sliding_block_mus08_md01_a.png, id=1384, 868.24374pt x 626.34pt>
+File: pics/png/sliding_block_mus08_md01_a.png Graphic file (type png)
+
+<use pics/png/sliding_block_mus08_md01_a.png>
+Package pdftex.def Info: pics/png/sliding_block_mus08_md01_a.png used on input 
+line 526.
+(pdftex.def)             Requested size: 248.96162pt x 179.59827pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 526--527
+ [][] 
+ []
+
+<pics/png/sliding_block_mus08_md01_b.png, id=1385, 868.24374pt x 626.34pt>
+File: pics/png/sliding_block_mus08_md01_b.png Graphic file (type png)
+
+<use pics/png/sliding_block_mus08_md01_b.png>
+Package pdftex.def Info: pics/png/sliding_block_mus08_md01_b.png used on input 
+line 531.
+(pdftex.def)             Requested size: 248.96162pt x 179.59827pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 531--532
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 523--533
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--533
+
+ []
+
+<pics/png/sliding_block_mus03_md005_a.png, id=1386, 921.4425pt x 644.4075pt>
+File: pics/png/sliding_block_mus03_md005_a.png Graphic file (type png)
+
+<use pics/png/sliding_block_mus03_md005_a.png>
+Package pdftex.def Info: pics/png/sliding_block_mus03_md005_a.png used on input
+ line 537.
+(pdftex.def)             Requested size: 248.96162pt x 174.11034pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 537--538
+ [][] 
+ []
+
+<pics/png/sliding_block_mus03_md005_b.png, id=1387, 921.4425pt x 644.4075pt>
+File: pics/png/sliding_block_mus03_md005_b.png Graphic file (type png)
+
+<use pics/png/sliding_block_mus03_md005_b.png>
+Package pdftex.def Info: pics/png/sliding_block_mus03_md005_b.png used on input
+ line 542.
+(pdftex.def)             Requested size: 248.96162pt x 174.11034pt.
+
+Overfull \hbox (6.672pt too wide) in paragraph at lines 542--543
+ [][] 
+ []
+
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 534--544
+[][] []
+ []
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.546 \end{figure}
+                   <./pics/png/bunny_inverted.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig::block_sliding_fric_longtime' on page lii undefin
+ed on input line 548.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page lii undefined on input li
+ne 551.
+
+
+LaTeX Warning: Reference `sec::res_redef' on page lii undefined on input line 5
+59.
+
+
+LaTeX Warning: Reference `fig::bunnyBowl' on page lii undefined on input line 5
+59.
+
+
+LaTeX Warning: Reference `fig::compCost_scene' on page lii undefined on input l
+ine 562.
+
+<pics/pdf/comparison_comptime_cpf_dpf.pdf, id=1394, 529.05148pt x 167.3789pt>
+File: pics/pdf/comparison_comptime_cpf_dpf.pdf Graphic file (type pdf)
+
+<use pics/pdf/comparison_comptime_cpf_dpf.pdf>
+Package pdftex.def Info: pics/pdf/comparison_comptime_cpf_dpf.pdf used on input
+ line 566.
+(pdftex.def)             Requested size: 448.12788pt x 141.77982pt.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.569 \end{figure}
+                   <./pics/pdf/block_fric_dyn.pdf> <./pics/pdf/block_fric_stat.
+pdf
+
+pdfTeX warning: pdflatex.exe (file ./pics/pdf/block_fric_stat.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.575 
+       <./pics/png/sliding_block_mus08_md01_a.png (PNG copy)> <./pics/png/slidi
+ng_block_mus08_md01_b.png (PNG copy)> <./pics/png/sliding_block_mus03_md005_a.p
+ng (PNG copy)> <./pics/png/sliding_block_mus03_md005_b.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig::comparison_comptime_cpf_dpf_imp' on page liv und
+efined on input line 577.
+
+
+LaTeX Warning: File `pics/pdf/comparison_comptime_cpf_dpf_imp.pdf' not found on
+ input line 581.
+
+
+! Package pdftex.def Error: File `pics/pdf/comparison_comptime_cpf_dpf_imp.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 .../pdf/comparison_comptime_cpf_dpf_imp.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `sec::stability' on page liv undefined on input line 5
+87.
+
+
+Package natbib Warning: Citation `TANG2012' on page liv undefined on input line
+ 589.
+
+
+Package natbib Warning: Citation `TANG2012' on page liv undefined on input line
+ 591.
+
+) [54pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+.17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.13 \include{results}
+                       <./pics/pdf/comparison_comptime_cpf_dpf.pdf>] [55pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.7.18}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.13 \include{results}
+                      ] (discussion.tex
+chapter 8.
+
+Package natbib Warning: Citation `BRIDSON2002' on page lvi undefined on input l
+ine 3.
+
+
+Package natbib Warning: Citation `PROVOT1997' on page lvi undefined on input li
+ne 3.
+
+
+Package natbib Warning: Citation `TANG2012' on page lvi undefined on input line
+ 3.
+
+
+Package natbib Warning: Citation `YAMANE2006' on page lvi undefined on input li
+ne 3.
+
+
+Package natbib Warning: Citation `TANG2012' on page lvi undefined on input line
+ 5.
+
+
+LaTeX Warning: Reference `sec::stability' on page lvi undefined on input line 1
+5.
+
+) [56
+
+
+
+]
+No file indexTU2.bbl.
+)
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+(indexTU2.aux (declarationOfHonor.aux) (abstract.aux) (intro.aux)
+(physical_principles.aux) (collision_detection.aux) (discrete_penalty.aux)
+(continuous_penalty.aux) (cpf_sliding_contacts.aux) (results.aux)
+(discussion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+
+
+Package rerunfilecheck Warning: File `indexTU2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `indexTU2.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  2930BE92603A3140087370A1F6F3F65A;1679.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+ ) 
+Here is how much of TeX's memory you used:
+ 25677 strings out of 493636
+ 481606 string characters out of 3141322
+ 609083 words of memory out of 3000000
+ 28018 multiletter control sequences out of 15000+200000
+ 155646 words of font info for 134 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 64i,16n,100p,990b,833s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{D:/
+Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/tuddesign/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files/tuddesign
+/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files/tuddesign/fonts/type
+1/softmake/frontpage/5fpm8a.pfb><C:/Program Files/tuddesign/fonts/type1/softmak
+e/frontpage/5fpr8a.pfb><C:/Program Files/tuddesign/fonts/type1/softmake/staffor
+d/5sfr8a.pfb><D:/Users/stange/AppData/Roaming/MiKTeX/2.9//fonts/type1/bitstrea/
+charter/bchb8a.pfb><D:/Users/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/bits
+trea/charter/bchr8a.pfb><D:/Users/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1
+/bitstrea/charter/bchri8a.pfb><D:/Users/stange/AppData/Roaming/MiKTeX/2.9/fonts
+/type1/mathdesign/mdbch/md-chbi7m.pfb><D:/Users/stange/AppData/Roaming/MiKTeX/2
+.9/fonts/type1/mathdesign/mdbch/md-chr7m.pfb><D:/Users/stange/AppData/Roaming/M
+iKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><D:/Users/stange/AppData/Ro
+aming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb><D:/Users/stange/App
+Data/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><D:/Users/sta
+nge/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><D:/U
+sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pf
+b><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><D:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on indexTU2.pdf (58 pages, 3400545 bytes).
+PDF statistics:
+ 1628 PDF objects out of 1728 (max. 8388607)
+ 321 named destinations out of 1000 (max. 500000)
+ 395 words of extra memory for PDF output out of 10000 (max. 10000000)
+

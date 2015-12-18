@@ -1,0 +1,72 @@
+\def\HeaderOne{\chapter}
+\def\HeaderTwo{\section}
+\def\HeaderThree{\subsection}
+
+\newcommand{\myparagraph}[1]{ \begin{flushleft} \textbf{#1} \end{flushleft} }
+\newcommand{\myeqref}[1]{Eqn.\eqref{#1}}
+
+%
+% Additional characters
+%
+
+\def\R{\mathbb{R}}
+\def\N{\mathbb{N}}
+
+%
+% Math operators
+%
+
+\DeclareMathOperator{\dt}{dt}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\rnk}{rank}
+\DeclareMathOperator{\mathdiv}{div}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\dv}{div}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\conv}{conv}
+\newcommand{\adv}{\textit{Advect}}
+
+%
+% New theorem style environments
+%
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+
+%
+% Other stuff
+%
+
+\newcommand{\eproof}{\begin{flushright} $\square$ \end{flushright}}
+\newcommand{\newword}[1]{{\it #1}}
+\newcommand{\newdef}[1]{\textbf{#1}}
+\newcommand{\myciteS}[1]{\citet{#1}}
+\newcommand{\myciteA}[2]{\citet[#2]{#1}}
+
+%
+% Notations
+%
+
+
+\newcommand{\SimplicesTypes}{\mathfrak{S}}
+\newcommand{\SimplexVertex}{\mathcal{V}}
+\newcommand{\SimplexEdge}{\mathcal{E}}
+\newcommand{\SimplexFace}{\mathcal{F}}
+\newcommand{\SimplexType}{\mathfrak{s}}
+\newcommand{\DiffForms}{\mathfrak{A}}
+
+\newcommand{\Vertices}{V}
+\newcommand{\Edges}{E}
+\newcommand{\Faces}{F}
+
+\newcommand{\BoundaryMatrix}{B}
+\newcommand{\InteriorMatrix}{I}
+\newcommand{\IdentityMatrix}{\textbf{1}}
+
+\newcommand{\DECCurl}{C}
+\newcommand{\DECLaplace}{L}
+
+\newcommand{\VelocityForm}{U}
+\newcommand{\VorticityForm}{\Omega}

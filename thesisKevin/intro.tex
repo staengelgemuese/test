@@ -1,0 +1,67 @@
+\chapter{Introduction}
+\label{ch:intro}
+
+\section{Motivation and Task}
+Collision handling has been an active research topic in the area of the physically-based simulation of rigid and deformable bodies for many years with several fields of application, for example, engineering, robotics, animation or games.
+To gain a realistic behavior, it is important to detect collisions between objects and to respond in a way that keeps the objects well separated. There are two main approaches for these responds: constraint-based and impulse-based.
+
+An example for a constraint-based approach is the use of discrete penalty forces (DPF). The forces only depend on the penetration depth and the contact normal at one moment in the time step of the simulation. Therefore, they provide low computational costs and good scalability. In its basic formulation, this approach suffers from several problems. In particular, DPF yield discontinuous forces implying jitter and instability, global inconsistency and interpenetrations.
+
+
+Continuous penalty forces (CPF) \cite{TANG2012} improve this approach and compute collision impulses by continuously accumulating penalty forces along the penetration trajectory over the whole time step and thereby reducing the jitter and instability issues.
+A drawback of the CPF algorithm is that it shows the artifacts of separated features still assumed colliding, additional artificial collisions through discretization and inconsistent feature pair mapping withdrawing a visually satisfying result.
+Therefore, it is desirable to enhance CPF to handle these situations properly. There is already an extensive amount of work about consistent penetration depth estimation and contact normal computation, nevertheless the CPF algorithm requires its own contact normal definition. Therefore, we want to apply an algorithm keeping the CPF contact normal definition and providing plausible collision feature couples.
+
+This thesis focuses on analyzing the artifacts arising from the CPF algorithm and examining approaches to tackle them. Furthermore, we compare  CPF \cite{TANG2012} and DPF when resolving collisions between rigid and deformable bodies in interactive multi body framework and investigate the application of a penalty based friction model \cite{YAMANE2006}.
+
+In the results we show that our new approach handles the artifacts arising from the CPF algorithm for non-deep contacts. We show that CPF reduce jitter and instability in comparison to DPF and that the penalty-based friction model provides visually sufficient results.
+%\newpage
+
+\section{Structure}
+This thesis is structured as follows. In chapter 2 we give an overview on the related work.
+In chapter \ref{ch:SimPhys} we provide an introduction to the physical foundations for the simulation of rigid and deformable bodies and explain the integration scheme.
+The collision detection is outlined in chapter \ref{ch:CollisionDetection}. In chapter \ref{ch:DiscretePenaltyForces}, we describe how to handle collisions with penalty forces and the penalty-based friction model. Chapter \ref{ch:RobustHandlingofSlidingContacts} analyzes CPF towards artifacts arising from the CCD/CPF formulation and we investigate approaches how to handle them.
+Subsequently, we present the results in chapter \ref{ch:results} and give a conclusion and outline future work in chapter \ref{ch:discussion}.
+
+\chapter{Related work}
+%The simulation of multi body systems has been studied intensively by the computer graphics community, including extensive work on collision handling.
+
+
+The laws of physics provide an exact and comprehensive description of the physical behavior of bodies. Since such an exact and comprehensive representation of these laws in multi-body-simulations is not feasible, due to the complexity of these descriptions approximations and adaptations with regard to the intended use are necessary.
+ Of great importance is Newton's second law of motion and the derived equation $ \mathbf F=m \mathbf a$ providing a relation between force and acceleration.
+With this relation it is possible to compute the motion of a particle.
+For the description of rigid bodies, additionally, the rotation needs to be taken into account, yielding three additional degrees of freedom. The necessary relation between angular acceleration and torque is provided by the Euler-Equation \cite{BENDER2007}.
+
+The simulation of deformable bodies adds various degrees of freedom and multiple approaches to model deformable bodies have been investigated by the computer graphics community. Mainly three approaches have become prevalent: mass-spring systems \cite{LIU2013}, shape matching \cite{MUELLER2005} and finite elements \cite{MUELLER2004}.
+Mass-spring systems and shape matching are fast and simple but lack of accuracy in comparison to finite elements.
+With an implicit integration, finite elements are unconditionally stable \cite{WEBER2011}. Higher accuracy and more complex deformations for finite elements can be obtained by applying quadratic bases as described by Weber et al. \cite{WEBER2011}.
+To increase the performance, there is work on the acceleration with efficient GPU data structures by Weber et al. \cite{WEBER2013}.
+With these enhancements, finite elements provide fast and stable deformable bodies with the ability to model complex material behavior.
+
+In order to simulate multiple bodies interacting and colliding with each other, it is necessary to detect the collision with a collision detection algorithm and to handle them with a collision handling algorithm.
+There is a large diversity in collision detection algorithms, varying in necessary pre-processing, provided collision information, performance and processable models. A survey focusing on the detection for different geometric models is provided by Lin and Gottschalk \cite{LIN1998} and a survey focusing on deformable bodies is provided by Teschner et al. \cite{TESCHNER2005}.
+Discrete algorithms check for collisions at a specific moment in a time step, though this can lead to missing collisions.
+Continuous algorithms, as described by Provot \cite{PROVOT1997}, take the bodies' approximated trajectory into account. Hence, no collisions are missed and the contact times can be provided.
+
+
+After the collision has been detected, it is handled in order to restore a penetration free state.
+Mainly two collision handling approaches have become prevalent in the community: impulse-based \cite{BENDER2007} and constraint-based methods \cite{MOORE1988}.
+Impulse based methods compute impulses which directly change the velocity and by integration modify the positions. They provide an accurate collision response for rigid bodies, but can not be easily extended for deformable bodies. 
+Constraint-based methods define constraints and based on the violation of the constraints contact forces or impulses are computed. A common constraint-based approach are penalty methods.
+ % Forces take effect on the body by acting upon the acceleration according two Newton's second law of motion. The resulting velocity and positions are obtained by integrating the acceleration.
+
+
+DPF compute the contact forces only depending on the penetration depth and the contact normal at one moment in the time step. Therefore, they provide low computational cost and good scalability. In its basic formulation, this approach suffers from several problems. Especially, DPF yield discontinuous forces implying jitter, instability and global inconsistency and interpenetrations.
+
+Continuous penalty forces \cite{TANG2012} extend the idea of DPF and compute collision impulses by continuously accumulating penalty forces along the penetration depth over the whole time step and thereby reducing the jitter and instability issues.
+
+
+Computing consistent penetration depths and contact normals is a closely related topic. An approach for deformable bodies with deep intersections was presented by Keiser et al. \cite{KEISER2004} and a continuous formulation was investigated by Zhang et al. \cite{ZHANG2014}. The CPF algorithm provides its own definition of contact normal and depth \cite{TANG2012}.
+
+The collision handling algorithms do not include friction. Friction models are generally based on Coulomb's Friction law, differentiating between dynamic and static friction. Dynamic friction slows down the tangential movement, whereas static friction stops any tangential movement. Static friction is only applied if the tangential velocity is zero and the tangential force smaller than the product of the normal force and the static friction coefficient.
+A penalty-based friction model is described by Yamane and Nakamura \cite{YAMANE2006}, providing a straightforward integration into a penalty based collision resolution, only small computational overhead and a unified handling of rigid and deformable bodies.
+
+The previous presented methods are connected in the integration scheme.
+An integration scheme approach for the treatment of collision and friction for cloth animation was proposed by Bridson et al. \cite{BRIDSON2002}. It can be adapted for the simulation of rigid and deformable bodies with CPF.
+
+In our work we apply finite elements with quadratic bases for the simulation of the deformable bodies \cite{WEBER2011}. The collisions are detected with CCD \cite{PROVOT1997} and handled with CPF \cite{TANG2012}, friction is modelled with a penalty-based algorithm \cite{YAMANE2006}. The integration scheme is similar to Bridson et al. \cite{BRIDSON2002} with adaptions for the simulation of rigid and deformable bodies with CPF.

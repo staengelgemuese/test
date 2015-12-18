@@ -1,0 +1,158 @@
+\chapter{Fundamentals}
+	\section{Essential equations}
+		In the following we will introduce the essential equations that form the basis of all results discussed in this thesis. 
+		\subsection{Equations of State}
+		\label{EOS}
+		First, I will enumerate the basic thermodynamic equations of state that describe the relations between the specific inner energy $e$, the local temperature $T$, the specific enthalpy $\bar{h}$, the pressure $p = p(\rho , e)$, the density $\rho$ and the specific entropy $s$.
+		Assuming that all material parameters are constant, we receive
+		\begin{align}
+			e &= c_v T \\
+			\bar{h} &= c_p T = e + \dfrac{p}{\rho}
+		\end{align}
+		with the material parameters $c_p$ and $c_v$ as specific heat capacities at constant pressure and volume, respectively. Using these relations, we can define the heat capacity ratio 
+		\begin{align}
+			\gamma = \dfrac{c_p}{c_v} = \dfrac{\bar{h}}{e}.
+		\end{align}
+		As we will only be modelling standard air in this thesis, we will use $\gamma = 1.4$.
+		
+		Another essential equation is the relation for the specific entropy 
+		\begin{align}
+			T \, ds = de + p \, d\rho^{-1}.
+		\end{align}
+		
+		\subsection{Ideal Gas Law}
+		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p(\rho , e)$. In this thesis we will confine ourselves to the ideal gas law for we are only modelling standard air. \\
+		The ideal gas law is defined as
+		\begin{align}
+			p = (\gamma - 1) \rho e
+		\end{align}
+		with $\rho e \in \mathbb{R}^+$ denoting the inner energy. \\
+		
+		The speed of sound is defined as 
+		\begin{align}
+			a = \sqrt{\left.\dfrac{\partial p}{\partial \rho}\right|_s}.
+		\end{align}
+		Using this definition combined with the ideal gas law and an equation for the change of entropy as can be read in \cite{Mueller.2014} leads to the useful relations
+		\begin{align}
+			a^2 &= \gamma \dfrac{p}{\rho}\\
+			\dfrac{p}{\rho^\gamma} &= \text{const}.
+		\end{align}
+		
+		
+		\subsection{Navier-Stokes Equations}
+		The compressible Navier-Stkoes equations (CNS) in conservative forms read as 
+		\begin{align}
+			\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B},
+		\end{align}
+		with the denotations $\mathbf{U}$ as the conserved flow variables, $\mathbf{F}_i^c$ and $\mathbf{F}_i^v$ as the convective and viscous fluxes and $\mathbf{B}$ as source terms:
+		\begin{align}
+			\mathbf{U} = 
+				\begin{pmatrix}
+				\rho \\
+				\rho v_j \\
+				\rho E
+				\end{pmatrix} , \quad
+			\mathbf{F}_i^c = 
+				\begin{pmatrix}
+				\rho v_i \\
+				\rho v_i v_j + p \delta_{ij}\\
+				v_i(\rho E + p)
+				\end{pmatrix} , \quad
+			\mathbf{F}_i^v = 
+				\begin{pmatrix}
+				0 \\
+				\tau_{ij}\\
+				\tau_{ij} + q_i
+				\end{pmatrix} , \quad
+			\mathbf{B} = 
+				\begin{pmatrix}
+				0 \\
+				\rho F_j\\
+				\rho F_j v_j + Q_i
+				\end{pmatrix}.
+		\end{align}
+		In addition to the denotations in \ref{EOS} we have $F_j$ as body forces, $Q_i$ as heat sources, the viscous stress tensor
+		\begin{align}
+			\tau_{ij} = \mu \left[\left(\dfrac{\partial v_i}{\partial x_j} + \dfrac{\partial v_j}{\partial x_i} \right) - \dfrac{2}{3} \dfrac{\partial v_k}{\partial x_k} \delta_{ij}\right]
+		\end{align}
+		with the dynamic viscosity $\mu$ and the heat flux $q_i$ modelled using Fourier's Law
+		\begin{align}
+			q_i = k \dfrac{\partial T}{\partial x_i}.
+		\end{align}
+		
+			\paragraph{Euler Equations}
+			Regarding only compressible inviscid flow, the viscous fluxes and the source terms dissolve ($\mathbf{F}_i^v = \mathbf{B} = \mathbf{0}$) and the Navier-Stokes equations simplify to
+			\begin{align}
+				\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F_x^c(U)}}{\partial x} + \dfrac{\partial \mathbf{F_y^c(U)}}{\partial y} = 0.
+			\end{align}
+	
+	
+	\section{Dimensionless Measures}
+	Dimensionless measures are very useful 
+	\todo{wofür benötigt asterisk}
+	
+	\begin{align}
+		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\
+		 \mu^* &= \dfrac{1}{\mu_\infty} \cdot \mu , & k^* &= \dfrac{1}{k_\infty} \cdot k,&  T^* &= \dfrac{R}{V_\infty^2}\cdot T, & F_j^*& = \dfrac{1}{g_\infty} \cdot F_j, & \rho E^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot \rho E, \\
+		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q &
+	\end{align}
+	
+	The dimensionless operators 
+	
+	\begin{align}
+		\frac{\partial}{\partial t}= \frac{\partial t^*}{\partial t} \frac{\partial}{\partial t^*} &= \frac{V_\infty}{L} \frac{\partial}{\partial t^*}, \\
+		\frac{\partial}{\partial x_i} = \frac{\partial x_i^*}{\partial x_i} \frac{\partial}{\partial x_i^*} &= \frac{1}{L} \frac{\partial}{\partial x_i^*}, \\
+		\nabla &= \frac{1}{L} \nabla^*
+	\end{align}
+	
+		
+	\subsection{Non-dimensional Ideal Gas Law}
+	In order to close the system of equations we need the ideal gas law in dimensionless form: 
+	
+	\begin{align}
+		p^* &= \rho^* (\gamma - 1) e^* \\
+		&= (\gamma - 1) \left(\rho E^* - \dfrac{1}{2} \rho^* \mathbf{v}^{*2}\right) .
+	\end{align}	
+	
+	\subsection{Dimensionless Navier-Stokes Equation}
+	Using the dimensionless measures and operators and defining the dimensionless relations
+	\begin{description}
+		\item[Reynolds Number] $\text{Re} = \dfrac{\rho_\infty V_\infty L}{\mu_\infty} \propto \dfrac{\text{inertia forces}}{\text{viscous forces}}$,
+		\item[Froude Number] $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,
+		\item[Prandtl Number] $\text{Pr} = \dfrac{ \mu_\infty c_p}{k_\infty} \propto \dfrac{\text{viscous diffusion rate}}{\text{thermal diffusion rate}}$,
+	\end{description}
+	we receive the dimensionless Navier-Stokes equations. As they only depend on dimensionless quantities we can drop the asterisk:
+	
+	\begin{align}
+		\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B}
+	\end{align}
+	
+	with the dimensionless fluxes
+	\begin{align}
+		\mathbf{F}_i^c = 
+		\begin{pmatrix}
+			\rho v_i \\
+			\rho v_i v_j + p \delta_{ij}\\
+			v_i(\rho E + p)
+		\end{pmatrix} , \quad
+		\mathbf{F}_i^v = \dfrac{1}{\text{Re}}
+		\begin{pmatrix}
+			0 \\
+			\tau_{ij}\\
+			\tau_{ij}v_j + \dfrac{\gamma}{\text{Pr}(\gamma-1)} q_i
+		\end{pmatrix} , \quad
+		\mathbf{B} = \dfrac{1}{\text{Fr}^2}
+		\begin{pmatrix}
+			0 \\
+			\rho F_j\\
+			\rho F_j v_j
+		\end{pmatrix}
+		+ 
+		\begin{pmatrix}
+			0 \\
+			0\\
+			Q_j
+		\end{pmatrix}
+		.
+	\end{align}	
+	

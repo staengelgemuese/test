@@ -1,0 +1,22 @@
+\chapter{Conclusion}
+\label{ch:Conclusion}
+
+In this thesis we applied the approach of \myciteS{elcott} to regular grids in order to avoid computational intensive mesh constructions.
+For this reason, we translated the required concepts of DEC onto regular grids.
+We applied bilinear interpolation to regular grids to reconstruct the velocity field.
+Additionally, we introduced a dense hodge star to make the interpolation compatible with DEC.
+Furthermore, we extended the advection step through adaptive sub-sampling and applied a MacCormack method to increase the stability.
+Due to a dense hodge star operator, our approach has comparable vorticity conservation properties.
+The implementation of boundary fluxes has been analyzed, e.g., for simulating a wind tunnel.
+Moreover, to simulate obstacles inside the domain we studied non-trivial topologies for regular grids and simplicial complexes.
+%Boundary fluxes and obstacles inside the domain have been extensively studied and implemented.
+We analyzed the pressure distributions of airfoils within a free stream and compared the pressure coefficients to existing methods.%with JavaFoil.
+With sufficient spatial discretization the pressure distributions of our method are comparable to literature.
+
+The major disadvantage of regular grids is the incapability of representing accurately curved boundaries as we have seen in Subsection \ref{sec:ResultPressure}.
+For future work, a combination of regular grids and simplicial complexes should be investigated in order to model curved surfaces without complicated mesh creations.
+Paralleled implementations of the regular grid approach may be interesting as they are well suited for parallel operations and thus promises substantially performance increases.
+%Paralleled implementations of the regular grid approach may be interesting as GPU based implementations promises substantially performance increases.
+Finally, higher order interpolations with corresponding smoother hodge-stars, e.g., bicubic spline interpolation, may even more reduce the vorticity dissipation.
+
+\label{ch:conc}

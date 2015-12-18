@@ -1,0 +1,47 @@
+\documentclass[article,dr=phil,type=drfinal,colorback,accentcolor=tud2a]{tudthesis}
+%\usepackage{ngerman}
+
+\newcommand{\getmydate}{%
+  \ifcase\month%
+    \or Januar\or Februar\or M\"arz%
+    \or April\or Mai\or Juni\or Juli%
+    \or August\or September\or Oktober%
+    \or November\or Dezember%
+  \fi\ \number\year%
+}
+
+\begin{document}
+  \thesistitle{Numerical simulation of compressible flows with immersed boundaries using Discontinuous Galerkin methods}
+    {The Fabulous Benner Boys present lordly the {\LaTeX} TUD corporate design!}
+  \author{Simone Katharina Stange}
+  \birthplace{Mainz}
+  \referee{Clemens v. Loewenich}{Johannes Werner}[another one]
+  \department{Fachbereich Physik}
+  \group{Fachgebiet Fluiddynamik}
+  \dateofexam{\today}{\today}
+  \tuprints{12345}{1234}
+  \makethesistitle
+  \affidavit{S. Stange}
+  
+  \tableofcontents
+  \newpage
+  \listoffigures
+  \newpage
+	
+  \section{Abstract}
+  \section{Motivation}
+  \section{Discontinous Galerkin Method}
+  \section{Immersed Boundaries}
+    \subsection{Cell Agglomeration}
+  \section{BoSSS}
+  \section{Generelle Informationen}
+    Die Klasse basiert auf der \textaccent{tudreport}-Klasse von C. v. Loewenich und
+    J. Werner. Alle "Anderungen dort wirken sich direkt auf die
+    \textaccent{tudthesis}-Klasse aus. Genauer: die \textaccent{tudthesis}-Klasse definiert nur einige
+    neue Befehle und legt die Formatierung der ersten zwei Seiten (Titelseite
+    und R"uckseite des Titleblattes) fest. \textbf{Alle Vordefinierten Texte sind, wie verbindlich vorgeschrieben, in der hessischen Amtssprache
+    gehalten\footnote{Deutschland hat (noch) keine Amtssprache.}.}
+  \section{Conclusion}
+  
+
+\end{document}

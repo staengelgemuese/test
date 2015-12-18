@@ -1,0 +1,194 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akenine-Moller et~al.(2002)Akenine-Moller, Moller, and
+  Haines]{Akenine-Moller2002}
+T.~Akenine-Moller, T.~Moller, and E.~Haines.
+\newblock \emph{Real-Time Rendering}.
+\newblock A. K. Peters, Ltd., Natick, MA, USA, 2nd edition, 2002.
+\newblock ISBN 1568811829.
+
+\bibitem[Baraff et~al.(2003)Baraff, Witkin, and Kass]{BARAFF2003}
+D.~Baraff, A.~Witkin, and M.~Kass.
+\newblock Untangling cloth.
+\newblock In \emph{ACM SIGGRAPH 2003 Papers}, SIGGRAPH '03, pages 862--870, New
+  York, NY, USA, 2003. ACM.
+\newblock ISBN 1-58113-709-5.
+\newblock \doi{10.1145/1201775.882357}.
+\newblock URL \url{http://doi.acm.org/10.1145/1201775.882357}.
+
+\bibitem[Bender(2007)]{BENDER2007}
+J.~Bender.
+\newblock \emph{Impulsbasierte Dynamiksimulation von Mehrk{\"o}rpersystemen in
+  der virtuellen Realit{\"a}t}.
+\newblock Univ.-Verlag Karlsruhe, 2007.
+
+\bibitem[Bridson et~al.(2002)Bridson, Fedkiw, and Anderson]{BRIDSON2002}
+R.~Bridson, R.~Fedkiw, and J.~Anderson.
+\newblock Robust treatment of collisions, contact and friction for cloth
+  animation.
+\newblock In \emph{Proceedings of the 29th annual conference on Computer
+  graphics and interactive techniques}, SIGGRAPH '02, pages 594--603, New York,
+  NY, USA, 2002. ACM.
+\newblock ISBN 1-58113-521-1.
+\newblock \doi{10.1145/566570.566623}.
+\newblock URL \url{http://doi.acm.org/10.1145/566570.566623}.
+
+\bibitem[Cook(1994)]{COOK1994}
+R.~D. Cook.
+\newblock \emph{Finite Element Modeling for Stress Analysis}.
+\newblock John Wiley \& Sons, Inc., New York, NY, USA, 1st edition, 1994.
+\newblock ISBN 0471107743.
+
+\bibitem[Coumans et~al.(2006)]{COUMANS2006}
+E.~Coumans et~al.
+\newblock Bullet physics library.
+\newblock \emph{Open source: bulletphysics. org}, 4\penalty0 (6), 2006.
+
+\bibitem[Gross et~al.(2011)Gross, Hauger, Schr{\"o}der, and Wall]{GROSS2011}
+D.~Gross, W.~Hauger, J.~Schr{\"o}der, and W.~A. Wall.
+\newblock \emph{Technische Mechanik 1}.
+\newblock Springer-Lehrbuch. Springer, 11 edition, 2011.
+\newblock ISBN 9783642138058.
+
+\bibitem[Hutter and Fuhrmann(2007)]{HUTTER2007}
+M.~Hutter and A.~Fuhrmann.
+\newblock Optimized continuous collision detection for deformable triangle
+  meshes.
+\newblock 2007.
+
+\bibitem[Keiser et~al.(2004)Keiser, Heidelberger, Teschner, Gross, and
+  Mueller]{KEISER2004}
+B.~Keiser, M.~Heidelberger, R.~Teschner, M.~Gross, and M.~Mueller.
+\newblock Consistent penetration depth estimation for deformable collision
+  response.
+\newblock In \emph{Vision, Modeling, and Visualization 2004: Proceedings,
+  November 16-18, 2004, Standford, USA}, page 339. IOS Press, 2004.
+
+\bibitem[Lin and Gottschalk(1998)]{LIN1998}
+M.~Lin and S.~Gottschalk.
+\newblock Collision detection between geometric models: A survey.
+\newblock In \emph{Proc. of IMA conference on mathematics of surfaces},
+  volume~1, pages 602--608, 1998.
+
+\bibitem[Liu et~al.(2013)Liu, Bargteil, O'Brien, and Kavan]{LIU2013}
+T.~Liu, A.~W. Bargteil, J.~F. O'Brien, and L.~Kavan.
+\newblock Fast simulation of mass-spring systems.
+\newblock \emph{ACM Transactions on Graphics}, 32\penalty0 (6):\penalty0
+  209:1--7, Nov. 2013.
+\newblock URL \url{http://graphics.berkeley.edu/papers/Liu-FSM-2013-11/}.
+\newblock Proceedings of ACM SIGGRAPH Asia 2013, Hong Kong.
+
+\bibitem[M{\"o}ller(1997)]{MOLLER1997}
+T.~M{\"o}ller.
+\newblock A fast triangle-triangle intersection test.
+\newblock \emph{Journal of graphics tools}, 2\penalty0 (2):\penalty0 25--30,
+  1997.
+
+\bibitem[Moore and Wilhelms(1988)]{MOORE1988}
+M.~Moore and J.~Wilhelms.
+\newblock Collision detection and response for computer animation.
+\newblock \emph{SIGGRAPH Comput. Graph.}, 22\penalty0 (4):\penalty0 289--298,
+  June 1988.
+\newblock ISSN 0097-8930.
+\newblock \doi{10.1145/378456.378528}.
+\newblock URL \url{http://doi.acm.org/10.1145/378456.378528}.
+
+\bibitem[M\"{u}ller and Gross(2004)]{MUELLER2004}
+M.~M\"{u}ller and M.~Gross.
+\newblock Interactive virtual materials.
+\newblock In \emph{Proceedings of Graphics Interface 2004}, GI '04, pages
+  239--246, School of Computer Science, University of Waterloo, Waterloo,
+  Ontario, Canada, 2004. Canadian Human-Computer Communications Society.
+\newblock ISBN 1-56881-227-2.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1006058.1006087}.
+
+\bibitem[M\"{u}ller et~al.(2005)M\"{u}ller, Heidelberger, Teschner, and
+  Gross]{MUELLER2005}
+M.~M\"{u}ller, B.~Heidelberger, M.~Teschner, and M.~Gross.
+\newblock Meshless deformations based on shape matching.
+\newblock In \emph{ACM SIGGRAPH 2005 Papers}, SIGGRAPH '05, pages 471--478, New
+  York, NY, USA, 2005. ACM.
+\newblock \doi{10.1145/1186822.1073216}.
+\newblock URL \url{http://doi.acm.org/10.1145/1186822.1073216}.
+
+\bibitem[Provot(1997)]{PROVOT1997}
+X.~Provot.
+\newblock Collision and self-collision handling in cloth model dedicated to
+  design garments.
+\newblock In D.~Thalmann and M.~van~de Panne, editors, \emph{Computer Animation
+  and Simulation '97}, Eurographics, pages 177--189. Springer Vienna, 1997.
+\newblock ISBN 978-3-211-83048-2.
+\newblock \doi{10.1007/978-3-7091-6874-5_13}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-7091-6874-5_13}.
+
+\bibitem[Serna et~al.(2009)Serna, da~Silva, Stork, and Marcos]{SERNA2009B}
+S.~P. Serna, J.~G. B.~R. da~Silva, A.~Stork, and A.~F. Marcos.
+\newblock Neighboring-based linear system for dynamic meshes.
+\newblock In \emph{Workshop in Virtual Reality Interactions and Physical
+  Simulation}, pages 95--103. The Eurographics Association, 2009.
+
+\bibitem[Tang et~al.(2012)Tang, Manocha, Otaduy, and Tong]{TANG2012}
+M.~Tang, D.~Manocha, M.~A. Otaduy, and R.~Tong.
+\newblock Continuous penalty forces.
+\newblock \emph{ACM Trans. Graph.}, 31\penalty0 (4):\penalty0 107:1--107:9,
+  July 2012.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2185520.2185603}.
+\newblock URL \url{http://doi.acm.org/10.1145/2185520.2185603}.
+
+\bibitem[Teschner et~al.(2005)Teschner, Kimmerle, Heidelberger, Zachmann,
+  Raghupathi, Fuhrmann, Cani, Faure, Magnenat-Thalmann, Strasser,
+  et~al.]{TESCHNER2005}
+M.~Teschner, S.~Kimmerle, B.~Heidelberger, G.~Zachmann, L.~Raghupathi,
+  A.~Fuhrmann, M.-P. Cani, F.~Faure, N.~Magnenat-Thalmann, W.~Strasser, et~al.
+\newblock Collision detection for deformable objects.
+\newblock In \emph{Computer Graphics Forum}, volume~24, pages 61--81. Wiley
+  Online Library, 2005.
+
+\bibitem[Weber et~al.(2011)Weber, Kalbe, Stork, Fellner, and
+  Goesele]{WEBER2011}
+D.~Weber, T.~Kalbe, A.~Stork, D.~Fellner, and M.~Goesele.
+\newblock Interactive deformable models with quadratic bases in
+  {Bernstein-B\'ezier}-form.
+\newblock \emph{TVC}, 27:\penalty0 473--483, 2011.
+\newblock ISSN 0178-2789.
+
+\bibitem[Weber et~al.(2013)Weber, Bender, Schnoes, Stork, and
+  Fellner]{WEBER2013}
+D.~Weber, J.~Bender, M.~Schnoes, A.~Stork, and D.~Fellner.
+\newblock Efficient gpu data structures and methods to solve sparse linear
+  systems in dynamics applications.
+\newblock \emph{Computer Graphics Forum}, 32\penalty0 (1):\penalty0 16--26,
+  2013.
+\newblock ISSN 1467-8659.
+\newblock \doi{10.1111/j.1467-8659.2012.03227.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1467-8659.2012.03227.x}.
+
+\bibitem[Weber(2012)]{WEBER2012}
+R.~Weber.
+\newblock \emph{Physik: Teil I: Mechanik und Thermodynamik ; experimentelle und
+  theoretische Grundlagen}.
+\newblock Physik. Books on Demand, 2012.
+\newblock ISBN 9783844829501.
+\newblock URL \url{http://books.google.de/books?id=A95dewBQ7v8C}.
+
+\bibitem[Yamane and Nakamura(2006)]{YAMANE2006}
+K.~Yamane and Y.~Nakamura.
+\newblock Stable penalty-based model of frictional contacts.
+\newblock In \emph{Robotics and Automation, 2006. ICRA 2006. Proceedings 2006
+  IEEE International Conference on}, pages 1904--1909. IEEE, 2006.
+
+\bibitem[Zhang et~al.(2014)Zhang, Kim, and Manocha]{ZHANG2014}
+X.~Zhang, Y.~J. Kim, and D.~Manocha.
+\newblock Continuous penetration depth.
+\newblock \emph{Comput. Aided Des.}, 46:\penalty0 3--13, Jan. 2014.
+\newblock ISSN 0010-4485.
+\newblock \doi{10.1016/j.cad.2013.08.013}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.cad.2013.08.013}.
+
+\end{thebibliography}

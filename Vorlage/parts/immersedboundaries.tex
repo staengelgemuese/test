@@ -1,0 +1,49 @@
+\chapter{Immersed Boundaries}
+In the following chapter we will study the DG method with immersed boundaries. IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. 
+	\section{The DG Scheme with Immersed Boundaries}
+	We regard an implicit representation of an immersed boundary using the level set function $\varphi$ that parts the calculation area $\Omega_h$ into 
+	\begin{description}
+		\item[the physical region] $\mathcal{A} = \left\{\vec{x} \in \Omega_h : \varphi (\vec{x}) > 0 \right\}$,
+		\item[the void region] $\mathcal{B} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) < 0 \right\}$, 
+		\item[and the immersed boundary] $\mathcal{I} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) = 0 \right\}$.
+	\end{description}
+	In our next step we use the definitions above in \ref{schwacheFormFlux} considering cell $\mathcal{K}_i$ with the sub-domain $\mathcal{A}_i = \mathcal{K}_i \cap \mathcal{A}$ and the surface $\partial \mathcal{A}_i$. As in cut cells the surface $\partial \mathcal{A}_i$ consists not only of the edges $\left\{\mathcal{E}_{i,e}^\mathcal{A} \right\}_{e = 1, ..., E} = \left\{\mathcal{E}_{i,e} \cap \bar{\mathcal{A}}_i \right\}_{e = 1, ..., E}$ but also of the boundary segment $\mathcal{I}_i = \mathcal{K}_i \cap \mathcal{I}$, the discrete weak formulation using an IBM follows as
+	\begin{align}
+	\int\limits_{\mathcal{A}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+	\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}^\mathcal{A}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA + \int\limits_{\mathcal{I}_{i}} f \left( c^-, c^+, \mathbf{n}_\mathcal{I} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{A}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV = 0
+	\label{schwacheFormIBM}
+	\end{align}
+	with $\mathbf{n}_\mathcal{I} = - \dfrac{\nabla\varphi}{\| \nabla\varphi \|}$.
+	In intersected cells the mass matrix is defined by
+	\begin{align}
+		(\mathbf{M_i})_{k,j} := \int\limits_{\mathcal{A}_i}\Phi_{i,k}\Phi_{i,j}\, dV
+	\end{align}
+	and the discrete operator 
+	\begin{align}
+		(\mathbf{f}_i)_j := \sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}^\mathcal{A}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA + \int\limits_{\mathcal{I}_{i}} f \left( c^-, c^+, \mathbf{n}_\mathcal{I} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{A}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV.
+	\end{align}
+	The difficulty of the IBM lies in the correct evaluation of $\mathcal{A}_i$ and $\mathcal{I}_i$ and in the agglomeration of intersected cells with very small volume fractions 
+	\begin{align}
+		\text{frac}(\mathcal{A}_i) = \dfrac{\text{meas}(\mathcal{A}_i)}{\text{meas}(\mathcal{K}_i)}
+	\end{align} 
+	as we will discuss in section \ref{cellAgglomeration}.
+	
+	\section{RK Time Discretization with Immersed Boundaries}
+	In this thesis we use only explicit Euler time discretization for immersed boundary problems:
+	\begin{align}
+		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \mathbf{M}_i^{-1} \mathbf{f}_i (c).
+	\end{align}
+	Using IBMs we have to modify the stability criterion and therefore use the modified step restriction
+	\begin{align}
+		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{\sqrt[D]{\text{meas}(\mathcal{A}_i)}}{\|\mathbf{u} \| + a}
+		\label{timestepIBM}
+	\end{align}
+	with a strong influence of the sub-cell $\mathcal{A}_i$ with the smallest volume.
+	
+	\section{Cell Agglomeration}
+	\label{cellAgglomeration}
+	As can be seen in \ref{timestepIBM} the time step size is strongly restricted in cell with very small volume fractions. This leads to a very long calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$
+	
+	
+	
+	

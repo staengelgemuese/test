@@ -1,0 +1,12 @@
+rm -f *.aux
+rm -f *.dvi
+rm -f *.ps
+rm -f *.pdf
+rm -f *.log
+rm -f *.lot
+rm -f *.lof
+rm -f *.loa
+rm -f *.toc
+rm -f *.bbl
+rm -f *.blg
+rm -f *.out

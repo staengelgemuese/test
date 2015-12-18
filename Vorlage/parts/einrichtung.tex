@@ -1,0 +1,159 @@
+\chapter{Einrichtung und Erläuterungen}
+	\section{Setup}
+	Zu Beginn wird für den Start folgendes Setup vorgeschlagen
+	\begin{itemize}
+		\item	\LaTeX-Distribution: \href{http://miktex.org/download}{MiKTeX} [Zugriff: 18.04.2014]
+		\item	\LaTeX-Editor: \href{http://texstudio.sourceforge.net/}{TeXstudio} [Zugriff: 18.04.2014]
+		\item	Literaturverwaltung (optional): \href{http://www.ulb.tu-darmstadt.de/service/literaturverwaltung/index.de.jsp}{Endnote/Citavi} [Zugriff: 18.04.2014] mit TU-Lizenz der ULB oder das kostenfreie \href{http://jabref.sourceforge.net/download.php}{JabRef} [Zugriff: 18.04.2014]
+		\item	PDF-Reader (optional): \href{http://blog.kowalczyk.info/software/sumatrapdf/download-free-pdf-viewer-de.html}{Sumatra PDF} [Zugriff: 18.04.2014] (Adobe Reader verhindert den Kompiliervorgang bei geöffnetem PDF-Dokument)
+	\end{itemize}
+	Es gibt eine Vielzahl kostenloser und kostenpflichtiger \LaTeX\ Distributionen (\href{http://www.tug.org/interest.html#free}{Auswahl} [Zugriff: 18.04.2014]) und Editoren (\href{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{Übersicht} [Zugriff: 18.04.2014]) mit unterschiedlichem Funktionsumfang mit denen persönliche Vorlieben erfüllt werden können.
+	Aus Gründen der Einfachheit und Reproduzierbarkeit beziehen sich Hilfestellungen sowie Tipps \& Tricks dieser Einrichtungshilfe allerdings auf oben genanntes Setup. Die Installation der genannten Komponenten ist unproblematisch und sollte mit den jeweiligen Installationsprogrammen durchgeführt werden können.
+	\section{Installation der TUD-Design \LaTeX\ Vorlage}
+		Die Vorlage für Abschlussarbeiten greift für die Umsetzung des Corporate Designs der TU Darmstadt auf die \href{http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/}{TUD-Design \LaTeX\ Vorlage} [Zugriff: 18.04.2014] zurück, welche von der Stabstelle Kommunikation und Medien genehmigt wurde. Diese hält die Vorgaben des Corporate Design Handbuchs (CDH) recht strikt ein (strikter als viele Fachgebiete dies bei den jeweils eigenen Word-Vorlagen tun), weshalb manche Anpassungen an Institutsvorgaben u.U. nur schwer umsetzbar sind, da sie gegen das CDH verstoßen.\newline		
+		Die notwendigen Pakete für die Verwendung der Vorlage für Abschlussarbeiten sind
+		\begin{itemize}
+			\item	\href{http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/latex/latex-tuddesign/latex-tuddesign_0.0.20100410.zip}{TUD-Design} [Zugriff: 18.04.2014]
+			\item	\href{http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/latex/tudfonts-tex/tudfonts-tex_0.0.20090806.zip}{TUD Fonts} [Zugriff: 18.04.2014]
+		\end{itemize}
+		Hinweis: die TUD-Design Thesis Klasse, welche ebenfalls zum Download bereit steht, wird nicht benötigt.
+		
+		\paragraph{Installation}
+			\noindent Für die Installation der TUD-Design Vorlage unter der MiKTeX Distribution unter Windows 7 kann folgende überarbeitete Anleitung verwendet werden. Sie basiert auf der \href{http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/Win7_miktex29.html}{Installationsanleitung auf den Seiten der TUD-Design Vorlage} [Zugriff: 18.04.2014].
+			
+			\noindent Hinweis: Für die Installation werden Administrator-Rechte benötigt
+			\begin{enumerate}
+				\item	Entpacken der beiden Zip-Dateien (fonts \& tuddesign) und anschließend aus den beiden Ordnern einen machen (ineinander kopieren und Verzeichnisse überschreiben)
+				\item	Öffnen der Eingabeaufforderung mit Administratorrechten: Start >> Programme >> Zubehör, dann Rechtsklick auf Eingabeaufforderung >> „Als Administrator ausführen“
+				\item	Mit cd <Pfad> in das Verzeichnis wechseln in dem der in 1.) angelegte Ordner (texmf) liegt. Falls der texmf-Ordner auf einem anderen Laufwerk als C liegt, muss beim Verzeichniswechsel der Parameter /d angegeben werden:\\
+				\textbf{Beispiel}: \\
+				texmf-Ordner liegt unter E:\textbackslash Test\\
+				Befehl: cd /d E:\textbackslash Test
+				\item	Löschen des Ordners texmf\textbackslash fonts\textbackslash map\textbackslash dvipdfm inklusive seines Inhalts mit folgendem Befehl\\
+				rmdir /Q /S "texmf\textbackslash fonts\textbackslash map\textbackslash dvipdfm"
+				\item	Kopieren der Unterverzeichnisse von texmf in den Ordner \%PROGRAMFILES\%\textbackslash tuddesign\textbackslash mit folgendem Befehl: 
+				xcopy texmf "\%PROGRAMFILES\%\textbackslash tuddesign" /E /I\\
+				Falls der xcopy Befehl fehlschlägt, liegen keine Administratorrechte vor (keine Schreibrechte für Programme-Ordner)
+				\item	Dannach folgenden Befehl ausführen:\\
+				mo\_admin\\
+				Zum Reiter Roots wechseln, den [add]-Knopf drücken und das Verzeichnis \%PROGRAMFILES\%\textbackslash tuddesign auswählen. (Unterordner tuddesign im Standard-Programmverzeichnis der Windows-Partition - i.d.R. auf C:\textbackslash)\\ Dann auf [OK] klicken.
+				\item	In der Konsole folgendes eingeben:\\
+				initexmf -{}-admin -{}-update-fndb
+				\item	Anschließend Folgendes eingeben\\
+				initexmf -{}-admin -{}-edit-config-file=updmap
+				\item	Folgende Zeilen in die sich öffnende Datei einfügen und speichern:\\
+				Map 5ch.map\\
+				Map 5fp.map\\
+				Map 5sf.map
+				\item	Abschließend diesen Befehl ausführen\\
+				initexmf -{}-admin -{}-mkmaps
+				\item	Fertig			
+			\end{enumerate}
+			
+			\noindent Für die Installation auf anderen Betriebssystemen wird an dieser Stelle auf die Anleitungen unter \url{http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/andere.html#install} [Zugriff: 18.04.2014] verwiesen.
+		
+	\section{Einstieg in \LaTeX}
+		Für einen fundierten Einsteig gibt es eine Vielzahl an Lehrbüchern, welche u.A. auch in der ULB verfügbar sind. Je nach Lerntyp ist aber auch learning-by-doing sehr gut möglich. Im Folgenden werden einige Internet-Informationsquellen aufgelistet die einen guten Einstieg in die Arbeit mit \LaTeX\ ermöglichen und/oder ein gutes Nachschlagewerk darstellen:
+		\begin{itemize}
+			\item 	\href{http://en.wikibooks.org/wiki/LaTeX}{\LaTeX\ Wikibook} [Zugriff: 18.04.2014]
+			\item 	\href{http://www.fernuni-hagen.de/imperia/md/content/zmi_2010/a026_latex_einf.pdf}{Manuela Jürgens \& Thomas Feuerstack: \LaTeX\ - eine Einführung und ein bisschen mehr... } [Zugriff: 18.04.2014]
+			\item	\href{ftp://ftp.fernuni-hagen.de/pub/pdf/urz-broschueren/broschueren/a0279510.pdf}{Manuela Jürgens: \LaTeX\ - Fortgeschrittene Anwendungen} [Zugriff: 18.04.2014]
+			\item 	\href{http://latex.tugraz.at/latex/tutorial}{\LaTeX-Tutorial der Universität Graz} [Zugriff: 18.04.2014]
+			\item 	\href{http://www.gidf.de/}{Geheimtip} [Zugriff: 18.04.2014]
+		\end{itemize}
+		PDF-Versionen sind sofern vorhanden dem Paket beigefügt. Die vorhandene Vorlage setzt das Wissen über den Inhalt der Dokumentation der TUD-Design Vorlage voraus.
+		
+		Bei Problemen gibt es eine Vielzahl an deutschsprachigen und englischsprachigen Foren in denen man Hilfe finden kann. Vor Eröffnung eines Beitrags sollte allerdings die Suchfunktion bemüht werden und bei der Erläuterung des Problems ein \href{http://www.golatex.de/wiki/Minimalbeispiel}{Minimalbeispiel} [Zugriff: 18.04.2014] angegeben werden. Speziell bei Problemen mit der TUD-Design Vorlage ist außerdem das \href{http://tuddesign-latex.fs-etit.de/index.php}{LaTeX-Forum des neuen TUD Designs} [Zugriff: 18.04.2014] zu empfehlen.
+	
+	\section{Anzeige des kompilierten PDF-Dokuments}
+		TeXstudio verfügt über eine eigene interne PDF-Anzeige, welche den aktuellen Stand des Dokuments nach jedem Kompiliervorgang anzeigt. Unter Umständen kann allerdings auch die Arbeit mit einem externen PDF Reader sinnvoll sein. 
+		
+		Hier verursacht Adobe Reader allerdings das Problem, dass bei geöffnetem PDF-Dokument der Kompiliervorgang nicht durchgeführt werden kann (Schreibschutz des geöffneten PDF-Files).
+		Aus diesem und anderen Gründen eignet sich Sumatra PDF als Reader für die Arbeit mit \LaTeX. Das angezeigte PDF-Dokument wird bei Verwendung von Sumatra PDF nach jedem Kompiliervorgang automatisch aktualisiert. 
+		
+		Weiterhin ist es mit diesem Reader möglich durch Doppelklick im PDF an die jeweilige Zeile im \LaTeX-Code zu springen. Auch ein Springen aus dem Code an die jeweilige Stelle des PDFs ist möglich. Die notwendigen Einstellungen um das Springen zwischen PDF-File und \LaTeX-Code zu ermöglichen, können \href{http://robjhyndman.com/hyndsight/texstudio-sumatrapdf/}{dieser Anleitung} [Zugriff: 18.04.2014] entnommen werden.
+		
+	\section{Literaturverwaltung und Literaturverzeichnis}
+		Die Verwendung eines Literaturverwaltungsprogramms zum Schreiben von wissenschaftlichen Arbeiten ist immer lohnenswert. Auf den meisten Suchportalen hat sich mittlerweile etabliert, dass für vorhandene Quellen die Möglichkeit angeboten wird für die gängigsten Literaturverwaltungsprogramme automatisch einen Eintrag zu erzeugen.
+		Die Literatureinträge können entweder mittels eines externen Programmes wie Citavi, Endnote oder Jabref verwaltet oder direkt in \LaTeX\ angelegt werden.
+		
+		Externe Programme ermöglichen durch Integration in \LaTeX-Editoren (vergleichbar mit der Integration in Word) bzw. den Export der Datenbank in ein \LaTeX-kompatibles Format ein einfaches Zitieren und automatisches Anlegen von Literaturverzeichnissen.
+		
+		\paragraph{BibTeX}
+		\noindent Das Standardformat zur Zitation und zur Erzeugung von Literaturverzeichnissen in \LaTeX\ ist BibTeX. Viele Literaturverwaltungsprogramme unterstützen den automatischen Export der in der Datenbank der Literaturverwaltungssoftware hinterlegten Informationen in einem zu BibTeX kompatiblen Format.
+		Alternativ können die BibTeX-Einträge auch direkt im \LaTeX-Editor \href{http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management\#BibTeX}{manuell} [Zugriff: 18.04.2014] eingegeben werden.
+		
+		\paragraph{natbib}
+		\noindent Ein weitverbreitetes Package zur Erweiterung des Funktionsumfangs von \LaTeX\ für Naturwissenschaftler stellt \href{http://ftp.gwdg.de/pub/ctan/macros/latex/contrib/natbib/natbib.pdf}{Natbib} [Zugriff: 18.04.2014] dar. Natbib ermöglicht die Verwendung zusätzlicher Zitierstile wie beispielsweise die "{}Harvard"{}-Zitierweise und weitere Bibliographiestile.
+		
+		\paragraph{biblatex}
+		\noindent Weiterhin existiert mit biblatex eine recht neue, komplette Neuimplementierung der bibliographischen Funktionen für \LaTeX, welche inoffiziell als Nachfolger von BibTeX betrachtet wird. biblatex bietet den Vorteil, dass sämtliche Funktionen zur Gestaltung von Zitierstilen und Bibliographiestilen durch Optionen zugänglich gemacht werden. Dadurch entfällt die nicht gerade triviale Programmierung von Stilen in BibTeX zur Anpassung an die jeweiligen Vorgaben.
+		
+		Weiterhin bietet biblatex in Verbindung mit dem Bibliographie-Prozessor biber volle UTF-8 Unterstützung. Dadurch lässt sich die komplizierte und fehleranfällige Darstellung von deutschen Umlauten und Sonderzeichen in URLs mittels spezieller Befehle vermeiden.
+		
+		biblatex definiert außerdem einige zusätzliche Eintrags- und Feldtypen, so dass beispielsweise Internetquellen ohne Workarounds über andere Eintragstypen mit dem Eintragstyp "{}online"{} gut dargestellt werden können. Zusätzlich reduziert sich die Anzahl der Kompilierdurchläufe bis zum fertigen PDF-Dokument auf einen Durchlauf im Vergleich zu drei Durchläufen bei BibTeX. Neben den genannten Vorteilen besitzt biblatex auch vollständige Kompatibilität zu BibTeX, so dass BibTeX-Datensätze ohne Probleme mit biblatex verarbeitet werden können.
+		
+		Aus oben genannten Gründen baut die vorliegende Vorlage auf biblatex in Verbindung mit biber auf.
+		Nichtsdestotrotz bleibt festzuhalten, dass die Anpassung von Zitier- und Bibliographiestilen auch unter biblatex nicht einfach ist und ausreichende \LaTeX-Kenntnisse voraussetzt. Mit Blick auf die Zeiteffizienz sollte deshalb bei sehr expliziten Vorgaben des jeweiligen Fachbereichs für die Abschlussarbeit auch die manuelle Erstellung des Literaturverzeichnisses in Erwägung gezogen werden, sofern nicht die Darstellung Mittels einem der Pakete mit einem der weiter verbreiteten, vorhandenen Stile verhandelt werden kann.
+		
+		MikTeX liefert die notwendigen Pakete für biblatex und biber bereits von Haus aus mit, so dass diese nur noch wie gewöhnlich geladen werden müssen. Außerdem unterstützt TeXstudio die Verwendung von biblatex und bier und es Bedarf deshalb keiner gesonderten Einstellungen im Editor. Der Kompilationsvorgang von biber wird standardmäßig mit der Funktionstaste F11 aufgerufen. Der Standardkompiliervorgang PdfLaTeX (F1), der das PDF erzeugt, bindet die von biber erzeugten Dateien automatisch ein.
+		
+	\section{Symbol- und Abkürzungsverzeichnis}
+		Teil vieler naturwissenschaftlicher Arbeiten ist ein Symbol- und/oder ein Abkürzungsverzeichnis. \LaTeX\ bietet hierfür standardmäßig keine spezielle Lösung, so dass die Verzeichnisse manuell erstellt werden oder Mittels Paketen wie beispielsweise \textit{glossaries} oder \textit{nomencl} realisiert werden müssen.
+		
+		Auch hier bietet die manuelle Erstellung mehr Freiheiten und einen geringeren Einarbeitungs- und Einrichtungsaufwand für die reine Verzeichniserstellung, sofern nicht die Zusatzfunktionen der Pakete benötigt werden. Für die manuelle Erstellung mittels einer Tabelle bietet sich das Paket longtable an.
+		
+		Die Vorlage bietet jeweils ein einfaches Beispiel für die Einbindung mittels des Pakets glossaries, sowie ein Beispiel mittels einer Tabelle. Für die Verwendung der glossaries-Variante wird \textit{makeindex} benötigt. In der TeXstudio-Konfiguration ist makeindex bereits hinterlegt (Shortcut F12), allerdings muss dort folgende Anpassung für die verwendete Variante vorgenommen werden:\newline
+		Unter Optionen $\rightarrow$ TeXstudio konfigurieren $\rightarrow$ Befehle muss beim Eintrag Makeindex folgende Befehlszeile stehen (ohne Absatz, alles in einer Zeile): 
+		\begin{verbatim}
+			makeindex -s %.ist -t %.alg -o %.acr %.acn | 
+			makeindex -s %.ist -t %.glg -o %.gls %.glo | 
+			makeindex -s %.ist -t %.slg -o %.syi %.syg
+		\end{verbatim}
+		Nach Ausführen von makeindex per F12, sollte das automatische Symbolverzeichnis und das automatische Abkürzungsverzeichnis korrekt dargestellt werden.
+		
+	\section{Abschließende Bemerkung}
+		Auch wenn die manuelle Erstellung in den beiden vorherigen Kapiteln immer im Hinblick auf den häufig vorhandenen Zeitdruck bei einer Abschlussarbeit als zu berücksichtigende Alternative genannt wurde, bleibt dennoch zu sagen, dass einmal erlerntes Wissen über \LaTeX\ und dessen Erweiterungspakete, sowie geschriebener Programmcode immer den Vorteil der einfachen Wiederverwendbarkeit für spätere Arbeiten bietet. Es bleibt also letztendlich immer eine Einzelfallentscheidung ob der zeitliche Aufwand für die Einarbeitung in ein neues Paket o.Ä. (als eine u.U. auch längerfristig fruchtende Lösung) gerechtfertigt oder eine kurzfristig händische Lösung zu bevorzugen ist.
+		
+\chapter{Beispiele}
+	\section{Bild}			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[scale=0.5]{wsmb}		
+				\caption{Logo }
+			\end{figure}
+	\section{Tabelle}
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{cccc}
+				\toprule
+				Buchstabe &Zahl &BUCHSTABE &Zahl Zahl \\\midrule
+				a &1 &A &11 \\
+				b &2 &B &22 \\\bottomrule
+			\end{tabular}
+			\caption{Zahlen und Buchstaben}
+		\end{table}
+	\section{Text mit Zitat}
+		Die ist ein Beispieltext mit einer zitierten Quelle \cite{Blomeke.2006}. Und noch ein Zitat \cite{Hering.2007} auf das ein weiteres Zitat aus einer Monografie folgt \cite[23]{Karmasin.2012}.
+	\section{Zahlen und Einheiten}
+		Für eine einheitliche Darstellung von Zahlen und Einheiten wird das Paket \textit{siunitx} verwendet. Diese führt die Makros
+		\begin{itemize}
+			\item	\verb|\si| für Einheiten
+				\begin{itemize}
+					\item	Beispiel: Ein \si{\newton} ist definiert als \si{\kilogram\meter\per\second\squared}
+				\end{itemize}
+			\item	\verb|\SI| für Zahlen und Einheiten
+				\begin{itemize}
+					\item	Beispiel: eine Spannung der Höhe \SI{2,386e3}{\newton\per\milli\meter\squared}
+				\end{itemize}
+			\item	\verb|\SIlist| für Aufzählungen von Zahlen und Einheiten
+				\begin{itemize}
+					\item	Beispiel: \SIlist{10;100;1000}{\kilogram}
+				\end{itemize}
+			\item	\verb|\SIrange| für die Darstellungen von Bereichen
+				\begin{itemize}
+					\item	Beispiel: \SIrange{300}{500}{\kelvin}
+				\end{itemize}
+		\end{itemize}
+		ein. Die Darstellung von Zahlen und Einheiten können zentral in der Präambel des Dokuments oder als Parameter der Makros von Fall zu Fall neu definiert werden. So ist sowohl Konsistenz als auch Flexibilität gewährleistet.\newline
+		Darüber hinaus gibt es noch viele weitere Anwendungsbereiche. Weitere Informationen zur Verwendung und Konfiguration sind der beiliegenden Dokumentation des Pakets zu entnehmen
