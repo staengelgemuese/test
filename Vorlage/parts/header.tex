@@ -9,7 +9,7 @@
 % 11pt, a4paper, abstractoff, bigheadings, final, footnosepline, headnosepline, nochapterprefix, onecolumn, oneside, openany, parindent, tablecaptionbelow und titlepage. 
 % Details zu diesen Voreinstellungen können der Dokumentation des KOMA-Scripts entnommen werden. Im folgenden werden lediglich Optionen definiert, welche von den Voreinstellungen abweichen oder durch die Klasse tudreport definiert werden.
 
-\documentclass[accentcolor=tud0a, bigchapter, colorbacktitle,toc=listof, toc=bibnumbered, parskip=off, 11pt, a4paper]{tudreport}
+\documentclass[accentcolor=tud7a, bigchapter, colorbacktitle,toc=listof, toc=bibnumbered, parskip=off, 11pt, a4paper]{tudreport}
 
 %TUD-Design Optionen
 	% accentcolor, bigchapter & colorbacktitle: siehe Dokumentation zum TUD-Design
@@ -82,12 +82,16 @@
 %\tikzexternalize
 %\tikzset{external/force remake}
 
+
+
 % biblatex ist ein Paket zur Ausgabe und Formatierung von Zitaten und von Literaturverzeichnissen
 %backend=biber		% Einstellung für die Verwendung von biber als Bibliographie-Prozessor
 %style=numeric-comp		% Einstellung des
 %bibstyle=numeric			% Einstellung des Bibliographie-Stils
 %citestyle=numeric		% Einstellung des Zitierstils
 \usepackage[
+nomain,
+xindy,
 nonumberlist, 			% keine Anzeige von Seitenzahlen der Einträge im Abkürzungs-/Symbolverzeichnis
 nogroupskip, 			% keine Gruppierung der Einträge nach Anfangsbuchstaben & keine zusätzlicher vertikaler Abstand bei Änderung des Anfangsbuchstabens
 acronym, 			% ein Abkürzungsverzeichnis erstellen
@@ -95,7 +99,8 @@ toc, 					% Einträge im Inhaltsverzeichnis für das Abkürzungs- und Symbolverz
 translate=babel 		% Übersetzung von Überschriften, etc. ins Deutsche
 ]{glossaries}			% Paket zur Erstellung von Abkürzungs-, Symbolverzeichnissen, etc.
 \usepackage{blindtext}		% Ermögicht die einfache Verwendung von Beispieltext zu Testzwecken
-
+\usepackage[xindy]{imakeidx}
+\makeindex
 % weitere möglicherweise interessante Pakete: capt-of, multirow
 
 
@@ -196,4 +201,4 @@ translate=babel 		% Übersetzung von Überschriften, etc. ins Deutsche
 		}	
 	
 % Laden der zweifarbigen Identbar (gegebenfalls auskommentieren)
-	\input{parts/indentbar}
+%	\input{parts/indentbar}

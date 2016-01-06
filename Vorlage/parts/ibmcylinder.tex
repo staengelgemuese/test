@@ -1,5 +1,6 @@
 \chapter{Parametric study of a flow around a cylinder}
-	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate BoSSS with immersed boundaries concerning robustness and convergence.
+	\label{eulerVerification}
+	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.
 
 	\section{Robustness study}
 	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $32 \times 32$ cells. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\
@@ -7,14 +8,14 @@
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
-			\begin{semilogyaxis}[title=Convergence Plot, xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$,$P=2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+			\begin{semilogyaxis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$,$P=2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
 				\addplot table[ x =shift, y =error1] {data/shift.dat};
 				\addplot table[ x =shift, y =error2] {data/shift.dat};
 				\addplot table[ x =shift, y =error3] {data/shift.dat};
 			\end{semilogyaxis}	
 		\end{tikzpicture}
 		\label{shifterror}	
-		\caption{test1}
+		\caption{Convergence Plot}
 	\end{figure}
 	
 
@@ -51,7 +52,7 @@
 	\begin{figure}[htp]
 		\centering		
 		\begin{tikzpicture}
-			\begin{loglogaxis}[title=Convergence Plot, xlabel ={Cells per Direction}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=0$,$P=1$,$P=2$, $P=3$, $P=4$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,} ]
+			\begin{loglogaxis}[xlabel ={Cells per Direction}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=0$,$P=1$,$P=2$, $P=3$, $P=4$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,} ]
 				\addplot table[ x =meshSize, y =error0] {data/test.dat};
 				\addplot table[ x =meshSize, y =error1] {data/test.dat};
 				\addplot table[ x =meshSize, y =error2] {data/test.dat};
@@ -60,28 +61,35 @@
 			\end{loglogaxis}	
 		\end{tikzpicture}
 		\label{mesherror}	
-		\caption{test}
+		\caption{Convergence Plot}
 	\end{figure}
 
-	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in \ref{fig:case14detail}. In order to correct the value I changed the NodeCountSafetyFactor \todo{was das} from $2$ to $5$ which should increase robustness and runtime.
+	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in \ref{fig:case14detail}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in \ref{fig:case14detail} and the flow after the correction in \ref{fig:case14detailneu}. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell in \ref{fig:case14detail}.
 	
 
 	\begin{figure}[htp]
 		\centering
-		\begin{subfigure}[b]{0.5\textwidth}
+		\begin{subfigure}[b]{0.3\textwidth}
 			\centering
-			\includegraphics[height=5.5cm]{case14.PNG}
-			\caption{Overview of flow}
+			\includegraphics[height=3.3cm]{case14.PNG}
+			\caption{Overview of flow before correction}
 			\label{fig:case14groß}
 		\end{subfigure}%
-		\begin{subfigure}[b]{0.5\textwidth}
+		\begin{subfigure}[b]{0.3\textwidth}
 			\centering
-			\includegraphics[height=5.5cm]{case14komisch.PNG}
-			\caption{Detailed view of critical cell}
+			\includegraphics[height=3.3cm]{case14komisch.PNG}
+			\caption{Detailed view of critical cell before correction}
 			\label{fig:case14detail}
 		\end{subfigure}
-		\caption{Mesh size $128 \times 128$, $P = 3$}\label{fig:case14}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\includegraphics[height=3.3cm]{case14normal.PNG}
+			\caption{Detailed view of critical cell after correction}
+			\label{fig:case14detailneu}
+		\end{subfigure}
+		\caption{Mesh size $128 \times 128$, $P = 3$}
+		\label{fig:case14}
 	\end{figure}
 	
-	Concluding, we remark that for this example it is better to use a mesh size of $64 \times 64$ cells and a high polynomial degree than using a more accurate mesh as it seems to lower the robustness of the solver. For most of the cases though the convergence behaves as desired with an order close to the optimal rate of $O(h^{P+1})$.
+	Concluding, we remark that the convergence behaves as desired with an order close to the optimal rate of $O(h^{P+1})$. Nevertheless to receive the correct result it should always be guaranteed that the calculation stops due to the residual rather than illegal values for momentum even if that means heightening the overall runtime by increasing the node count safety factor thus robustness.
 	

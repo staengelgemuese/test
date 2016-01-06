@@ -1,6 +1,11 @@
-\glossaryentry{TUD?\glossentry{tud}|setentrycounter[]{page}\glsnumberformat}{X}
-\glossaryentry{SPZ?\glossentry{spz}|setentrycounter[]{page}\glsnumberformat}{X}
-\glossaryentry{PMV?\glossentry{pmv}|setentrycounter[]{page}\glsnumberformat}{X}
-\glossaryentry{TUD?\glossentry{tud}|setentrycounter[]{page}\glsnumberformat}{XII}
-\glossaryentry{SPZ?\glossentry{spz}|setentrycounter[]{page}\glsnumberformat}{XII}
-\glossaryentry{PMV?\glossentry{pmv}|setentrycounter[]{page}\glsnumberformat}{XII}
+(indexentry :tkey (("BoSSS" "\\glossentry{bosss}") ) :locref "{}{14}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("RKDG" "\\glossentry{rkdg}") ) :locref "{}{18}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("BoSSS" "\\glossentry{bosss}") ) :locref "{}{18}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("BoSSS" "\\glossentry{bosss}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("RKDG" "\\glossentry{rkdg}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("RK" "\\glossentry{rk}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DG" "\\glossentry{dg}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("BoSSS" "\\glossentry{bosss}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("RKDG" "\\glossentry{rkdg}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("RK" "\\glossentry{rk}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DG" "\\glossentry{dg}") ) :locref "{}{X}" :attr "pageglsnumberformat" ) 

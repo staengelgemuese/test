@@ -1,9 +1,13 @@
 \chapter{The viscous cylinder}
+The flow around a viscous cylinder has been approached by many papers both analytically \todo{wirklich?} and numerically, e.g. \todo{literatur}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
+	The flow around a viscous cylinder can be divided in different sections depending on the Reynolds number. The first section applies for a Reynolds number $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
+	 
+	The second section contains all larger Reynolds number $\text{Re}> 40-50$ and thus describes the unsteady flow. 
 
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$ and a polynomial degree of $1$.
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$ and a polynomial degree of $1$.
 	\subsection{Steady State Simulations ($\text{Re} < 40-50$)}
 	\subsubsection{Simulation at Reynolds Number 10}
 	\subsubsection{Simulation at Reynolds Number 20}
