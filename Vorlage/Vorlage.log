@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  5 JAN 2016 18:14
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  7 JAN 2016 13:11
 **Vorlage.tex
 (./Vorlage.tex
 LaTeX2e <2015/10/01> patch level 1
@@ -2507,10 +2507,10 @@ File: english.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
 (./parts/abstractalternativ.aux) (./parts/motivation.aux)
 (./parts/fundamentals.aux) (./parts/dgmethod.aux)
 (./parts/immersedboundaries.aux) (./parts/ibmcylinder.aux)
-(./parts/viscouscylinder.aux) (./parts/results.aux) (./parts/discussion.aux)
-(./parts/ehrenwortde.aux) (./parts/ehrenworten.aux) (./parts/anhangvorlage.aux))
-
+(./parts/viscouscylinder.aux) (./parts/discussion.aux) (./parts/ehrenwortde.aux
+) (./parts/ehrenworten.aux) (./parts/anhangvorlage.aux))
 \openout1 = Vorlage.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -2527,6 +2527,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for MDA+cmr on input line 24.
+
 (D:/Users/stange/AppData/Roaming/MiKTeX/2.9/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
@@ -2816,7 +2817,7 @@ File: t15fp.fd 2009/08/06 Fontinst v1.927 font definitions for T1/5fp.
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 31
 .
 
-<tud_logo.pdf, id=174, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=178, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 31.
@@ -3072,7 +3073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
 
 
-] <img/2_2.PNG, id=399, 770.88pt x 722.7pt>
+] <img/2_2.PNG, id=404, 770.88pt x 722.7pt>
 File: img/2_2.PNG Graphic file (type png)
  <use img/2_2.PNG>
 Package pdftex.def Info: img/2_2.PNG used on input line 31.
@@ -3148,7 +3149,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 6.86201pt on input line 32.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 5.92201pt on input line 32.
-<img/2_4.PNG, id=400, 770.88pt x 722.7pt>
+<img/2_4.PNG, id=405, 770.88pt x 722.7pt>
 File: img/2_4.PNG Graphic file (type png)
  <use img/2_4.PNG>
 Package pdftex.def Info: img/2_4.PNG used on input line 37.
@@ -3195,7 +3196,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `mesherror' on page 16 undefined on input line 67.
 
-<img/case14.PNG, id=421, 1027.84pt x 651.43375pt>
+<img/case14.PNG, id=426, 1027.84pt x 651.43375pt>
 File: img/case14.PNG Graphic file (type png)
  <use img/case14.PNG>
 Package pdftex.def Info: img/case14.PNG used on input line 74.
@@ -3205,7 +3206,7 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 74--75
  [][][] 
  []
 
-<img/case14komisch.PNG, id=422, 1027.84pt x 651.43375pt>
+<img/case14komisch.PNG, id=427, 1027.84pt x 651.43375pt>
 File: img/case14komisch.PNG Graphic file (type png)
 
 <use img/case14komisch.PNG>
@@ -3216,7 +3217,7 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 80--81
  [][][] 
  []
 
-<img/case14normal.PNG, id=423, 1027.84pt x 651.43375pt>
+<img/case14normal.PNG, id=428, 1027.84pt x 651.43375pt>
 File: img/case14normal.PNG Graphic file (type png)
 
 <use img/case14normal.PNG>
@@ -3233,99 +3234,109 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 86--87
 (./parts/viscouscylinder.tex
 chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+<img/overviewCylinderReynolds_Williamson.PNG, id=443, 848.4197pt x 574.39594pt>
+File: img/overviewCylinderReynolds_Williamson.PNG Graphic file (type png)
+<use img/overviewCylinderReynolds_Williamson.PNG>
+Package pdftex.def Info: img/overviewCylinderReynolds_Williamson.PNG used on inp
+ut line 8.
+(pdftex.def)             Requested size: 336.20308pt x 227.62204pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    External font `yhcmex10' loaded for size
-(Font)              <12.1> on input line 11.
-LaTeX Font Info:    External font `yhcmex10' loaded for size
-(Font)              <8.5> on input line 11.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 12.46802pt on input line 11.
-
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 11.
-
-LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 8.31201pt on input line 11.
-LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 12.86407pt on input line 11.
-
-LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 11.
-
-LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 8.57605pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 11.61607pt on input line 11.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.16005pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 11.37402pt on input line 11.
-LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 7.99002pt on input line 11.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 15.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 15.
 
 [18
 
 
 
-]) [19]
-\openout2 = parts/results.aux
- (./parts/results.tex
-chapter 7.
-) [20
+<./img/overviewCylinderReynolds_Williamson.PNG>]
+<img/steadyFlow_Williamson.PNG, id=452, 520.19344pt x 316.93407pt>
+File: img/steadyFlow_Williamson.PNG Graphic file (type png)
+
+<use img/steadyFlow_Williamson.PNG>
+Package pdftex.def Info: img/steadyFlow_Williamson.PNG used on input line 27.
+(pdftex.def)             Requested size: 186.80118pt x 113.81102pt.
+
+<img/unsteady_Williamson.PNG, id=453, 1123.94907pt x 447.92343pt>
+File: img/unsteady_Williamson.PNG Graphic file (type png)
+
+<use img/unsteady_Williamson.PNG>
+Package pdftex.def Info: img/unsteady_Williamson.PNG used on input line 35.
+(pdftex.def)             Requested size: 285.56564pt x 113.81102pt.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    External font `yhcmex10' loaded for size
+(Font)              <12.1> on input line 42.
+LaTeX Font Info:    External font `yhcmex10' loaded for size
+(Font)              <8.5> on input line 42.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
+(Font)              scaled to size 12.46802pt on input line 42.
 
 
+LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <8.5> not available
+(Font)              size <8> substituted on input line 42.
 
-]
+LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
+(Font)              scaled to size 8.31201pt on input line 42.
+LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
+(Font)              scaled to size 12.86407pt on input line 42.
+
+LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <8.5> not available
+(Font)              size <8> substituted on input line 42.
+
+LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
+(Font)              scaled to size 8.57605pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 11.61607pt on input line 42.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 8.16005pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 11.37402pt on input line 42.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 7.99002pt on input line 42.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 42.
+
+[19<./img/steadyFlow_Williamson.PNG><./img/unsteady_Williamson.PNG>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 46.
+
+) [20]
 \openout2 = parts/discussion.aux
  (./parts/discussion.tex
-chapter 8.
+chapter 7.
 ) [21
 
 
@@ -3337,7 +3348,7 @@ LaTeX Warning: Empty bibliography on input line 53.
 
 \openout2 = parts/ehrenwortde.aux
 (./parts/ehrenwortde.tex
-chapter 9.
+chapter 8.
 ) [6
 
 
@@ -3345,7 +3356,7 @@ chapter 9.
 ]
 \openout2 = parts/ehrenworten.aux
  (./parts/ehrenworten.tex
-chapter 10.
+chapter 9.
 ) [7
 
 
@@ -3381,12 +3392,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
 (./parts/abstractalternativ.aux) (./parts/motivation.aux)
 (./parts/fundamentals.aux) (./parts/dgmethod.aux)
 (./parts/immersedboundaries.aux) (./parts/ibmcylinder.aux)
-(./parts/viscouscylinder.aux) (./parts/results.aux) (./parts/discussion.aux)
-(./parts/ehrenwortde.aux) (./parts/ehrenworten.aux) (./parts/anhangvorlage.aux))
+(./parts/viscouscylinder.aux) (./parts/discussion.aux) (./parts/ehrenwortde.aux
+) (./parts/ehrenworten.aux) (./parts/anhangvorlage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `Vorlage.out' has not changed.
-(rerunfilecheck)             Checksum: 73F73380FBB2CCE8AF8805C05A4BFE59;3008.
+(rerunfilecheck)             Checksum: 3485A11450B977CCCFC4FC51E17F31CF;3130.
+
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -3406,13 +3418,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
 )
 
 Here is how much of LuaTeX's memory you used:
- 55752 strings out of 494933
+ 55768 strings out of 494933
  100000,1977958 words of node,token memory allocated
- 819 words of node memory still in use:
+ 825 words of node memory still in use:
     nodes
-   avail lists: 1:3,2:57,3:979,4:1463,5:263,6:2575,7:177,8:37,9:704,10:236
- 56460 multiletter control sequences out of 65536+200000
- 338 fonts using 9446151 bytes
+   avail lists: 1:3,2:57,3:985,4:1457,5:264,6:2575,7:177,8:38,9:704,10:236
+ 56474 multiletter control sequences out of 65536+200000
+ 342 fonts using 9557703 bytes
  75i,20n,110p,2006b,2349s stack positions out of 5000i,500n,10000p,200000b,50000s
 LuaTeX warning (dest): name{glo:rkdg} has been referenced but does not exist, re
 placed by a fixed one
@@ -3443,9 +3455,9 @@ nge/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb
 ><<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on Vorlage.pdf (35 pages, 579599 bytes).
+Output written on Vorlage.pdf (35 pages, 679323 bytes).
 
-PDF statistics: 586 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 131072)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 603 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 131072)
+ 372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

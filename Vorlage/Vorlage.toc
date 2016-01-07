@@ -23,22 +23,23 @@
 \contentsline {section}{\numberline {5.2}Convergence study of mesh size and polynomial degree}{16}{section.5.2}
 \contentsline {chapter}{\numberline {6}The viscous cylinder}{18}{chapter.6}
 \contentsline {section}{\numberline {6.1}Theory}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulations}{18}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{18}{subsection.6.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 10}{18}{subsubsection*.14}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{18}{subsubsection*.15}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{18}{subsubsection*.16}
-\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{19}{subsection.6.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{19}{subsubsection*.17}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{19}{subsubsection*.18}
-\contentsline {chapter}{\numberline {7}Results}{20}{chapter.7}
-\contentsline {chapter}{\numberline {8}Discussion}{21}{chapter.8}
-\contentsline {chapter}{\numberline {9}Ehrenwörtliche Erklärung}{VI}{chapter.9}
-\contentsline {paragraph}{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.19}
-\contentsline {chapter}{\numberline {10}Declaration of Academic Integrity}{VII}{chapter.10}
-\contentsline {paragraph}{Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.20}
-\contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.23}
-\contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.26}
+\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{19}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{19}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Simulations}{19}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{20}{subsection.6.2.1}
+\contentsline {subsubsection}{Simulation at Reynolds Number 10}{20}{subsubsection*.17}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{20}{subsubsection*.18}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{20}{subsubsection*.19}
+\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{20}{subsection.6.2.2}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{20}{subsubsection*.20}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{20}{subsubsection*.21}
+\contentsline {chapter}{\numberline {7}Discussion}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Ehrenwörtliche Erklärung}{VI}{chapter.8}
+\contentsline {paragraph}{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.22}
+\contentsline {chapter}{\numberline {9}Declaration of Academic Integrity}{VII}{chapter.9}
+\contentsline {paragraph}{Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.23}
+\contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.26}
+\contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.29}
 \contentsline {chapter}{\numberline {A}Anhang}{XI}{appendix.A}
 \contentsline {section}{\numberline {A.1}Ein Anhang}{XI}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Teil eines Anhangs}{XI}{subsection.A.1.1}
