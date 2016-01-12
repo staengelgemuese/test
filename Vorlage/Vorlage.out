@@ -17,7 +17,7 @@
 \BOOKMARK [1][-]{section.3.2}{3.2 RK time discretization}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{4 Immersed Boundaries}{}% 18
 \BOOKMARK [1][-]{section.4.1}{4.1 The DG Scheme with Immersed Boundaries}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretization with Immersed Boundaries}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretisation with Immersed Boundaries}{chapter.4}% 20
 \BOOKMARK [1][-]{section.4.3}{4.3 Cell Agglomeration}{chapter.4}% 21
 \BOOKMARK [0][-]{chapter.5}{5 Parametric study of a flow around a cylinder}{}% 22
 \BOOKMARK [1][-]{section.5.1}{5.1 Robustness study}{chapter.5}% 23
@@ -32,8 +32,8 @@
 \BOOKMARK [0][-]{chapter.7}{7 Discussion}{}% 32
 \BOOKMARK [0][-]{chapter.8}{8 Ehrenwörtliche Erklärung}{}% 33
 \BOOKMARK [0][-]{chapter.9}{9 Declaration of Academic Integrity}{}% 34
-\BOOKMARK [0][-]{section*.26}{List of Figures}{}% 35
-\BOOKMARK [0][-]{section*.29}{List of Tables}{}% 36
+\BOOKMARK [0][-]{section*.35}{List of Figures}{}% 35
+\BOOKMARK [0][-]{section*.38}{List of Tables}{}% 36
 \BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 37
 \BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 38
 \BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 Teil eines Anhangs}{section.A.1}% 39

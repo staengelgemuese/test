@@ -38,11 +38,135 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$ and a polynomial degree of $1$.
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$ and a polynomial degree of $1$. These coefficients are defined as
+	\begin{align}
+		C_D = \dfrac{d}{q_\infty L_\infty} \\
+		D_L = \dfrac{l}{q_\infty L_\infty}
+	\end{align}
+	with the dynamic pressure $q_\infty = \dfrac{1}{2} \rho_\infty V_\infty^2$. For we set $L_\infty = \rho_\infty = V_\infty = 1$ in our boundary and initial conditions, we can assume
+	\begin{align}
+		C_D = 2 \cdot d \\
+		C_L = 2 \cdot l,
+	\end{align}
+	with the drag and lift forces $d$ and $l$ provided from the calculation.
 	\subsection{Steady State Simulations ($\text{Re} < 40-50$)}
+	For the steady state simulations we can use the wake separation length $W^*$ as an additional variable to compare to other simulations.
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[height=4cm]{steadyFlow_modifiedWilliamson.PNG}
+				\caption{Wake separation length \todo{Quelle modified!}}
+				\label{fig:wakeSeparation}
+			\end{figure} 
+	It can be found from examining the velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
 	\subsubsection{Simulation at Reynolds Number 10}
+
+
+
+	\begin{table}[htp]
+		\centering
+		\begin{tabular}{|c||c|c|c|c}
+			\cline{1-4}
+			\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
+			\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
+			\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
+			\rule{0pt}{2,3ex}$C_D$                & $2.27638400267312$        & $2.3205402064175$        & $2.41364044322$        &  \\ \cline{1-4}
+			\rule{0pt}{2,3ex}$C_L$                & $-0.000550594258569958$        & $-0.0014617338683891$        & $0.00004720682$        &  \\ \cline{1-4}
+		\end{tabular}
+		\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=10$}
+		\label{tab:re10}
+	\end{table}
+	
 	\subsubsection{Simulation at Reynolds Number 20}
+	
+		\begin{table}[htp]
+			\centering
+			\begin{tabular}{|c||c|c|c|c}
+				\cline{1-4}
+				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
+				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_D$                & $1.64383538515868$        & $1.63699061840009$        & $1.63699061840009$       &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_L$                & $-0.000670676506459244$       & $-0.000694847445600998$       & $-0.000694847445600998$        &  \\ \cline{1-4}
+			\end{tabular}
+			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=20$}
+			\label{tab:re20}
+		\end{table}
 	\subsubsection{Simulation at Reynolds Number 40}
+		\begin{table}[htp]
+			\centering
+			\begin{tabular}{|c||c|c|c|c}
+				\cline{1-4}
+				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
+				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_D$                & $1.26492653341108$        & $1.20679001087588$        & $1.1891224168599$       &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_L$                & $-0.000508760643526784$        & $-0.00157058413712008$        & $-0.00054056507571687$        &  \\ \cline{1-4}
+			\end{tabular}
+			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=40$}
+			\label{tab:re40}
+		\end{table}
 	\subsection{Unsteady Simulations ($\text{Re}> 40-50$)}
+	In order to compare the unsteady simulations we need the Strouhal number
+	\begin{align}
+		\text{St} = \dfrac{f  L_\infty}{V_\infty}.
+	\end{align}
+	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. 
 	\subsubsection{Simulation at Reynolds Number 100}
+			\begin{table}[htp]
+				\centering
+				\begin{tabular}{|c||c|c|c|c}
+					\cline{1-4}
+					\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
+					\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$St$ 				 & a        & b        & c        &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$C_D$                & d        & e        & f        &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$C_L$                & g        & h        & i        &  \\ \cline{1-4}
+				\end{tabular}
+				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=100$}
+				\label{tab:re100}
+			\end{table}
+			
+				\begin{figure}[htp]	
+					\centering
+					\begin{tikzpicture}
+					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\end{axis}	
+					\end{tikzpicture}
+					\label{shijfterror}	
+					\caption{Convergence Plot}
+				\end{figure}
+				\begin{figure}[htp]	
+					\centering
+					\begin{tikzpicture}
+					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\end{axis}	
+					\end{tikzpicture}
+					\label{shijfterror}	
+					\caption{Convergence Plot}
+				\end{figure}
+				\begin{figure}[htp]	
+					\centering
+					\begin{tikzpicture}
+					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
+					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\end{axis}	
+					\end{tikzpicture}
+					\label{shijfterror}	
+					\caption{Convergence Plot}
+				\end{figure}
 	\subsubsection{Simulation at Reynolds Number 200}
+			\begin{table}[htp]
+				\centering
+				\begin{tabular}{|c||c|c|c|c}
+					\cline{1-4}
+					\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
+					\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$St$ 				 & a        & b        & c        &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$C_D$                & d        & e        & f        &  \\ \cline{1-4}
+					\rule{0pt}{2,3ex}$C_L$                & g        & h        & i        &  \\ \cline{1-4}
+				\end{tabular}
+				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=200$}
+				\label{tab:re200}
+			\end{table}

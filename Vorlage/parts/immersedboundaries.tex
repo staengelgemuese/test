@@ -1,5 +1,5 @@
 \chapter{Immersed Boundaries}
-In the following chapter we will study the DG method with immersed boundaries. IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. 
+In the following chapter we will study the DG method with immersed boundaries. IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. It therefore makes the mesh generation much easier, as it only needs a cartesian mesh and a function that approximates the level set. Brought along with the cartesian mesh, it is easily parallelisable, thus rendering it convenient for more complex structures that shall be computed on several processors.
 	\section{The DG Scheme with Immersed Boundaries}
 	We regard an implicit representation of an immersed boundary using the level set function $\varphi$ that parts the calculation area $\Omega_h$ into 
 	\begin{description}
@@ -18,7 +18,7 @@ In the following chapter we will study the DG method with immersed boundaries. I
 	\begin{align}
 		(\mathbf{M_i})_{k,j} := \int\limits_{\mathcal{A}_i}\Phi_{i,k}\Phi_{i,j}\, dV
 	\end{align}
-	and the discrete operator 
+	and the discrete operator by
 	\begin{align}
 		(\mathbf{f}_i)_j := \sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}^\mathcal{A}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA + \int\limits_{\mathcal{I}_{i}} f \left( c^-, c^+, \mathbf{n}_\mathcal{I} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{A}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV.
 	\end{align}
@@ -28,8 +28,8 @@ In the following chapter we will study the DG method with immersed boundaries. I
 	\end{align} 
 	as we will discuss in section \ref{cellAgglomeration}.
 	
-	\section{RK Time Discretization with Immersed Boundaries}
-	In this thesis we use only explicit Euler time discretization for immersed boundary problems:
+	\section{RK Time Discretisation with Immersed Boundaries}
+	In this thesis we use only explicit Euler time discretisation for immersed boundary problems:
 	\begin{align}
 		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \mathbf{M}_i^{-1} \mathbf{f}_i (c).
 	\end{align}
@@ -42,8 +42,9 @@ In the following chapter we will study the DG method with immersed boundaries. I
 	
 	\section{Cell Agglomeration}
 	\label{cellAgglomeration}
-	As can be seen in \ref{timestepIBM} the time step size is strongly restricted in cell with very small volume fractions. This leads to a very long calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$
+	As can be seen in \ref{timestepIBM} the time step size is strongly restricted in cells with very small volume fractions. This leads to a very long calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$. \\
+	The cell agglomeration strategy relies on finding the source cells $\left\{\mathcal{K}_s^\text{src} \right\}_{s=1,...,S}$ with $\text{frac}(\mathcal{A}_i) \leq \alpha$ and agglomerating them to the neighboring cell with the highest volume fraction, namely target cell $\mathcal{K}_s^\text{tar}$.\\
 	
-	
-	
+	For the neighboring cells are weakly coupled via fluxes, the basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell. Therefore the source cell can formally be deleted from the discretisation mesh, reducing it to $\left\{\mathcal{K}_s^\text{agg} \right\}_{i=1,...,N-S}$.
+	As can be found in \todo{paper zitieren}, it however does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency.
 	
