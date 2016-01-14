@@ -60,7 +60,33 @@ The flow around a viscous cylinder has been approached by many papers both analy
 	It can be found from examining the velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
 	\subsubsection{Simulation at Reynolds Number 10}
 
-
+	\begin{figure}[htp]	
+		\centering
+		\begin{tikzpicture}
+		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128, ymax = 2.7]
+		\addplot table[ x = meshSize, y =C_D] {data/re10.dat};
+		\addlegendentry{$P=1$}
+		\addplot[mark=none, red] coordinates {(32, 2.5) (128, 2.5)};
+		\addlegendentry{Constant Value}
+		\end{semilogxaxis}	
+		\end{tikzpicture}
+		\label{shivfjfterror}	
+		\caption{Convergence Plot}
+	\end{figure}
+	
+	\begin{figure}[htp]	
+		\centering
+		\begin{tikzpicture}
+		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128]
+		\addplot table[ x = meshSize, y =C_L] {data/re10.dat};
+		\addlegendentry{$P=1$}
+		\addplot[mark=none, red] coordinates {(32, 0) (128, 0)};
+		\addlegendentry{Constant Value}
+		\end{semilogxaxis}	
+		\end{tikzpicture}
+		\label{shivfjftqerror}	
+		\caption{Convergence Plot}
+	\end{figure}
 
 	\begin{table}[htp]
 		\centering
@@ -69,8 +95,8 @@ The flow around a viscous cylinder has been approached by many papers both analy
 			\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
 			\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
 			\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
-			\rule{0pt}{2,3ex}$C_D$                & $2.27638400267312$        & $2.3205402064175$        & $2.41364044322$        &  \\ \cline{1-4}
-			\rule{0pt}{2,3ex}$C_L$                & $-0.000550594258569958$        & $-0.0014617338683891$        & $0.00004720682$        &  \\ \cline{1-4}
+			\rule{0pt}{2,3ex}$C_D$                & $2.2763840026747$        & $2.3205402064175$        & $2.41364044322$        &  \\ \cline{1-4}
+			\rule{0pt}{2,3ex}$C_L$                & $-0.00055059425842785$        & $-0.0014617338683891$        & $0.00004720682$        &  \\ \cline{1-4}
 		\end{tabular}
 		\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=10$}
 		\label{tab:re10}
@@ -85,8 +111,8 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
 				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
 				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
-				\rule{0pt}{2,3ex}$C_D$                & $1.64383538515868$        & $1.63699061840009$        & $1.63699061840009$       &  \\ \cline{1-4}
-				\rule{0pt}{2,3ex}$C_L$                & $-0.000670676506459244$       & $-0.000694847445600998$       & $-0.000694847445600998$        &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_D$                & $1.64383538516091$        & $1.63699061840009$        & $1.63699061840009$       &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_L$                & $-0.000776541603329406$       & $-0.000694847445600998$       & $-0.000694847445600998$        &  \\ \cline{1-4}
 			\end{tabular}
 			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=20$}
 			\label{tab:re20}
@@ -99,8 +125,8 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
 				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
 				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
-				\rule{0pt}{2,3ex}$C_D$                & $1.26492653341108$        & $1.20679001087588$        & $1.1891224168599$       &  \\ \cline{1-4}
-				\rule{0pt}{2,3ex}$C_L$                & $-0.000508760643526784$        & $-0.00157058413712008$        & $-0.00054056507571687$        &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_D$                & $1.26492653340932$        & $1.20679001087588$        & $1.1891224168599$       &  \\ \cline{1-4}
+				\rule{0pt}{2,3ex}$C_L$                & $-0.000508760643668893$        & $-0.00157058413712008$        & $-0.00054056507571687$        &  \\ \cline{1-4}
 			\end{tabular}
 			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=40$}
 			\label{tab:re40}
@@ -130,7 +156,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 					\centering
 					\begin{tikzpicture}
 					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
 					\label{shijfterror}	
@@ -140,7 +166,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 					\centering
 					\begin{tikzpicture}
 					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
 					\label{shijfterror}	
@@ -150,7 +176,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 					\centering
 					\begin{tikzpicture}
 					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
-					\addplot table[ x =x, y =y, mark=none] {data/CLRE100.dat};
+					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
 					\label{shijfterror}	
