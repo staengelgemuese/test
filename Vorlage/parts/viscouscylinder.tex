@@ -1,8 +1,8 @@
 \chapter{The viscous cylinder}
-The flow around a viscous cylinder has been approached by many papers both analytically \todo{wirklich?} and numerically, e.g. \todo{literatur}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
+The flow around a viscous cylinder has been approached by many papers both analytically \todo{wirklich?} and numerically, e.g. \todo{literatur}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
-	The flow around a viscous cylinder can be divided in different sections depending on the Reynolds number. The first section applies for a Reynolds number $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
+	The flow around a viscous cylinder can be divided into different sections depending on the flow specific Reynolds number. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=8cm]{overviewCylinderReynolds_Williamson.PNG}
@@ -18,7 +18,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		\item[$200000 < \text{Re}$] critical transition, supercritical regime and post-critical regime.
 	\end{description}
 	
-	As we will only discuss Reynolds numbers up to $\text{Re} < 200$ the important phases for us are the laminar steady regime and the laminar vortex shedding. At around $\text{Re} = 190$ the three dimensionality of the system has a incrementing influence on the flow; for we only analyse the 2-D model of the experiment we stop at $\text{Re} = 200$ expecting slight deflection in our results.
+	As we will only discuss Reynolds numbers up to $\text{Re} = 200$ the important phases for us are the laminar steady regime and the laminar vortex shedding. At around $\text{Re} = 190$ the three dimensionality of the system has an incrementing influence on the flow; for we only analyse the 2-D model of the experiment we stop at $\text{Re} = 200$ expecting slight deflection in our results.
 	
 	\subsection{The Laminar Steady Regime}
 	
@@ -38,7 +38,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$ and a polynomial degree of $1$. These coefficients are defined as
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The drag and lift coefficients $C_D$ and $C_L$ are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
 		D_L = \dfrac{l}{q_\infty L_\infty}
@@ -49,6 +49,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		C_L = 2 \cdot l,
 	\end{align}
 	with the drag and lift forces $d$ and $l$ provided from the calculation.
+	
 	\subsection{Steady State Simulations ($\text{Re} < 40-50$)}
 	For the steady state simulations we can use the wake separation length $W^*$ as an additional variable to compare to other simulations.
 			\begin{figure}[htp]
