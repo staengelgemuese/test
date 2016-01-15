@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  14 JAN 2016 15:19
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  15 JAN 2016 13:38
 **Vorlage.tex
 (./Vorlage.tex
 LaTeX2e <2015/10/01> patch level 1
@@ -3365,19 +3365,22 @@ PGFPlots: reading {data/re10.dat}
 Package pgfplots info on input line 80: Using 'lua backend=false' for axis: xmod
 e=log unsupported (yet).
 PGFPlots: reading {data/re10.dat}
+Package pgfplots info on input line 109: Using 'lua backend=false' for axis: xmo
+de=log unsupported (yet).
+PGFPlots: reading {data/re20.dat}
 
-Overfull \hbox (9.44267pt too wide) in paragraph at lines 109--117
+Overfull \hbox (9.44267pt too wide) in paragraph at lines 122--130
  [][][] 
  []
 
-[21<./img/steadyFlow_modifiedWilliamson.PNG>] [22]
+[21<./img/steadyFlow_modifiedWilliamson.PNG>] [22] [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 147.
 
 PGFPlots: reading {data/CLRE100.dat}
 NOTE: coordinate (--,--,--) [--](was (Grouping:test2,2.2173459999999998E-003,--)
@@ -3388,11 +3391,12 @@ NOTE: coordinate (--,--,--) [--](was (Grouping:test2,2.2173459999999998E-003,--)
 PGFPlots: reading {data/CLRE100.dat}
 NOTE: coordinate (--,--,--) [--](was (Grouping:test2,2.2173459999999998E-003,--)
  [--]) has been dropped because of a coordinate filter.
-) [23] [24] [25]
+PGFPlots: reading {data/re200dg1.dat}
+) [24] [25] [26]
 \openout2 = parts/discussion.aux
  (./parts/discussion.tex
 chapter 7.
-) [26
+) [27
 
 
 
@@ -3452,7 +3456,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `Vorlage.out' has not changed.
-(rerunfilecheck)             Checksum: 0A0D514610CD0708E30DC717195523C7;3130.
+(rerunfilecheck)             Checksum: FA101ACE5DEAAF7E8083AF231B045A29;3130.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3476,12 +3480,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56019 strings out of 494933
+ 56065 strings out of 494933
  100000,1977958 words of node,token memory allocated
- 860 words of node memory still in use:
+ 864 words of node memory still in use:
     nodes
-   avail lists: 1:3,2:57,3:3422,4:2891,5:264,6:2575,7:269,8:38,9:882,10:236
- 56652 multiletter control sequences out of 65536+200000
+   avail lists: 1:3,2:57,3:4117,4:2905,5:264,6:2575,7:239,8:38,9:914,10:236
+ 56683 multiletter control sequences out of 65536+200000
  342 fonts using 9557703 bytes
  75i,20n,110p,2006b,2349s stack positions out of 5000i,500n,10000p,200000b,50000s
 LuaTeX warning (dest): name{glo:rkdg} has been referenced but does not exist, re
@@ -3513,9 +3517,9 @@ nge/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb
 ><<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on Vorlage.pdf (40 pages, 737790 bytes).
+Output written on Vorlage.pdf (41 pages, 746003 bytes).
 
-PDF statistics: 656 PDF objects out of 1000 (max. 8388607)
- 174 named destinations out of 1000 (max. 131072)
+PDF statistics: 665 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 131072)
  372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

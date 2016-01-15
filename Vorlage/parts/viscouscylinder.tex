@@ -103,6 +103,19 @@ The flow around a viscous cylinder has been approached by many papers both analy
 	\end{table}
 	
 	\subsubsection{Simulation at Reynolds Number 20}
+	\begin{figure}[htp]	
+		\centering
+		\begin{tikzpicture}
+		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128, ymax = 2.0]
+		\addplot table[ x = meshSize, y =C_D] {data/re20.dat};
+		\addlegendentry{$P=1$}
+		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+		\addlegendentry{Constant Value}
+		\end{semilogxaxis}	
+		\end{tikzpicture}
+		\label{shivfjftersaror}	
+		\caption{Convergence Plot}
+	\end{figure}
 	
 		\begin{table}[htp]
 			\centering
@@ -196,3 +209,13 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=200$}
 				\label{tab:re200}
 			\end{table}
+			\begin{figure}[htp]	
+				\centering
+				\begin{tikzpicture}
+				\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+				\addplot table[ x =time, y =l, mark=none] {data/re200dg1.dat};
+				\end{axis}	
+				\end{tikzpicture}
+				\label{shijfterdaror}	
+				\caption{Convergence Plot}
+			\end{figure}
