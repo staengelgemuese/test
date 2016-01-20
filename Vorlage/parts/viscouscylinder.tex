@@ -41,7 +41,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The drag and lift coefficients $C_D$ and $C_L$ are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
-		D_L = \dfrac{l}{q_\infty L_\infty}
+		C_L = \dfrac{l}{q_\infty L_\infty}
 	\end{align}
 	with the dynamic pressure $q_\infty = \dfrac{1}{2} \rho_\infty V_\infty^2$. For we set $L_\infty = \rho_\infty = V_\infty = 1$ in our boundary and initial conditions, we can assume
 	\begin{align}
@@ -117,6 +117,23 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		\label{shivfjftersaror}	
 		\caption{Convergence Plot}
 	\end{figure}
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		$\text{Re}=20$                              & Source                             & 2D/3D & $W^*$ & $C_D$ \\ \hline
+		\multirow{3}{*}{Numerical - Incompressible} & Dennis et al {[}1970{]}            & 2D    & d     & s     \\ \cline{2-5} 
+		& Forberg {[}1980{]}                 & 2D    & d     & s     \\ \cline{2-5} 
+		& Linnick et al. {[}2005{]}          & 2D    & d     & d     \\ \hline
+		\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & dd    & d     \\ \cline{2-5} 
+		& Tritton {[}1959{]}                 & -     & d     & d     \\ \hline
+		\multirow{3}{*}{Numerical Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & d     & A     \\ \cline{2-5} 
+		& Ayers {[}2015{]}                   & 2D    & d     & g     \\ \cline{2-5} 
+		& Present Results:                   & 2D    & d     & 4     \\ \hline
+	\end{tabular}
+\end{table}
 	
 		\begin{table}[htp]
 			\centering
@@ -165,11 +182,21 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=100$}
 				\label{tab:re100}
 			\end{table}
+				\begin{figure}[htp]	
+					\centering
+					\begin{tikzpicture}
+					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+					\addplot table[ x =time  , y =l, mark=none] {data/vortex.dat};
+					\end{axis}	
+					\end{tikzpicture}
+					\label{shijftserdaror}	
+					\caption{Convergence Plot}
+				\end{figure}
 			
 				\begin{figure}[htp]	
 					\centering
 					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
 					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
@@ -179,7 +206,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\begin{figure}[htp]	
 					\centering
 					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
 					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
@@ -189,7 +216,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\begin{figure}[htp]	
 					\centering
 					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
+					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
 					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
 					\end{axis}	
 					\end{tikzpicture}
@@ -213,7 +240,7 @@ The flow around a viscous cylinder has been approached by many papers both analy
 			\begin{figure}[htp]	
 				\centering
 				\begin{tikzpicture}
-				\begin{axis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
 				\addplot table[ x =time, y =l, mark=none] {data/re200dg1.dat};
 				\end{axis}	
 				\end{tikzpicture}
