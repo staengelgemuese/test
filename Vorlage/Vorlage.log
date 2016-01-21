@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  20 JAN 2016 15:40
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.12.10)  21 JAN 2016 11:23
 **Vorlage.tex
 (./Vorlage.tex
 LaTeX2e <2015/10/01> patch level 1
@@ -2518,15 +2518,7 @@ File: english.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
 (./parts/abstractalternativ.aux) (./parts/motivation.aux)
 (./parts/fundamentals.aux) (./parts/dgmethod.aux)
 (./parts/immersedboundaries.aux) (./parts/ibmcylinder.aux)
-(./parts/viscouscylinder.aux
-
-LaTeX Warning: Label `shijfterror' multiply defined.
-
-
-LaTeX Warning: Label `shijfterror' multiply defined.
-
-) (./parts/discussion.aux) (./parts/ehrenwortde.aux) (./parts/ehrenworten.aux)
-(./parts/anhangvorlage.aux))
+(./parts/viscouscylinder.aux))
 \openout1 = Vorlage.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -2836,7 +2828,7 @@ File: t15fp.fd 2009/08/06 Fontinst v1.927 font definitions for T1/5fp.
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 31
 .
 
-<tud_logo.pdf, id=178, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=126, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 31.
@@ -2894,19 +2886,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-(./Vorlage.toc [4
-
-
-]
-Overfull \hbox (0.24194pt too wide) detected at line 49
- []\T1/5ch/m/n/11 XIII
- []
-
-)
+(./Vorlage.toc)
 \tf@toc=\write10
 
 \openout10 = Vorlage.toc
- [5]
+ [4
+
+
+]
 \c@savecounter=\count465
  (./body.tex
 \openout2 = parts/motivation.aux
@@ -3102,7 +3089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
 
 
-] <img/2_2.PNG, id=412, 770.88pt x 722.7pt>
+] <img/2_2.PNG, id=313, 770.88pt x 722.7pt>
 File: img/2_2.PNG Graphic file (type png)
  <use img/2_2.PNG>
 Package pdftex.def Info: img/2_2.PNG used on input line 31.
@@ -3178,7 +3165,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 6.86201pt on input line 32.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 5.92201pt on input line 32.
-<img/2_4.PNG, id=413, 770.88pt x 722.7pt>
+<img/2_4.PNG, id=314, 770.88pt x 722.7pt>
 File: img/2_4.PNG Graphic file (type png)
  <use img/2_4.PNG>
 Package pdftex.def Info: img/2_4.PNG used on input line 37.
@@ -3225,7 +3212,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `mesherror' on page 17 undefined on input line 67.
 
-<img/case14.PNG, id=433, 1027.84pt x 651.43375pt>
+<img/case14.PNG, id=335, 1027.84pt x 651.43375pt>
 File: img/case14.PNG Graphic file (type png)
  <use img/case14.PNG>
 Package pdftex.def Info: img/case14.PNG used on input line 74.
@@ -3235,7 +3222,7 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 74--75
  [][][] 
  []
 
-<img/case14komisch.PNG, id=434, 1027.84pt x 651.43375pt>
+<img/case14komisch.PNG, id=336, 1027.84pt x 651.43375pt>
 File: img/case14komisch.PNG Graphic file (type png)
 
 <use img/case14komisch.PNG>
@@ -3246,7 +3233,7 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 80--81
  [][][] 
  []
 
-<img/case14normal.PNG, id=435, 1027.84pt x 651.43375pt>
+<img/case14normal.PNG, id=337, 1027.84pt x 651.43375pt>
 File: img/case14normal.PNG Graphic file (type png)
 
 <use img/case14normal.PNG>
@@ -3263,7 +3250,7 @@ Overfull \hbox (11.57224pt too wide) in paragraph at lines 86--87
 (./parts/viscouscylinder.tex
 chapter 6.
 
-<img/overviewCylinderReynolds_Williamson.PNG, id=450, 848.4197pt x 574.39594pt>
+<img/overviewCylinderReynolds_Williamson.PNG, id=352, 848.4197pt x 574.39594pt>
 File: img/overviewCylinderReynolds_Williamson.PNG Graphic file (type png)
 <use img/overviewCylinderReynolds_Williamson.PNG>
 Package pdftex.def Info: img/overviewCylinderReynolds_Williamson.PNG used on inp
@@ -3279,14 +3266,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
 
 <./img/overviewCylinderReynolds_Williamson.PNG>]
-<img/steadyFlow_Williamson.PNG, id=459, 520.19344pt x 316.93407pt>
+<img/steadyFlow_Williamson.PNG, id=361, 520.19344pt x 316.93407pt>
 File: img/steadyFlow_Williamson.PNG Graphic file (type png)
 
 <use img/steadyFlow_Williamson.PNG>
 Package pdftex.def Info: img/steadyFlow_Williamson.PNG used on input line 27.
 (pdftex.def)             Requested size: 186.80118pt x 113.81102pt.
 
-<img/unsteady_Williamson.PNG, id=460, 1123.94907pt x 447.92343pt>
+<img/unsteady_Williamson.PNG, id=362, 1123.94907pt x 447.92343pt>
 File: img/unsteady_Williamson.PNG Graphic file (type png)
 
 <use img/unsteady_Williamson.PNG>
@@ -3354,7 +3341,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 53.
 
-<img/steadyFlow_modifiedWilliamson.PNG, id=469, 478.78876pt x 243.91125pt>
+<img/steadyFlow_modifiedWilliamson.PNG, id=371, 478.78876pt x 243.91125pt>
 File: img/steadyFlow_modifiedWilliamson.PNG Graphic file (type png)
 
 <use img/steadyFlow_modifiedWilliamson.PNG>
@@ -3389,7 +3376,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 165.
 
 [21<./img/steadyFlow_modifiedWilliamson.PNG>] [22] [23]
-PGFPlots: reading {data/vortex.dat}
+PGFPlots: reading {data/vortex2.dat}
 PGFPlots: reading {data/CLRE100.dat}
 
 NOTE: coordinate (--,--,--) [--](was (Grouping:test2,2.2173459999999998E-003,--)
@@ -3411,25 +3398,25 @@ chapter 7.
 
 ])
 
-LaTeX Warning: Citation 'Blomeke.2006' on page 6 undefined on input line 53.
+LaTeX Warning: Citation 'Blomeke.2006' on page 5 undefined on input line 53.
 
 
 LaTeX Warning: Empty bibliography on input line 54.
 
-[6
+[5
 
 ]
 \openout2 = parts/ehrenwortde.aux
  (./parts/ehrenwortde.tex
 chapter 8.
-) [7
+) [6
 
 
 ]
 \openout2 = parts/ehrenworten.aux
  (./parts/ehrenworten.tex
 chapter 9.
-) [8
+) [7
 
 
 
@@ -3437,27 +3424,27 @@ chapter 9.
 \tf@lof=\write11
 
 \openout11 = Vorlage.lof
- [9
+ [8
 
 
 ] (./Vorlage.lot)
 \tf@lot=\write12
 
 \openout12 = Vorlage.lot
- [10
+ [9
 
 Missing character: There is no – (U+2013) in font 5chr8t!
 ]
 No file Vorlage.acr.
 No file Vorlage.syi.
-[11]
+[10]
 \openout2 = parts/anhangvorlage.aux
  (./parts/anhangvorlage.tex
 chapter A.
-[12
+[11
 
 
-] [13]) [14]
+] [12]) [13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (./Vorlage.aux (./parts/impressum.aux) (./parts/abstract.aux)
@@ -3468,9 +3455,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 ) (./parts/ehrenworten.aux) (./parts/anhangvorlage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
-Package rerunfilecheck Info: File `Vorlage.out' has not changed.
-(rerunfilecheck)             Checksum: 4047150A97E4B3DF9DF2C1007D0D7FFA;3130.
 
+
+Package rerunfilecheck Warning: File `Vorlage.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Vorlage.out':
+(rerunfilecheck)             Before: F5EA078DCC8494177FE0FA6C37B338C9;2217
+(rerunfilecheck)             After:  4047150A97E4B3DF9DF2C1007D0D7FFA;3130.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -3479,7 +3472,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -3493,14 +3486,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56090 strings out of 494933
- 100000,2848258 words of node,token memory allocated
+ 56032 strings out of 494933
+ 100000,1977958 words of node,token memory allocated
  869 words of node memory still in use:
     nodes
-   avail lists: 1:3,2:57,3:10755,4:3312,5:264,6:2575,7:326,8:38,9:1013,10:236
- 56699 multiletter control sequences out of 65536+200000
- 342 fonts using 9557703 bytes
- 75i,20n,110p,2006b,2349s stack positions out of 5000i,500n,10000p,420062b,50000s
+   avail lists: 1:3,2:57,3:5003,4:3312,5:263,6:2572,7:326,8:20,9:1013,10:236
+ 56680 multiletter control sequences out of 65536+200000
+ 340 fonts using 9501927 bytes
+ 75i,20n,110p,2006b,2349s stack positions out of 5000i,500n,10000p,200000b,50000s
 LuaTeX warning (dest): name{glo:rkdg} has been referenced but does not exist, re
 placed by a fixed one
 
@@ -3530,9 +3523,9 @@ nge/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb
 ><<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><<D:/U
 sers/stange/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on Vorlage.pdf (42 pages, 804099 bytes).
+Output written on Vorlage.pdf (41 pages, 743341 bytes).
 
-PDF statistics: 673 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 131072)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 588 PDF objects out of 1000 (max. 8388607)
+ 179 named destinations out of 1000 (max. 131072)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
