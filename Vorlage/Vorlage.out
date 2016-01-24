@@ -17,26 +17,27 @@
 \BOOKMARK [1][-]{section.3.2}{3.2 RK time discretization}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{4 Immersed Boundaries}{}% 18
 \BOOKMARK [1][-]{section.4.1}{4.1 The DG Scheme with Immersed Boundaries}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretization with Immersed Boundaries}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretisation with Immersed Boundaries}{chapter.4}% 20
 \BOOKMARK [1][-]{section.4.3}{4.3 Cell Agglomeration}{chapter.4}% 21
 \BOOKMARK [0][-]{chapter.5}{5 Parametric study of a flow around a cylinder}{}% 22
 \BOOKMARK [1][-]{section.5.1}{5.1 Robustness study}{chapter.5}% 23
 \BOOKMARK [1][-]{section.5.2}{5.2 Convergence study of mesh size and polynomial degree}{chapter.5}% 24
 \BOOKMARK [0][-]{chapter.6}{6 The viscous cylinder}{}% 25
 \BOOKMARK [1][-]{section.6.1}{6.1 Theory}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.2}{6.2 Simulations}{chapter.6}% 27
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Steady State Simulations \(Re < 40-50\)}{section.6.2}% 28
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 29
-\BOOKMARK [0][-]{chapter.7}{7 Results}{}% 30
-\BOOKMARK [0][-]{chapter.8}{8 Discussion}{}% 31
-\BOOKMARK [0][-]{chapter.9}{9 Ehrenwörtliche Erklärung}{}% 32
-\BOOKMARK [0][-]{chapter.10}{10 Declaration of Academic Integrity}{}% 33
-\BOOKMARK [0][-]{section*.23}{List of Figures}{}% 34
-\BOOKMARK [0][-]{section*.26}{List of Tables}{}% 35
-\BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 36
-\BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 37
-\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 Teil eines Anhangs}{section.A.1}% 38
-\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 Noch ein Teil eines Anhangs}{section.A.1}% 39
-\BOOKMARK [1][-]{section.A.2}{A.2 Noch ein Anhang}{appendix.A}% 40
-\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 Teil des weiteren Anhangs}{section.A.2}% 41
-\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 Noch ein Teil des weiteren Anhangs}{section.A.2}% 42
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The Laminar Steady Regime}{section.6.1}% 27
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Laminar Vortex Shedding}{section.6.1}% 28
+\BOOKMARK [1][-]{section.6.2}{6.2 Simulations}{chapter.6}% 29
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Steady State Simulations \(Re < 40-50\)}{section.6.2}% 30
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 31
+\BOOKMARK [0][-]{chapter.7}{7 Discussion}{}% 32
+\BOOKMARK [0][-]{chapter.8}{8 Ehrenwörtliche Erklärung}{}% 33
+\BOOKMARK [0][-]{chapter.9}{9 Declaration of Academic Integrity}{}% 34
+\BOOKMARK [0][-]{section*.41}{List of Figures}{}% 35
+\BOOKMARK [0][-]{section*.44}{List of Tables}{}% 36
+\BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 37
+\BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 38
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 Teil eines Anhangs}{section.A.1}% 39
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 Noch ein Teil eines Anhangs}{section.A.1}% 40
+\BOOKMARK [1][-]{section.A.2}{A.2 Noch ein Anhang}{appendix.A}% 41
+\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 Teil des weiteren Anhangs}{section.A.2}% 42
+\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 Noch ein Teil des weiteren Anhangs}{section.A.2}% 43

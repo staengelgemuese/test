@@ -16,29 +16,30 @@
 \contentsline {section}{\numberline {3.2}RK time discretization}{8}{section.3.2}
 \contentsline {chapter}{\numberline {4}Immersed Boundaries}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}The DG Scheme with Immersed Boundaries}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}RK Time Discretization with Immersed Boundaries}{13}{section.4.2}
+\contentsline {section}{\numberline {4.2}RK Time Discretisation with Immersed Boundaries}{13}{section.4.2}
 \contentsline {section}{\numberline {4.3}Cell Agglomeration}{13}{section.4.3}
-\contentsline {chapter}{\numberline {5}Parametric study of a flow around a cylinder}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}Robustness study}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}Convergence study of mesh size and polynomial degree}{16}{section.5.2}
-\contentsline {chapter}{\numberline {6}The viscous cylinder}{18}{chapter.6}
-\contentsline {section}{\numberline {6.1}Theory}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulations}{18}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{18}{subsection.6.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 10}{18}{subsubsection*.14}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{18}{subsubsection*.15}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{18}{subsubsection*.16}
-\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{19}{subsection.6.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{19}{subsubsection*.17}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{19}{subsubsection*.18}
-\contentsline {chapter}{\numberline {7}Results}{20}{chapter.7}
-\contentsline {chapter}{\numberline {8}Discussion}{21}{chapter.8}
-\contentsline {chapter}{\numberline {9}Ehrenwörtliche Erklärung}{VI}{chapter.9}
-\contentsline {paragraph}{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.19}
-\contentsline {chapter}{\numberline {10}Declaration of Academic Integrity}{VII}{chapter.10}
-\contentsline {paragraph}{Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.20}
-\contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.23}
-\contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.26}
+\contentsline {chapter}{\numberline {5}Parametric study of a flow around a cylinder}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Robustness study}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Convergence study of mesh size and polynomial degree}{17}{section.5.2}
+\contentsline {chapter}{\numberline {6}The viscous cylinder}{19}{chapter.6}
+\contentsline {section}{\numberline {6.1}Theory}{19}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{20}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{20}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Simulations}{20}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{21}{subsection.6.2.1}
+\contentsline {subsubsection}{Simulation at Reynolds Number 10}{21}{subsubsection*.18}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{21}{subsubsection*.22}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{21}{subsubsection*.26}
+\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{24}{subsection.6.2.2}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{24}{subsubsection*.28}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{24}{subsubsection*.34}
+\contentsline {chapter}{\numberline {7}Discussion}{27}{chapter.7}
+\contentsline {chapter}{\numberline {8}Ehrenwörtliche Erklärung}{VI}{chapter.8}
+\contentsline {paragraph}{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.37}
+\contentsline {chapter}{\numberline {9}Declaration of Academic Integrity}{VII}{chapter.9}
+\contentsline {paragraph}{Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.38}
+\contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.41}
+\contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.44}
 \contentsline {chapter}{\numberline {A}Anhang}{XI}{appendix.A}
 \contentsline {section}{\numberline {A.1}Ein Anhang}{XI}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Teil eines Anhangs}{XI}{subsection.A.1.1}

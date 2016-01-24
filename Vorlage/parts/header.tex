@@ -54,6 +54,7 @@
 \usepackage[babel, german=quotes]{csquotes} 
 % Einstellung der Anführungszeichen bei Zitaten
 \usepackage[backend=biber, style=numeric-comp, bibstyle=numeric, citestyle=numeric]{biblatex}
+\addbibresource{bibliography.bib}
 \usepackage{graphicx}
 %\usepackage{subfigure}
 \usepackage{caption}
@@ -82,7 +83,9 @@
 %\tikzexternalize
 %\tikzset{external/force remake}
 
-
+\usepackage{multirow}
+\usepackage{rotating}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
 
 % biblatex ist ein Paket zur Ausgabe und Formatierung von Zitaten und von Literaturverzeichnissen
 %backend=biber		% Einstellung für die Verwendung von biber als Bibliographie-Prozessor
