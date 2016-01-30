@@ -1,8 +1,0 @@
-[0] Config.pm:327> INFO - This is Biber 2.2
-[1] Config.pm:330> INFO - Logfile is 'Vorlage.blg'
-[68] biber-MSWIN:283> INFO - === 
-[69] Biber.pm:334> INFO - Reading 'Vorlage.bcf'
-[257] Biber.pm:677> INFO - Found 3 citekeys in bib section 0
-[296] Biber.pm:3054> INFO - Processing section 0
-[331] Biber.pm:3193> INFO - Looking for bibtex format file 'Vorlage.bib' for section 0
-[344] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8

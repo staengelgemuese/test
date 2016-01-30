@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{titelseite.0}{Titelseite}{}% 1
+\BOOKMARK [0][-]{impressum.0}{Impressum}{}% 2
+\BOOKMARK [0][-]{toc.0}{Inhaltsverzeichnis}{}% 3
+\BOOKMARK [0][-]{chapter.1}{1 Motivation}{}% 4
+\BOOKMARK [0][-]{chapter.2}{2 Fundamentals}{}% 5
+\BOOKMARK [1][-]{section.2.1}{2.1 Essential equations}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Equations of State}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Ideal Gas Law}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Navier-Stokes Equations}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{2.2 Dimensionless Measures}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Non-dimensional Ideal Gas Law}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Dimensionless Navier-Stokes Equation}{section.2.2}% 12
+\BOOKMARK [0][-]{chapter.3}{3 The Runge-Kutta Discontinous Galerkin Method}{}% 13
+\BOOKMARK [1][-]{section.3.1}{3.1 DG space discretization}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Weak formulation}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Numerical fluxes}{section.3.1}% 16
+\BOOKMARK [1][-]{section.3.2}{3.2 RK time discretization}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{4 Immersed Boundaries}{}% 18
+\BOOKMARK [1][-]{section.4.1}{4.1 The DG Scheme with Immersed Boundaries}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretisation with Immersed Boundaries}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{4.3 Cell Agglomeration}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{5 Parametric study of a flow around a cylinder}{}% 22
+\BOOKMARK [1][-]{section.5.1}{5.1 Robustness study}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{5.2 Convergence study of mesh size and polynomial degree}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{6 The viscous cylinder}{}% 25
+\BOOKMARK [1][-]{section.6.1}{6.1 Theory}{chapter.6}% 26
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The Laminar Steady Regime}{section.6.1}% 27
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Laminar Vortex Shedding}{section.6.1}% 28
+\BOOKMARK [1][-]{section.6.2}{6.2 Simulations}{chapter.6}% 29
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Steady State Simulations \(Re < 40-50\)}{section.6.2}% 30
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 31
+\BOOKMARK [0][-]{chapter.7}{7 Discussion}{}% 32
+\BOOKMARK [0][-]{chapter.8}{8 Bibliography}{}% 33
+\BOOKMARK [0][-]{chapter.9}{9 Ehrenwörtliche Erklärung}{}% 34
+\BOOKMARK [0][-]{chapter.10}{10 Declaration of Academic Integrity}{}% 35
+\BOOKMARK [0][-]{section*.39}{List of Figures}{}% 36
+\BOOKMARK [0][-]{section*.42}{List of Tables}{}% 37
+\BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 38
+\BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 39

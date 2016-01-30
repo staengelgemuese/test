@@ -1,0 +1,200 @@
+\chapter{The Runge-Kutta Discontinous Galerkin Method}
+	This thesis deals with a software that uses a Runge-Kutta Discontinous Galerkin (RKDG) method for the numerical approximation of compressible flows. The RKDG method is split into the DG method for space discretization and the RK method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
+	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{Mueller.2014}.
+	\section{DG space discretization}
+		First, we will study the Discontinous Galerkin method which can be seen as combination of the Finite Volume and the Finite Element method.
+
+		As a simple example we will consider the scalar conservation law 
+		
+		\begin{align}
+			\frac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0
+			\label{pde}
+		\end{align}	
+		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{Mueller.2014} 
+		\subsection{Weak formulation}
+		Our first step of the DG method will be transfering the partial differential equation \eqref{pde} into a weak formulation.
+		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
+		After having discretized our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
+		In order to obtain the weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:
+		
+		\begin{align*}
+			\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) &= 0 \\
+			\dfrac{\partial c}{\partial t}\Phi_{i,j} + \nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} &= 0 \\
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV + \int\limits_{\mathcal{K}_i}\nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} \, dV &= 0\\
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
+			\int\limits_{\partial \mathcal{K}_i} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
+			- \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c\right)\nabla\Phi_{i,j} \, dV &= 0.
+		\end{align*}
+		
+		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite the equation as
+		
+		\begin{align}
+				\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
+				\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
+				- \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c\right)\nabla\Phi_{i,j} \, dV &= 0.
+				\label{schwacheForm}
+		\end{align}
+				
+		\subsection{Numerical fluxes}
+		
+		As the concentration $c$ is unknown, we need to introduce a modal approximation
+		\begin{align}
+			c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \bar{c} (\mathbf{x} , t)\mid _{\mathcal{K}_i} = c_i (\boldmath{x} , t) = \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})
+		\end{align}
+		with the Galerkin approach of identical Ansatz and test functions. 
+		For we do not enforce continuity on $\mathcal{E}_{i,e}$ and thus 
+		\begin{align}
+			c_i \mid_{\mathcal{E}_{i,e}}=: c^- \neq c^+ := c_{n(i,e)} \mid_{\mathcal{E}_{i,e}}
+		\end{align}
+		we cannot simply insert the approximation into equation \eqref{schwacheForm}.
+		Therefore we will introduce a monotone, Lipschitz continuous numerical flux function $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
+		\begin{align}
+			f(c^-, c^+, \mathbf{n}) = - f(c^-, c^+, -\mathbf{n}).
+		\end{align}
+		
+		By including these definitions into \eqref{schwacheForm} we receive
+		
+		\begin{align}
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+			\underbrace{\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV}_{=:(\mathbf{f_i})_j} = 0
+			\label{schwacheFormFlux}
+		\end{align}
+		with the discrete operator $\mathbf{f_i}=\mathbf{f_i}(t, \mathbf{c_i})\in\mathbb{R}$.
+		
+		Some well-known examples of numerical fluxes contain \cite{Cockburn.2014}:
+		\begin{itemize}
+			\item The Godunov flux 
+			\item The Engquist-Osher flux
+			\item The Lax-Friedrichs flux
+			\item The local Lax-Friedrichs flux
+			\item The Roe flux with 'entropy flux',
+		\end{itemize}
+		whereby we will attend to the local Lax-Friedrichs or Rusanov flux, which is defined as
+		\begin{align}
+			f(c^-, c^+, \mathbf{n}) = \dfrac{\mathbf{f}(c^-)+\mathbf{f}(c^+)}{2} \cdot \mathbf{n} -\dfrac{C_R}{2}(c^+-c^-)
+		\end{align}
+		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed
+		\begin{align}
+			C_R = \max(|\mathbf{u^+}\cdot \mathbf{n}|+a^-,|\mathbf{u^-}\cdot \mathbf{n}|+a^+)
+		\end{align}
+		with $u^\pm$ and $a^\pm$ denoting the normal velocity and the local speed of sound at the edges.
+		As the Rusanov flux has a high stability it will be used disregarding that it is prone to numerical diffusion.
+		
+	%	\subsection{Diagonalization of the mass matrix}
+	%	\subsection{Convergence}
+	\section{RK time discretization}
+	For we have studied the spatial discretization, we will now attend to the time discretization, using the Runge-Kutta method.\\\\
+
+	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled ODEs.
+	
+	\begin{align*}
+		\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+		\underbrace{\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV}_{=:(\mathbf{f_i})_j} = 0.
+	\end{align*}
+	
+	The first term of the equation above can be reformulated as 
+	\begin{align*}
+		\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV &= \int\limits_{\mathcal{K}_i} \dfrac{\partial}{\partial t} \left(\sum\limits_{k=0}^{M}c_{i,k}(t)\Phi_{i,k}(\mathbf{x})\right)\Phi_{i,j} \, dV \\
+		&= \sum\limits_{k=0}^{M}\dfrac{\partial c_{i,k}}{\partial t}\underbrace{\int\limits_{\mathcal{K}_i}\Phi_{i,k}\Phi_{i,j}\, dV}_{=: (\mathbf{M_i})_{k,j}} \\
+		&= \mathbf{M_i} \dfrac{\partial \mathbf{c_i}}{\partial t}
+	\end{align*}
+	thus leading to 
+	\begin{align}
+		\mathbf{M_i} \dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{f_i} = 0
+	\end{align}
+	with $\mathbf{M_i}\in \mathbb{R}^{M,M}$ being a cell-local symmetric mass matrix associated with $\mathcal{K}_i$. As we have assumed an orthonormal basis $\left\{\Phi_{i,j}\right\}_{j=1,...,M}$ thus reducing the mass matrix to the identity matrix $I$, the ODEs simplify to
+	\begin{align}
+		\dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{M_i^{-1}f_i}&=\mathbf{0}\\
+		\dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{f_i}&=\mathbf{0}.	
+	\end{align}
+	
+	Using an explicit RK method of Order S we can now advance this system of ODEs and calculate the new coefficients from
+	
+	\begin{align}
+		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \sum\limits_{s=1}^{S}\mathbf{(\alpha)_s k_s}, 
+	\end{align}
+	
+	with a known solution at $t_0$ to a new instant $t_1$ and $\Delta t = t_1 - t_0$, where
+	
+	\begin{align}
+		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
+	\end{align}
+	
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each RK method. The coefficients of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
+\begin{table}[h]
+	\begin{equation*}
+		% \label{eq:19}
+		\begin{array}{l | c c c c c}
+			\rule{0pt}{2,3ex} 0      \quad &             &               &              &         &   \\
+			\rule{0pt}{2,3ex} \beta_2    \quad & \quad \Gamma_{21}  &              &              &         &   \\
+			\rule{0pt}{2,3ex} \beta_3    \quad & \quad \Gamma_{31}  & \quad \Gamma_{32}  &              &         &   \\
+			\rule{0pt}{2,3ex} \vdots \quad & \quad \vdots & \quad \vdots & \quad \ddots &         &   \\
+			\rule{0pt}{2,3ex} \beta_s    \quad & \quad \Gamma_{s1}  & \quad \Gamma_{s2}  & \quad \cdots & \quad \Gamma_{s,s-1} & \\[2,0ex] \hline
+			\rule{0pt}{3,3ex}              & \quad \alpha_{1}  & \quad \alpha_{2}    & \quad \cdots & \quad \alpha_{s-1}  & \quad \alpha_{s}
+		\end{array}
+	\end{equation*}
+	\caption{Butcher tableau for the explicit Runge–Kutta method.}
+	\label{tab:RKexplicit}
+\end{table}		
+
+\begin{table}
+	\centering
+	\def\arraystretch{1.5}
+	\begin{subfigure}[b]{0.18\textwidth}		
+		\begin{tabular}{l|c}	
+			0 & \\
+			\hline
+			& 1
+		\end{tabular}
+		\caption{Explicit Euler \\(first order)}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[b]{0.24\textwidth}		
+		\begin{tabular}{l|c c}	
+			0 & &\\
+			1 & 1 & \\
+			\hline
+			& $\tfrac{1}{2}$ & $\tfrac{1}{2}$\\
+		\end{tabular}
+		\caption{Trapezoidal rule \\(second order)}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[b]{0.26\textwidth}		
+		\begin{tabular}{l|c c c}	
+			0 & & &\\
+			$\tfrac{1}{3}$ &$\tfrac{1}{3}$& &\\
+			$\tfrac{2}{3}$ & 0 & $\tfrac{1}{3}$ & \\
+			\hline
+			& $\tfrac{1}{4}$ & 0 & $\tfrac{3}{4}$\\
+		\end{tabular}
+		\caption{Third order TVD \\(third order)}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[b]{0.29\textwidth}		
+		\begin{tabular}{l|c c c c}	
+			0 & & & &\\
+			$\tfrac{1}{2}$ &$\tfrac{1}{2}$& & &\\
+			$\tfrac{1}{2}$ & 0 & $\tfrac{1}{2}$ & &\\
+			1 & 0 & 0 & 1 &\\
+			\hline
+			& $\tfrac{1}{6}$ & $\tfrac{2}{6}$ & $\tfrac{2}{6}$ & $\tfrac{2}{6}$\\
+		\end{tabular}
+		\caption{Classical RK \\(fourth order)}
+	\end{subfigure}
+	\caption{Butcher Tableaus for different orders of RK}
+	\label{RKtableaus}
+\end{table}		
+	
+	A well-known stability criterion according the explicit Euler time discretization for linear, hyperbolic PDEs, namely the Courant-Friedrichs-Lewy (CFL) criterion, restrains the temporal step-size $\Delta t$:
+	
+	\begin{align}
+		\Delta t \leq c_{CFL} \dfrac{h}{\underline{u}}
+	\end{align}
+	
+	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{CFL} \leq 1$ depending on the applied spatial discretization procedure.
+	
+	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use 
+	\begin{align}
+		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
+	\end{align}
+	as a sufficiently accurate estimate for the stability criterion in this thesis. 
