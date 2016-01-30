@@ -21,6 +21,7 @@
 	\input{parts/abkuerzungenundsymbole}
 
 % Beginn des eigentlichen Dokumentenkörpers
+
 	\begin{document}
 		\pagestyle{headings}			% Setzt den Seitenstil (siehe TUD-Design Dokumentation)
 		\pagenumbering{Roman}		% Römische Seitenzahlen
@@ -29,10 +30,10 @@
 			\maketitle
 		% Kontaktseite einfügen und PDF-Lesezeichen setzen
 			\pdfbookmark[0]{Impressum}{impressum}
-			\include{parts/impressum}
+		%	\include{parts/impressum}
 		% Abstract einfügen	
-			\include{parts/abstract}		% TUD-Design Abstract/Zusammenfassung
-			\include{parts/abstractalternativ}		% klassisches Abstract
+		%	\include{parts/abstract}		% TUD-Design Abstract/Zusammenfassung
+		%	\include{parts/abstractalternativ}		% klassisches Abstract
 		% Inhaltsverzeichnis einfügen und PDF-Lesezeichen setzen
 			\pdfbookmark[0]{Inhaltsverzeichnis}{toc}	% PDF-Lesezeichen für das Inhaltsverzeichnis setzen, da dies nicht automatisch erfolgt
 			\tableofcontents						% Inhaltsverzeichnis erzeugen
@@ -51,10 +52,11 @@
 			\setcounter{page}{\value{savecounter}}		%Aufruf der zuvor gespeicherten zuletzt verwendeten römischen Seitenzahl
 		% Literaturverzeichnis einfügen
 		    \cite{Blomeke.2006}
+		   % \nocite{*}
 			\printbibliography
 		% Ehrenwörtliche Erklärung einfügen (je nach dem eine Variante auskommentieren)
-			\include{parts/ehrenwortde}
-			\include{parts/ehrenworten}
+		%	\include{parts/ehrenwortde}
+		%	\include{parts/ehrenworten}
 		% Abbildungsverzeichnis einfügen
 			\listoffigures
 		% Tabellenverzeichnis einfügen

@@ -1,18 +1,8 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Vorlage.aux
-A level-1 auxiliary file: parts/impressum.aux
-A level-1 auxiliary file: parts/abstract.aux
-A level-1 auxiliary file: parts/abstractalternativ.aux
-A level-1 auxiliary file: parts/motivation.aux
-A level-1 auxiliary file: parts/fundamentals.aux
-A level-1 auxiliary file: parts/dgmethod.aux
-A level-1 auxiliary file: parts/immersedboundaries.aux
-A level-1 auxiliary file: parts/ibmcylinder.aux
-A level-1 auxiliary file: parts/viscouscylinder.aux
-A level-1 auxiliary file: parts/discussion.aux
-A level-1 auxiliary file: parts/ehrenwortde.aux
-A level-1 auxiliary file: parts/ehrenworten.aux
-A level-1 auxiliary file: parts/anhangvorlage.aux
-I found no \citation commands---while reading file Vorlage.aux
-I found no \bibdata command---while reading file Vorlage.aux
-I found no \bibstyle command---while reading file Vorlage.aux
-(There were 3 error messages)
+[0] Config.pm:327> INFO - This is Biber 2.2
+[1] Config.pm:330> INFO - Logfile is 'Vorlage.blg'
+[68] biber-MSWIN:283> INFO - === 
+[69] Biber.pm:334> INFO - Reading 'Vorlage.bcf'
+[257] Biber.pm:677> INFO - Found 3 citekeys in bib section 0
+[296] Biber.pm:3054> INFO - Processing section 0
+[331] Biber.pm:3193> INFO - Looking for bibtex format file 'Vorlage.bib' for section 0
+[344] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8

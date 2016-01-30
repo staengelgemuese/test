@@ -52,9 +52,12 @@
 \usepackage{siunitx}
 % Paket zur korrekten und einheitlichen Darstellung von Zahlen und Einheiten (Verwendung siehe Dokumenation)
 \usepackage[babel, german=quotes]{csquotes} 
+\RequirePackage[backend=biber, style=ieee, citestyle=ieee, bibstyle=ieee, firstinits=true, maxnames=3%authortitle-icomp
+]{biblatex} %backend=biber
+\bibliography{Vorlage}
 % Einstellung der Anführungszeichen bei Zitaten
-\usepackage[backend=biber, style=numeric-comp, bibstyle=numeric, citestyle=numeric]{biblatex}
-\addbibresource{bibliography.bib}
+%\usepackage[backend=biber, style=numeric-comp, bibstyle=numeric, citestyle=numeric]{biblatex}
+%\addbibresource{bibliography.bib}
 \usepackage{graphicx}
 %\usepackage{subfigure}
 \usepackage{caption}
@@ -87,6 +90,7 @@
 \usepackage{rotating}
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
 
+
 % biblatex ist ein Paket zur Ausgabe und Formatierung von Zitaten und von Literaturverzeichnissen
 %backend=biber		% Einstellung für die Verwendung von biber als Bibliographie-Prozessor
 %style=numeric-comp		% Einstellung des
@@ -99,7 +103,7 @@ nonumberlist, 			% keine Anzeige von Seitenzahlen der Einträge im Abkürzungs-/
 nogroupskip, 			% keine Gruppierung der Einträge nach Anfangsbuchstaben & keine zusätzlicher vertikaler Abstand bei Änderung des Anfangsbuchstabens
 acronym, 			% ein Abkürzungsverzeichnis erstellen
 toc, 					% Einträge im Inhaltsverzeichnis für das Abkürzungs- und Symbolverzeichnis
-translate=babel 		% Übersetzung von Überschriften, etc. ins Deutsche
+translate=babel, 		% Übersetzung von Überschriften, etc. ins Deutsche
 ]{glossaries}			% Paket zur Erstellung von Abkürzungs-, Symbolverzeichnissen, etc.
 \usepackage{blindtext}		% Ermögicht die einfache Verwendung von Beispieltext zu Testzwecken
 \usepackage[xindy]{imakeidx}
@@ -145,8 +149,7 @@ translate=babel 		% Übersetzung von Überschriften, etc. ins Deutsche
 % 	Anpassung des Literaturverzeichnisses		%
 %										 %
 % % % % % % % % % % % % % % % % % % % 
-
-\addbibresource{bibliography.bib}		
+	
 % läd die Literaturdatenbank aus dem aktuellen Arbeitsverzeichnis
 \ExecuteBibliographyOptions{%
 	url = false,
