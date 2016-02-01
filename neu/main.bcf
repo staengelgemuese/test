@@ -2215,10 +2215,10 @@
     <bcf:datasource type="file" datatype="bibtex">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Mueller.2014</bcf:citekey>
-    <bcf:citekey order="2">Mueller.2014</bcf:citekey>
-    <bcf:citekey order="3">Mueller.2014</bcf:citekey>
-    <bcf:citekey order="4">Cockburn.2014</bcf:citekey>
+    <bcf:citekey order="1">mueller2014</bcf:citekey>
+    <bcf:citekey order="2">mueller2014</bcf:citekey>
+    <bcf:citekey order="3">mueller2014</bcf:citekey>
+    <bcf:citekey order="4">Cockburn1998</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

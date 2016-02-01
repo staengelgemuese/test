@@ -4,12 +4,19 @@ fclose(fid)
 C = C{:};
 
 [x,y]=size(C);
+email = '[a-z_]+@[a-z]+\.(com|net)';
+result = result(:);
 
-index = strfind(C,'@');
-index = find(~cellfun(@isempty,index));
+for i=0:x
+    
+    result(i) = regexp(C(i), email, 'match')
+end
 
-mist = strfind(C,'@font-face');
-mist = find(~cellfun(@isempty,mist));
-
-result = C(index)
-C(mist)
+% index = strfind(C,'@');
+% index = find(~cellfun(@isempty,index));
+% 
+% mist = strfind(C,'@font-face');
+% mist = find(~cellfun(@isempty,mist));
+% 
+% result = C(index)
+% C(mist)

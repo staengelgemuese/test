@@ -1,6 +1,6 @@
 \chapter{The Runge-Kutta Discontinous Galerkin Method}
 	This thesis deals with a software that uses a Runge-Kutta Discontinous Galerkin (RKDG) method for the numerical approximation of compressible flows. The RKDG method is split into the DG method for space discretization and the RK method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
-	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{Mueller.2014}.
+	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
 	\section{DG space discretization}
 		First, we will study the Discontinous Galerkin method which can be seen as combination of the Finite Volume and the Finite Element method.
 
@@ -10,7 +10,7 @@
 			\frac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0
 			\label{pde}
 		\end{align}	
-		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{Mueller.2014} 
+		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
 		\subsection{Weak formulation}
 		Our first step of the DG method will be transfering the partial differential equation \eqref{pde} into a weak formulation.
 		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
@@ -61,7 +61,7 @@
 		\end{align}
 		with the discrete operator $\mathbf{f_i}=\mathbf{f_i}(t, \mathbf{c_i})\in\mathbb{R}$.
 		
-		Some well-known examples of numerical fluxes contain \cite{Cockburn.2014}:
+		Some well-known examples of numerical fluxes contain \cite{Cockburn1998}:
 		\begin{itemize}
 			\item The Godunov flux 
 			\item The Engquist-Osher flux
