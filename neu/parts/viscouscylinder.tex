@@ -196,17 +196,17 @@ The flow around a viscous cylinder has been approached by many papers both analy
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=100$                              & Source                             & 2D/3D & $St$ & $C_D$ & $C_L$\\ \hline
 		\rule{0pt}{2,3ex}\multirow{7}{*}{Numerical - Incompressible} & Gresho et al. {[}1984{]}            & 2D    & 0.18     & 1.76 & -   \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.056$)                 & 2D    & 0.169     & 1.38 \pm 0.010  &  \pm  0.337 \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.023$)                  & 2D    & 0.169     & 1.34 \pm 0.009  &  \pm 0.333 \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.056$)                 & 2D    & 0.169     & 1.38 \plusminus 0.010  &  \plusminus  0.337 \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.023$)                  & 2D    & 0.169     & 1.34 \plusminus 0.009  &  \plusminus 0.333 \\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & 2D    & 0.165     & 1.253  & -  \\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& Saiki et al. {[}1996{]}                 & 2D    & 0.171     & 1.26  &  - \\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & 3D    & 0.164     & 1.240  & -  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Liu et al. {[}1998{]}          & 3D    & 0.165     & 1.35 \pm 0.012  & \pm 0.339  \\ \hline
+		\rule{0pt}{2,3ex}& Liu et al. {[}1998{]}          & 3D    & 0.165     & 1.35 \plusminus 0.012  & \plusminus 0.339  \\ \hline
 		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Berger et al. {[}1972{]}       & -     & 0.16-0.17    & -    & -\\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& Clift et al. {[}1978{]}                 & -    & -     & 1.24  &  - \\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& Williamson {[}1996{]}                 & -     & 0.164    & -   & - \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} \newline (Ma = 0.1) & 3D    & 0.165     & 1.32 \pm 0.01    & \pm 0.32 \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 0.167     & 1.371 \pm 0.011   & \pm 0.333 \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} \newline (Ma = 0.1) & 3D    & 0.165     & 1.32 \plusminus 0.01    & \plusminus 0.32 \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 0.167     & 1.371 \plusminus 0.011   & \plusminus 0.333 \\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4  &   \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $St$, $C_D$ and $C_L$, \todo{modified Lawrence}}
@@ -238,9 +238,9 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\begin{figure}[htp]	
 					\centering
 					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
-					\end{axis}	
+						\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+						\addplot table[ x = time, y = d, mark=none] {data/CLRE100.dat};
+						\end{axis}	
 					\end{tikzpicture}
 					\label{shijfterror}	
 					\caption{Convergence Plot}

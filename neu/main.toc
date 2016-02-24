@@ -35,10 +35,10 @@
 \contentsline {subsubsection}{Simulation at Reynolds Number 200}{24}{subsubsection*.32}
 \contentsline {chapter}{\numberline {7}Discussion}{28}{chapter.7}
 \contentsline {chapter}{\numberline {8}Bibliography}{V}{chapter.8}
-\contentsline {chapter}{\numberline {9}Ehrenwörtliche Erklärung}{VI}{chapter.9}
-\contentsline {paragraph}{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.35}
+\contentsline {chapter}{\numberline {9}Ehrenw\IeC {\"o}rtliche Erkl\IeC {\"a}rung}{VI}{chapter.9}
+\contentsline {paragraph}{Erkl\IeC {\"a}rung zur Abschlussarbeit gem\IeC {\"a}\IeC {\ss } \IeC {\textsection } 22 Abs. 7 APB der TU Darmstadt}{VI}{paragraph*.35}
 \contentsline {chapter}{\numberline {10}Declaration of Academic Integrity}{VII}{chapter.10}
-\contentsline {paragraph}{Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.36}
+\contentsline {paragraph}{Thesis Statement pursuant to \IeC {\textsection } 22 paragraph 7 of APB TU Darmstadt}{VII}{paragraph*.36}
 \contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.39}
 \contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.42}
 \contentsline {chapter}{\numberline {A}Anhang}{XI}{appendix.A}

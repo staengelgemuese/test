@@ -2,8 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Butcher tableau for the explicit Runge–Kutta method.\relax }}{10}{table.caption.8}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Butcher tableau for the explicit Runge\IeC {\textendash }Kutta method.\relax }}{10}{table.caption.8}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Explicit Euler (first order)\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Trapezoidal rule (second order)\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Third order TVD (third order)\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Classical RK (fourth order)\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{10}{table.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
