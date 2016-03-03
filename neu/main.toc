@@ -25,10 +25,10 @@
 \contentsline {section}{\numberline {6.1}Theory}{19}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{20}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{20}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Simulations}{20}{section.6.2}
+\contentsline {section}{\numberline {6.2}Simulations}{21}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{21}{subsection.6.2.1}
 \contentsline {subsubsection}{Simulation at Reynolds Number 20}{21}{subsubsection*.18}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{21}{subsubsection*.21}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{23}{subsubsection*.21}
 \contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{23}{subsection.6.2.2}
 \contentsline {subsubsection}{Simulation at Reynolds Number 100}{23}{subsubsection*.23}
 \contentsline {subsubsection}{Simulation at Reynolds Number 200}{23}{subsubsection*.29}
