@@ -66,7 +66,7 @@
 
 	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in \ref{fig:case14detail}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in \ref{fig:case14detail} and the flow after the correction in \ref{fig:case14detailneu}. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell in \ref{fig:case14detail}.
 	
-
+\todo{ALIGN!}
 	\begin{figure}[htp]
 		\centering
 		\begin{minipage}[b]{0.3\textwidth}

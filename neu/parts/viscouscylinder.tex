@@ -1,5 +1,5 @@
 \chapter{The viscous cylinder}
-The flow around a viscous cylinder has been approached by many papers both analytically \todo{wirklich?} and numerically, e.g. \todo{literatur}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
+The flow around a viscous cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
 	The flow around a viscous cylinder can be divided into different sections depending on the flow specific Reynolds number. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
@@ -62,36 +62,36 @@ The flow around a viscous cylinder has been approached by many papers both analy
 				\label{fig:wakeSeparation}
 			\end{figure} 
 	It can be found from examining the velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
-	\subsubsection{Simulation at Reynolds Number 10}
-
-	\begin{figure}[htp]	
-		\centering
-		\begin{tikzpicture}
-		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128, ymax = 2.7]
-		\addplot table[ x = meshSize, y =C_D] {data/re10.dat};
-		\addlegendentry{$P=1$}
-		\addplot[mark=none, red] coordinates {(32, 2.5) (128, 2.5)};
-		\addlegendentry{Constant Value}
-		\end{semilogxaxis}	
-		\end{tikzpicture}
-		\label{shivfjfterror}	
-		\caption{Convergence Plot}
-	\end{figure}
-	
-	\begin{figure}[htp]	
-		\centering
-		\begin{tikzpicture}
-		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128]
-		\addplot table[ x = meshSize, y =C_L] {data/re10.dat};
-		\addlegendentry{$P=1$}
-		\addplot[mark=none, red] coordinates {(32, 0) (128, 0)};
-		\addlegendentry{Constant Value}
-		\end{semilogxaxis}	
-		\end{tikzpicture}
-		\label{shivfjftqerror}	
-		\caption{Convergence Plot}
-	\end{figure}
-
+%	\subsubsection{Simulation at Reynolds Number 10}
+%
+%	\begin{figure}[htp]	
+%		\centering
+%		\begin{tikzpicture}
+%		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128, ymax = 2.7]
+%		\addplot table[ x = meshSize, y =C_D] {data/re10.dat};
+%		\addlegendentry{$P=1$}
+%		\addplot[mark=none, red] coordinates {(32, 2.5) (128, 2.5)};
+%		\addlegendentry{Constant Value}
+%		\end{semilogxaxis}	
+%		\end{tikzpicture}
+%		\label{shivfjfterror}	
+%		\caption{Convergence Plot}
+%	\end{figure}
+%	
+%	\begin{figure}[htp]	
+%		\centering
+%		\begin{tikzpicture}
+%		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 32, xmax = 128]
+%		\addplot table[ x = meshSize, y =C_L] {data/re10.dat};
+%		\addlegendentry{$P=1$}
+%		\addplot[mark=none, red] coordinates {(32, 0) (128, 0)};
+%		\addlegendentry{Constant Value}
+%		\end{semilogxaxis}	
+%		\end{tikzpicture}
+%		\label{shivfjftqerror}	
+%		\caption{Convergence Plot}
+%	\end{figure}
+%
 %	\begin{table}[htp]
 %		\centering
 %		\begin{tabular}{|c||c|c|c|c}

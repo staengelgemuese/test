@@ -40,7 +40,7 @@
 		
 		
 		\subsection{Navier-Stokes Equations}
-		The compressible Navier-Stkoes equations (CNS) in conservative forms read as 
+		The compressible Navier-Stokes equations (CNS) in conservative forms read as 
 		\begin{align}
 			\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B},
 		\end{align}
@@ -88,26 +88,25 @@
 	
 	
 	\section{Dimensionless Measures}
-	Dimensionless measures are very useful 
-	\todo{wofür benötigt asterisk}
+	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R \todo{Krämer-Eis zitieren}. All other reference quantities can be derived from those. In the following all dimensionless quantities will be marked with an asterisk ()*:
 	
 	\begin{align}
 		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\
 		 \mu^* &= \dfrac{1}{\mu_\infty} \cdot \mu , & k^* &= \dfrac{1}{k_\infty} \cdot k,&  T^* &= \dfrac{R}{V_\infty^2}\cdot T, & F_j^*& = \dfrac{1}{g_\infty} \cdot F_j, & \rho E^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot \rho E, \\
-		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q &
+		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q &.
 	\end{align}
 	
-	The dimensionless operators 
+	In order to derive the non-dimensional form of the CNS, we also need the dimensionless operators:
 	
 	\begin{align}
 		\frac{\partial}{\partial t}= \frac{\partial t^*}{\partial t} \frac{\partial}{\partial t^*} &= \frac{V_\infty}{L} \frac{\partial}{\partial t^*}, \\
 		\frac{\partial}{\partial x_i} = \frac{\partial x_i^*}{\partial x_i} \frac{\partial}{\partial x_i^*} &= \frac{1}{L} \frac{\partial}{\partial x_i^*}, \\
-		\nabla &= \frac{1}{L} \nabla^*
+		\nabla &= \frac{1}{L} \nabla^*.
 	\end{align}
 	
 		
 	\subsection{Non-dimensional Ideal Gas Law}
-	In order to close the system of equations we need the ideal gas law in dimensionless form: 
+	For a closed system of equations we have to use the ideal gas law in dimensionless form: 
 	
 	\begin{align}
 		p^* &= \rho^* (\gamma - 1) e^* \\
@@ -115,13 +114,13 @@
 	\end{align}	
 	
 	\subsection{Dimensionless Navier-Stokes Equation}
-	Using the dimensionless measures and operators and defining the dimensionless relations
+	As we now have all required measures and operator we can use them to define the dimensionless relations
 	\begin{description}
 		\item[Reynolds Number] $\text{Re} = \dfrac{\rho_\infty V_\infty L}{\mu_\infty} \propto \dfrac{\text{inertia forces}}{\text{viscous forces}}$,
-		\item[Froude Number] $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,
-		\item[Prandtl Number] $\text{Pr} = \dfrac{ \mu_\infty c_p}{k_\infty} \propto \dfrac{\text{viscous diffusion rate}}{\text{thermal diffusion rate}}$,
+		\item[Froude Number] \quad $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,
+		\item[Prandtl Number]\quad $\text{Pr} = \dfrac{ \mu_\infty c_p}{k_\infty} \propto \dfrac{\text{viscous diffusion rate}}{\text{thermal diffusion rate}}$.
 	\end{description}
-	we receive the dimensionless Navier-Stokes equations. As they only depend on dimensionless quantities we can drop the asterisk:
+	Putting all together we receive the dimensionless Navier-Stokes equations. As they only depend on non-dimensional quantities we can drop the asterisk:
 	
 	\begin{align}
 		\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B}
