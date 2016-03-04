@@ -1,4 +1,5 @@
 \chapter{The Runge-Kutta Discontinous Galerkin Method}
+\label{rkdgm}
 	This thesis deals with a software that uses a Runge-Kutta Discontinous Galerkin (RKDG) method for the numerical approximation of compressible flows. The RKDG method is split into the DG method for space discretization and the RK method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
 	\section{DG space discretization}
@@ -138,6 +139,7 @@
 \end{table}		
 
 \todo{Align den kram!}
+\captionsetup[table]{labelformat=empty}
 \begin{table}
 	\centering
 	\def\arraystretch{1.5}
@@ -182,6 +184,7 @@
 		\end{tabular}
 		\caption{Classical RK \\(fourth order)}
 	\end{minipage}
+	\captionsetup[table]{labelformat=default}
 	\caption{Butcher Tableaus for different orders of RK}
 	\label{RKtableaus}
 \end{table}		

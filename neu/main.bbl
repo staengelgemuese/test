@@ -55,7 +55,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{chapter}{An introduction to the Discontinuous Galerkin method for convection-dominated problems}
-      \field{isbn}{9783540498049}
+      \field{isbn}{978-3-540-49804-9}
       \field{title}{Advanced Numerical Approximation of Nonlinear Hyperbolic Equations: Lectures given at the 2nd Session of the Centro Internazionale Matematico Estivo (C.I.M.E.) held in Cetraro, Italy, June 23--28, 1997}
       \field{year}{1998}
       \field{pages}{151\bibrangedash 268}
@@ -66,6 +66,74 @@
       \verb{url}
       \verb http://dx.doi.org/10.1007/BFb0096353
       \endverb
+    \endentry
+    \entry{williamson1996vortex}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad766b33915c0d87e6d2ad54b69151c5}{Williamson}{W\bibinitperiod}{Charles\bibnamedelima HK}{C\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{ad766b33915c0d87e6d2ad54b69151c5}
+      \strng{fullhash}{ad766b33915c0d87e6d2ad54b69151c5}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of fluid mechanics}
+      \field{number}{1}
+      \field{title}{Vortex dynamics in the cylinder wake}
+      \field{volume}{28}
+      \field{year}{1996}
+      \field{pages}{477\bibrangedash 539}
+      \range{pages}{63}
+    \endentry
+    \entry{FLM:14223}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d6fbe62edce0860d60c965ca1866ba7f}{Persillon}{P\bibinitperiod}{Hélène}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=6af4e928f4a5ff2cb9370cd5c6071cd6}{Braza}{B\bibinitperiod}{Marianna}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9afd040bee9648d8cadecdc422d6e3d4}
+      \strng{fullhash}{9afd040bee9648d8cadecdc422d6e3d4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1469-7645}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{month}{6}
+      \field{title}{Physical analysis of the transition to turbulence in the wake of a circular cylinder by three-dimensional Navier–Stokes simulation}
+      \field{volume}{365}
+      \field{year}{1998}
+      \field{pages}{23\bibrangedash 88}
+      \range{pages}{66}
+      \verb{doi}
+      \verb 10.1017/S0022112098001116
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article_S0022112098001116
+      \endverb
+    \endentry
+    \entry{canutoTaira}{article}{}
+      \name{author}{2}{}{%
+        {{hash=493c6cde8449a5c8383ab987fea3d9e8}{Canuto}{C\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=97ba68be32aea354c50f85f46f32a82f}{Taira}{T\bibinitperiod}{Kunihiko}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Univ Press}%
+      }
+      \strng{namehash}{621ae944cd3f917384e09794f350cc0e}
+      \strng{fullhash}{621ae944cd3f917384e09794f350cc0e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Two-dimensional compressible viscous flow around a circular cylinder}
+      \field{volume}{785}
+      \field{year}{2015}
+      \field{pages}{349\bibrangedash 371}
+      \range{pages}{23}
     \endentry
   \endsortlist
 \endrefsection

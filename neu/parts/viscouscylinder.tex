@@ -1,4 +1,5 @@
 \chapter{The viscous cylinder}
+\label{viscousCylinder}
 The flow around a viscous cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
@@ -6,7 +7,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=8cm]{overviewCylinderReynolds_Williamson.PNG}
-		\caption{Overview of Base Suction Coefficients over Reynolds Number \todo{Quelle}}
+		\caption{Overview of Base Suction Coefficients over Reynolds Number \cite{williamson1996vortex}}
 		\label{fig:overview}
 	\end{figure} 
 	The second section contains all other Reynolds number $\text{Re}> 40-50$ and thus describes the unsteady flow. It can be subdivided in several subsections:
@@ -30,7 +31,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 			\label{fig:steady}
 		\end{figure}
 	\subsection{Laminar Vortex Shedding}
-	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \ref{fig:unsteady}.
+	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \ref{fig:unsteady}. With increasing Reynolds number the amplitudes of drag and lift coefficients increases while the Strouhal number, respectively frequency, decreases.
 	
 		\begin{figure}[htp]
 			\centering
@@ -40,7 +41,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MP $+$ \textit{number of cells per direction}, eg DG2MP64 for a simulation with polynomial degree 2 and $64 \times 64$ cells.\\
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MP $+$ \textit{number of cells per direction}, e.g. DG2MP64 for a simulation with polynomial degree 2 and $64 \times 64$ cells.\\
 	 The drag and lift coefficients $C_D$ and $C_L$ are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
@@ -60,10 +61,10 @@ The flow around a viscous cylinder has been approached by many papers both exper
 			\begin{figure}[htp]
 				\centering
 				\includegraphics[height=4cm]{steadyFlow_modifiedWilliamson.PNG}
-				\caption{Wake separation length \todo{Quelle modified!}}
+				\caption{Wake separation length, from \cite{williamson1996vortex} modified }
 				\label{fig:wakeSeparation}
 			\end{figure} 
-	It can be found from examining the velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
+	It can be found from examining the x-velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
 %	\subsubsection{Simulation at Reynolds Number 10}
 %
 %	\begin{figure}[htp]	
@@ -133,7 +134,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & 2D    & 0.93     & 2.06     \\ \hline
 		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & 0.93    & -     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & 2.09     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 0.96     & 2.02     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 0.96     & 2.02     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 0.975     & 2.06     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
 	\end{tabular}	
@@ -165,7 +166,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & 2D    & 2.28     & 1.54     \\ \hline
 		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & 2.13    & -     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & 1.59     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 2.26     & 1.51     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 2.26     & 1.51     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 2.250     & 1.605     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
 	\end{tabular}	
@@ -189,7 +190,8 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\begin{align}
 		\text{St} = \dfrac{f  L_\infty}{V_\infty}.
 	\end{align}
-	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. 
+	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. For developing vortex shedding, the flow needs small perturbations that destabilize the flow towards a symmetry breaking state \cite{FLM:14223}. In reality those are given by the structure of the cylinder, the influence of the walls or the not completely straight inflow; in our simulations they come from small truncation errors and the computer's round-off errors. 
+	In order to accelerate the process until the wake begins to oscillate one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not needed in our simulations.
 	\subsubsection{Simulation at Reynolds Number 100}
 \begin{table}[htp]
 	\centering

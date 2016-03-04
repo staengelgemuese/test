@@ -1,4 +1,5 @@
-\chapter{Immersed Boundaries}
+\chapter{The Immersed Boundary Method}
+\label{immersedBoundaries}
 In the following chapter we will study the DG method with immersed boundaries. IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. It therefore makes the mesh generation much easier, as it only needs a cartesian mesh and a function that approximates the level set. Brought along with the cartesian mesh, it is easily parallelisable, thus rendering it convenient for more complex structures that shall be computed on several processors.
 	\section{The DG Scheme with Immersed Boundaries}
 	We regard an implicit representation of an immersed boundary using the level set function $\varphi$ that parts the calculation area $\Omega_h$ into 

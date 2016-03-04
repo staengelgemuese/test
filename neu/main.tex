@@ -34,6 +34,9 @@
 		% Kontaktseite einfügen und PDF-Lesezeichen setzen
 			\pdfbookmark[0]{Impressum}{impressum}
 			\include{parts/impressum}
+		% Ehrenwörtliche Erklärung einfügen (je nach dem eine Variante auskommentieren)
+		%\include{parts/ehrenwortde}
+		\include{parts/ehrenworten}
 		% Abstract einfügen	
 			\include{parts/abstract}		% TUD-Design Abstract/Zusammenfassung
 		% Inhaltsverzeichnis einfügen und PDF-Lesezeichen setzen
@@ -54,9 +57,6 @@
 		% Literaturverzeichnis einfügen
 		   % \nocite{*}
 			\printbibliography
-		% Ehrenwörtliche Erklärung einfügen (je nach dem eine Variante auskommentieren)
-			\include{parts/ehrenwortde}
-			\include{parts/ehrenworten}
 		% Abbildungsverzeichnis einfügen
 			\listoffigures
 		% Tabellenverzeichnis einfügen

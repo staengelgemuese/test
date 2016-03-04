@@ -1,15 +1,17 @@
-[0] Config.pm:327> INFO - This is Biber 2.2
+[0] Config.pm:327> INFO - This is Biber 2.3
 [0] Config.pm:330> INFO - Logfile is 'main.blg'
-[65] biber-MSWIN:283> INFO - === 
-[66] Biber.pm:334> INFO - Reading 'main.bcf'
-[248] Biber.pm:677> INFO - Found 2 citekeys in bib section 0
-[300] Biber.pm:3054> INFO - Processing section 0
-[334] Biber.pm:3193> INFO - Looking for bibtex format file 'main.bib' for section 0
-[339] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
-[342] bibtex.pm:935> INFO - Found BibTeX data source 'main.bib'
-[453] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[453] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[453] Biber.pm:2931> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[453] Biber.pm:2935> INFO - No sort tailoring available for locale 'en-US'
-[458] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[459] bbl.pm:596> INFO - Output to main.bbl
+[51] biber-MSWIN:284> INFO - === 
+[128] Biber.pm:346> INFO - Reading 'main.bcf'
+[231] Utils.pm:147> WARN - Warning: Found biblatex control file version 2.8, expected version 2.9
+[232] Biber.pm:689> INFO - Found 5 citekeys in bib section 0
+[237] Biber.pm:3066> INFO - Processing section 0
+[303] Biber.pm:3206> INFO - Looking for bibtex format file 'main.bib' for section 0
+[306] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[308] bibtex.pm:923> INFO - Found BibTeX data source 'main.bib'
+[449] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[450] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[450] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[450] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
+[456] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[457] bbl.pm:596> INFO - Output to main.bbl
+[458] Biber.pm:107> INFO - WARNINGS: 1
