@@ -61,7 +61,7 @@
 	%\addbibresource{bibliography.bib}
 	\usepackage{graphicx}
 	%\usepackage{subfigure}
-	\usepackage{caption}
+	\usepackage[format=plain, indention=0.5cm, justification=justified]{caption}
 	\usepackage{subfigure}
 	\usepackage{yhmath}
 	\usepackage{amsmath}
@@ -99,8 +99,8 @@
 	nonumberlist, 			% keine Anzeige von Seitenzahlen der Einträge im Abkürzungs-/Symbolverzeichnis
 	nogroupskip, 			% keine Gruppierung der Einträge nach Anfangsbuchstaben & keine zusätzlicher vertikaler Abstand bei Änderung des Anfangsbuchstabens
 	acronym, 			% ein Abkürzungsverzeichnis erstellen
-	toc, 					% Einträge im Inhaltsverzeichnis für das Abkürzungs- und Symbolverzeichnis
-	translate=babel, 		% Übersetzung von Überschriften, etc. ins Deutsche
+	toc			% Einträge im Inhaltsverzeichnis für das Abkürzungs- und Symbolverzeichnis
+		% Übersetzung von Überschriften, etc. ins Deutsche
 	]{glossaries}			% Paket zur Erstellung von Abkürzungs-, Symbolverzeichnissen, etc.
 	\usepackage{blindtext}		% Ermögicht die einfache Verwendung von Beispieltext zu Testzwecken
 	\usepackage[xindy]{imakeidx}

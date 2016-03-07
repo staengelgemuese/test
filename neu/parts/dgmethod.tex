@@ -2,7 +2,7 @@
 \label{rkdgm}
 	This thesis deals with a software that uses a Runge-Kutta Discontinous Galerkin (RKDG) method for the numerical approximation of compressible flows. The RKDG method is split into the DG method for space discretization and the RK method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
-	\section{DG space discretization}
+	\section{DG Space Discretization}
 		First, we will study the Discontinous Galerkin method which can be seen as combination of the Finite Volume and the Finite Element method.
 
 		As a simple example we will consider the scalar conservation law 
@@ -12,7 +12,7 @@
 			\label{pde}
 		\end{align}	
 		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
-		\subsection{Weak formulation}
+		\subsection{Weak Formulation}
 		Our first step of the DG method will be transfering the partial differential equation \eqref{pde} into a weak formulation.
 		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
 		After having discretized our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
@@ -36,7 +36,7 @@
 				\label{schwacheForm}
 		\end{align}
 				
-		\subsection{Numerical fluxes}
+		\subsection{Numerical Fluxes}
 		
 		As the concentration $c$ is unknown, we need to introduce a modal approximation
 		\begin{align}
@@ -83,7 +83,7 @@
 		
 	%	\subsection{Diagonalization of the mass matrix}
 	%	\subsection{Convergence}
-	\section{RK time discretization}
+	\section{RK Time Discretization}
 	For we have studied the spatial discretization, we will now attend to the time discretization, using the Runge-Kutta method.\\\\
 
 	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled ODEs.
@@ -134,12 +134,12 @@
 			\rule{0pt}{3,3ex}              & \quad \alpha_{1}  & \quad \alpha_{2}    & \quad \cdots & \quad \alpha_{s-1}  & \quad \alpha_{s}
 		\end{array}
 	\end{equation*}
-	\caption{Butcher tableau for the explicit Runge–Kutta method.}
+	\caption{Butcher Tableau for the Explicit Runge–Kutta Method.}
 	\label{tab:RKexplicit}
 \end{table}		
 
-\todo{Align den kram!}
-\captionsetup[table]{labelformat=empty}
+\todo{Nummerierung Tabelle}
+%\captionsetup[table]{labelformat=empty}
 \begin{table}
 	\centering
 	\def\arraystretch{1.5}
@@ -149,7 +149,7 @@
 			\hline
 			& 1
 		\end{tabular}
-		\caption{Explicit Euler \\(first order)}
+		\caption*{Explicit Euler \\(first order)}
 	\end{minipage}
 	\centering
 	\begin{minipage}[b]{0.24\textwidth}		
@@ -159,7 +159,7 @@
 			\hline
 			& $\tfrac{1}{2}$ & $\tfrac{1}{2}$\\
 		\end{tabular}
-		\caption{Trapezoidal rule \\(second order)}
+		\caption*{Trapezoidal rule \\(second order)}
 	\end{minipage}
 	\centering
 	\begin{minipage}[b]{0.26\textwidth}		
@@ -170,7 +170,7 @@
 			\hline
 			& $\tfrac{1}{4}$ & 0 & $\tfrac{3}{4}$\\
 		\end{tabular}
-		\caption{Third order TVD \\(third order)}
+		\caption*{Third order TVD \\(third order)}
 	\end{minipage}
 	\centering
 	\begin{minipage}[b]{0.29\textwidth}		
@@ -182,12 +182,13 @@
 			\hline
 			& $\tfrac{1}{6}$ & $\tfrac{2}{6}$ & $\tfrac{2}{6}$ & $\tfrac{2}{6}$\\
 		\end{tabular}
-		\caption{Classical RK \\(fourth order)}
+		\caption*{Classical RK \\(fourth order)}
 	\end{minipage}
-	\captionsetup[table]{labelformat=default}
 	\caption{Butcher Tableaus for different orders of RK}
 	\label{RKtableaus}
 \end{table}		
+	
+	%\captionsetup[table]{labelformat=default}
 	
 	A well-known stability criterion according the explicit Euler time discretization for linear, hyperbolic PDEs, namely the Courant-Friedrichs-Lewy (CFL) criterion, restrains the temporal step-size $\Delta t$:
 	

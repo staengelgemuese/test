@@ -22,7 +22,7 @@
 	
 %Definitionen der Abkürzungen und Symbole einfügen
 	\input{parts/abkuerzungenundsymbole}
-
+	\makeglossary
 % Beginn des eigentlichen Dokumentenkörpers
 
 	\begin{document}
@@ -62,7 +62,7 @@
 		% Tabellenverzeichnis einfügen
 			\listoftables
 		%Abkürzungsverzeichnis einfügen
-			\newpage
+			
 			\glsaddall
 			\setlength{\glsdescwidth}{14cm}
 			\printglossary[type=\acronymtype,style=long, title=Abkürzungsverzeichnis]

@@ -1,17 +1,17 @@
 [0] Config.pm:327> INFO - This is Biber 2.3
 [0] Config.pm:330> INFO - Logfile is 'main.blg'
-[51] biber-MSWIN:284> INFO - === 
-[128] Biber.pm:346> INFO - Reading 'main.bcf'
-[231] Utils.pm:147> WARN - Warning: Found biblatex control file version 2.8, expected version 2.9
-[232] Biber.pm:689> INFO - Found 5 citekeys in bib section 0
-[237] Biber.pm:3066> INFO - Processing section 0
-[303] Biber.pm:3206> INFO - Looking for bibtex format file 'main.bib' for section 0
-[306] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
-[308] bibtex.pm:923> INFO - Found BibTeX data source 'main.bib'
-[449] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[450] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[450] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[450] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
-[456] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[457] bbl.pm:596> INFO - Output to main.bbl
-[458] Biber.pm:107> INFO - WARNINGS: 1
+[77] biber-MSWIN:284> INFO - === 
+[229] Biber.pm:346> INFO - Reading 'main.bcf'
+[330] Utils.pm:147> WARN - Warning: Found biblatex control file version 2.8, expected version 2.9
+[331] Biber.pm:689> INFO - Found 6 citekeys in bib section 0
+[336] Biber.pm:3066> INFO - Processing section 0
+[444] Biber.pm:3206> INFO - Looking for bibtex format file 'main.bib' for section 0
+[447] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[450] bibtex.pm:923> INFO - Found BibTeX data source 'main.bib'
+[788] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[788] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[789] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[789] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
+[796] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[797] bbl.pm:596> INFO - Output to main.bbl
+[797] Biber.pm:107> INFO - WARNINGS: 1

@@ -3,19 +3,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Butcher tableau for the explicit Runge\IeC {\textendash }Kutta method.\relax }}{10}{table.caption.9}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Explicit Euler (first order)\relax }}{10}{table.caption.10}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Trapezoidal rule (second order)\relax }}{10}{table.caption.10}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Third order TVD (third order)\relax }}{10}{table.caption.10}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Classical RK (fourth order)\relax }}{10}{table.caption.10}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{10}{table.caption.10}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Butcher Tableau for the Explicit Runge\IeC {\textendash }Kutta Method.\relax }}{10}{table.caption.9}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{10}{table.caption.10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{22}{table.caption.21}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{23}{table.caption.23}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{24}{table.caption.25}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{25}{table.caption.31}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, from \cite {ayers} modified\relax }}{22}{table.caption.20}
+\contentsline {table}{\numberline {7.2}{\ignorespaces $C_D$ Values for each simulation}}{22}{table.caption.21}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Wake Separation Lengths for each simulation\relax }}{22}{table.caption.21}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{23}{table.caption.24}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{24}{table.caption.26}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, \leavevmode {\color {red}@TODO: modified Lawrence}\relax }}{25}{table.caption.32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

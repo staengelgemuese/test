@@ -110,6 +110,58 @@ The flow around a viscous cylinder has been approached by many papers both exper
 %	\end{table}
 	
 	\subsubsection{Simulation at Reynolds Number 20}
+	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \ref{table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.
+
+\begin{table}[htp]
+	\centering
+	\label{table20}
+	\begin{tabular}{|c|l|c|c|c|}
+		\hline
+		\rule{0pt}{2,3ex}$\text{Re}=20$                              & Source                             & 2D/3D & $W^*$ & $C_D$ \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Incompressible} & Dennis et al {[}1970{]}            & 2D    & 0.94     & 2.05     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& Forberg {[}1980{]}                 & 2D    & 0.91     & 2.00     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & 2D    & 0.93     & 2.06     \\ \hline
+		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & 0.93    & -     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & 2.09     \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 0.96     & 2.02     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 0.975     & 2.06     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
+	\end{tabular}	
+	\caption{Comparison of Results for $W^*$ and $C_D$, from \cite{ayers} modified}
+\end{table}
+
+
+\begin{table}[htp]
+	\centering
+	\def\arraystretch{1.5}
+	\begin{minipage}[b]{0.3\textwidth}		
+			\label{C_D20}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
+				\multicolumn{2}{|c|}{}                       & 32     & 64    & 128    \\ \hline
+				\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
+				& 2           &        &       &        \\ \cline{2-5} 
+				& 3           &        &       &        \\ \hline
+			\end{tabular}
+			\caption[$C_D$ Values for each simulation]{$C_D$ Values for each simulation \newline}
+	\end{minipage}
+	\centering
+	\quad
+	\begin{minipage}[b]{0.3\textwidth}		
+		\label{W20}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
+			\multicolumn{2}{|c|}{}                       & 32     & 64    & 128    \\ \hline
+			\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
+			& 2           &        &       &        \\ \cline{2-5} 
+			& 3           &        &       &        \\ \hline
+		\end{tabular}
+		\caption{Wake Separation Lengths for each simulation}
+	\end{minipage}
+\end{table}
+
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
@@ -123,23 +175,6 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\label{shivfjftersaror}	
 		\caption{Convergence Plot}
 	\end{figure}
-\begin{table}[htp]
-	\centering
-	\label{my-label}
-	\begin{tabular}{|c|l|c|c|c|}
-		\hline
-		\rule{0pt}{2,3ex}$\text{Re}=20$                              & Source                             & 2D/3D & $W^*$ & $C_D$ \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Incompressible} & Dennis et al {[}1970{]}            & 2D    & 0.94     & 2.05     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Forberg {[}1980{]}                 & 2D    & 0.91     & 2.00     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & 2D    & 0.93     & 2.06     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & 0.93    & -     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & 2.09     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{Numerical - Compressible}     & Brehm et al. {[}2015{]} (Ma = 0.1) & 3D    & 0.96     & 2.02     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & 2D    & 0.975     & 2.06     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
-	\end{tabular}	
-	\caption{Comparison of Results for $W^*$ and $C_D$, \todo{modified Lawrence}}
-\end{table}
 	
 %		\begin{table}[htp]
 %			\centering

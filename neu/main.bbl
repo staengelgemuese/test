@@ -135,6 +135,24 @@
       \field{pages}{349\bibrangedash 371}
       \range{pages}{23}
     \endentry
+    \entry{ayers}{bachelorthesis}{}
+      \name{author}{1}{}{%
+        {{hash=53856fbe83a8507bc8c9889150c8e478}{Ayers}{A\bibinitperiod}{Lawrence\bibnamedelima F.}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{53856fbe83a8507bc8c9889150c8e478}
+      \strng{fullhash}{53856fbe83a8507bc8c9889150c8e478}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{Dezember}
+      \field{title}{Validation of a discontinuous Galerkin based compressible CFD solver}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://tubiblio.ulb.tu-darmstadt.de/77250/
+      \endverb
+      \keyw{BoSSS}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

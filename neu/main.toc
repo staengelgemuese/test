@@ -12,10 +12,10 @@
 \contentsline {subsection}{\numberline {3.2.1}Non-dimensional Ideal Gas Law}{5}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Dimensionless Navier-Stokes Equation}{5}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}The Runge-Kutta Discontinous Galerkin Method}{6}{chapter.4}
-\contentsline {section}{\numberline {4.1}DG space discretization}{6}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Weak formulation}{6}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Numerical fluxes}{7}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}RK time discretization}{8}{section.4.2}
+\contentsline {section}{\numberline {4.1}DG Space Discretization}{6}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Weak Formulation}{6}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Numerical Fluxes}{7}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}RK Time Discretization}{8}{section.4.2}
 \contentsline {chapter}{\numberline {5}The Immersed Boundary Method}{12}{chapter.5}
 \contentsline {section}{\numberline {5.1}The DG Scheme with Immersed Boundaries}{12}{section.5.1}
 \contentsline {section}{\numberline {5.2}RK Time Discretisation with Immersed Boundaries}{13}{section.5.2}
@@ -29,14 +29,14 @@
 \contentsline {subsection}{\numberline {7.1.2}Laminar Vortex Shedding}{20}{subsection.7.1.2}
 \contentsline {section}{\numberline {7.2}Simulations}{21}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{21}{subsection.7.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{21}{subsubsection*.19}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{23}{subsubsection*.22}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{22}{subsubsection*.19}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{23}{subsubsection*.23}
 \contentsline {subsection}{\numberline {7.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{23}{subsection.7.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{23}{subsubsection*.24}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{23}{subsubsection*.30}
-\contentsline {chapter}{\numberline {8}Discussion}{27}{chapter.8}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{24}{subsubsection*.25}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{24}{subsubsection*.31}
+\contentsline {chapter}{\numberline {8}Discussion}{28}{chapter.8}
 \contentsline {chapter}{\numberline {9}Bibliography}{VI}{chapter.9}
-\contentsline {chapter}{\nonumberline List of Figures}{VII}{section*.35}
-\contentsline {chapter}{\nonumberline List of Tables}{VIII}{section*.38}
-\contentsline {chapter}{\numberline {A}Anhang}{X}{appendix.A}
-\contentsline {section}{\numberline {A.1}Ein Anhang}{X}{section.A.1}
+\contentsline {chapter}{\nonumberline List of Figures}{VII}{section*.36}
+\contentsline {chapter}{\nonumberline List of Tables}{VIII}{section*.39}
+\contentsline {chapter}{\numberline {A}Anhang}{IX}{appendix.A}
+\contentsline {section}{\numberline {A.1}Ein Anhang}{IX}{section.A.1}
