@@ -14,8 +14,8 @@
 				\addplot table[ x =shift, y =error3] {data/shift.dat};
 			\end{semilogyaxis}	
 		\end{tikzpicture}
-		\label{shifterror}	
 		\caption{Convergence Plot}
+		\label{shifterror}
 	\end{figure}
 	
 
@@ -41,7 +41,7 @@
 		\caption{Isolines of pressure}\label{fig:isoshift}
 	\end{figure}
 	
-	In figure \ref{fig:isoshift} you can see the two mentioned cases with highlighted isolines of pressure and pseudocolored density. As only the upper half of the cylinder has been calculated, I reflected the results through the centre point of the cylinder. Therefore you can easily see that the results are not correct, as the flow before and after the obstacle should be identical. Furthermore you can see that in \ref{fig:2_2} the isolines are smoother than in \ref{fig:2_4}. In order to give an explanation for the higher error of entropy in \ref{fig:2_4} I highlighted the cells that should have been agglomerated in red. In the left case there are less agglomerated cells than in the right one, therefore there was a not so big agglomeration mistake made.\\\\
+	In figure \ref{fig:isoshift} you can see the two mentioned cases with highlighted isolines of pressure and pseudocolored density. As only the upper half of the cylinder has been calculated, I reflected the results through the centre point of the cylinder. Therefore you can easily see that the results are not correct, as the flow before and after the obstacle should be identical. Furthermore you can see that in the left picture the isolines are smoother than in the right one. In order to give an explanation for the higher error of entropy in the former I highlighted the cells that should have been agglomerated in red. In the left case there are less agglomerated cells than in the right one, therefore there was a not so big agglomeration mistake made.\\\\
 	
 	Except for the two discordant values at polynomial degree $3$, the error of entropy changes very little for the different cases. We can therefore assume that the solver is good enough validated concerning the way the agglomerated cells influence the calculation. \todo{cases nochmal rechnen um peaks wegzukriegen}
 	
@@ -59,12 +59,12 @@
 				\addplot table[ x =meshSize, y =error3] {data/test.dat};
 				\addplot table[ x =meshSize, y =error4] {data/test.dat};
 			\end{loglogaxis}	
-		\end{tikzpicture}
-		\label{mesherror}	
+		\end{tikzpicture}	
 		\caption{Convergence Plot}
+		\label{mesherror}
 	\end{figure}
 
-	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in \ref{fig:case14detail}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in \ref{fig:case14detail} and the flow after the correction in \ref{fig:case14detailneu}. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell in \ref{fig:case14detail}.
+	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in the detailed view before correction in \ref{fig:case14}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in the middle and the flow after the correction on the right handside. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell.
 	
 \todo{ALIGN!}
 	\begin{figure}[htp]

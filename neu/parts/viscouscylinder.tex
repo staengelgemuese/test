@@ -110,11 +110,10 @@ The flow around a viscous cylinder has been approached by many papers both exper
 %	\end{table}
 	
 	\subsubsection{Simulation at Reynolds Number 20}
-	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \ref{table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.
+	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \ref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.
 
 \begin{table}[htp]
 	\centering
-	\label{table20}
 	\begin{tabular}{|c|l|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=20$                              & Source                             & 2D/3D & $W^*$ & $C_D$ \\ \hline
@@ -128,14 +127,14 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $W^*$ and $C_D$, from \cite{ayers} modified}
+	\label{tab:table20} 
 \end{table}
 
 
 \begin{table}[htp]
 	\centering
 	\def\arraystretch{1.5}
-	\begin{minipage}[b]{0.3\textwidth}		
-			\label{C_D20}
+	\begin{minipage}[b]{0.3\textwidth}	
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
 				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
@@ -144,12 +143,12 @@ The flow around a viscous cylinder has been approached by many papers both exper
 				& 2           &        &       &        \\ \cline{2-5} 
 				& 3           &        &       &        \\ \hline
 			\end{tabular}
-			\caption[$C_D$ Values for each simulation]{$C_D$ Values for each simulation \newline}
+			\caption[$C_D$ Values for each simulation]{$C_D$ Values for each simulation \newline}	
+			\label{C_D20}
 	\end{minipage}
 	\centering
 	\quad
-	\begin{minipage}[b]{0.3\textwidth}		
-		\label{W20}
+	\begin{minipage}[b]{0.3\textwidth}	
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
@@ -158,7 +157,8 @@ The flow around a viscous cylinder has been approached by many papers both exper
 			& 2           &        &       &        \\ \cline{2-5} 
 			& 3           &        &       &        \\ \hline
 		\end{tabular}
-		\caption{Wake Separation Lengths for each simulation}
+		\caption{Wake Separation Lengths for each simulation}	
+		\label{W20}
 	\end{minipage}
 \end{table}
 
@@ -172,27 +172,14 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\addlegendentry{Constant Value}
 		\end{semilogxaxis}	
 		\end{tikzpicture}
-		\label{shivfjftersaror}	
 		\caption{Convergence Plot}
+		\label{shivfjftersaror}	
 	\end{figure}
 	
-%		\begin{table}[htp]
-%			\centering
-%			\begin{tabular}{|c||c|c|c|c}
-%				\cline{1-4}
-%				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
-%				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$C_D$                & $1.64383538516091$        & $1.63699061840009$        & $1.63699061840009$       &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$C_L$                & $-0.000776541603329406$       & $-0.000694847445600998$       & $-0.000694847445600998$        &  \\ \cline{1-4}
-%			\end{tabular}
-%			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=20$}
-%			\label{tab:re20}
-%		\end{table}
+
 	\subsubsection{Simulation at Reynolds Number 40}
 \begin{table}[htp]
 	\centering
-	\label{my-label}
 	\begin{tabular}{|c|l|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=40$                              & Source                             & 2D/3D & $W^*$ & $C_D$ \\ \hline
@@ -206,6 +193,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4     \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $W^*$ and $C_D$, \todo{modified Lawrence}}
+	\label{table40}
 \end{table}
 %		\begin{table}[htp]
 %			\centering
@@ -230,7 +218,6 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\subsubsection{Simulation at Reynolds Number 100}
 \begin{table}[htp]
 	\centering
-	\label{my-label}
 	\begin{tabular}{|c|p{4cm}|c|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=100$                              & Source                             & 2D/3D & $St$ & $C_D$ & $C_L$\\ \hline
@@ -249,6 +236,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4  &   \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $St$, $C_D$ and $C_L$, \todo{modified Lawrence}}
+	\label{table100}
 \end{table}
 %			\begin{table}[htp]
 %				\centering
@@ -263,51 +251,50 @@ The flow around a viscous cylinder has been approached by many papers both exper
 %				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=100$}
 %				\label{tab:re100}
 %			\end{table}
-				\begin{figure}[htp]	
-					\centering
-					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-					\addplot table[ x =time  , y =C_L, mark=none] {data/vortex2.dat};
-					\end{axis}	
-					\end{tikzpicture}
-					\label{shijftserdaror}	
-					\caption{Convergence Plot}
-				\end{figure}
-			
-				\begin{figure}[htp]	
-					\centering
-					\begin{tikzpicture}
-						\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-						\addplot table[ x = time, y = d, mark=none] {data/CLRE100.dat};
-						\end{axis}	
-					\end{tikzpicture}
-					\label{shijfterror}	
-					\caption{Convergence Plot}
-				\end{figure}
-				\begin{figure}[htp]	
-					\centering
-					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
-					\end{axis}	
-					\end{tikzpicture}
-					\label{shijfterror}	
-					\caption{Convergence Plot}
-				\end{figure}
-				\begin{figure}[htp]	
-					\centering
-					\begin{tikzpicture}
-					\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
-					\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
-					\end{axis}	
-					\end{tikzpicture}
-					\label{shijfterror}	
-					\caption{Convergence Plot}
-				\end{figure}
+		\begin{figure}[htp]	
+			\centering
+			\begin{tikzpicture}
+			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+			\addplot table[ x =time  , y =C_L, mark=none] {data/vortex2.dat};
+			\end{axis}	
+			\end{tikzpicture}
+			\caption{Convergence Plot}
+			\label{shijftserdaror}	
+		\end{figure}
+	
+		\begin{figure}[htp]	
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+				\addplot table[ x = time, y = d, mark=none] {data/CLRE100.dat};
+				\end{axis}	
+			\end{tikzpicture}
+			\caption{Convergence Plot}
+			\label{shijfterror}	
+		\end{figure}
+		\begin{figure}[htp]	
+			\centering
+			\begin{tikzpicture}
+			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+			\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
+			\end{axis}	
+			\end{tikzpicture}
+			\caption{Convergence Plot}
+			\label{shijfterror}	
+		\end{figure}
+		\begin{figure}[htp]	
+			\centering
+			\begin{tikzpicture}
+			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
+			\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
+			\end{axis}	
+			\end{tikzpicture}
+			\caption{Convergence Plot}
+			\label{shijfterror}	
+		\end{figure}
 	\subsubsection{Simulation at Reynolds Number 200}
 \begin{table}[htp]
 	\centering
-	\label{my-label}
 	\begin{tabular}{|c|l|c|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=100$                              & Source                             & 2D/3D & $St$ & $C_D$ & $C_L$\\ \hline
@@ -321,6 +308,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & 2D    & d     & 4  &   \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $W^*$ and $C_D$, \todo{modified Lawrence}}
+	\label{my-label}
 \end{table}
 	
 %			\begin{table}[htp]
@@ -343,6 +331,6 @@ The flow around a viscous cylinder has been approached by many papers both exper
 				\addplot table[ x =time, y =l, mark=none] {data/re200dg1.dat};
 				\end{axis}	
 				\end{tikzpicture}
-				\label{shijfterdaror}	
 				\caption{Convergence Plot}
+				\label{shijfterdaror}	
 			\end{figure}

@@ -145,7 +145,7 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{Dezember}
+      \field{month}{12}
       \field{title}{Validation of a discontinuous Galerkin based compressible CFD solver}
       \field{year}{2015}
       \verb{url}
