@@ -1,6 +1,6 @@
 \chapter{The Runge-Kutta Discontinous Galerkin Method}
-\label{rkdgm}
-	This thesis deals with a software that uses a Runge-Kutta Discontinous Galerkin (RKDG) method for the numerical approximation of compressible flows. The RKDG method is split into the DG method for space discretization and the RK method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
+%\label{rkdgm}
+	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretization and the \gls{rk} method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
 	\section{DG Space Discretization}
 		First, we will study the Discontinous Galerkin method which can be seen as combination of the Finite Volume and the Finite Element method.
@@ -84,9 +84,9 @@
 	%	\subsection{Diagonalization of the mass matrix}
 	%	\subsection{Convergence}
 	\section{RK Time Discretization}
-	For we have studied the spatial discretization, we will now attend to the time discretization, using the Runge-Kutta method.\\\\
+	After having studied the spatial discretization, we will now attend to the time discretization, using the \gls{rk} method.\\\\
 
-	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled ODEs.
+	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled \gls{ode}s.
 	
 	\begin{align*}
 		\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
@@ -103,13 +103,13 @@
 	\begin{align}
 		\mathbf{M_i} \dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{f_i} = 0
 	\end{align}
-	with $\mathbf{M_i}\in \mathbb{R}^{M,M}$ being a cell-local symmetric mass matrix associated with $\mathcal{K}_i$. As we have assumed an orthonormal basis $\left\{\Phi_{i,j}\right\}_{j=1,...,M}$ thus reducing the mass matrix to the identity matrix $I$, the ODEs simplify to
+	with $\mathbf{M_i}\in \mathbb{R}^{M,M}$ being a cell-local symmetric mass matrix associated with $\mathcal{K}_i$. As we have assumed an orthonormal basis $\left\{\Phi_{i,j}\right\}_{j=1,...,M}$ thus reducing the mass matrix to the identity matrix $I$, the \gls{ode}s simplify to
 	\begin{align}
 		\dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{M_i^{-1}f_i}&=\mathbf{0}\\
 		\dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{f_i}&=\mathbf{0}.	
 	\end{align}
 	
-	Using an explicit RK method of Order S we can now advance this system of ODEs and calculate the new coefficients from
+	Using an explicit RK method of order S we can now advance this system of \gls{ode}s and calculate the new coefficients from
 	
 	\begin{align}
 		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \sum\limits_{s=1}^{S}\mathbf{(\alpha)_s k_s}, 
@@ -121,7 +121,7 @@
 		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
 	\end{align}
 	
-	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each RK method. The coefficients of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each RK method. Those of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
 \begin{table}[h]
 	\begin{equation*}
 		% \label{eq:19}

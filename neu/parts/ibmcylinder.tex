@@ -1,8 +1,8 @@
-\chapter{Parametric study of a flow around a cylinder}
+\chapter{Parametric Study of a Flow Around a Cylinder}
 	\label{eulerVerification}
 	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.
 
-	\section{Robustness study}
+	\section{Robustness Study}
 	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $32 \times 32$ cells. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\
 
 	\begin{figure}[htp]	
@@ -21,7 +21,8 @@
 
 	As we look at the chart \ref{shifterror}, first of all we will note that the absolute error of entropy decreases with increasing polynomial degree. As a higher polynomial degree implies a better approximation this can be explained very easily. \\ \indent
 	Secondly, we can observe that the error of entropy behaves roughly symmetrically to the ordinate. As we shifted the cylinder symmetrically this observation does not surprise us either. \\ \indent
-	Regarding the absolute error at a polynomial degree of 3, it is striking that this curve shows a much higher error difference compared to degrees 1 and 2. There are two peaks at a shift of $\pm 0.03$; these discordant values where produced because the calculation stopped early. Unlike all other cases during this study, the calculation did not stop because the convergence criterion (change of error of entropy $\leq 10^{-13}$) was reached but because the CFL number got invalid.\\ \indent
+	\todo{erklärung rechnungsabbruch}
+	Regarding the absolute error at a polynomial degree of 3, it is striking that this curve shows a much higher error difference compared to degrees 1 and 2. There are two peaks at a shift of $\pm 0.03$; these discordant values were produced because the calculation stopped early. Unlike all other cases during this study, the calculation did not stop because the convergence criterion (change of error of entropy $\leq 10^{-13}$) was reached but because the CFL number got invalid.\\ \indent
 	As these two values rather count as exceptions, we now consider two cases with a degree of $2$ at the shifts of $-0.06$ and $-0.03$. \\\\
 	
 	\begin{figure}[htp]
@@ -45,7 +46,7 @@
 	
 	Except for the two discordant values at polynomial degree $3$, the error of entropy changes very little for the different cases. We can therefore assume that the solver is good enough validated concerning the way the agglomerated cells influence the calculation. \todo{cases nochmal rechnen um peaks wegzukriegen}
 	
-	\section{Convergence study of mesh size and polynomial degree}
+	\section{Convergence Study of Mesh Size and Polynomial Degree}
 	
 	In the second study we vary the mesh size of our geometry from $32 \times 32$ by $64 \times 64$ to $128 \times 128$ cells. Additionally we also vary the polynomial degree from $0$ to $4$, consequently regarding fifteen cases in total. \\
 	Our aim is the verification of the convergence of the RKDGM based solver for the inviscid cylinder. Therefore we hope to achieve an experimental order of convergence that is near the optimal rate $O(h^{P+1})$. In chart \ref{mesherror} I compared the absolute error entropy to the mesh size logarithmically for each polynomial degree. 	
@@ -65,8 +66,7 @@
 	\end{figure}
 
 	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in the detailed view before correction in \ref{fig:case14}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in the middle and the flow after the correction on the right handside. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell.
-	
-\todo{ALIGN!}
+
 	\begin{figure}[htp]
 		\centering
 		\begin{minipage}[b]{0.28\textwidth}

@@ -1,10 +1,10 @@
 \chapter{Fundamentals}
 \label{fundamentals}
-	\section{Essential equations}
-		In the following we will introduce the essential equations that form the basis of all results discussed in this thesis. 
+	\section{Essential Equations}
+		In the following we will introduce the essential equations that form the basis of all methods and results discussed in this thesis. 
 		\subsection{Equations of State}
 		\label{EOS}
-		First, I will enumerate the basic thermodynamic equations of state that describe the relations between the specific inner energy $e$, the local temperature $T$, the specific enthalpy $\bar{h}$, the pressure $p = p(\rho , e)$, the density $\rho$ and the specific entropy $s$.
+		First, I will enumerate the basic thermodynamic equations of state that describe the relations between the specific inner energy $e$, the local temperature $T$, the specific enthalpy $\bar{h}$, the pressure $p = p (\rho , e)$, the density $\rho$ and the specific entropy $s$.
 		Assuming that all material parameters are constant, we receive
 		\begin{align}
 			e &= c_v T \\
@@ -12,9 +12,9 @@
 		\end{align}
 		with the material parameters $c_p$ and $c_v$ as specific heat capacities at constant pressure and volume, respectively. Using these relations, we can define the heat capacity ratio 
 		\begin{align}
-			\gamma = \dfrac{c_p}{c_v} = \dfrac{\bar{h}}{e}.
+			\gamma = \dfrac{c_p}{c_v} = \dfrac{\bar{h}}{e}, 
 		\end{align}
-		As we will only be modelling standard air in this thesis, we will use $\gamma = 1.4$.
+		e.g. $\gamma = 1.4$ for standard air.
 		
 		Another essential equation is the relation for the specific entropy 
 		\begin{align}
@@ -22,7 +22,7 @@
 		\end{align}
 		
 		\subsection{Ideal Gas Law}
-		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p(\rho , e)$. In this thesis we will confine ourselves to the ideal gas law for we are only modelling standard air. \\
+		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will confine ourselves to the ideal gas law as we are only modelling standard air($\gamma = 1.4$). \\
 		The ideal gas law is defined as
 		\begin{align}
 			p = (\gamma - 1) \rho e
@@ -92,9 +92,9 @@
 	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R \todo{Krämer-Eis zitieren}. All other reference quantities can be derived from those. In the following all dimensionless quantities will be marked with an asterisk ()*:
 	
 	\begin{align}
-		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\
-		 \mu^* &= \dfrac{1}{\mu_\infty} \cdot \mu , & k^* &= \dfrac{1}{k_\infty} \cdot k,&  T^* &= \dfrac{R}{V_\infty^2}\cdot T, & F_j^*& = \dfrac{1}{g_\infty} \cdot F_j, & \rho E^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot \rho E, \\
-		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q &.
+		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\ \nonumber
+		 \mu^* &= \dfrac{1}{\mu_\infty} \cdot \mu , & k^* &= \dfrac{1}{k_\infty} \cdot k,&  T^* &= \dfrac{R}{V_\infty^2}\cdot T, & F_j^*& = \dfrac{1}{g_\infty} \cdot F_j, & \rho E^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot \rho E, \\ \nonumber
+		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q. &
 	\end{align}
 	
 	In order to derive the non-dimensional form of the CNS, we also need the dimensionless operators:
@@ -114,8 +114,8 @@
 		&= (\gamma - 1) \left(\rho E^* - \dfrac{1}{2} \rho^* \mathbf{v}^{*2}\right) .
 	\end{align}	
 	
-	\subsection{Dimensionless Navier-Stokes Equation}
-	As we now have all required measures and operator we can use them to define the dimensionless relations
+	\subsection{Dimensionless Navier-Stokes Equations}
+	As we now have all required measures and operator we can use them to define the dimensionless relations \todo{zahlen erklären}
 	\begin{description}
 		\item[Reynolds Number] $\text{Re} = \dfrac{\rho_\infty V_\infty L}{\mu_\infty} \propto \dfrac{\text{inertia forces}}{\text{viscous forces}}$,
 		\item[Froude Number] \quad $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,

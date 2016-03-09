@@ -3,14 +3,14 @@
 \contentsline {paragraph}{Thesis Statement pursuant to \IeC {\textsection } 22 paragraph 7 of APB TU Darmstadt}{II}{paragraph*.1}
 \contentsline {chapter}{\numberline {2}Introduction}{1}{chapter.2}
 \contentsline {chapter}{\numberline {3}Fundamentals}{2}{chapter.3}
-\contentsline {section}{\numberline {3.1}Essential equations}{2}{section.3.1}
+\contentsline {section}{\numberline {3.1}Essential Equations}{2}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Equations of State}{2}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Ideal Gas Law}{2}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Navier-Stokes Equations}{3}{subsection.3.1.3}
 \contentsline {paragraph}{Euler Equations}{4}{paragraph*.8}
 \contentsline {section}{\numberline {3.2}Dimensionless Measures}{4}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Non-dimensional Ideal Gas Law}{5}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Dimensionless Navier-Stokes Equation}{5}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Dimensionless Navier-Stokes Equations}{5}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}The Runge-Kutta Discontinous Galerkin Method}{6}{chapter.4}
 \contentsline {section}{\numberline {4.1}DG Space Discretization}{6}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Weak Formulation}{6}{subsection.4.1.1}
@@ -20,9 +20,9 @@
 \contentsline {section}{\numberline {5.1}The DG Scheme with Immersed Boundaries}{12}{section.5.1}
 \contentsline {section}{\numberline {5.2}RK Time Discretisation with Immersed Boundaries}{13}{section.5.2}
 \contentsline {section}{\numberline {5.3}Cell Agglomeration}{13}{section.5.3}
-\contentsline {chapter}{\numberline {6}Parametric study of a flow around a cylinder}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Robustness study}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Convergence study of mesh size and polynomial degree}{17}{section.6.2}
+\contentsline {chapter}{\numberline {6}Parametric Study of a Flow Around a Cylinder}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Robustness Study}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}Convergence Study of Mesh Size and Polynomial Degree}{17}{section.6.2}
 \contentsline {chapter}{\numberline {7}The viscous cylinder}{19}{chapter.7}
 \contentsline {section}{\numberline {7.1}Theory}{19}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}The Laminar Steady Regime}{20}{subsection.7.1.1}

@@ -3,17 +3,17 @@
 The flow around a viscous cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
-	The flow around a viscous cylinder can be divided into different sections depending on the flow specific Reynolds number. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
+	The flow around a viscous cylinder can be divided into different sections depending on the Reynolds number as shown in \ref{fig:overview}. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=8cm]{overviewCylinderReynolds_Williamson.PNG}
 		\caption{Overview of Base Suction Coefficients over Reynolds Number \cite{williamson1996vortex}}
 		\label{fig:overview}
 	\end{figure} 
-	The second section contains all other Reynolds number $\text{Re}> 40-50$ and thus describes the unsteady flow. It can be subdivided in several subsections:
+	The second section contains all other Reynolds number $\text{Re}> 40-50$ and thus describes the unsteady flow. It can be subdivided in several subsections \cite{williamson1996vortex}:
 	\begin{description}
 		\item[$40-50 < \text{Re} < 190$] laminar vortex shedding,
-		\item[$190 < \text{Re} < 260$] 3-D wake-transition regime,
+		\item[$190 < \text{Re} < 260$] \gls{3d} wake-transition regime,
 		\item[$260 < \text{Re} < 1000$] increasing disorder in the fine-scale three dimensionalities,
 		\item[$1000 < \text{Re} < 200000$] shear layer transition regime,
 		\item[$200000 < \text{Re}$] critical transition, supercritical regime and post-critical regime.
@@ -23,7 +23,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	
 	\subsection{The Laminar Steady Regime}
 	
-	At Reynolds numbers below 50 the flow forms a steady recirculation region, characterised by the wake separation length  $W^*$. I is built by two symmetrically placed vortices on each side of the wake as can be seen in \ref{fig:steady}. It has been shown experimentally as well as numerically, that the wake separation length increases with increasing Reynolds number. 
+	At Reynolds numbers below 50 the flow forms a steady recirculation region, characterised by the wake separation length  $W^*$. It is built by two symmetrically placed vortices on each side of the wake as can be seen in \ref{fig:steady}. It has been shown experimentally as well as numerically, that the wake separation length increases with increasing Reynolds number. 
 		\begin{figure}[htp]
 			\centering
 			\includegraphics[height=4cm]{steadyFlow_Williamson.PNG}
@@ -36,12 +36,12 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\begin{figure}[htp]
 			\centering
 			\includegraphics[height=4cm]{unsteady_Williamson.PNG}
-			\caption{Karmán Vortex Street \cite{williamson1996vortex}}
+			\caption{Kármán Vortex Street \cite{williamson1996vortex}}
 			\label{fig:unsteady}
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MP $+$ \textit{number of cells per direction}, e.g. DG2MP64 for a simulation with polynomial degree 2 and $64 \times 64$ cells.\\
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MS $+$ \textit{number of cells per direction}, e.g. DG2MS64 for a simulation with polynomial degree 2 and $64 \times 64$ cells.\\
 	 The drag and lift coefficients $C_D$ and $C_L$ are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
