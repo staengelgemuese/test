@@ -20,19 +20,20 @@
 \BOOKMARK [1][-]{section.5.1}{5.1 The DG Scheme with Immersed Boundaries}{chapter.5}% 20
 \BOOKMARK [1][-]{section.5.2}{5.2 RK Time Discretisation with Immersed Boundaries}{chapter.5}% 21
 \BOOKMARK [1][-]{section.5.3}{5.3 Cell Agglomeration}{chapter.5}% 22
-\BOOKMARK [0][-]{chapter.6}{6 Parametric Study of a Flow Around a Cylinder}{}% 23
+\BOOKMARK [0][-]{chapter.6}{6 Validation of bosss Concerning Euler Equations with ibms}{}% 23
 \BOOKMARK [1][-]{section.6.1}{6.1 Robustness Study}{chapter.6}% 24
 \BOOKMARK [1][-]{section.6.2}{6.2 Convergence Study of Mesh Size and Polynomial Degree}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{7 The viscous cylinder}{}% 26
-\BOOKMARK [1][-]{section.7.1}{7.1 Theory}{chapter.7}% 27
-\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 The Laminar Steady Regime}{section.7.1}% 28
-\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Laminar Vortex Shedding}{section.7.1}% 29
-\BOOKMARK [1][-]{section.7.2}{7.2 Simulations}{chapter.7}% 30
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Steady State Simulations \(Re < 40-50\)}{section.7.2}% 31
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Unsteady Simulations \(Re> 40-50\)}{section.7.2}% 32
-\BOOKMARK [0][-]{chapter.8}{8 Discussion}{}% 33
-\BOOKMARK [0][-]{chapter.9}{9 Bibliography}{}% 34
-\BOOKMARK [0][-]{section*.36}{List of Figures}{}% 35
-\BOOKMARK [0][-]{section*.39}{List of Tables}{}% 36
-\BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 37
-\BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 38
+\BOOKMARK [1][-]{section.6.3}{6.3 Conclusion}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{7 The viscous cylinder}{}% 27
+\BOOKMARK [1][-]{section.7.1}{7.1 Theory}{chapter.7}% 28
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 The Laminar Steady Regime}{section.7.1}% 29
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Laminar Vortex Shedding}{section.7.1}% 30
+\BOOKMARK [1][-]{section.7.2}{7.2 Simulations}{chapter.7}% 31
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Steady State Simulations \(Re < 40-50\)}{section.7.2}% 32
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Unsteady Simulations \(Re> 40-50\)}{section.7.2}% 33
+\BOOKMARK [0][-]{chapter.8}{8 Discussion}{}% 34
+\BOOKMARK [0][-]{chapter.9}{9 Bibliography}{}% 35
+\BOOKMARK [0][-]{section*.37}{List of Figures}{}% 36
+\BOOKMARK [0][-]{section*.40}{List of Tables}{}% 37
+\BOOKMARK [0][-]{appendix.A}{A Anhang}{}% 38
+\BOOKMARK [1][-]{section.A.1}{A.1 Ein Anhang}{appendix.A}% 39

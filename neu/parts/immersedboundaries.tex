@@ -31,7 +31,7 @@ In the following chapter we will study the DG method with immersed boundaries. I
 	as we will discuss in section \ref{cellAgglomeration}.
 	
 	\section{RK Time Discretisation with Immersed Boundaries}
-	In this thesis we only use explicit Euler time discretisation for immersed boundary problems:
+	In this thesis we only use explicit Euler time discretisation for immersed boundary problems as it is less computationally expensive than higher order \gls{rk}:
 	\begin{align}
 		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \mathbf{M}_i^{-1} \mathbf{f}_i (c).
 	\end{align}

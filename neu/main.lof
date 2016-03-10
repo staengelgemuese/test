@@ -3,23 +3,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of \gls {fem}, \gls {fvm} and \gls {dg} \leavevmode {\color {red}@TODO: cite fdy vortrag}\relax }}{6}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Convergence Plot\relax }}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Isolines of pressure\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Convergence Plot\relax }}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Mesh size $128 \times 128$, $P = 3$\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Convergence Plot\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Isolines of pressure\relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Convergence Plot\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Mesh size $128 \times 128$, $P = 3$\relax }}{18}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Overview of Base Suction Coefficients over Reynolds Number \cite {williamson1996vortex}\relax }}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Recirculation Region \cite {williamson1996vortex}\relax }}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces K\IeC {\'a}rm\IeC {\'a}n Vortex Street \cite {williamson1996vortex}\relax }}{21}{figure.caption.17}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Wake separation length, from \cite {williamson1996vortex} modified \relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Convergence Plot\relax }}{23}{figure.caption.22}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Convergence Plot\relax }}{25}{figure.caption.27}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Convergence Plot\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Convergence Plot\relax }}{26}{figure.caption.29}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Convergence Plot\relax }}{26}{figure.caption.30}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Convergence Plot\relax }}{27}{figure.caption.33}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Overview of Base Suction Coefficients over Reynolds Number \cite {williamson1996vortex}\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Recirculation Region \cite {williamson1996vortex}\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces K\IeC {\'a}rm\IeC {\'a}n Vortex Street \cite {williamson1996vortex}\relax }}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Wake separation length, from \cite {williamson1996vortex} modified \relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Convergence Plot\relax }}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Convergence Plot\relax }}{25}{figure.caption.28}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Convergence Plot\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Convergence Plot\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Convergence Plot\relax }}{26}{figure.caption.31}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Convergence Plot\relax }}{27}{figure.caption.34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

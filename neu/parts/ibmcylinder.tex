@@ -1,4 +1,4 @@
-\chapter{Parametric Study of a Flow Around a Cylinder}
+\chapter{Validation of \gls{bosss} Concerning Euler Equations with \gls{ibm}s}
 	\label{eulerVerification}
 	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.
 
@@ -64,7 +64,7 @@
 		\caption{Convergence Plot}
 		\label{mesherror}
 	\end{figure}
-
+ \todo{umschreiben!}
 	As you can see in \ref{mesherror} each graph has a more or less constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. Regarding the values of the $128 \times 128$ mesh there are two discordant values: the case with mesh size $128 \times 128$ and polynomial degree $P = 4$ did not terminate due to the error of entropy residual but because the CFL number could not be determined and therefore no value for the error of entropy was computed. The case for $P = 3$ has a disproportionately high value that is caused by two cells as can be seen in the detailed view before correction in \ref{fig:case14}. In order to correct the value I changed the \textit{node count safety factor} from $2$ to $5$ which increases the robustness and therefore lets the calculation finish due to the residual. In \ref{fig:case14} you can see the visualised flow of the inspected case with the critical spot where entropy is produced in the middle and the flow after the correction on the right handside. Please remark that differently coloured entropy ranges had to be used in the two cases in order to point out the critical cell.
 
 	\begin{figure}[htp]
@@ -93,5 +93,9 @@
 		\label{fig:case14}
 	\end{figure}
 	
-	Concluding, we remark that the convergence behaves as desired with an order close to the optimal rate of $O(h^{P+1})$. Nevertheless to receive the correct result it should always be guaranteed that the calculation stops due to the residual rather than illegal values for momentum even if that means heightening the overall runtime by increasing the node count safety factor thus robustness.
+	\section{Conclusion}
+	
+	After having studied the behaviour of \gls{bosss} concerning the Euler equations with immersed boundaries, we can conclude that is sufficiently validated. The robustness studied showed that the results are mostly independent from the exact position of the grid cells. During the convergence study we remarked  that the convergence behaves as desired with an order close to the optimal rate of $O(h^{P+1})$. 
+	
+	Nevertheless in order to receive the correct result it should always be guaranteed that the calculation can terminate properly which can be derived by a smaller \gls{cfl} number, respectively time step size, an increased node count safety factor or smaller cells. Unfortunately these precautions cause a higher overall runtime.
 	

@@ -3,10 +3,16 @@
 	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretization and the \gls{rk} method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
 	\section{DG Space Discretization}
-		First, we will study the Discontinous Galerkin method which can be seen as combination of the Finite Volume and the Finite Element method.
-
-		As a simple example we will consider the scalar conservation law 
+		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}) as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \ref{femfvm}.
 		
+		\begin{figure}[htp]
+			\centering
+			\includegraphics[width=\textwidth]{femfvm.PNG}
+			\caption{Comparison of \gls{fem}, \gls{fvm} and \gls{dg} \todo{cite fdy vortrag}}
+			\label{femfvm}
+		\end{figure} 
+
+		As a simple example that we can use to derive the \gls{dg} formulation we will consider the scalar conservation law 	
 		\begin{align}
 			\frac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0
 			\label{pde}
@@ -16,26 +22,25 @@
 		Our first step of the DG method will be transfering the partial differential equation \eqref{pde} into a weak formulation.
 		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
 		After having discretized our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
-		In order to obtain the weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:
-		
-		\begin{align*}
-			\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) &= 0 \\
-			\dfrac{\partial c}{\partial t}\Phi_{i,j} + \nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} &= 0 \\
-			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV + \int\limits_{\mathcal{K}_i}\nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} \, dV &= 0\\
+		In order to obtain the weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:	
+		\begin{gather}	
+			\begin{aligned}
+			\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) &= 0 \\ 
+			\dfrac{\partial c}{\partial t}\Phi_{i,j} + \nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} &= 0 \\ 
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV + \int\limits_{\mathcal{K}_i}\nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} \, dV &= 0\\ 
 			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
 			\int\limits_{\partial \mathcal{K}_i} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
 			- \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c\right)\nabla\Phi_{i,j} \, dV &= 0.
-		\end{align*}
-		
-		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite the equation as
-		
+			\label{partialintegration}
+			\end{aligned}
+		\end{gather}
+		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite \ref{partialintegration} as
 		\begin{align}
 				\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
 				\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
 				- \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c\right)\nabla\Phi_{i,j} \, dV &= 0.
 				\label{schwacheForm}
 		\end{align}
-				
 		\subsection{Numerical Fluxes}
 		
 		As the concentration $c$ is unknown, we need to introduce a modal approximation
@@ -54,7 +59,6 @@
 		\end{align}
 		
 		By including these definitions into \eqref{schwacheForm} we receive
-		
 		\begin{align}
 			\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
 			\underbrace{\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV}_{=:(\mathbf{f_i})_j} = 0
@@ -81,8 +85,6 @@
 		with $u^\pm$ and $a^\pm$ denoting the normal velocity and the local speed of sound at the edges.
 		As the Rusanov flux has a high stability it will be used disregarding that it is prone to numerical diffusion.
 		
-	%	\subsection{Diagonalization of the mass matrix}
-	%	\subsection{Convergence}
 	\section{RK Time Discretization}
 	After having studied the spatial discretization, we will now attend to the time discretization, using the \gls{rk} method.\\\\
 
@@ -121,7 +123,7 @@
 		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
 	\end{align}
 	
-	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each RK method. Those of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
 \begin{table}[h]
 	\begin{equation*}
 		% \label{eq:19}
@@ -138,8 +140,6 @@
 	\label{tab:RKexplicit}
 \end{table}		
 
-\todo{Nummerierung Tabelle}
-%\captionsetup[table]{labelformat=empty}
 \begin{table}
 	\centering
 	\def\arraystretch{1.5}
@@ -190,7 +190,7 @@
 	
 	%\captionsetup[table]{labelformat=default}
 	
-	A well-known stability criterion according the explicit Euler time discretization for linear, hyperbolic PDEs, namely the Courant-Friedrichs-Lewy (CFL) criterion, restrains the temporal step-size $\Delta t$:
+	A well-known stability criterion according the explicit Euler time discretization for linear, hyperbolic PDEs, namely the \gls{cfl} criterion, restrains the temporal step-size $\Delta t$:
 	
 	\begin{align}
 		\Delta t \leq c_{CFL} \dfrac{h}{\underline{u}}
