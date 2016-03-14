@@ -265,33 +265,33 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\begin{figure}[htp]	
 			\centering
 			\begin{tikzpicture}
-				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-				\addplot table[ x = time, y = d, mark=none] {data/CLRE100.dat};
+				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+				\addplot table[ x = time, y = l, mark=none] {data/re100dg1ms128.dat};
 				\end{axis}	
 			\end{tikzpicture}
 			\caption{Convergence Plot}
-			\label{shijfterror}	
+			\label{shijftaerror}	
 		\end{figure}
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-			\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
-			\end{axis}	
-			\end{tikzpicture}
-			\caption{Convergence Plot}
-			\label{shijfterror}	
-		\end{figure}
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
-			\addplot table[ x =time, y =d, mark=none] {data/CLRE100.dat};
-			\end{axis}	
-			\end{tikzpicture}
-			\caption{Convergence Plot}
-			\label{shijfterror}	
-		\end{figure}
+%		\begin{figure}[htp]	
+%			\centering
+%			\begin{tikzpicture}
+%			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
+%			\addplot table[ x = time, y = l, mark = none] {data/re100dg1ms128.dat};
+%			\end{axis}	
+%			\end{tikzpicture}
+%			\caption{Convergence Plot}
+%			\label{shijfterror}	
+%		\end{figure}
+%		\begin{figure}[htp]	
+%			\centering
+%			\begin{tikzpicture}
+%			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 300, xmax = 350]
+%			\addplot table[ x =time, y =l, mark=none] {data/re100dg1ms128.dat};
+%			\end{axis}	
+%			\end{tikzpicture}
+%			\caption{Convergence Plot}
+%			\label{shijfterror}	
+%		\end{figure}
 	\subsubsection{Simulation at Reynolds Number 200}
 \begin{table}[htp]
 	\centering
