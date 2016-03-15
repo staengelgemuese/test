@@ -1,6 +1,7 @@
 \chapter{Validation of \gls{bosss} Concerning Euler Equations with \gls{ibm}s}
 	\label{eulerVerification}
-	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.
+	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.\\\\
+	During the simulation we compute only half of the domain with $-40 \leq x \leq 40$, $0 \leq y \leq 40$ and the cylinder radius $r = 1$ as the flow above and below the cylinder should be identical.
 
 	\section{Robustness Study}
 	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $32 \times 32$ cells. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\

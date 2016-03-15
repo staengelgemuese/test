@@ -41,7 +41,8 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $32 \times 32$, $64 \times 64$ and $128 \times 128$ cells. The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MS $+$ \textit{number of cells per direction}, e.g. DG2MS64 for a simulation with polynomial degree 2 and $64 \times 64$ cells.\\
+	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
+	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MS $+$ \textit{number of cells per direction}, e.g. DG2MS80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
 	 The drag and lift coefficients $C_D$ and $C_L$ are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
@@ -52,9 +53,10 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		C_D = 2 \cdot d \\
 		C_L = 2 \cdot l,
 	\end{align}
-	with the drag and lift forces $d$ and $l$ provided from the calculation.
-	
-	
+	with the drag and lift forces $d$ and $l$ provided from the calculation. \\\\
+	During the simulations we now compute the complete domain with $-40 \leq x \leq 40$, $-40 \leq y \leq 40$ and the cylinder radius $r = 1$ as we expect asymmetrical oscillations of the flow with higher Reynolds numbers.
+	We will use a rectilinear mesh that is finer near the cylinder, an isothermal wall boundary condition at the cylinder wall and supersonic inlet boundary conditions for the domain borders that shall prevent the reflection of the initial wave.  \\\\
+	For the calculation with DG3MS40 no results could be found. The case produces a ill conditioned matrix that is not positive definite; thus the Cholesky factorisation fails. We can therefore conclude that it is unsafe to use \gls{bosss} with high order on very coarse meshes. These results match those that we found in \ref{eulerVerification} where we got irregular values for DG3MS32 during the robustness study.
 	
 	\subsection{Steady State Simulations ($\text{Re} < 40-50$)}
 	For the steady state simulations we can use the wake separation length $W^*$ as an additional variable to compare to other simulations.
@@ -138,7 +140,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
 				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
-				\multicolumn{2}{|c|}{}                       & 32     & 64    & 128    \\ \hline
+				\multicolumn{2}{|c|}{}                       & 40     & 80    & 160    \\ \hline
 				\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
 				& 2           &        &       &        \\ \cline{2-5} 
 				& 3           &        &       &        \\ \hline
@@ -152,7 +154,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
-			\multicolumn{2}{|c|}{}                       & 32     & 64    & 128    \\ \hline
+			\multicolumn{2}{|c|}{}                       & 40     & 80    & 160    \\ \hline
 			\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
 			& 2           &        &       &        \\ \cline{2-5} 
 			& 3           &        &       &        \\ \hline
