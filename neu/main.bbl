@@ -35,6 +35,27 @@
       \field{title}{Methods for higher order numerical simulations of complex inviscid fluids with immersed boundaries}
       \field{year}{2014}
     \endentry
+    \entry{ayers}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=53856fbe83a8507bc8c9889150c8e478}{Ayers}{A\bibinitperiod}{Lawrence\bibnamedelima F.}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Technische Universität Darmstadt}%
+      }
+      \strng{namehash}{53856fbe83a8507bc8c9889150c8e478}
+      \strng{fullhash}{53856fbe83a8507bc8c9889150c8e478}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Validation of a discontinuous Galerkin based compressible CFD solver}
+      \field{type}{Bachelor thesis}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://tubiblio.ulb.tu-darmstadt.de/77250/
+      \endverb
+    \endentry
     \entry{Cockburn1998}{inbook}{}
       \name{author}{1}{}{%
         {{hash=a862e1da6d04641d986b5d3eace69664}{Cockburn}{C\bibinitperiod}{Bernardo}{B\bibinitperiod}{}{}{}{}}%
@@ -135,23 +156,47 @@
       \field{pages}{349\bibrangedash 371}
       \range{pages}{23}
     \endentry
-    \entry{ayers}{bachelorthesis}{}
-      \name{author}{1}{}{%
-        {{hash=53856fbe83a8507bc8c9889150c8e478}{Ayers}{A\bibinitperiod}{Lawrence\bibnamedelima F.}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+    \entry{brehm2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eaf834fe8f9cd34cf19261f7984cd579}{Brehm}{B\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=e78aacb2825615ed9fd63ecb7665178e}{Hader}{H\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=3793cf33b811943b11b502022f8e4e50}{Fasel}{F\bibinitperiod}{Hermann\bibnamedelima F}{H\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{53856fbe83a8507bc8c9889150c8e478}
-      \strng{fullhash}{53856fbe83a8507bc8c9889150c8e478}
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1ab10efca133e6909533cd835403f30d}
+      \strng{fullhash}{1ab10efca133e6909533cd835403f30d}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{12}
-      \field{title}{Validation of a discontinuous Galerkin based compressible CFD solver}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A locally stabilized immersed boundary method for the compressible Navier--Stokes equations}
+      \field{volume}{295}
       \field{year}{2015}
-      \verb{url}
-      \verb http://tubiblio.ulb.tu-darmstadt.de/77250/
-      \endverb
-      \keyw{BoSSS}
+      \field{pages}{475\bibrangedash 504}
+      \range{pages}{30}
+    \endentry
+    \entry{hartmann}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=8494fbdc99ed794470c65bd548bffcd0}{Hartmann}{H\bibinitperiod}{Ralf}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=71ec5d4ae4e9d6fca3259a45a625d8f1}{Deconinck}{D\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Von Karman Institute for Fluid Dynamics, Rhode Saint Genèse, Belgium}%
+      }
+      \strng{namehash}{8494fbdc99ed794470c65bd548bffcd0}
+      \strng{fullhash}{8494fbdc99ed794470c65bd548bffcd0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{VKI LS 2008-08: CFD - ADIGMA course on very high order discretization methods, Oct. 13-17, 2008}
+      \field{title}{Numerical Analysis of Higher Order Discontinuous {G}alerkin Finite Element Methods}
+      \field{year}{2008}
     \endentry
   \endsortlist
 \endrefsection

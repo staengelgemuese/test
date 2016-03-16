@@ -1,43 +1,47 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\contentsline {chapter}{\numberline {1}Declaration of Academic Integrity}{II}{chapter.1}
-\contentsline {paragraph}{Thesis Statement pursuant to \IeC {\textsection } 22 paragraph 7 of APB TU Darmstadt}{II}{paragraph*.1}
-\contentsline {chapter}{\numberline {2}Introduction}{1}{chapter.2}
-\contentsline {chapter}{\numberline {3}Fundamentals}{2}{chapter.3}
-\contentsline {section}{\numberline {3.1}Essential Equations}{2}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Equations of State}{2}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Ideal Gas Law}{2}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Navier-Stokes Equations}{3}{subsection.3.1.3}
-\contentsline {paragraph}{Euler Equations}{4}{paragraph*.8}
-\contentsline {section}{\numberline {3.2}Dimensionless Measures}{4}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Non-dimensional Ideal Gas Law}{5}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Dimensionless Navier-Stokes Equations}{5}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}The Runge-Kutta Discontinous Galerkin Method}{6}{chapter.4}
-\contentsline {section}{\numberline {4.1}DG Space Discretization}{6}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Weak Formulation}{7}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Numerical Fluxes}{7}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}RK Time Discretization}{8}{section.4.2}
-\contentsline {chapter}{\numberline {5}The Immersed Boundary Method}{12}{chapter.5}
-\contentsline {section}{\numberline {5.1}The DG Scheme with Immersed Boundaries}{12}{section.5.1}
-\contentsline {section}{\numberline {5.2}RK Time Discretisation with Immersed Boundaries}{13}{section.5.2}
-\contentsline {section}{\numberline {5.3}Cell Agglomeration}{13}{section.5.3}
-\contentsline {chapter}{\numberline {6}Validation of \gls {bosss} Concerning Euler Equations with \gls {ibm}s}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Robustness Study}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Convergence Study of Mesh Size and Polynomial Degree}{17}{section.6.2}
-\contentsline {section}{\numberline {6.3}Conclusion}{18}{section.6.3}
-\contentsline {chapter}{\numberline {7}The viscous cylinder}{19}{chapter.7}
-\contentsline {section}{\numberline {7.1}Theory}{19}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}The Laminar Steady Regime}{20}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Laminar Vortex Shedding}{20}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Simulations}{21}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{22}{subsection.7.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{22}{subsubsection*.20}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{22}{subsubsection*.24}
-\contentsline {subsection}{\numberline {7.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{22}{subsection.7.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{24}{subsubsection*.26}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{24}{subsubsection*.30}
-\contentsline {chapter}{\numberline {8}Discussion}{27}{chapter.8}
-\contentsline {chapter}{\numberline {9}Bibliography}{VI}{chapter.9}
-\contentsline {chapter}{\nonumberline List of Figures}{VII}{section*.35}
-\contentsline {chapter}{\nonumberline List of Tables}{VIII}{section*.38}
-\contentsline {chapter}{\numberline {A}Appendix}{IX}{appendix.A}
-\contentsline {section}{\numberline {A.1}Mesh properties}{IX}{section.A.1}
+\contentsline {chapter}{\numberline {1}Ehrenw\IeC {\"o}rtliche Erkl\IeC {\"a}rung}{II}{chapter.1}
+\contentsline {paragraph}{Erkl\IeC {\"a}rung zur Abschlussarbeit gem\IeC {\"a}\IeC {\ss } \IeC {\textsection } 22 Abs. 7 APB der TU Darmstadt}{II}{paragraph*.1}
+\contentsline {chapter}{\numberline {2}Declaration of Academic Integrity}{III}{chapter.2}
+\contentsline {paragraph}{Thesis Statement pursuant to \IeC {\textsection } 22 paragraph 7 of APB TU Darmstadt}{III}{paragraph*.2}
+\contentsline {chapter}{\numberline {3}Introduction}{1}{chapter.3}
+\contentsline {section}{\numberline {3.1}Main Goals}{1}{section.3.1}
+\contentsline {section}{\numberline {3.2}Outline}{1}{section.3.2}
+\contentsline {chapter}{\numberline {4}Fundamentals}{3}{chapter.4}
+\contentsline {section}{\numberline {4.1}Essential Equations}{3}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Equations of State}{3}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Ideal Gas Law}{3}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Navier-Stokes Equations}{4}{subsection.4.1.3}
+\contentsline {paragraph}{Euler Equations}{5}{paragraph*.9}
+\contentsline {section}{\numberline {4.2}Dimensionless Measures}{5}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Non-dimensional Ideal Gas Law}{6}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Dimensionless Navier-Stokes Equations}{6}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}The Runge-Kutta Discontinous Galerkin Method}{7}{chapter.5}
+\contentsline {section}{\numberline {5.1}DG Space Discretization}{7}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Weak Formulation}{8}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Numerical Fluxes}{8}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}RK Time Discretization}{9}{section.5.2}
+\contentsline {chapter}{\numberline {6}The Immersed Boundary Method}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}The DG Scheme with Immersed Boundaries}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}RK Time Discretisation with Immersed Boundaries}{14}{section.6.2}
+\contentsline {section}{\numberline {6.3}Cell Agglomeration}{14}{section.6.3}
+\contentsline {chapter}{\numberline {7}Validation of \gls {bosss} Concerning Euler Equations with \gls {ibm}s}{16}{chapter.7}
+\contentsline {section}{\numberline {7.1}Robustness Study}{16}{section.7.1}
+\contentsline {section}{\numberline {7.2}Convergence Study of Mesh Size and Polynomial Degree}{18}{section.7.2}
+\contentsline {section}{\numberline {7.3}Conclusion}{19}{section.7.3}
+\contentsline {chapter}{\numberline {8}The viscous cylinder}{20}{chapter.8}
+\contentsline {section}{\numberline {8.1}Theory}{20}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}The Laminar Steady Regime}{21}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Laminar Vortex Shedding}{21}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Simulations}{22}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{23}{subsection.8.2.1}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{23}{subsubsection*.21}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{23}{subsubsection*.25}
+\contentsline {subsection}{\numberline {8.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{23}{subsection.8.2.2}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{25}{subsubsection*.27}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{25}{subsubsection*.31}
+\contentsline {chapter}{\numberline {9}Discussion}{28}{chapter.9}
+\contentsline {chapter}{\numberline {10}Bibliography}{VII}{chapter.10}
+\contentsline {chapter}{\nonumberline List of Figures}{VIII}{section*.36}
+\contentsline {chapter}{\nonumberline List of Tables}{IX}{section*.39}
+\contentsline {chapter}{\numberline {A}Appendix}{X}{appendix.A}
+\contentsline {section}{\numberline {A.1}Mesh properties}{X}{section.A.1}

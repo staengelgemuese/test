@@ -25,7 +25,7 @@
 
 % Beginn des eigentlichen Dokumentenkörpers
 
-	\begin{document}
+	\begin{document}		
 		\pagestyle{headings}			% Setzt den Seitenstil (siehe TUD-Design Dokumentation)
 		\pagenumbering{Roman}		% Römische Seitenzahlen
 		% Titelseite erstellen
@@ -35,7 +35,7 @@
 			\pdfbookmark[0]{Impressum}{impressum}
 			\include{parts/impressum}
 		% Ehrenwörtliche Erklärung einfügen (je nach dem eine Variante auskommentieren)
-		%\include{parts/ehrenwortde}
+		\include{parts/ehrenwortde}
 		\include{parts/ehrenworten}
 		% Abstract einfügen	
 			\include{parts/abstract}		% TUD-Design Abstract/Zusammenfassung
@@ -55,7 +55,7 @@
 			\pagenumbering{Roman}					%Aktivierung römischer Seitenzahlen
 			\setcounter{page}{\value{savecounter}}		%Aufruf der zuvor gespeicherten zuletzt verwendeten römischen Seitenzahl
 		% Literaturverzeichnis einfügen
-		   % \nocite{*}
+		    \nocite{*}
 			\printbibliography
 		% Abbildungsverzeichnis einfügen
 			\listoffigures

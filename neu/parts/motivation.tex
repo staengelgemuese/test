@@ -1,6 +1,59 @@
 \chapter{Introduction}
-The chair of fluid dynamics of the technical university Darmstadt mainly deals with research in fluid mechanical problems, e.g. multiphase flows, turbulence or thermodynamics. In recent years they have been developing a \gls{bosss}, a  software using a \gls{rkdg} method for simulation of both incompressible and compressible Navier-Stokes, that is highly parallelizable and allows distinct grid types and dimensions (\gls{2d}, \gls{3d}) and arbitrarily defined polynomial order. \\\\
-In this thesis we will concentrate on a \gls{2d} grid that is based on an \gls{ibm}. The \gls{bosss} code in combination with \gls{ibm} firstly needs to be validated concerning incompressible Navier Stokes, which will be done in \ref{eulerVerification}, thus giving a basis for examining the calculations of the compressible Navier Stokes case. \\\\
-For both cases we will study the \gls{2d} flow around a cylinder for different mesh sizes and polynomial degrees, also varying the Reynolds number as we are studying the compressible viscous flow in \ref{viscousCylinder}. \\\\
-In order to be able to conceive the results which we will get by our simulations, I will first give some theory about the fundamental equations in \ref{fundamentals}, the \gls{rkdg} method in \ref{rkdgm} and the grid type based on the \gls{ibm} in \ref{immersedBoundaries}.
- \todo{what has been done already?}
+The chair of fluid dynamics of the Technical University Darmstadt mainly deals with research in fluid mechanical problems, e.g. multiphase flows, turbulence or thermodynamics. In recent years they have been developing a \gls{bosss}, that we will use in this thesis for the simulation of compressible flows with immersed boundaries. \gls{bosss} is based on a \gls{rkdg} method that allows allows distinct grid types and dimensions (\gls{2d}, \gls{3d}) and arbitrarily defined polynomial order without losing the ability of being highly parallelisable. 
+
+\section{Main Goals}
+
+This thesis aims at validating the \gls{cns} for both inviscid and viscid compressible flows using a grid defined through immersed boundaries. For inviscid flows it has already been validated thoroughly by \cite{mueller2014}, though not for the specific example we will concentrating on. 
+Within this work I will consider the flow around a cylinder in a \gls{2d} mesh. First I will use the inviscid flow in order to validate \gls{bosss} concerning robustness and convergence, using the entropy as an error criterion. \\ \indent
+After having formed a firm basis for the inviscid cylinder flow simulation we can then consider the same example for viscid flows using different Reynolds number (20, 40, 100, 200) and compare the obtained results as has already been done for \gls{bosss} by \cite{ayers}, who instead of an \gls{ibm} used curved elements to define the grid. We will therefore comply with the structure given by \cite{ayers}.
+
+
+\section{Outline}
+In order to gain a fundamental background knowledge of the methods that are used during the simulation, I will give some theory in the first part of this work. The second part we will devote to the simulation and validation followed by a conclusion. \\ \indent
+First, I will enumerate the important equations of fluid mechanics and their dimensionless forms in chapter \ref{fundamentals}. After that I will explain the \gls{dg} method using an example taken from \cite{mueller2014} and the \gls{rk} method in \ref{rkdgm}. The methodological part of the thesis will then be completed with an introduction to the \gls{ibm} in chapter \ref{immersedBoundaries}. \\ \indent
+The second part starts with the validation of \gls{bosss} concerning the Euler equations or inviscid flow, respectively, considering the robustness and convergence of the computations in chapter \ref{eulerVerification}. In chapter \ref{viscousCylinder} I will first give some theory about the viscid flow around a cylinder followed by the results and analysis of the main task of this work. \\ \indent
+The thesis will then be closed with a short conclusion and outlook for following works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%The chair of fluid dynamics of the Technical University Darmstadt mainly deals with research in fluid mechanical problems, e.g. multiphase flows, turbulence or thermodynamics. In recent years they have been developing a \gls{bosss}, a  software using a \gls{rkdg} method for simulation of both incompressible and compressible Navier-Stokes, that is highly parallelizable and allows distinct grid types and dimensions (\gls{2d}, \gls{3d}) and arbitrarily defined polynomial order. \\\\
+%\gls{bosss} has already been validated by \cite{ayers} for very similar cases as we will be concentrating on but using a mesh with curved elements. \\ \indent
+%In this thesis we will consider a \gls{2d} grid that is based on an \gls{ibm}. The \gls{bosss} code in combination with immersed boundaries firstly needs to be validated concerning incompressible Navier Stokes, which will be done in \ref{eulerVerification}, thus giving a basis for examining and comparing the calculations of the compressible Navier Stokes case. \\\\
+%For both cases we will study the \gls{2d} flow around a cylinder for different mesh sizes and polynomial degrees, also varying the Reynolds number as we are studying the compressible viscous flow in \ref{viscousCylinder}. \\\\
+%In order to be able to conceive the results which we will get by our simulations, I will first give some theory about the fundamental equations in \ref{fundamentals}, the \gls{rkdg} method in \ref{rkdgm} and the grid type based on the \gls{ibm} in \ref{immersedBoundaries}.
