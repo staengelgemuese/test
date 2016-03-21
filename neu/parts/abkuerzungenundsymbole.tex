@@ -1,3 +1,4 @@
+
 %Ein extra Verzeichnis für Symbole erstellen
 \newglossary[slg]{symbolslist}{syi}{syg}{Symbolverzeichnis}
 
@@ -9,38 +10,252 @@
 
 
 %				    	    %
-%%	Symbole definieren	%
-%%					    %
-%\newglossaryentry{symb:epsilon}{
-%	name=$\varepsilon$,
-%	description={Dehnung},
-%	sort=epsilon, type=symbolslist
-%}
-%\newglossaryentry{symb:phi}{
-%	name=$\varphi$,
-%	description={Winkel},
-%	sort=phi, type=symbolslist
-%}
-%\newglossaryentry{symb:E}{
-%	name=E,
-%	description={Elastizitätsmodul},
-%	sort=E, type=symbolslist
-%}
-%\newglossaryentry{symb:T}{
-%	name=T,
-%	description={Temperatur},
-%	sort=T, 
-%	type=symbolslist,
-%	symbol=\si{\kelvin}
-%}
-%\newglossaryentry{symb:sigma}{
-%	name=$\sigma$,
-%	description={Spannung},
-%	sort=sigma, 
-%	type=symbolslist,
-%	symbol=\si{\newton\per\millimetre\squared}
-%}
-%							%
+%	Symbole definieren	%
+%					    %
+\newglossaryentry{symb:e}{
+	name=$e$,
+	description={Specific inner energy},
+	sort=e, type=symbolslist
+}
+\newglossaryentry{symb:phi}{
+	name=$\varphi$,
+	description={Level set function},
+	sort=phi, type=symbolslist
+}
+\newglossaryentry{symb:h}{
+	name=$\bar{h}$,
+	description={Specific enthalpy},
+	sort=h, type=symbolslist
+}
+\newglossaryentry{symb:T}{
+	name=T,
+	description={Temperature},
+	sort=T, 
+	type=symbolslist
+}
+\newglossaryentry{symb:p}{
+	name=p,
+	description={Pressure},
+	sort=p, 
+	type=symbolslist
+}
+\newglossaryentry{symb:rho}{
+	name=$\rho$,
+	description={Density},
+	sort=rho, 
+	type=symbolslist
+}
+\newglossaryentry{symb:s}{
+	name=s,
+	description={Specific entropy},
+	sort=s, 
+	type=symbolslist
+}
+\newglossaryentry{symb:c_p}{
+	name=$c_p$,
+	description={Specific heat capacity at constant pressure},
+	sort=c_p, 
+	type=symbolslist
+}
+\newglossaryentry{symb:c_v}{
+	name=$c_v$,
+	description={Specific heat capacity at constant volume},
+	sort=c_v, 
+	type=symbolslist
+}
+\newglossaryentry{symb:gamma}{
+	name=$\gamma$,
+	description={Heat capacity ratio},
+	sort=gamma, 
+	type=symbolslist
+}
+\newglossaryentry{symb:rhoE}{
+	name=$\rho E$,
+	description={Inner energy},
+	sort=rhoE, 
+	type=symbolslist
+}
+\newglossaryentry{symb:a}{
+	name=$a$,
+	description={Speed of sound},
+	sort=ac, 
+	type=symbolslist
+}
+\newglossaryentry{symb:Fc}{
+	name=$\mathbf{F}^c_i$,
+	description={Convective flux},
+	sort=Fc, 
+	type=symbolslist
+}
+\newglossaryentry{symb:Fv}{
+	name=$\mathbf{F}^v_i$,
+	description={Viscous flux},
+	sort=Fv, 
+	type=symbolslist
+}
+\newglossaryentry{symb:B}{
+	name=$\mathbf{B}$,
+	description={Source term},
+	sort=B, 
+	type=symbolslist
+}
+\newglossaryentry{symb:tau}{
+	name=$\tau_{ij}$,
+	description={Viscous stress tensor},
+	sort=tau, 
+	type=symbolslist
+}
+\newglossaryentry{symb:mu}{
+	name=$\mu$,
+	description={Dynamic viscosity},
+	sort=mu, 
+	type=symbolslist
+}
+\newglossaryentry{symb:q}{
+	name=$q_i$,
+	description={Heat flux},
+	sort=q, 
+	type=symbolslist
+}
+\newglossaryentry{symb:infty}{
+	name=$(\cdot)_\infty$,
+	description={Reference quantities},
+	sort=ab, 
+	type=symbolslist
+}
+\newglossaryentry{symb:asterisk}{
+	name=$(\cdot)^*$,
+	description={Dimensionless quantities},
+	sort=aa, 
+	type=symbolslist
+}
+\newglossaryentry{symb:re}{
+	name=$\text{Re}$,
+	description={Reynolds number},
+	sort=re, 
+	type=symbolslist
+}
+\newglossaryentry{symb:fr}{
+	name=$\text{Fr}$,
+	description={Froude number},
+	sort=fr, 
+	type=symbolslist
+}
+\newglossaryentry{symb:pr}{
+	name=$\text{Pr}$,
+	description={Prandtl number},
+	sort=pr, 
+	type=symbolslist
+}
+\newglossaryentry{symb:c}{
+	name=$c$,
+	description={Concentration},
+	sort=c, 
+	type=symbolslist
+}
+\newglossaryentry{symb:x}{
+	name=$\mathbf{x}$,
+	description={Spatial coordinate vector, $\mathbf{x} = (x,y)^\intercal \in \Omega$ },
+	sort=x, 
+	type=symbolslist
+}
+\newglossaryentry{symb:t}{
+	name=$t$,
+	description={Time},
+	sort=t, 
+	type=symbolslist
+}
+\newglossaryentry{symb:omegah}{
+	name=$\Omega_h$,
+	description={Discretised problem domain},
+	sort=omegah, 
+	type=symbolslist
+}
+\newglossaryentry{symb:omega}{
+	name=$\Omega$,
+	description={Problem domain},
+	sort=omega, 
+	type=symbolslist
+}
+\newglossaryentry{symb:k}{
+	name=$\mathcal{K}$,
+	description={Cell domain},
+	sort=k, 
+	type=symbolslist
+}
+\newglossaryentry{symb:Phi}{
+	name=$\Phi$,
+	description={Cell-local test function},
+	sort=pphi, 
+	type=symbolslist
+}
+\newglossaryentry{symb:P}{
+	name=$P$,
+	description={Polynomial degree},
+	sort=p, 
+	type=symbolslist
+}
+\newglossaryentry{symb:A}{
+	name=$\mathcal{A}$,
+	description={Physical region of calculation area},
+	sort=A, 
+	type=symbolslist
+}
+\newglossaryentry{symb:Bb}{
+	name=$\mathcal{B}$,
+	description={Void region of calculation area},
+	sort=B, 
+	type=symbolslist
+}
+\newglossaryentry{symb:I}{
+	name=$\mathcal{I}$,
+	description={Immersed boundary},
+	sort=I, 
+	type=symbolslist
+}
+\newglossaryentry{symb:r}{
+	name=$r$,
+	description={Radius},
+	sort=r, 
+	type=symbolslist
+}
+\newglossaryentry{symb:W}{
+	name=$W^*$,
+	description={Wake separation length},
+	sort=W, 
+	type=symbolslist
+}
+\newglossaryentry{symb:C_D}{
+	name=$C_D$,
+	description={Drag coefficient},
+	sort=C_D, 
+	type=symbolslist
+}
+\newglossaryentry{symb:C_L}{
+	name=$C_L$,
+	description={Lift coefficient},
+	sort=C_L, 
+	type=symbolslist
+}
+\newglossaryentry{symb:d}{
+	name=$d$,
+	description={Drag force},
+	sort=d, 
+	type=symbolslist
+}
+\newglossaryentry{symb:l}{
+	name=$l$,
+	description={Lift force},
+	sort=l, 
+	type=symbolslist
+}
+\newglossaryentry{symb:St}{
+	name=$\text{St}$,
+	description={Strouhal number},
+	sort=st, 
+	type=symbolslist
+}
+							%
 %	Abkürzungen definieren		%
 %							%
 %Befehls-Schema:
@@ -51,13 +266,16 @@
 \newacronym{dg}{DG}{Discontinous Galerkin}
 \newacronym{2d}{2D}{2-dimensional}
 \newacronym{3d}{3D}{3-dimensional}
-\newacronym{ibm}{IBM}{immersed boundary method}
-\newacronym{ode}{ODE}{ordinary differential equation}
-\newacronym{fvm}{FVM}{finite volume method}
-\newacronym{fem}{FEM}{finite element method}
+\newacronym{ibm}{IBM}{Immersed Boundary Method}
+\newacronym{ode}{ODE}{Ordinary Differential Equation}
+\newacronym{fvm}{FVM}{Finite Volume Method}
+\newacronym{fem}{FEM}{Finite Element Method}
 \newacronym{cfl}{CFL}{Courant-Friedrichs-Lewy}
-\newacronym{cns}{CNS}{Compressible Navier-Stokes Solver}
+\newacronym{cns}{CNS}{Compressible Navier-Stokes}
+\newacronym{dgcpd}{DG$(\cdot)$CpD$(\cdot)$}{Degree $(\cdot)$, Cells per Direction $(\cdot)$}
 
 
-\makeglossaries
+
+
+
 

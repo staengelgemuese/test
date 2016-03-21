@@ -22,18 +22,18 @@
 		\end{align}
 		
 		\subsection{Ideal Gas Law}
-		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will confine ourselves to the ideal gas law as we are only modelling standard air($\gamma = 1.4$). \\
+		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will confine ourselves to the ideal gas law as we are only modelling standard air ($\gamma = 1.4$). \\
 		The ideal gas law is defined as
 		\begin{align}
 			p = (\gamma - 1) \rho e
 		\end{align}
 		with $\rho e \in \mathbb{R}^+$ denoting the inner energy. \\
 		
-		The speed of sound is defined as 
+		A definition of the speed of sound is given by
 		\begin{align}
 			a = \sqrt{\left.\dfrac{\partial p}{\partial \rho}\right|_s}.
 		\end{align}
-		Using this definition combined with the ideal gas law and an equation for the change of entropy as can be read in \cite{mueller2014} leads to the useful relations
+		Using this definition combined with the ideal gas law and an equation for the change of entropy as found in \cite{mueller2014} leads to the useful relations
 		\begin{align}
 			a^2 &= \gamma \dfrac{p}{\rho}\\
 			\dfrac{p}{\rho^\gamma} &= \text{const}.
@@ -41,7 +41,7 @@
 		
 		
 		\subsection{Navier-Stokes Equations}
-		The compressible Navier-Stokes equations (CNS) in conservative forms read as 
+		The \gls{cns} equations in conservative forms read as 
 		\begin{align}
 			\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B},
 		\end{align}
@@ -82,14 +82,14 @@
 		\end{align}
 		
 			\paragraph{Euler Equations}
-			Regarding only compressible inviscid flow, the viscous fluxes and the source terms dissolve ($\mathbf{F}_i^v = \mathbf{B} = \mathbf{0}$) and the Navier-Stokes equations simplify to
+			Regarding only compressible inviscid flow, the viscous fluxes and the source terms dissolve ($\mathbf{F}_i^v = \mathbf{B} = \mathbf{0}$) and the Navier-Stokes equations simplify to the so-called Euler equations: 
 			\begin{align}
 				\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F_x^c(U)}}{\partial x} + \dfrac{\partial \mathbf{F_y^c(U)}}{\partial y} = 0.
 			\end{align}
 	
 	
 	\section{Dimensionless Measures}
-	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R \todo{Krämer-Eis zitieren}. All other reference quantities can be derived from those. In the following all dimensionless quantities will be marked with an asterisk ()*:
+	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures as found in \cite{annualreport}. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R. All other reference quantities can be derived from those. In the following all dimensionless quantities will be marked with an asterisk $(\cdot)^*$:
 	
 	\begin{align}
 		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\ \nonumber
@@ -115,14 +115,13 @@
 	\end{align}	
 	
 	\subsection{Dimensionless Navier-Stokes Equations}
-	As we now have all required measures and operator we can use them to define the dimensionless relations \todo{zahlen erklären}
+	As we now have all required measures and operator we can use them to define the dimensionless relations 
 	\begin{description}
 		\item[Reynolds Number] $\text{Re} = \dfrac{\rho_\infty V_\infty L}{\mu_\infty} \propto \dfrac{\text{inertia forces}}{\text{viscous forces}}$,
 		\item[Froude Number] \quad $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,
 		\item[Prandtl Number]\quad $\text{Pr} = \dfrac{ \mu_\infty c_p}{k_\infty} \propto \dfrac{\text{viscous diffusion rate}}{\text{thermal diffusion rate}}$.
 	\end{description}
 	Putting all together we receive the dimensionless Navier-Stokes equations. As they only depend on non-dimensional quantities we can drop the asterisk:
-	
 	\begin{align}
 		\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B}
 	\end{align}

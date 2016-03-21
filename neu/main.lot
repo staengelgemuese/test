@@ -2,19 +2,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Butcher Tableau for the Explicit Runge\IeC {\textendash }Kutta Method.\relax }}{11}{table.caption.11}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{11}{table.caption.12}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Butcher Tableau for the Explicit Runge\IeC {\textendash }Kutta Method.\relax }}{11}{table.caption.25}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Butcher Tableaus for different orders of RK\relax }}{11}{table.caption.26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{24}{table.caption.22}
-\contentsline {table}{\numberline {8.2}{\ignorespaces $C_D$ Values for each simulation}}{24}{table.caption.23}
-\contentsline {table}{\numberline {8.3}{\ignorespaces Wake Separation Lengths for each simulation\relax }}{24}{table.caption.23}
-\contentsline {table}{\numberline {8.4}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{25}{table.caption.26}
-\contentsline {table}{\numberline {8.5}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite {ayers}, modified\relax }}{26}{table.caption.28}
-\contentsline {table}{\numberline {8.6}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{27}{table.caption.32}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{23}{table.caption.38}
+\contentsline {table}{\numberline {6.2}{\ignorespaces $C_D$ Values for each simulation}}{24}{table.caption.39}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Wake Separation Lengths for each simulation\relax }}{24}{table.caption.39}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{24}{table.caption.42}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite {ayers}, modified\relax }}{25}{table.caption.44}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{26}{table.caption.47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

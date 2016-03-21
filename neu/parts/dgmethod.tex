@@ -7,10 +7,29 @@
 		
 		\begin{figure}[htp]
 			\centering
-			\includegraphics[width=\textwidth]{femfvm.PNG}
-			\caption{Comparison of \gls{fem}, \gls{fvm} and \gls{dg} \todo{cite fdy vortrag}}
+			\begin{minipage}[b]{0.3\textwidth}
+				\centering
+				\includegraphics[height=3.3cm]{img/fem.PNG}
+				\caption*{(a) First order \gls{fem}}
+				%	\label{fig:case14gross}
+			\end{minipage}
+			\quad
+			\begin{minipage}[b]{0.3\textwidth}
+				\centering
+				\includegraphics[height=3.3cm]{fvm.PNG}
+				\caption*{(b) Zeroth order \gls{dg} (\gls{fvm})}
+				\label{fig:case1afj4detail}
+			\end{minipage}
+			\quad
+			\begin{minipage}[b]{0.3\textwidth}
+				\centering
+				\includegraphics[height=3.3cm]{dg.PNG}
+				\caption*{(c) First order DG}
+				\label{femfafdavm}
+			\end{minipage}
+			\caption{Comparison of \gls{fem}, \gls{fvm} and \gls{dg}}
 			\label{femfvm}
-		\end{figure} 
+		\end{figure}
 
 		As a simple example that we can use to derive the \gls{dg} formulation we will consider the scalar conservation law 	
 		\begin{align}

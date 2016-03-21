@@ -1,6 +1,7 @@
-\chapter{The viscous cylinder}
+\chapter{Evaluation of \glsentrytext{bosss} for Viscid Flows}
 \label{viscousCylinder}
-The flow around a viscous cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
+In this chapter we aim at validating \gls{bosss} for viscid flows with \gls{ibm}s. In order to have a good comparable result, we will once again regard the flow around a cylinder as in chapter \ref{eulerVerification}. 
+The viscous flow around a cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
 	The flow around a viscous cylinder can be divided into different sections depending on the Reynolds number as shown in \ref{fig:overview}. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
@@ -31,7 +32,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 			\label{fig:steady}
 		\end{figure}
 	\subsection{Laminar Vortex Shedding}
-	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \ref{fig:unsteady}. With increasing Reynolds number the amplitudes of drag and lift coefficients increases while the Strouhal number, respectively frequency, decreases.
+	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \ref{fig:unsteady}. With increasing Reynolds number the amplitudes of drag and lift coefficients increases while the Strouhal number and frequency, respectively, decreases.
 	
 		\begin{figure}[htp]
 			\centering
@@ -41,9 +42,9 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
-	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ MS $+$ \textit{number of cells per direction}, e.g. DG2MS80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
-	 The drag and lift coefficients $C_D$ and $C_L$ are defined as
+	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
+	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ CpD $+$ \textit{number of cells per direction}, e.g. DG2CpD80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
+	 The drag and lift coefficients are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\
 		C_L = \dfrac{l}{q_\infty L_\infty}
@@ -56,7 +57,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	with the drag and lift forces $d$ and $l$ provided from the calculation. \\\\
 	During the simulations we now compute the complete domain with $-40 \leq x \leq 40$, $-40 \leq y \leq 40$ and the cylinder radius $r = 1$ as we expect asymmetrical oscillations of the flow with higher Reynolds numbers.
 	We will use a rectilinear mesh that is finer near the cylinder, an isothermal wall boundary condition at the cylinder wall and supersonic inlet boundary conditions for the domain borders that shall prevent the reflection of the initial wave.  \\\\
-	For the calculation with DG3MS40 no results could be found. The case produces a ill conditioned matrix that is not positive definite; thus the Cholesky factorisation fails. We can therefore conclude that it is unsafe to use \gls{bosss} with high order on very coarse meshes. These results match those that we found in \ref{eulerVerification} where we got irregular values for DG3MS32 during the robustness study.
+%	For the calculation with DG3CpD40 no results could be found. The case produces a ill conditioned matrix that is not positive definite; thus the Cholesky factorisation fails. We can therefore conclude that it is unsafe to use \gls{bosss} with high order on very coarse meshes. These results match those that we found in \ref{eulerVerification} where we got irregular values for DG3CpD32 during the robustness study.
 	
 	\subsection{Steady State Simulations ($\text{Re} < 40-50$)}
 	For the steady state simulations we can use the wake separation length $W^*$ as an additional variable to compare to other simulations.
@@ -139,7 +140,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\begin{minipage}[b]{0.3\textwidth}	
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
-				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
+				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 				\multicolumn{2}{|c|}{}                       & 40     & 80    & 160    \\ \hline
 				\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
 				& 2           &        &       &        \\ \cline{2-5} 
@@ -153,7 +154,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\begin{minipage}[b]{0.3\textwidth}	
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{MS} \\ \cline{3-5} 
+			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 			\multicolumn{2}{|c|}{}                       & 40     & 80    & 160    \\ \hline
 			\multirow{3}{*}{DG}            & 1           &        &       &        \\ \cline{2-5} 
 			& 2           &        &       &        \\ \cline{2-5} 
@@ -174,7 +175,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 		\addlegendentry{Constant Value}
 		\end{semilogxaxis}	
 		\end{tikzpicture}
-		\caption{Convergence Plot}
+		\caption{Graphical presentation of \ref{C_D20} for Re=20}
 		\label{shivfjftersaror}	
 	\end{figure}
 	
@@ -197,19 +198,7 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\caption{Comparison of Results for $W^*$ and $C_D$, taken from \cite{ayers}, modified}
 	\label{table40}
 \end{table}
-%		\begin{table}[htp]
-%			\centering
-%			\begin{tabular}{|c||c|c|c|c}
-%				\cline{1-4}
-%				\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
-%				\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$W^*$ 				 & a        & b        & c        &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$C_D$                & $1.26492653340932$        & $1.20679001087588$        & $1.1891224168599$       &  \\ \cline{1-4}
-%				\rule{0pt}{2,3ex}$C_L$                & $-0.000508760643668893$        & $-0.00157058413712008$        & $-0.00054056507571687$        &  \\ \cline{1-4}
-%			\end{tabular}
-%			\caption{Wake separation length and coefficients of drag and lift for $\text{Re}=40$}
-%			\label{tab:re40}
-%		\end{table}
+
 	\subsection{Unsteady Simulations ($\text{Re}> 40-50$)}
 	In order to compare the unsteady simulations we need the Strouhal number
 	\begin{align}
@@ -253,26 +242,17 @@ The flow around a viscous cylinder has been approached by many papers both exper
 %				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=100$}
 %				\label{tab:re100}
 %			\end{table}
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-			\addplot table[ x =time  , y =C_L, mark=none] {data/vortex2.dat};
-			\end{axis}	
-			\end{tikzpicture}
-			\caption{Convergence Plot}
-			\label{shijftserdaror}	
-		\end{figure}
+
 	
 		\begin{figure}[htp]	
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-				\addplot table[ x = time, y = l, mark=none] {data/re100dg1ms128.dat};
+				\addplot table[ x = time, y = l, mark=none] {data/ms64dg1re100.dat};
 				\end{axis}	
 			\end{tikzpicture}
-			\caption{Convergence Plot}
-			\label{shijftaerror}	
+			\caption{Lift coefficient over time for Re = 100}
+			\label{osci100}	
 		\end{figure}
 %		\begin{figure}[htp]	
 %			\centering
@@ -313,19 +293,6 @@ The flow around a viscous cylinder has been approached by many papers both exper
 	\label{my-label}
 \end{table}
 	
-%			\begin{table}[htp]
-%				\centering
-%				\begin{tabular}{|c||c|c|c|c}
-%					\cline{1-4}
-%					\rule{0pt}{2,3ex}\multirow{2}{*}{}   & \multicolumn{3}{c|}{mesh size} &  \\ \cline{2-4}
-%					\rule{0pt}{2,3ex}& $32 \times 32$       & $64 \times 64$       & $128 \times 128$      &  \\ \cline{1-4}
-%					\rule{0pt}{2,3ex}$St$ 				 & a        & b        & c        &  \\ \cline{1-4}
-%					\rule{0pt}{2,3ex}$C_D$                & d        & e        & f        &  \\ \cline{1-4}
-%					\rule{0pt}{2,3ex}$C_L$                & g        & h        & i        &  \\ \cline{1-4}
-%				\end{tabular}
-%				\caption{Strouhal number and coefficients of drag and lift for $\text{Re}=200$}
-%				\label{tab:re200}
-%			\end{table}
 			\begin{figure}[htp]	
 				\centering
 				\begin{tikzpicture}
@@ -333,6 +300,6 @@ The flow around a viscous cylinder has been approached by many papers both exper
 				\addplot table[ x =time, y =l, mark=none] {data/re200dg1.dat};
 				\end{axis}	
 				\end{tikzpicture}
-				\caption{Convergence Plot}
-				\label{shijfterdaror}	
+				\caption{Lift coefficient over time for Re=200}
+				\label{osci200}	
 			\end{figure}

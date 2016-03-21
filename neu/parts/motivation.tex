@@ -3,16 +3,16 @@ The chair of fluid dynamics of the Technical University Darmstadt mainly deals w
 
 \section{Main Goals}
 
-This thesis aims at validating the \gls{cns} for both inviscid and viscid compressible flows using a grid defined through immersed boundaries. For inviscid flows it has already been validated thoroughly by \cite{mueller2014}, though not for the specific example we will concentrating on. 
+This thesis aims at validating the \gls{cns} solver for both inviscid and viscid compressible flows using a grid defined through immersed boundaries. For inviscid flows it has already been validated thoroughly by \cite{mueller2014}, though not for the specific example we will concentrating on. 
 Within this work I will consider the flow around a cylinder in a \gls{2d} mesh. First I will use the inviscid flow in order to validate \gls{bosss} concerning robustness and convergence, using the entropy as an error criterion. \\ \indent
 After having formed a firm basis for the inviscid cylinder flow simulation we can then consider the same example for viscid flows using different Reynolds number (20, 40, 100, 200) and compare the obtained results as has already been done for \gls{bosss} by \cite{ayers}, who instead of an \gls{ibm} used curved elements to define the grid. We will therefore comply with the structure given by \cite{ayers}.
 
 
 \section{Outline}
 In order to gain a fundamental background knowledge of the methods that are used during the simulation, I will give some theory in the first part of this work. The second part we will devote to the simulation and validation followed by a conclusion. \\ \indent
-First, I will enumerate the important equations of fluid mechanics and their dimensionless forms in chapter \ref{fundamentals}. After that I will explain the \gls{dg} method using an example taken from \cite{mueller2014} and the \gls{rk} method in \ref{rkdgm}. The methodological part of the thesis will then be completed with an introduction to the \gls{ibm} in chapter \ref{immersedBoundaries}. \\ \indent
+First, I will enumerate the important equations of fluid mechanics and their dimensionless forms in chapter \ref{fundamentals}. After that I will explain the \gls{dg} method using an example taken from \cite{mueller2014} and the \gls{rk} method in chapter \ref{rkdgm}. The methodological part of the thesis will then be completed with an introduction to the \gls{ibm} in chapter \ref{immersedBoundaries}. \\ \indent
 The second part starts with the validation of \gls{bosss} concerning the Euler equations or inviscid flow, respectively, considering the robustness and convergence of the computations in chapter \ref{eulerVerification}. In chapter \ref{viscousCylinder} I will first give some theory about the viscid flow around a cylinder followed by the results and analysis of the main task of this work. \\ \indent
-The thesis will then be closed with a short conclusion and outlook for following works.
+The thesis will then be closed by a short conclusion and outlook for following works.
 
 
 

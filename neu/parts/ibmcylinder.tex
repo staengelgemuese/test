@@ -1,4 +1,4 @@
-\chapter{Validation of \gls{bosss} Concerning Euler Equations with \gls{ibm}s}
+\chapter{Validation of \glsentrytext{bosss} for Inviscid Flows}
 	\label{eulerVerification}
 	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.\\\\
 	During the simulation we compute only half of the domain with $-40 \leq x \leq 40$, $0 \leq y \leq 40$ and the cylinder radius $r = 1$ as the flow above and below the cylinder should be identical.
@@ -107,5 +107,5 @@
 	
 	After having studied the behaviour of \gls{bosss} concerning the Euler equations with immersed boundaries, we can conclude that is sufficiently validated. The robustness studied showed that the results are mostly independent from the exact position of the grid cells. During the convergence study we remarked  that the convergence behaves as desired with an order close to the optimal rate of $O(h^{P+1})$. 
 	
-	Nevertheless in order to receive the correct result it should always be guaranteed that the calculation can terminate properly which can be derived by a smaller \gls{cfl} number, respectively time step size, an increased node count safety factor or smaller cells. Unfortunately these precautions cause a higher overall runtime.
+	Nevertheless in order to receive the correct result it should always be guaranteed that the calculation can terminate properly which can be derived by a smaller \gls{cfl} number and time step size, respectively, an increased node count safety factor or smaller cells. Unfortunately these precautions cause a higher overall runtime.
 	
