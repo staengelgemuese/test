@@ -1,10 +1,10 @@
 \chapter{Evaluation of \glsentrytext{bosss} for Viscid Flows}
 \label{viscousCylinder}
-In this chapter we aim at validating \gls{bosss} for viscid flows with \gls{ibm}s. In order to have a good comparable result, we will once again regard the flow around a cylinder as in chapter \ref{eulerVerification}. 
-The viscous flow around a cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \ref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
+In this chapter we aim at validating \gls{bosss} for viscid flows with \gls{ibm}s. In order to have a good comparable result, we will once again regard the flow around a cylinder as in chapter \cref{eulerVerification}. 
+The viscous flow around a cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \cref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
-	The flow around a viscous cylinder can be divided into different sections depending on the Reynolds number as shown in \ref{fig:overview}. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
+	The flow around a viscous cylinder can be divided into different sections depending on the Reynolds number as shown in \cref{fig:overview}. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=8cm]{overviewCylinderReynolds_Williamson.PNG}
@@ -24,7 +24,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 	
 	\subsection{The Laminar Steady Regime}
 	
-	At Reynolds numbers below 50 the flow forms a steady recirculation region, characterised by the wake separation length  $W^*$. It is built by two symmetrically placed vortices on each side of the wake as can be seen in \ref{fig:steady}. It has been shown experimentally as well as numerically, that the wake separation length increases with increasing Reynolds number. 
+	At Reynolds numbers below 50 the flow forms a steady recirculation region, characterised by the wake separation length  $W^*$. It is built by two symmetrically placed vortices on each side of the wake as can be seen in \cref{fig:steady}. It has been shown experimentally as well as numerically, that the wake separation length increases with increasing Reynolds number. 
 		\begin{figure}[htp]
 			\centering
 			\includegraphics[height=4cm]{steadyFlow_Williamson.PNG}
@@ -32,7 +32,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 			\label{fig:steady}
 		\end{figure}
 	\subsection{Laminar Vortex Shedding}
-	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \ref{fig:unsteady}. With increasing Reynolds number the amplitudes of drag and lift coefficients increases while the Strouhal number and frequency, respectively, decreases.
+	For Reynolds numbers of between 50 and 200 the recirculation region develops instabilities leading to the development of turbulence in the wake. This results into fully periodic vortex shedding, known as the Kármán vortex street, as can be seen in \cref{fig:unsteady}. With increasing Reynolds number the amplitudes of drag and lift coefficients increases while the Strouhal number and frequency, respectively, decreases.
 	
 		\begin{figure}[htp]
 			\centering
@@ -42,7 +42,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.1$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
+	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
 	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ CpD $+$ \textit{number of cells per direction}, e.g. DG2CpD80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
 	 The drag and lift coefficients are defined as
 	\begin{align}
@@ -113,7 +113,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 %	\end{table}
 	
 	\subsubsection{Simulation at Reynolds Number 20}
-	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \ref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.
+	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.
 
 \begin{table}[htp]
 	\centering
@@ -175,7 +175,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 		\addlegendentry{Constant Value}
 		\end{semilogxaxis}	
 		\end{tikzpicture}
-		\caption{Graphical presentation of \ref{C_D20} for Re=20}
+		\caption{Graphical presentation of \cref{C_D20} for Re=20}
 		\label{shivfjftersaror}	
 	\end{figure}
 	

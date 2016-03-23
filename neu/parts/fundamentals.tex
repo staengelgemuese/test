@@ -22,7 +22,7 @@
 		\end{align}
 		
 		\subsection{Ideal Gas Law}
-		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will confine ourselves to the ideal gas law as we are only modelling standard air ($\gamma = 1.4$). \\
+		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will limit ourselves to the ideal gas law as we are only modelling standard air ($\gamma = 1.4$). \\
 		The ideal gas law is defined as
 		\begin{align}
 			p = (\gamma - 1) \rho e
@@ -33,7 +33,7 @@
 		\begin{align}
 			a = \sqrt{\left.\dfrac{\partial p}{\partial \rho}\right|_s}.
 		\end{align}
-		Using this definition combined with the ideal gas law and an equation for the change of entropy as found in \cite{mueller2014} leads to the useful relations
+		Using this definition combined with the ideal gas law and an equation for the change of entropy as found in \cite{mueller2014} leads to the useful relations \todo{isentropy!}
 		\begin{align}
 			a^2 &= \gamma \dfrac{p}{\rho}\\
 			\dfrac{p}{\rho^\gamma} &= \text{const}.
@@ -45,7 +45,7 @@
 		\begin{align}
 			\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B},
 		\end{align}
-		with the denotations $\mathbf{U}$ as the conserved flow variables, $\mathbf{F}_i^c$ and $\mathbf{F}_i^v$ as the convective and viscous fluxes and $\mathbf{B}$ as source terms:
+		with $\mathbf{U}$ as the conserved flow variables, $\mathbf{F}_i^c$ and $\mathbf{F}_i^v$ as the convective and viscous fluxes and $\mathbf{B}$ as source terms:
 		\begin{align}
 			\mathbf{U} = 
 				\begin{pmatrix}
@@ -72,7 +72,7 @@
 				\rho F_j v_j + Q_i
 				\end{pmatrix}.
 		\end{align}
-		In addition to the denotations in \ref{EOS} we have $F_j$ as body forces, $Q_i$ as heat sources, the viscous stress tensor
+		In addition to the denotations in \cref{EOS} we have $F_j$ as body forces, $Q_i$ as heat sources, the viscous stress tensor
 		\begin{align}
 			\tau_{ij} = \mu \left[\left(\dfrac{\partial v_i}{\partial x_j} + \dfrac{\partial v_j}{\partial x_i} \right) - \dfrac{2}{3} \dfrac{\partial v_k}{\partial x_k} \delta_{ij}\right]
 		\end{align}
@@ -97,7 +97,7 @@
 		 Q_i^* &= \dfrac{L}{V_\infty^3} \cdot Q. &
 	\end{align}
 	
-	In order to derive the non-dimensional form of the CNS, we also need the dimensionless operators:
+	In order to derive the non-dimensional form of the \gls{cns} equation, we also need the dimensionless operators:
 	
 	\begin{align}
 		\frac{\partial}{\partial t}= \frac{\partial t^*}{\partial t} \frac{\partial}{\partial t^*} &= \frac{V_\infty}{L} \frac{\partial}{\partial t^*}, \\

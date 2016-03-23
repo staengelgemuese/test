@@ -14,29 +14,30 @@
 \BOOKMARK [1][-]{section.2.2}{2.2 Dimensionless Measures}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Non-dimensional Ideal Gas Law}{section.2.2}% 15
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Dimensionless Navier-Stokes Equations}{section.2.2}% 16
-\BOOKMARK [0][-]{chapter.3}{3 The Runge-Kutta Discontinous Galerkin Method}{}% 17
+\BOOKMARK [0][-]{chapter.3}{3 The Runge-Kutta Discontinuous Galerkin Method}{}% 17
 \BOOKMARK [1][-]{section.3.1}{3.1 DG Space Discretization}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Weak Formulation}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Discrete Weak Formulation}{section.3.1}% 19
 \BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Numerical Fluxes}{section.3.1}% 20
 \BOOKMARK [1][-]{section.3.2}{3.2 RK Time Discretization}{chapter.3}% 21
 \BOOKMARK [0][-]{chapter.4}{4 The Immersed Boundary Method}{}% 22
 \BOOKMARK [1][-]{section.4.1}{4.1 The DG Scheme with Immersed Boundaries}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretisation with Immersed Boundaries}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.3}{4.3 Cell Agglomeration}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{5 Validation of BoSSS for Inviscid Flows}{}% 26
-\BOOKMARK [1][-]{section.5.1}{5.1 Robustness Study}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{5.2 Convergence Study of Mesh Size and Polynomial Degree}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{5.3 Conclusion}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{6 Evaluation of BoSSS for Viscid Flows}{}% 30
-\BOOKMARK [1][-]{section.6.1}{6.1 Theory}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The Laminar Steady Regime}{section.6.1}% 32
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Laminar Vortex Shedding}{section.6.1}% 33
-\BOOKMARK [1][-]{section.6.2}{6.2 Simulations}{chapter.6}% 34
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Steady State Simulations \(Re < 40-50\)}{section.6.2}% 35
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 36
-\BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 37
-\BOOKMARK [0][-]{chapter.8}{8 Bibliography}{}% 38
-\BOOKMARK [0][-]{section*.51}{List of Figures}{}% 39
-\BOOKMARK [0][-]{section*.54}{List of Tables}{}% 40
-\BOOKMARK [0][-]{appendix.A}{A Appendix}{}% 41
-\BOOKMARK [1][-]{section.A.1}{A.1 Mesh properties}{appendix.A}% 42
+\BOOKMARK [1][-]{section.4.4}{4.4 Properties BoSSS}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{5 Validation of BoSSS for Inviscid Flows}{}% 27
+\BOOKMARK [1][-]{section.5.1}{5.1 Robustness Study}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{5.2 Convergence Study of Mesh Size and Polynomial Degree}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{5.3 Conclusion}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{6 Evaluation of BoSSS for Viscid Flows}{}% 31
+\BOOKMARK [1][-]{section.6.1}{6.1 Theory}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The Laminar Steady Regime}{section.6.1}% 33
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Laminar Vortex Shedding}{section.6.1}% 34
+\BOOKMARK [1][-]{section.6.2}{6.2 Simulations}{chapter.6}% 35
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Steady State Simulations \(Re < 40-50\)}{section.6.2}% 36
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 37
+\BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 38
+\BOOKMARK [0][-]{chapter.8}{8 Bibliography}{}% 39
+\BOOKMARK [0][-]{section*.51}{List of Figures}{}% 40
+\BOOKMARK [0][-]{section*.54}{List of Tables}{}% 41
+\BOOKMARK [0][-]{appendix.A}{A Appendix}{}% 42
+\BOOKMARK [1][-]{section.A.1}{A.1 Mesh properties}{appendix.A}% 43

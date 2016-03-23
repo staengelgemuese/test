@@ -1,6 +1,6 @@
 \chapter{The Immersed Boundary Method}
 \label{immersedBoundaries}
-In the following chapter we will study the DG method with immersed boundaries. Most of this chapter's information has been taken from \cite{paper} \\ \indent 
+In the following chapter we will study the DG method with immersed boundaries. This chapter is based on \cite{paper} \\ \indent 
 IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. It therefore makes the mesh generation much easier, as it only needs a cartesian mesh and a function that approximates the level set. Brought along with the cartesian mesh, it is easily parallelisable, thus rendering it convenient for more complex structures that shall be computed on several processors.
 	\section{The DG Scheme with Immersed Boundaries}
 	We regard an implicit representation of an immersed boundary using the level set function $\varphi$ that parts the calculation area $\Omega_h$ into 
@@ -10,13 +10,13 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 		\item[the void region]  $\mathcal{B} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) < 0 \right\}$, 
 		\item[and the immersed boundary] $\mathcal{I} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) = 0 \right\}$
 	\end{description} 
-	as can be seen in  \ref{fig:cutcell}.
+	as can be seen in  \cref{fig:cutcell}.
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=4cm]{ibmcut.PNG}
-		\caption{Cut cell with physical (red) and void region (white)}\label{fig:cutcell}
+		\caption{Cut cell with physical (red) and void region (white) \cite{paper}}\label{fig:cutcell}
 	\end{figure}
-	In our next step we use the definitions above in \ref{schwacheFormFlux} considering cell $\mathcal{K}_i$ with the sub-domain $\mathcal{A}_i = \mathcal{K}_i \cap \mathcal{A}$ and the surface $\partial \mathcal{A}_i$. As in cut cells the surface $\partial \mathcal{A}_i$ consists not only of the edges $\left\{\mathcal{E}_{i,e}^\mathcal{A} \right\}_{e = 1, ..., E} = \left\{\mathcal{E}_{i,e} \cap \bar{\mathcal{A}}_i \right\}_{e = 1, ..., E}$ but also of the boundary segment $\mathcal{I}_i = \mathcal{K}_i \cap \mathcal{I}$, the discrete weak formulation using an IBM follows as
+	In our next step we use the definitions above in \eqref{schwacheFormFlux} considering cell $\mathcal{K}_i$ with the sub-domain $\mathcal{A}_i = \mathcal{K}_i \cap \mathcal{A}$ and the surface $\partial \mathcal{A}_i$. As in cut cells the surface $\partial \mathcal{A}_i$ consists not only of the edges $\left\{\mathcal{E}_{i,e}^\mathcal{A} \right\}_{e = 1, ..., E} = \left\{\mathcal{E}_{i,e} \cap \bar{\mathcal{A}}_i \right\}_{e = 1, ..., E}$ but also of the boundary segment $\mathcal{I}_i = \mathcal{K}_i \cap \mathcal{I}$, the discrete weak formulation using an IBM follows as
 	\begin{align}
 	\int\limits_{\mathcal{A}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
 	\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}^\mathcal{A}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA + \int\limits_{\mathcal{I}_{i}} f \left( c^-, c^+, \mathbf{n}_\mathcal{I} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{A}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV = 0
@@ -35,10 +35,10 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	\begin{align}
 		\text{frac}(\mathcal{A}_i) = \dfrac{\text{meas}(\mathcal{A}_i)}{\text{meas}(\mathcal{K}_i)}
 	\end{align} 
-	as we will discuss in section \ref{cellAgglomeration}.
+	as we will discuss in section \cref{cellAgglomeration}.
 	
 	\section{RK Time Discretisation with Immersed Boundaries}
-	In this thesis we only use explicit Euler time discretisation for immersed boundary problems as it is less computationally expensive than higher order \gls{rk}:
+	In this thesis we only use explicit Euler time discretisation for immersed boundary problems as we are only interested in the steady state:
 	\begin{align}
 		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \mathbf{M}_i^{-1} \mathbf{f}_i (c).
 	\end{align}
@@ -51,8 +51,8 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	
 	\section{Cell Agglomeration}
 	\label{cellAgglomeration}
-	As can be seen in \ref{timestepIBM} the time step size is strongly restricted in cells with very small volume fractions. This leads to an elongated calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$. \\
-	The cell agglomeration strategy depends on finding the source cells $\left\{\mathcal{K}_s^\text{src} \right\}_{s=1,...,S}$ with $\text{frac}(\mathcal{A}_i) \leq \alpha$ and agglomerating them to the neighboring cell with the highest volume fraction, namely target cell $\mathcal{K}_s^\text{tar}$. In \ref{fig:agglomeration} u can see the cell agglomeration for a smaller (b) and a bigger (c) agglomeration factor. \\
+	As can be seen in \eqref{timestepIBM} the time step size is strongly restricted in cells with very small volume fractions. This leads to an elongated calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$. \\
+	The cell agglomeration strategy depends on finding the source cells $\left\{\mathcal{K}_s^\text{src} \right\}_{s=1,...,S}$ with $\text{frac}(\mathcal{A}_i) \leq \alpha$ and agglomerating them to the neighboring cell with the highest volume fraction, namely target cell $\mathcal{K}_s^\text{tar}$. In \cref{fig:agglomeration} you can see the cell agglomeration for a smaller (b) and a bigger (c) agglomeration factor. \\
 	\begin{figure}[htp]
 		\centering
 		\begin{minipage}[b]{0.3\textwidth}
@@ -78,4 +78,9 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	
 	For the neighboring cells are weakly coupled via fluxes, the basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell. Therefore the source cell can formally be deleted from the discretisation mesh, reducing it to $\left\{\mathcal{K}_s^\text{agg} \right\}_{i=1,...,N-S}$.
 	As can be found in \cite{paper}, it however does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency.
+	
+	\section{Properties BoSSS}
+	\todo{levelSetQuadratureOrder}
+	\todo{SIPGPenaltyConstant}
+	\todo{NodeCountSafetyFactor}
 	

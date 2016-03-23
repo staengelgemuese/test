@@ -2,7 +2,7 @@
 	\label{eulerVerification}
 	In the following chapter we will regard a flow at Mach $0.2$ around a frictionless cylinder with adiabatic slip walls at changing parameters such as the polynomial degree, the mesh size and the position of the cylinder in order to validate \gls{bosss} with immersed boundaries concerning robustness and convergence.\\\\
 	During the simulation we compute only half of the domain with $-40 \leq x \leq 40$, $0 \leq y \leq 40$ and the cylinder radius $r = 1$ as the flow above and below the cylinder should be identical.
-
+\todo{level set, what to expect, agglo 0.3, agglo fehler rausnehmen, robustness study werte reinbringen und beobachten}
 	\section{Robustness Study}
 	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $32 \times 32$ cells. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\
 
@@ -21,7 +21,7 @@
 	\end{figure}
 	
 
-	As we look at the chart \ref{shifterror}, first of all we will note that the absolute error of entropy decreases with increasing polynomial degree. As a higher polynomial degree implies a better approximation this can be explained very easily. \\ \indent
+	As we look at \cref{shifterror}, first of all we will note that the absolute error of entropy decreases with increasing polynomial degree. As a higher polynomial degree implies a better approximation this can be explained very easily. \\ \indent
 	Secondly, we can observe that the error of entropy behaves roughly symmetrically to the ordinate. As we shifted the cylinder symmetrically this observation does not surprise us either. \\ \indent
 	For degree 1 and 2 the error is at a fairly constant value throughout the cylinder shift; at the polynomial degree 3 it is very irregular. The two most discordant values appeared at a shift of $\pm 0.03$. There the calculation was cancelled early because of illegal values for momentum. I tried getting them to work by reducing the time step size and increasing the node count safety factor that should produce a more stable calculation, but the calculation never came to the convergence criterion. \\ \indent
 	We can therefore infer that with increasing polynomial degree at a mesh that course the calculation gets very instable; a finer mesh should be used. \\ \indent
@@ -44,14 +44,14 @@
 		\caption{Isolines of pressure}\label{fig:isoshift}
 	\end{figure}
 	
-	In figure \ref{fig:isoshift} you can see the two mentioned cases with highlighted isolines of pressure and pseudocolored density. As only the upper half of the cylinder has been calculated, I reflected the results through the centre point of the cylinder. Therefore you can easily see that the results are not flawless, as the flow before and after the obstacle should be identical. Furthermore you can see that in the left picture the isolines are smoother than in the right one. In order to give an explanation for the higher error of entropy in the former I highlighted the cells that should have been agglomerated in red. In the left case there are less agglomerated cells than in the right one, therefore there was a not so big agglomeration mistake made.\\\\ \todo{bessere Erklärung für Agglomerationsfehler}
+	In \cref{fig:isoshift} you can see the two mentioned cases with highlighted isolines of pressure and pseudocolored density. As only the upper half of the cylinder has been calculated, I reflected the results through the centre point of the cylinder. Therefore you can easily see that the results are not flawless, as the flow before and after the obstacle should be identical. Furthermore you can see that in the left picture the isolines are smoother than in the right one. In order to give an explanation for the higher error of entropy in the former I highlighted the cells that should have been agglomerated in red. In the left case there are less agglomerated cells than in the right one, therefore there was a not so big agglomeration mistake made.\\\\ \todo{bessere Erklärung für Agglomerationsfehler}
 	
 	Except for the polynomial degree $3$, the error of entropy changes very little for the different cases. We can therefore assume that the solver is good enough validated concerning the way the agglomerated cells influence the calculation as long as we consider a fine enough mesh for higher degrees.
 	
 	\section{Convergence Study of Mesh Size and Polynomial Degree}
 	
 	In the second study we vary the mesh size of our geometry from $32 \times 32$ by $64 \times 64$ to $128 \times 128$ cells. Additionally we also vary the polynomial degree from $0$ to $4$, consequently regarding fifteen cases in total. \\
-	Our aim is the validation of the convergence of the RKDGM based solver for the inviscid cylinder. Therefore we hope to achieve an experimental order of convergence that is near the optimal rate $O(h^{P+1})$. In chart \ref{mesherror} I compared the absolute error entropy to the mesh size logarithmically for each polynomial degree. 	\\\\
+	Our aim is the validation of the convergence of the RKDGM based solver for the inviscid cylinder. Therefore we hope to achieve an experimental order of convergence that is near the optimal rate $O(h^{P+1})$. In  \cref{mesherror} I compared the absolute error entropy to the mesh size logarithmically for each polynomial degree. 	\\\\
 	\begin{figure}[htp]
 		\centering		
 		\begin{tikzpicture}
@@ -75,8 +75,8 @@
 		\caption{Convergence Plot}
 		\label{mesherror}
 	\end{figure}
-	As you can see in \ref{mesherror} each graph has a quite constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. For the calculation with higher polynomial degrees it was necessary to adjust time step size and node count safety factor again in order to get the calculation to terminate. \\ \indent
-	As an example for the correction of a critical calculation I visualised the case with mesh size $128 \times 128$ and polynomial degree $P = 3$ before and after the correction in \ref{fig:case14}. Again, I visualised entropy and pressure. The picture in the middle shows a zoomed view of the critical cell where a high amount of entropy was produced and lead to the breakup. Please remark that differently coloured entropy ranges had to be used before and after the correction in order to point out the critical cell.
+	As you can see in \cref{mesherror} each graph has a quite constant gradient that is higher with increasing polynomial degree which is approximately of the order $P+1$ as we hoped. For the calculation with higher polynomial degrees it was necessary to adjust time step size and node count safety factor again in order to get the calculation to terminate. \\ \indent
+	As an example for the correction of a critical calculation I visualised the case with mesh size $128 \times 128$ and polynomial degree $P = 3$ before and after the correction in \cref{fig:case14}. Again, I visualised entropy and pressure. The picture in the middle shows a zoomed view of the critical cell where a high amount of entropy was produced and lead to the breakup. Please remark that differently coloured entropy ranges had to be used before and after the correction in order to point out the critical cell.
 	\begin{figure}[htp]
 		\centering
 		\begin{minipage}[b]{0.28\textwidth}

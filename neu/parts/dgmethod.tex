@@ -1,9 +1,9 @@
-\chapter{The Runge-Kutta Discontinous Galerkin Method}
+\chapter{The Runge-Kutta Discontinuous Galerkin Method}
 \label{rkdgm}
 	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretization and the \gls{rk} method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
 	\section{DG Space Discretization}
-		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}) as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \ref{femfvm}.
+		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}) as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \cref{femfvm}.
 		
 		\begin{figure}[htp]
 			\centering
@@ -37,23 +37,23 @@
 			\label{pde}
 		\end{align}	
 		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
-		\subsection{Weak Formulation}
-		Our first step of the DG method will be transfering the partial differential equation \eqref{pde} into a weak formulation.
+		\subsection{Discrete Weak Formulation}
+		Our first step of the DG method will be transferring the partial differential equation \eqref{pde} into a weak formulation.
 		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
-		After having discretized our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
-		In order to obtain the weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:	
+		After having discretised our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
+		In order to obtain the discrete weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:	
 		\begin{gather}	
 			\begin{aligned}
 			\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) &= 0 \\ 
-			\dfrac{\partial c}{\partial t}\Phi_{i,j} + \nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} &= 0 \\ 
-			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV + \int\limits_{\mathcal{K}_i}\nabla \cdot \boldsymbol{f}(c)\Phi_{i,j} \, dV &= 0\\ 
+			\dfrac{\partial c}{\partial t}\Phi_{i,j} + \left(\nabla \cdot \boldsymbol{f}(c)\right)\Phi_{i,j} &= 0 \\ 
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV + \int\limits_{\mathcal{K}_i}\left(\nabla \cdot \boldsymbol{f}(c)\right)\Phi_{i,j} \, dV &= 0\\ 
 			\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
 			\int\limits_{\partial \mathcal{K}_i} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
 			- \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c\right)\nabla\Phi_{i,j} \, dV &= 0.
 			\label{partialintegration}
 			\end{aligned}
 		\end{gather}
-		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite \ref{partialintegration} as
+		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite \eqref{partialintegration} as
 		\begin{align}
 				\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
 				\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
@@ -67,12 +67,12 @@
 			c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \bar{c} (\mathbf{x} , t)\mid _{\mathcal{K}_i} = c_i (\boldmath{x} , t) = \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})
 		\end{align}
 		with the Galerkin approach of identical Ansatz and test functions. 
-		For we do not enforce continuity on $\mathcal{E}_{i,e}$ and thus 
+		For we do not enforce continuity on $\mathcal{E}_{i,e}$ and thus \todo{$c_{n(i,e)}$ definieren}
 		\begin{align}
 			c_i \mid_{\mathcal{E}_{i,e}}=: c^- \neq c^+ := c_{n(i,e)} \mid_{\mathcal{E}_{i,e}}
 		\end{align}
 		we cannot simply insert the approximation into equation \eqref{schwacheForm}.
-		Therefore we will introduce a monotone, Lipschitz continuous numerical flux function $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
+		Therefore we will introduce a monotone, Lipschitz continuous numerical flux function \todo{erklären} $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
 		\begin{align}
 			f(c^-, c^+, \mathbf{n}) = - f(c^-, c^+, -\mathbf{n}).
 		\end{align}
@@ -91,17 +91,17 @@
 			\item The Engquist-Osher flux
 			\item The Lax-Friedrichs flux
 			\item The local Lax-Friedrichs flux
-			\item The Roe flux with 'entropy flux',
+			\item The Roe flux with 'entropy fix',
 		\end{itemize}
 		whereby we will attend to the local Lax-Friedrichs or Rusanov flux, which is defined as
 		\begin{align}
 			f(c^-, c^+, \mathbf{n}) = \dfrac{\mathbf{f}(c^-)+\mathbf{f}(c^+)}{2} \cdot \mathbf{n} -\dfrac{C_R}{2}(c^+-c^-)
 		\end{align}
-		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed
+		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed \todo{cite Toro2009}
 		\begin{align}
 			C_R = \max(|\mathbf{u^+}\cdot \mathbf{n}|+a^-,|\mathbf{u^-}\cdot \mathbf{n}|+a^+)
 		\end{align}
-		with $u^\pm$ and $a^\pm$ denoting the normal velocity and the local speed of sound at the edges.
+		with $\mathbf{u^\pm}$ and $a^\pm$ denoting the one-sided normal velocity and the local speed of sound.
 		As the Rusanov flux has a high stability it will be used disregarding that it is prone to numerical diffusion.
 		
 	\section{RK Time Discretization}
@@ -142,7 +142,7 @@
 		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
 	\end{align}
 	
-	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus in \ref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus in \cref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\ \todo{cite Butcher (1987), Gottlieb and Shu (1998)}
 \begin{table}[h]
 	\begin{equation*}
 		% \label{eq:19}
@@ -217,7 +217,7 @@
 	
 	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{CFL} \leq 1$ depending on the applied spatial discretization procedure.
 	
-	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use 
+	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use \todo{cite Cockburn and Shu 1991}
 	\begin{align}
 		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
 	\end{align}
