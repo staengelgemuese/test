@@ -11,6 +11,8 @@
 \glossaryentry{CFL?\glossentry{cfl}|setentrycounter[]{page}\glsnumberformat}{VI}
 \glossaryentry{CNS?\glossentry{cns}|setentrycounter[]{page}\glsnumberformat}{VI}
 \glossaryentry{DG$(\cdot )$CpD$(\cdot )$?\glossentry{dgcpd}|setentrycounter[]{page}\glsnumberformat}{VI}
+\glossaryentry{SIPG?\glossentry{sipg}|setentrycounter[]{page}\glsnumberformat}{VI}
+\glossaryentry{DoF?\glossentry{dof}|setentrycounter[]{page}\glsnumberformat}{VI}
 \glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{VII}
 \glossaryentry{RKDG?\glossentry{rkdg}|setentrycounter[]{page}\glsnumberformat}{VII}
 \glossaryentry{RK?\glossentry{rk}|setentrycounter[]{page}\glsnumberformat}{VII}
@@ -24,6 +26,8 @@
 \glossaryentry{CFL?\glossentry{cfl}|setentrycounter[]{page}\glsnumberformat}{VII}
 \glossaryentry{CNS?\glossentry{cns}|setentrycounter[]{page}\glsnumberformat}{VII}
 \glossaryentry{DG$(\cdot )$CpD$(\cdot )$?\glossentry{dgcpd}|setentrycounter[]{page}\glsnumberformat}{VII}
+\glossaryentry{SIPG?\glossentry{sipg}|setentrycounter[]{page}\glsnumberformat}{VII}
+\glossaryentry{DoF?\glossentry{dof}|setentrycounter[]{page}\glsnumberformat}{VII}
 \glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{RKDG?\glossentry{rkdg}|setentrycounter[]{page}\glsnumberformat}{1}
@@ -65,14 +69,21 @@
 \glossaryentry{RK?\glossentry{rk}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{CFL?\glossentry{cfl}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{CNS?\glossentry{cns}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{SIPG?\glossentry{sipg}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{CFL?\glossentry{cfl}|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{IBM?\glossentry{ibm}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{RKDG?\glossentry{rkdg}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{3D?\glossentry{3d}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{IBM?\glossentry{ibm}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{RKDG?\glossentry{rkdg}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{IBM?\glossentry{ibm}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{RKDG?\glossentry{rkdg}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{BoSSS?\glossentry{bosss}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{3D?\glossentry{3d}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{DoF?\glossentry{dof}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{DoF?\glossentry{dof}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{DoF?\glossentry{dof}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{FEM?\glossentry{fem}|setentrycounter[]{page}\glsnumberformat}{XI}
 \glossaryentry{FVM?\glossentry{fvm}|setentrycounter[]{page}\glsnumberformat}{XI}
 \glossaryentry{DG?\glossentry{dg}|setentrycounter[]{page}\glsnumberformat}{XI}

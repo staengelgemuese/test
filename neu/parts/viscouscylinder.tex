@@ -42,8 +42,26 @@ The viscous flow around a cylinder has been approached by many papers both exper
 		\end{figure}
 		
 \section{Simulations}
-	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $80 \times 80$ and $160 \times 160$ cells. These mesh sizes were developed from 32, 64 and 128 cells per direction but overlaying them with a mesh with one eighth of those in order to better approach the boundary layer of the cylinder. The meshes can be found in the appendix. \\\indent
+\todo{DoF}
+	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $60 \times 60$ and $80 \times 80$ cells. The meshes can be found in the appendix. \\\indent
 	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ CpD $+$ \textit{number of cells per direction}, e.g. DG2CpD80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
+	In \cref{DOF} you can see the total \gls{dof} for each simulation taking into account the \gls{dof}s produced by order 1, 2 and 3 as 3, 6 and 10 \gls{dof}s per cell.
+	
+	\begin{table}[htp]
+		\centering
+		\def\arraystretch{1.5}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{\multirow{2}{*}{DoF}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
+				\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
+				\multirow{3}{*}{DG}            & 1           &    4800    &    10800   &    19200    \\ \cline{2-5} 
+				& 2           &    9600    &   21600    &    38400    \\ \cline{2-5} 
+				& 3           &      16000  &   36000    &   64000     \\ \hline
+			\end{tabular}
+			\caption{Degrees of Freedom for Different Simulation Properties}	
+			\label{DOF}
+	\end{table}
+	
 	 The drag and lift coefficients are defined as
 	\begin{align}
 		C_D = \dfrac{d}{q_\infty L_\infty} \\

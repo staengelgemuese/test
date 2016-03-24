@@ -24,25 +24,28 @@
 \contentsline {section}{\numberline {4.1}The DG Scheme with Immersed Boundaries}{13}{section.4.1}
 \contentsline {section}{\numberline {4.2}RK Time Discretisation with Immersed Boundaries}{14}{section.4.2}
 \contentsline {section}{\numberline {4.3}Cell Agglomeration}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Properties BoSSS}{15}{section.4.4}
-\contentsline {chapter}{\numberline {5}Validation of BoSSS for Inviscid Flows}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Robustness Study}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}Convergence Study of Mesh Size and Polynomial Degree}{18}{section.5.2}
-\contentsline {section}{\numberline {5.3}Conclusion}{19}{section.5.3}
-\contentsline {chapter}{\numberline {6}Evaluation of BoSSS for Viscid Flows}{20}{chapter.6}
-\contentsline {section}{\numberline {6.1}Theory}{20}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{21}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{21}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Simulations}{22}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{23}{subsection.6.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{23}{subsubsection*.37}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{23}{subsubsection*.41}
-\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{25}{subsection.6.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{25}{subsubsection*.43}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{25}{subsubsection*.46}
-\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.7}
+\contentsline {section}{\numberline {4.4}Simulation Parameters Concerning Stability and Runtime in BoSSS}{15}{section.4.4}
+\contentsline {paragraph}{LevelSetQuadratureOrder}{16}{paragraph*.29}
+\contentsline {paragraph}{SIPGPenaltyConstant}{16}{paragraph*.30}
+\contentsline {paragraph}{NodeCountSafetyFactor}{16}{paragraph*.31}
+\contentsline {chapter}{\numberline {5}Verification of BoSSS for Inviscid Flows}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Robustness Study}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Convergence Study of Mesh Size and Polynomial Degree}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusion}{21}{section.5.3}
+\contentsline {chapter}{\numberline {6}Evaluation of BoSSS for Viscid Flows}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Theory}{22}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{23}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{23}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Simulations}{24}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{25}{subsection.6.2.1}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{25}{subsubsection*.41}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{27}{subsubsection*.45}
+\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{27}{subsection.6.2.2}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{27}{subsubsection*.47}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{27}{subsubsection*.50}
+\contentsline {chapter}{\numberline {7}Conclusion}{30}{chapter.7}
 \contentsline {chapter}{\numberline {8}Bibliography}{X}{chapter.8}
-\contentsline {chapter}{\nonumberline List of Figures}{XI}{section*.51}
-\contentsline {chapter}{\nonumberline List of Tables}{XII}{section*.54}
+\contentsline {chapter}{\nonumberline List of Figures}{XI}{section*.55}
+\contentsline {chapter}{\nonumberline List of Tables}{XII}{section*.58}
 \contentsline {chapter}{\numberline {A}Appendix}{XIII}{appendix.A}
 \contentsline {section}{\numberline {A.1}Mesh properties}{XIII}{section.A.1}

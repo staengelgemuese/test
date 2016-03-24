@@ -79,8 +79,33 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	For the neighboring cells are weakly coupled via fluxes, the basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell. Therefore the source cell can formally be deleted from the discretisation mesh, reducing it to $\left\{\mathcal{K}_s^\text{agg} \right\}_{i=1,...,N-S}$.
 	As can be found in \cite{paper}, it however does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency.
 	
-	\section{Properties BoSSS}
-	\todo{levelSetQuadratureOrder}
-	\todo{SIPGPenaltyConstant}
-	\todo{NodeCountSafetyFactor}
+	\section{Simulation Parameters Concerning Stability and Runtime in \glsentrytext{bosss}}
+	\label{parameters}
+	
+	In the following we will describe some of the preferences for the \gls{cns} solver that can be modified in order to stabilise the computations. 
+	
+	\paragraph{LevelSetQuadratureOrder}
+	The first preference is the \textit{LevelSetQuadratureOrder}. It describes the quadrature order that is used for the evaluation of volume and edge operators. It is set to an integer; we will use a constant
+	\begin{lstlisting}
+		c.LevelSetQuadratureOrder = 8;
+	\end{lstlisting}
+	in \cref{eulerVerification} as it is important to have comparable results for the verification and a degree dependent order
+	\begin{lstlisting}
+		c.LevelSetQuadratureOrder = 3*dgDegree;
+	\end{lstlisting}
+	in \cref{viscousCylinder} as it is more important to produce efficient and fast though stable results. 
+	
+	\paragraph{SIPGPenaltyConstant}
+	 The second preference that we used is the \textit{SIPGPenaltyConstant}. It is set to a double that should be greater than one and describes the weighting of the viscous terms. For the stability of the computation it is essential that the numerical flux functions that are used for the discretisation of the viscous terms are consistent. This can be achieved by different methods; one of those being the \gls{sipg} which we are using which introduces the penalty factor. In \cref{viscousCylinder} we will set 
+	 \begin{lstlisting}
+		c.SIPGPenaltyConstant = 5.0;
+	 \end{lstlisting}
+	for our calculations.
+		 
+	\paragraph{NodeCountSafetyFactor}
+	The last factor that we will vary for a better stability is the \textit{NodeCountSafetyFactor}. This factor, that is also set to a double, indicates the number of the nodes with respect to the number of modes that will be used during the quadrature. By standard \gls{bosss} sets it to $1.0$; in our calculations we mostly used a NodeCountSafetyFactor of $2.0$  in \cref{eulerVerification} and of $5.0$ in \cref{viscousCylinder} though it has been modified for few calculations in order to get them more stable.\\\\
+	
+     All of these factors should be set just high enough in order to ensure a accurate and stable solution and the shortest possible runtime at the same time. 
+     
+
 	

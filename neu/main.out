@@ -23,8 +23,8 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 The DG Scheme with Immersed Boundaries}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.2}{4.2 RK Time Discretisation with Immersed Boundaries}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.3}{4.3 Cell Agglomeration}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.4}{4.4 Properties BoSSS}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{5 Validation of BoSSS for Inviscid Flows}{}% 27
+\BOOKMARK [1][-]{section.4.4}{4.4 Simulation Parameters Concerning Stability and Runtime in BoSSS}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{5 Verification of BoSSS for Inviscid Flows}{}% 27
 \BOOKMARK [1][-]{section.5.1}{5.1 Robustness Study}{chapter.5}% 28
 \BOOKMARK [1][-]{section.5.2}{5.2 Convergence Study of Mesh Size and Polynomial Degree}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.3}{5.3 Conclusion}{chapter.5}% 30
@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Unsteady Simulations \(Re> 40-50\)}{section.6.2}% 37
 \BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 38
 \BOOKMARK [0][-]{chapter.8}{8 Bibliography}{}% 39
-\BOOKMARK [0][-]{section*.51}{List of Figures}{}% 40
-\BOOKMARK [0][-]{section*.54}{List of Tables}{}% 41
+\BOOKMARK [0][-]{section*.55}{List of Figures}{}% 40
+\BOOKMARK [0][-]{section*.58}{List of Tables}{}% 41
 \BOOKMARK [0][-]{appendix.A}{A Appendix}{}% 42
 \BOOKMARK [1][-]{section.A.1}{A.1 Mesh properties}{appendix.A}% 43
