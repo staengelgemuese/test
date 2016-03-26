@@ -1,6 +1,6 @@
 \chapter{The Immersed Boundary Method}
 \label{immersedBoundaries}
-In the following chapter we will study the DG method with immersed boundaries. This chapter is based on \cite{paper} \\ \indent 
+In the following chapter we will study the DG method with immersed boundaries. This chapter is based on \textcite{paper} \\ \indent 
 IBMs are characteristic in the way of creating the calculation mesh as they do not rely on body fitted grids but on a level set function $\varphi$ that cuts the cells into the physical and the void region. It therefore makes the mesh generation much easier, as it only needs a cartesian mesh and a function that approximates the level set. Brought along with the cartesian mesh, it is easily parallelisable, thus rendering it convenient for more complex structures that shall be computed on several processors.
 	\section{The DG Scheme with Immersed Boundaries}
 	We regard an implicit representation of an immersed boundary using the level set function $\varphi$ that parts the calculation area $\Omega_h$ into 
@@ -14,7 +14,7 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	\begin{figure}[htp]
 		\centering
 		\includegraphics[height=4cm]{ibmcut.PNG}
-		\caption{Cut cell with physical (red) and void region (white) \cite{paper}}\label{fig:cutcell}
+		\caption{Cut cell with physical (red) and void region (white) \textcite{paper}}\label{fig:cutcell}
 	\end{figure}
 	In our next step we use the definitions above in \eqref{schwacheFormFlux} considering cell $\mathcal{K}_i$ with the sub-domain $\mathcal{A}_i = \mathcal{K}_i \cap \mathcal{A}$ and the surface $\partial \mathcal{A}_i$. As in cut cells the surface $\partial \mathcal{A}_i$ consists not only of the edges $\left\{\mathcal{E}_{i,e}^\mathcal{A} \right\}_{e = 1, ..., E} = \left\{\mathcal{E}_{i,e} \cap \bar{\mathcal{A}}_i \right\}_{e = 1, ..., E}$ but also of the boundary segment $\mathcal{I}_i = \mathcal{K}_i \cap \mathcal{I}$, the discrete weak formulation using an IBM follows as
 	\begin{align}
@@ -52,7 +52,7 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	\section{Cell Agglomeration}
 	\label{cellAgglomeration}
 	As can be seen in \eqref{timestepIBM} the time step size is strongly restricted in cells with very small volume fractions. This leads to an elongated calculation process thus rendering the method impractical. Therefore we need to agglomerate those small cells to larger ones using a cell agglomeration factor $0 \leq \alpha \leq 1$. \\
-	The cell agglomeration strategy depends on finding the source cells $\left\{\mathcal{K}_s^\text{src} \right\}_{s=1,...,S}$ with $\text{frac}(\mathcal{A}_i) \leq \alpha$ and agglomerating them to the neighboring cell with the highest volume fraction, namely target cell $\mathcal{K}_s^\text{tar}$. In \cref{fig:agglomeration} you can see the cell agglomeration for a smaller (b) and a bigger (c) agglomeration factor. \\
+	The cell agglomeration strategy depends on finding the source cells $\left\{\mathcal{K}_s^\text{src} \right\}_{s=1,...,S}$ with $\text{frac}(\mathcal{A}_i) \leq \alpha$ and agglomerating them to the neighbouring cell with the highest volume fraction, namely target cell $\mathcal{K}_s^\text{tar}$. In \cref{fig:agglomeration} you can see the cell agglomeration for a smaller (b) and a bigger (c) agglomeration factor. \\
 	\begin{figure}[htp]
 		\centering
 		\begin{minipage}[b]{0.3\textwidth}
@@ -77,7 +77,7 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	\end{figure}
 	
 	For the neighboring cells are weakly coupled via fluxes, the basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell. Therefore the source cell can formally be deleted from the discretisation mesh, reducing it to $\left\{\mathcal{K}_s^\text{agg} \right\}_{i=1,...,N-S}$.
-	As can be found in \cite{paper}, it however does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency.
+	As can be found in \textcite{paper}, it however does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency.
 	
 	\section{Simulation Parameters Concerning Stability and Runtime in \glsentrytext{bosss}}
 	\label{parameters}

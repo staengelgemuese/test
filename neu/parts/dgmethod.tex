@@ -1,7 +1,7 @@
 \chapter{The Runge-Kutta Discontinuous Galerkin Method}
 \label{rkdgm}
 	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretization and the \gls{rk} method as an explicit time discretization. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
-	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \cite{mueller2014}.
+	In the following sections we will study the DG and RK methods separately considering simple examples and using the same notation as in \textcite{mueller2014}.
 	\section{DG Space Discretization}
 		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}) as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \cref{femfvm}.
 		
@@ -36,7 +36,7 @@
 			\frac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0
 			\label{pde}
 		\end{align}	
-		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
+		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\textcite{mueller2014} 
 		\subsection{Discrete Weak Formulation}
 		Our first step of the DG method will be transferring the partial differential equation \eqref{pde} into a weak formulation.
 		Priorly to this we need a discretisation $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
@@ -93,7 +93,7 @@
 		\end{align}
 		with the discrete operator $\mathbf{f_i}=\mathbf{f_i}(t, \mathbf{c_i})\in\mathbb{R}$.
 		
-		Some well-known examples of numerical fluxes contain \cite{Cockburn1998}:
+		Some well-known examples of numerical fluxes contain \textcite{Cockburn1998}:
 		\begin{itemize}
 			\item The Godunov flux 
 			\item The Engquist-Osher flux
@@ -105,7 +105,7 @@
 		\begin{align}
 			f(c^-, c^+, \mathbf{n}) = \dfrac{\mathbf{f}(c^-)+\mathbf{f}(c^+)}{2} \cdot \mathbf{n} -\dfrac{C_R}{2}(c^+-c^-)
 		\end{align}
-		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed that was developed by \cite{tororiemann}
+		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed that was developed by \textcite{tororiemann}
 		\begin{align}
 			C_R = \max(|\mathbf{u^+}\cdot \mathbf{n}|+a^-,|\mathbf{u^-}\cdot \mathbf{n}|+a^+)
 		\end{align}
@@ -150,7 +150,7 @@
 		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
 	\end{align}
 	
-	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus (\cite{butcher}, \cite{gottlieb}) in \cref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\ 
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus (\textcite{butcher}, \textcite{gottlieb}) in \cref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\ 
 \begin{table}[h]
 	\begin{equation*}
 		% \label{eq:19}
@@ -225,7 +225,7 @@
 	
 	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{CFL} \leq 1$ depending on the applied spatial discretization procedure.
 	
-	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use the criterion developed by \cite{cockburn1991runge}
+	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use the criterion developed by \textcite{cockburn1991runge}
 	\begin{align}
 		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
 	\end{align}

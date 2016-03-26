@@ -1,7 +1,7 @@
 \chapter{Evaluation of \glsentrytext{bosss} for Viscid Flows}
 \label{viscousCylinder}
 In this chapter we aim at validating \gls{bosss} for viscid flows with \gls{ibm}s. In order to have a good comparable result, we will once again regard the flow around a cylinder as in chapter \cref{eulerVerification}. 
-The viscous flow around a cylinder has been approached by many papers both experimentally and numerically, e.g. \cite{williamson1996vortex}, \cite{FLM:14223}, \cite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \cref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
+The viscous flow around a cylinder has been approached by many papers both experimentally and numerically, e.g. \textcite{williamson1996vortex}, \textcite{FLM:14223}, \textcite{canutoTaira}, though very few numerical approaches use a \gls{rkdg} method combined with immersed boundaries. In order to verify the \gls{bosss} code with immersed boundaries not only for the Euler equations as we did in chapter \cref{eulerVerification} but also for the viscous case we will now consider different Reynolds numbers for the steady and unsteady flow and compare our results to those of other studies.
 
 \section{Theory}
 	The flow around a viscous cylinder can be divided into different sections depending on the Reynolds number as shown in \cref{fig:overview}. The first section applies for Reynolds numbers $0 < \text{Re} < 40-50$ characterised by a laminar steady flow. In that regime a recirculation region with two symmetric vortices with opposite directions is comprised by the wake. The flow can be described using the wake separation length $W^*$.\\\\
@@ -89,7 +89,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 
 	
 	\subsubsection{Simulation at Reynolds Number 20}
-	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \cite{ayers}.Furthermore the results are divided into \gls{2d} and \gls{3d} simulations which should not produce large differences as long as we are regarding low Reynolds numbers. The values that were produced by Brehm et al. [2015] using $\text{Ma} = 0.1$ as well as those that were simulated as incompressible flows can still be compared as in these low Mach numbers the compressibility does not have a great effect on the flow.
+	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \textcite{ayers}.Furthermore the results are divided into \gls{2d} and \gls{3d} simulations which should not produce large differences as long as we are regarding low Reynolds numbers. The values that were produced by Brehm et al. [2015] using $\text{Ma} = 0.1$ as well as those that were simulated as incompressible flows can still be compared as in these low Mach numbers the compressibility does not have a great effect on the flow.
 
 \begin{table}[htp]
 	\centering
@@ -124,7 +124,7 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 				& 2           &    $2.14085421873382$    &    $2.13771290819429$   &   $2.19714806470952$     \\ \cline{2-5} 
 				& 3           &    $2.13627628461972$    &     $2.13597650124614$  &   -     \\ \hline
 			\end{tabular}
-			\caption[$C_D$ Values for each simulation]{$C_D$ Values for each simulation ($\text{Re} = 20$)}	
+			\caption[$C_D$ Values for each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 20$)}	
 			\label{C_D20}
 		\end{table}
 			\begin{table}[htp]
@@ -142,11 +142,11 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 			& 2           &    $1.387451171875$    &     $1.443115234375$  &    $1.416015625$    \\ \cline{2-5} 
 			& 3           &     $1.421142578125$   &     $1.427734375$  &    -    \\ \hline
 		\end{tabular}
-		\caption{Wake Separation Lengths for each simulation ($\text{Re} = 20$)}	
+		\caption{Wake Separation Lengths for Each Simulation ($\text{Re} = 20$)}	
 		\label{W20}
 %	\end{minipage}
 \end{table}
-DG3CPD80 we did not simulate as it would have taken much longer, being the simulation on the finest mesh with the highest order, than the other simulations. What is striking about our values is the discordant value of DG2CpD80 which should have been the most accurate simulation. 
+We did not simulate DG3CPD80 as it would have taken much longer, being the simulation on the finest mesh with the highest order, than the other simulations. What is striking about our values is the discordant value of DG2CpD80 which should have been the most accurate simulation. 
 Figure \ref{fig:C_D20} graphically presents the values of \cref{C_D20} and shows that higher degrees produce much faster accurate results than finer meshes. \\\indent
 	\begin{figure}[htp]	
 		\centering
@@ -165,7 +165,7 @@ Figure \ref{fig:C_D20} graphically presents the values of \cref{C_D20} and shows
 		\caption{Graphical Presentation of Table \ref{C_D20} for $\text{Re} = 20$}
 		\label{fig:C_D20}	
 	\end{figure}
-	In \cref{fig:C_Dt} you can see the behaviour of the coefficient of drag over time for different simulations. The peak at the beginning is produced because the flow reacts to the cylinder that is suddenly put into place at $t=0$. Afterwards the value drops quickly; at around $t=10$ the almost steady state is reached, though the $C_D$ value is still slightly falling. We stopped the simulation at $t=14$ so we could better compare the result to the one of \cite{ayers}. It is to be assumed that for a longer simulation time the flow would reach the completely steady state and the coefficient of drag would finally converge to the expected value. The examination of its behaviour for a longer simulate physical time as well as the inspection of the wake separation length using an adjusted mesh shall be subject of future works.\\\indent
+	In \cref{fig:C_Dt} you can see the behaviour of the coefficient of drag over time for different simulations. The peak at the beginning is produced because the flow reacts to the cylinder that is suddenly put into place at $t=0$. Afterwards the value drops quickly; at around $t=10$ the almost steady state is reached, though the $C_D$ value is still slightly falling. We stopped the simulation at $t=14$ so we could better compare the result to the one of \textcite{ayers}. It is to be assumed that for a longer simulation time the flow would reach the completely steady state and the coefficient of drag would finally converge to the expected value. The examination of its behaviour for a longer simulate physical time as well as the inspection of the wake separation length using an adjusted mesh shall be subject of future works.\\\indent
 \begin{figure}[htp]	
 	\centering
 	\begin{tikzpicture}
@@ -195,6 +195,7 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 \end{figure}	
 
 	\subsubsection{Simulation at Reynolds Number 40}
+	As we did for $\text{Re}=20$ we will now compare our results for the wake separation length and the coefficient of drag to those documented before by others. Once again, we compare our result simulated with DG3CpD60 which is much more accurate than it was for $\text{Re}=20$. The coefficient of drag is slightly too high but still in very good agreement; the wake separation length is much higher which is caused by the coarse mesh for $x,y \geq 2$. As we expected before, we can confirm the theory that higher Reynolds number cause higher wake separation lengths.
 \begin{table}[htp]
 	\centering
 	\begin{tabular}{|l|l|c|c|c|}
@@ -212,7 +213,7 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 	\caption{Comparison of Results for $W^*$ and $C_D$, taken from \cite{ayers}, modified}
 	\label{table40}
 \end{table}
-
+In \cref{C_D40,W40} you can see the results of every simulation. As we did for $\text{Re}=20$ we did not simulate DG3CpD80 as it would have taken too long. Unfortunately we did not get a stable calculation for DG3CpD40 until we reduced the time step by ninety-five per cent. This resulted into a tremendous runtime which made the simulation impossible. \\\indent
 \begin{table}[htp]
 	\centering
 	\def\arraystretch{1.5}
@@ -225,7 +226,7 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 			& 2           &     $1.60025832690217$   &   $1.59617303474342$    &     $1.6161797186352$   \\ \cline{2-5} 
 			& 3           &      -  &     $1.60757505790039$  &     -   \\ \hline
 		\end{tabular}
-		\caption[$C_D$ Values for each simulation]{$C_D$ Values for each simulation ($\text{Re} = 40$)}	
+		\caption[$C_D$ Values for each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 40$)}	
 		\label{C_D40}
 	\end{table}
 	\begin{table}[htp]
@@ -243,10 +244,11 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 			& 2           &     $2.615234375$   &    $2.681640625$   &     $2.681640625$   \\ \cline{2-5} 
 			& 3           &     -   &    $2.701171875$   &    -    \\ \hline
 		\end{tabular}
-		\caption{Wake Separation Lengths for each simulation ($\text{Re} = 40$)}	
+		\caption{Wake Separation Lengths for Each Simulation ($\text{Re} = 40$)}	
 		\label{W40}
 %	\end{minipage} 
 \end{table}
+In \cref{fig:C_D40} you can see the graphical presentation of \cref{C_D40}; here it is very clear that higher order calculations provide even for coarse meshes very accurate solutions. \\\indent
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
@@ -262,9 +264,28 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 		\end{semilogxaxis}	
 		\end{tikzpicture}
 		\caption{Graphical Presentation of Table \ref{C_D40} for $\text{Re} = 40$}
-		\label{shivfjftesrsaror}	
+		\label{fig:C_D40}	
 	\end{figure}
-For DG3CpD40 we did not get a stable calculation until we reduced the time step by ninety-five per cent which resulted into a tremendous runtime. For DG3CpD80 the calculation was stable but as it is the simulation on the finest mesh with the highest degree it naturally took much longer than the other simulations which already produced good results. \\\indent
+\begin{figure}[htp]	
+	\centering
+	\begin{tikzpicture}
+	\begin{semilogyaxis}[xlabel ={Time}, ylabel ={$C_D$},  grid =major, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east}, scaled x ticks = false, scaled y ticks = false, xmin = 0, xmax = 14]
+	\addplot[brown] table[x = t, y =C_D, mark=none] {data/re40dg1cpd40.dat};
+	\addlegendentry{DG1CpD40}
+	\addplot[red] table[ x = t, y =C_D, mark=none] {data/re40dg2cpd60.dat};
+	\addlegendentry{DG2CpD60}
+	\addplot[blue] table[ x = t, y =C_D, mark=none] {data/re40dg3cpd60.dat};
+	\addlegendentry{DG3CpD60}
+	\addplot[black] table[ x = t, y =C_D, mark=none] {data/re40dg2cpd80.dat};
+	\addlegendentry{DG2CpD80}
+	%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+	%		\addlegendentry{Constant Value}
+	\end{semilogyaxis}	
+	\end{tikzpicture}
+	\caption{Coefficient of Drag over Time ($\text{Re} = 40$)}
+	\label{fig:C_Dt40}	
+\end{figure}
+As you can see in \cref{fig:C_Dt40} the behaviour of the coefficient of drag over the physical time is very similar for the simulations plotted. They are more in agreement with each other than they were for $\text{Re = 20}$. In \cref{fig:vorticity40} you can see the vorticity for DG3CpD60; there we remark that the wake is much longer than it was for $\text{Re}=20$.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[height=10cm]{Re40DG3CpD60.png}
@@ -272,11 +293,12 @@ For DG3CpD40 we did not get a stable calculation until we reduced the time step 
 	\label{fig:vorticity40}
 \end{figure}
 	\subsection{Unsteady Simulations ($\text{Re}> 40-50$)}
+	After having examined the steady simulations which were very accurate for the coefficient of drag, we will now turn to the unsteady ones with $\text{Re}=100$ and $\text{Re}=200$.
 	In order to compare the unsteady simulations we need the Strouhal number
 	\begin{align}
 		\text{St} = \dfrac{f  L_\infty}{V_\infty}.
 	\end{align}
-	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. For developing vortex shedding, the flow needs small perturbations that destabilize the flow towards a symmetry breaking state \cite{FLM:14223}. In reality those are given by the structure of the cylinder, the influence of the walls or the not completely straight inflow; in our simulations they come from small truncation errors and the computer's round-off errors. 
+	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. In order to develop vortex shedding, the flow needs small perturbations that destabilise the flow towards a symmetry breaking state (\textcite{FLM:14223}). In reality those are given by the structure of the cylinder, the influence of the walls or the not completely straight inflow; in our simulations they come from small truncation errors and the computer's round-off errors. 
 	In order to accelerate the process until the wake begins to oscillate one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not needed in our simulations.
 	\subsubsection{Simulation at Reynolds Number 100}
 \begin{table}[htp]
