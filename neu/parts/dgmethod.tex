@@ -39,7 +39,7 @@
 		for the concentration $c = c(\boldsymbol{x}, t)$  with $\vec{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
 		\subsection{Discrete Weak Formulation}
 		Our first step of the DG method will be transferring the partial differential equation \eqref{pde} into a weak formulation.
-		Priorly to this we need a discretization $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
+		Priorly to this we need a discretisation $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
 		After having discretised our geometry, we now need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of polynomials $P_{\mathcal{K}_i}(P)$ with the maximum degree $P$. \\ \indent
 		In order to obtain the discrete weak formulation we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:	
 		\begin{gather}	
@@ -53,7 +53,15 @@
 			\label{partialintegration}
 			\end{aligned}
 		\end{gather}
-		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ we can rewrite \eqref{partialintegration} as
+		Considering that the cell's surface $\partial \mathcal{K}_i$ consists of internal or boundary edges $\left\{\mathcal{E}_{i,e}\right\}_{e = 1,...,E_i}$ with
+				\begin{align}
+				n(i,e) =  
+				\begin{cases}
+				n & \text{if} ~ \mathcal{E}_{i,e} = \mathcal{K}_i \cap \mathcal{K}_n \\
+				0 &\text{otherwise}
+				\end{cases}
+				\end{align}
+		where $n(i,e)=0$ describes a boundary edge, we can rewrite \eqref{partialintegration} as
 		\begin{align}
 				\int\limits_{\mathcal{K}_i} \dfrac{\partial c}{\partial t}\Phi_{i,j} \, dV +
 				\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} \left(\boldsymbol{f} \left( c \right) \cdot \boldsymbol{n} \right)\Phi_{i,j} \, dA
@@ -67,14 +75,14 @@
 			c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \bar{c} (\mathbf{x} , t)\mid _{\mathcal{K}_i} = c_i (\boldmath{x} , t) = \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})
 		\end{align}
 		with the Galerkin approach of identical Ansatz and test functions. 
-		For we do not enforce continuity on $\mathcal{E}_{i,e}$ and thus \todo{$c_{n(i,e)}$ definieren}
+		For we do not enforce continuity on $\mathcal{E}_{i,e}$ and thus 
 		\begin{align}
 			c_i \mid_{\mathcal{E}_{i,e}}=: c^- \neq c^+ := c_{n(i,e)} \mid_{\mathcal{E}_{i,e}}
 		\end{align}
 		we cannot simply insert the approximation into equation \eqref{schwacheForm}.
 		Therefore we will introduce a monotone, Lipschitz continuous numerical flux function \todo{erklären} $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
 		\begin{align}
-			f(c^-, c^+, \mathbf{n}) = - f(c^-, c^+, -\mathbf{n}).
+			f(c^-, c^+, \mathbf{n}) = - f(c^+, c^-, -\mathbf{n}).
 		\end{align}
 		
 		By including these definitions into \eqref{schwacheForm} we receive
@@ -97,7 +105,7 @@
 		\begin{align}
 			f(c^-, c^+, \mathbf{n}) = \dfrac{\mathbf{f}(c^-)+\mathbf{f}(c^+)}{2} \cdot \mathbf{n} -\dfrac{C_R}{2}(c^+-c^-)
 		\end{align}
-		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed \todo{cite Toro2009}
+		with the coefficient $C_R$ based on a local stability criterion. In this thesis we will use an estimate based on the maximum local wave speed that was developed by \cite{tororiemann}
 		\begin{align}
 			C_R = \max(|\mathbf{u^+}\cdot \mathbf{n}|+a^-,|\mathbf{u^-}\cdot \mathbf{n}|+a^+)
 		\end{align}
@@ -142,7 +150,7 @@
 		\mathbf{k}_s = \mathbf{f}_i \left( t_0 +(\mathbf{\beta})_s \Delta t, \mathbf{c}_i (t_0) + \Delta t \sum\limits_{t = 1}^{S}\boldsymbol{(\Gamma)}_{s,t}\mathbf{k}_t\right).
 	\end{align}
 	
-	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus in \cref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\ \todo{cite Butcher (1987), Gottlieb and Shu (1998)}
+	The coefficients $\alpha \in \mathbb{R}^S$, $\beta \in \mathbb{R}^S$ and $\Gamma \in \mathbb{R}^S$ are specific for each \gls{rk} method. Those of the most common RK methods are displayed in the Butcher Tableaus (\cite{butcher}, \cite{gottlieb}) in \cref{RKtableaus}. They determine the stability and accuracy of the time integration scheme. \\ 
 \begin{table}[h]
 	\begin{equation*}
 		% \label{eq:19}
@@ -217,7 +225,7 @@
 	
 	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{CFL} \leq 1$ depending on the applied spatial discretization procedure.
 	
-	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use \todo{cite Cockburn and Shu 1991}
+	Concerning the Euler equations the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account we can use the criterion developed by \cite{cockburn1991runge}
 	\begin{align}
 		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
 	\end{align}

@@ -58,10 +58,10 @@
     \endentry
     \entry{annualreport}{misc}{}
       \name{author}{1}{}{%
-        {{hash=146d6bd07b88b0b1c089a3071d6bf077}{{Krämer-Eis,\bibnamedelimb Stephan}}{K\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=1f74d838ae2afdade98a612123da6d3c}{Krämer-Eis}{K\bibinithyphendelim E\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{146d6bd07b88b0b1c089a3071d6bf077}
-      \strng{fullhash}{146d6bd07b88b0b1c089a3071d6bf077}
+      \strng{namehash}{1f74d838ae2afdade98a612123da6d3c}
+      \strng{fullhash}{1f74d838ae2afdade98a612123da6d3c}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -100,6 +100,76 @@
       \verb{url}
       \verb http://dx.doi.org/10.1007/BFb0096353
       \endverb
+    \endentry
+    \entry{tororiemann}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fa01bb533c50a3644db770733a52fd74}{Toro}{T\bibinitperiod}{EF}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{fa01bb533c50a3644db770733a52fd74}
+      \strng{fullhash}{fa01bb533c50a3644db770733a52fd74}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Riemann solvers and numerical methods for fluid dynamics. 2009}
+    \endentry
+    \entry{butcher}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c281a88a6909ab6f74f1c19322dae818}{Enright}{E\bibinitperiod}{WH}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics}%
+      }
+      \strng{namehash}{c281a88a6909ab6f74f1c19322dae818}
+      \strng{fullhash}{c281a88a6909ab6f74f1c19322dae818}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Numerical Analysis of Ordinary Differential Equations: Runge-Kutta and General Linear Methods (JC Butcher)}
+      \field{year}{1989}
+    \endentry
+    \entry{gottlieb}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4b57c63db865ccff156d117069235bc5}{Gottlieb}{G\bibinitperiod}{Sigal}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=0316cefd59f32815e356c1128b2ef3c0}{Shu}{S\bibinitperiod}{Chi-Wang}{C\bibinithyphendelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9e9f81555007fcdf7790606d484b21a3}
+      \strng{fullhash}{9e9f81555007fcdf7790606d484b21a3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of computation of the American Mathematical Society}
+      \field{number}{221}
+      \field{title}{Total variation diminishing Runge-Kutta schemes}
+      \field{volume}{67}
+      \field{year}{1998}
+      \field{pages}{73\bibrangedash 85}
+      \range{pages}{13}
+    \endentry
+    \entry{cockburn1991runge}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a862e1da6d04641d986b5d3eace69664}{Cockburn}{C\bibinitperiod}{Bernardo}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=0316cefd59f32815e356c1128b2ef3c0}{Shu}{S\bibinitperiod}{Chi-Wang}{C\bibinithyphendelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a0abf0da9df700b2876975d7b40811c7}
+      \strng{fullhash}{a0abf0da9df700b2876975d7b40811c7}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Institute of Aeronautics and Astronautics}
+      \field{number}{3}
+      \field{title}{The Runge-Kutta local projection P1-discontinuous Galerkin finite element method for scalar conservation laws}
+      \field{volume}{25}
+      \field{year}{1991}
+      \field{pages}{337\bibrangedash 361}
+      \range{pages}{25}
     \endentry
     \entry{paper}{article}{}
       \name{author}{4}{}{%

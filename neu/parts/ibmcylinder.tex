@@ -10,7 +10,7 @@
 	we can compare our results for the entropy to the analytical solution $s = 0$. Using this comparison we aim at verifying \gls{bosss} for inviscid flows and \gls{ibm}s considering robustness and convergence.
 	
 	\section{Robustness Study}
-	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $64 \times 64$ cells thus causing different cell agglomerations with every shift. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\
+	In the first study regarding the frictionless cylinder, we compare the absolute error of entropy for a polynomial degree from $1$ to $3$ along a shift of the centre point of the cylinder from $-0.075$ to $0.075$ at steps of $0.015$. Therefore the level set $\varphi$ will now be described by $\varphi = x^2 + y^2 - (1+ \text{shift})^2$. By shifting the cylinder we can consider several cases where the cells would be cut differently and therefore cause different cell agglomerations. The cell agglomeration threshold is at a constant level of $0.5$ in a mesh of $64 \times 64$ cells (see \cref{fig:eulershift}) thus causing different cell agglomerations with every shift. In this example we aim at proving the robustness of the solver as for each position of the cylinder the error of entropy should not vary too much thus making it independent of the way the border cells are cut. \\ \\
 
 	\begin{figure}[htp]	
 		\centering
@@ -19,7 +19,6 @@
 				\addplot table[ x =shift, y =error1] {data/shift.dat};
 				\addplot table[ x =shift, y =error2] {data/shift.dat};
 				\addplot table[ x =shift, y =error3] {data/shift.dat};
-			%	\addplot [black, mark = *] coordinates {( -0.03, 7.6464856926146425E-003)};
 			\end{semilogyaxis}	
 		\end{tikzpicture}
 		\caption{Convergence Plot}
