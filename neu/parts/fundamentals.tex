@@ -1,10 +1,10 @@
 \chapter{Fundamentals}
 \label{fundamentals}
 	\section{Essential Equations}
-		In the following we will introduce the essential equations that form the basis of all methods and results discussed in this thesis. 
+		In the following, we will introduce the essential equations that form the basis of all methods and results discussed in this thesis. 
 		\subsection{Equations of State}
 		\label{EOS}
-		First, I will enumerate the basic thermodynamic equations of state that describe the relations between the specific inner energy $e$, the local temperature $T$, the specific enthalpy $\bar{h}$, the pressure $p = p (\rho , e)$, the density $\rho$ and the specific entropy $s$.
+		First, we will enumerate the basic thermodynamic equations of state that describe the relations between the specific inner energy $e$, the local temperature $T$, the specific enthalpy $\bar{h}$, the pressure $p = p (\rho , e)$, the density $\rho$ and the specific entropy $s$.
 		Assuming that all material parameters are constant, we receive
 		\begin{align}
 			e &= c_v T \\
@@ -22,7 +22,7 @@
 		\end{align}
 		
 		\subsection{Ideal Gas Law}
-		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis we will limit ourselves to the ideal gas law as we are only modelling standard air ($\gamma = 1.4$). \\
+		The equations of state mentioned above are not yet complete as there is missing a law for the pressure $p = p (\rho , e)$. In this thesis, we will limit ourselves to the ideal gas law as we are only modelling standard air ($\gamma = 1.4$). \\
 		The ideal gas law is defined as
 		\begin{align}
 			p = (\gamma - 1) \rho e
@@ -33,11 +33,11 @@
 		\begin{align}
 			a = \sqrt{\left.\dfrac{\partial p}{\partial \rho}\right|_s}.
 		\end{align}
-		Using this definition combined with the ideal gas law and an equation for the change of entropy as found in \textcite{mueller2014} leads to
+		Using this definition combined with the ideal gas law and an equation for the change of entropy, as found in \textcite{mueller2014}, leads to
 		\begin{align}
 			a^2 &= \gamma \dfrac{p}{\rho}.
 		\end{align}
-		For fully isentropic flows which we will be concentrating on it also follows that 
+		For fully isentropic flows, which we will be concentrating on, it also follows that 
 		\begin{align}
 				\dfrac{p}{\rho^\gamma} &= \text{const}.
 		\end{align}
@@ -74,7 +74,7 @@
 				\rho F_j v_j + Q_i
 				\end{pmatrix}.
 		\end{align}
-		In addition to the denotations in \cref{EOS} we have $F_j$ as body forces, $Q_i$ as heat sources, the viscous stress tensor
+		In addition to the denotations in \cref{EOS}, we have $F_j$ as body forces, $Q_i$ as heat sources, the viscous stress tensor
 		\begin{align}
 			\tau_{ij} = \mu \left[\left(\dfrac{\partial v_i}{\partial x_j} + \dfrac{\partial v_j}{\partial x_i} \right) - \dfrac{2}{3} \dfrac{\partial v_k}{\partial x_k} \delta_{ij}\right]
 		\end{align}
@@ -91,7 +91,7 @@
 	
 	
 	\section{Dimensionless Measures}
-	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures as found in \textcite{annualreport}. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R. All other reference quantities can be derived from those. In the following all dimensionless quantities will be marked with an asterisk $(\cdot)^*$:
+	For it is much easier to handle dimensionless PDEs, we will introduce some dimensionless measures as found in \textcite{annualreport}. In order to derive these, we need some reference quantities: $L_\infty$ as a reference length, a reference velocity $V_\infty$, reference density $\rho_\infty$, reference volume force $g_\infty$, reference viscosity $\mu_\infty$, reference thermal conductivity coefficient $k_\infty$ and the gas constant R. All other reference quantities can be derived from those. In the following, all dimensionless quantities will be marked with an asterisk $(\cdot)^*$:
 	
 	\begin{align}
 		t^* &= \dfrac{V_\infty}{L_\infty} \cdot t,& x_i^* &= \dfrac{1}{L} \cdot x_i, & v_i^* &= \dfrac{1}{V_\infty}\cdot v_i, & \rho^* &= \dfrac{1}{\rho_\infty} \cdot \rho, & p^* &= \dfrac{1}{\rho_\infty V_\infty^2} \cdot p, \\ \nonumber
@@ -109,21 +109,20 @@
 	
 		
 	\subsection{Non-dimensional Ideal Gas Law}
-	For a closed system of equations we have to use the ideal gas law in dimensionless form: 
-	
+	For a closed system of equations, we have to use the ideal gas law in dimensionless form: 
 	\begin{align}
 		p^* &= \rho^* (\gamma - 1) e^* \\
 		&= (\gamma - 1) \left(\rho E^* - \dfrac{1}{2} \rho^* \mathbf{v}^{*2}\right) .
 	\end{align}	
 	
 	\subsection{Dimensionless Navier-Stokes Equations}
-	As we now have all required measures and operator we can use them to define the dimensionless relations 
+	As we now have all required measures and operators, we can use them to define the dimensionless relations 
 	\begin{description}
 		\item[Reynolds Number] $\text{Re} = \dfrac{\rho_\infty V_\infty L}{\mu_\infty} \propto \dfrac{\text{inertia forces}}{\text{viscous forces}}$,
 		\item[Froude Number] \quad $\text{Fr} = \dfrac{V_\infty }{\sqrt{g L}} \propto \dfrac{\text{body inertia}}{\text{gravitational forces}}$,
 		\item[Prandtl Number]\quad $\text{Pr} = \dfrac{ \mu_\infty c_p}{k_\infty} \propto \dfrac{\text{viscous diffusion rate}}{\text{thermal diffusion rate}}$.
 	\end{description}
-	Putting all together we receive the dimensionless Navier-Stokes equations. As they only depend on non-dimensional quantities we can drop the asterisk:
+	Putting all together, we receive the dimensionless Navier-Stokes equations. As they only depend on non-dimensional quantities, we can drop the asterisk:
 	\begin{align}
 		\dfrac{\partial \mathbf{U}}{\partial t} + \dfrac{\partial \mathbf{F}_i^c(\mathbf{U})}{\partial x_i} - \dfrac{\partial \mathbf{F}_i^v(\mathbf{U}, \nabla\mathbf{U})}{\partial x_i} = \mathbf{B}
 	\end{align}

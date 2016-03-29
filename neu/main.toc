@@ -15,35 +15,35 @@
 \contentsline {section}{\numberline {2.2}Dimensionless Measures}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Non-dimensional Ideal Gas Law}{6}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Dimensionless Navier-Stokes Equations}{6}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}The Runge-Kutta Discontinuous Galerkin Method}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}DG Space Discretization}{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Discrete Weak Formulation}{9}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Numerical Fluxes}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}RK Time Discretization}{11}{section.3.2}
-\contentsline {chapter}{\numberline {4}The Immersed Boundary Method}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}The DG Scheme with Immersed Boundaries}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}RK Time Discretisation with Immersed Boundaries}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Cell Agglomeration}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Simulation Parameters Concerning Stability and Runtime in BoSSS}{16}{section.4.4}
-\contentsline {paragraph}{LevelSetQuadratureOrder}{17}{paragraph*.29}
-\contentsline {paragraph}{SIPGPenaltyConstant}{17}{paragraph*.30}
-\contentsline {paragraph}{NodeCountSafetyFactor}{17}{paragraph*.31}
-\contentsline {chapter}{\numberline {5}Verification of BoSSS for Inviscid Flows}{18}{chapter.5}
-\contentsline {section}{\numberline {5.1}Robustness Study}{18}{section.5.1}
-\contentsline {section}{\numberline {5.2}Convergence Study of Mesh Size and Polynomial Degree}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Conclusion}{22}{section.5.3}
-\contentsline {chapter}{\numberline {6}Evaluation of BoSSS for Viscid Flows}{23}{chapter.6}
-\contentsline {section}{\numberline {6.1}Theory}{23}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{24}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{24}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Simulations}{25}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{26}{subsection.6.2.1}
-\contentsline {subsubsection}{Simulation at Reynolds Number 20}{26}{subsubsection*.41}
-\contentsline {subsubsection}{Simulation at Reynolds Number 40}{29}{subsubsection*.48}
-\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{32}{subsection.6.2.2}
-\contentsline {subsubsection}{Simulation at Reynolds Number 100}{33}{subsubsection*.55}
-\contentsline {subsubsection}{Simulation at Reynolds Number 200}{33}{subsubsection*.58}
-\contentsline {chapter}{\numberline {7}Conclusion}{36}{chapter.7}
+\contentsline {chapter}{\numberline {3}The Runge-Kutta Discontinuous Galerkin Method}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}DG Space Discretisation}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Discrete Weak Formulation}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Numerical Fluxes}{8}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}RK Time Discretization}{10}{section.3.2}
+\contentsline {chapter}{\numberline {4}The Immersed Boundary Method}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}The DG Scheme with Immersed Boundaries}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}RK Time Discretisation with Immersed Boundaries}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Cell Agglomeration}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Simulation Parameters Concerning Stability and Runtime in BoSSS}{15}{section.4.4}
+\contentsline {paragraph}{LevelSetQuadratureOrder}{16}{paragraph*.29}
+\contentsline {paragraph}{SIPGPenaltyConstant}{16}{paragraph*.30}
+\contentsline {paragraph}{NodeCountSafetyFactor}{16}{paragraph*.31}
+\contentsline {chapter}{\numberline {5}Verification of BoSSS for Inviscid Flows}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Robustness Study}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Convergence Study of Mesh Size and Polynomial Degree}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusion}{21}{section.5.3}
+\contentsline {chapter}{\numberline {6}Evaluation of BoSSS for Viscid Flows}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Theory}{22}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{23}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Laminar Vortex Shedding}{23}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Simulations}{24}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Steady State Simulations ($\text {Re} < 40-50$)}{25}{subsection.6.2.1}
+\contentsline {subsubsection}{Simulation at Reynolds Number 20}{25}{subsubsection*.41}
+\contentsline {subsubsection}{Simulation at Reynolds Number 40}{28}{subsubsection*.48}
+\contentsline {subsection}{\numberline {6.2.2}Unsteady Simulations ($\text {Re}> 40-50$)}{31}{subsection.6.2.2}
+\contentsline {subsubsection}{Simulation at Reynolds Number 100}{32}{subsubsection*.55}
+\contentsline {subsubsection}{Simulation at Reynolds Number 200}{32}{subsubsection*.58}
+\contentsline {chapter}{\numberline {7}Conclusion}{35}{chapter.7}
 \contentsline {chapter}{\numberline {8}Bibliography}{X}{chapter.8}
 \contentsline {chapter}{\nonumberline List of Tables}{XII}{section*.63}
 \contentsline {chapter}{\numberline {A}Appendix}{XIII}{appendix.A}
