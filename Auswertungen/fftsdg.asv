@@ -1,5 +1,5 @@
-test = dlmread('re100dg1cpd40cl.dat', '',1,0);
-
+test = dlmread('re100dg2cpd80cl.dat', '',1,0);
+test2 = dlmread('re100dg2cpd80cd.dat', '',1,0);
 t= test(:,1);
 c = test(:,2);
 plot(t,c)
@@ -7,6 +7,7 @@ plot(t,c)
 a1 = find(test(:,1) >= 90);
 t1 = test(a1,1);
 cl = test(a1,2);
+cd = test2(a1,2);
 
 T = 60;
 Fs = 1/T;            % Sampling frequency           % Sampling period
@@ -20,11 +21,19 @@ P1(2:end-1) = 2*P1(2:end-1);
 
 f = Fs*(0:(L/2))/L;
 plot(f,P1)
+f(find(P1 == max(P1)))
 
-% cl_mean=mean(cl)
-% cl_max=max(cl)
-% cl_min=min(cl)
-% 
+cl_mean=mean(cl)
+cl_max=max(cl)
+cl_min=min(cl)
+
+
+cd_mean = mean(cd)
+cd_abweichungoben = max(cd)-cd_mean
+cd_abweichungoben = min(cd)-cd_mean
+
+
+
 % n = length(cl)
 % dt = mean(t1(2:end,1)-t1(1:end-1,1))
 % fs = 1/dt;

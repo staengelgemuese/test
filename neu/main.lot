@@ -10,12 +10,18 @@
 \contentsline {table}{\numberline {6.1}{\ignorespaces Degrees of Freedom for Different Simulation Properties\relax }}{24}{table.caption.39}
 \contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{26}{table.caption.42}
 \contentsline {table}{\numberline {6.3}{\ignorespaces $C_D$ Values for each simulation}}{26}{table.caption.43}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Wake Separation Lengths for Each Simulation ($\text {Re} = 20$)\relax }}{27}{table.caption.44}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Wake Separation Lengths for Each Simulation ($\text {Re} = 20$)\relax }}{26}{table.caption.44}
 \contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of Results for $W^*$ and $C_D$, taken from \cite {ayers}, modified\relax }}{29}{table.caption.49}
 \contentsline {table}{\numberline {6.6}{\ignorespaces $C_D$ Values for each simulation}}{29}{table.caption.50}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Wake Separation Lengths for Each Simulation ($\text {Re} = 40$)\relax }}{30}{table.caption.51}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Wake Separation Lengths for Each Simulation ($\text {Re} = 40$)\relax }}{29}{table.caption.51}
 \contentsline {table}{\numberline {6.8}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite {ayers}, modified\relax }}{32}{table.caption.56}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite {ayers}, modified\relax }}{33}{table.caption.59}
+\contentsline {table}{\numberline {6.9}{\ignorespaces $C_D$ Values for Each simulation}}{32}{table.caption.57}
+\contentsline {table}{\numberline {6.10}{\ignorespaces $C_L$ Values for Each Simulation ($\text {Re} = 100$)\relax }}{33}{table.caption.58}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Strouhal Numbers for Each Simulation ($\text {Re} = 100$)\relax }}{33}{table.caption.59}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite {ayers}, modified\relax }}{36}{table.caption.65}
+\contentsline {table}{\numberline {6.13}{\ignorespaces $C_D$ Values for Each simulation}}{36}{table.caption.66}
+\contentsline {table}{\numberline {6.14}{\ignorespaces $C_L$ Values for Each Simulation ($\text {Re} = 200$)\relax }}{36}{table.caption.67}
+\contentsline {table}{\numberline {6.15}{\ignorespaces Strouhal Numbers for Each Simulation ($\text {Re} = 200$)\relax }}{37}{table.caption.68}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
