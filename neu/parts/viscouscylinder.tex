@@ -60,6 +60,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 			\caption{Degrees of Freedom for Different Simulation Properties}	
 			\label{DOF}
 	\end{table}
+	During the evaluation of our results, we will also compare simulations of similar \gls{dof}s like DG2CpD40 and DG1CpD60 or DG3CpD60 and DG2CpD80 in order to inspect the influence of higher order and finer mesh properties.
 	
 	 The drag and lift coefficients are defined as
 	\begin{align}
@@ -86,20 +87,20 @@ The viscous flow around a cylinder has been approached by many papers both exper
 	It can be found from examining the x-velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
 
 	\subsubsection{Simulation at Reynolds Number 20}
-	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \textcite{ayers}.Furthermore the results are divided into \gls{2d} and \gls{3d} simulations which should not produce large differences as long as we are regarding low Reynolds numbers. The values that were produced by Brehm et al. [2015] using $\text{Ma} = 0.1$ as well as those that were simulated as incompressible flows can still be compared as in these low Mach numbers the compressibility does not have a great effect on the flow.
+	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \textcite{ayers}.Furthermore the results are divided into \gls{2d} and \gls{3d} simulations which should not produce large differences as long as we are regarding low Reynolds numbers. The values that were produced by \textcite{brehm2015locally} using $\text{Ma} = 0.1$ as well as those that were simulated as incompressible flows can still be compared as in these low Mach numbers the compressibility does not have a great effect on the flow.
 
 \begin{table}[htp]
 	\centering
 	\begin{tabular}{|l|l|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=20$                              & Source                             & \gls{2d}/\gls{3d} & $W^*$ & $C_D$ \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & Dennis et al {[}1970{]}            & \gls{2d}    & $0.94$     & $2.05$     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Forberg {[}1980{]}                 & \gls{2d}    & $0.91$     & $2.00$     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & \gls{2d}    &$ 0.93 $    & $2.06$     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & 0.93    & -     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & $2.09$     \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage}}     & Brehm et al. {[}2015{]} (Ma = 0.1) & \gls{3d}    & $0.96$     &$ 2.02$     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & \gls{2d}    & $0.975$     & $2.06 $    \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & \textcite{dennis1970numerical}           & \gls{2d}    & $0.94$     & $2.05$     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{fornberg1980numerical}                 & \gls{2d}    & $0.91$     & $2.00$     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}&\textcite{linnick2005high}          & \gls{2d}    &$ 0.93 $    & $2.06$     \\ \hline
+		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & \textcite{coutanceau1977experimental}       & -     & 0.93    & -     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{tritton1959experiments}             & -     & -     & $2.09$     \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage}}     & \textcite{brehm2015locally} (Ma = 0.1) & \gls{3d}    & $0.96$     &$ 2.02$     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{ayers}                 & \gls{2d}    & $0.975$     & $2.06 $    \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $0.928$     & $2.136$     \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $W^*$ and $C_D$, taken from \cite{ayers}, modified}
@@ -117,9 +118,9 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 				\hline
 				\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 				\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-				\multirow{3}{*}{DG}            & 1           &    $1.81210203936273$    &  $1.95174279852438$     &    $1.98810584929267$    \\ \cline{2-5} 
-				& 2           &    $2.14085421873382$    &    $2.13771290819429$   &   $2.19714806470952$     \\ \cline{2-5} 
-				& 3           &    $2.13627628461972$    &     $2.13597650124614$  &   -     \\ \hline
+				\multirow{3}{*}{DG}            & 1           &    $1.812$    &  $1.952$     &    $1.988$    \\ \cline{2-5} 
+				& 2           &    $2.141$    &    $2.138$   &   $2.197$     \\ \cline{2-5} 
+				& 3           &    $2.136$    &     $2.136$  &   -     \\ \hline
 			\end{tabular}
 			\caption[$C_D$ Values for each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 20$)}	
 			\label{C_D20}
@@ -135,9 +136,9 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 			\hline
 			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 			\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-			\multirow{3}{*}{DG}            & 1           &    $0.95629882812$    &     $1.04418945313$  &    $0.92700195312$    \\ \cline{2-5} 
-			& 2           &    $0.88745117187$    &     $0.94311523437$  &    $0.916015625$    \\ \cline{2-5} 
-			& 3           &     $0.92114257812$   &     $0.927734375$  &    -    \\ \hline
+			\multirow{3}{*}{DG}            & 1           &    $0.956$    &     $1.044$  &    $0.927$    \\ \cline{2-5} 
+			& 2           &    $0.887$    &     $0.943$  &    $0.916$    \\ \cline{2-5} 
+			& 3           &     $0.921$   &     $0.928$  &    -    \\ \hline
 		\end{tabular}
 		\caption{Wake Separation Lengths for Each Simulation ($\text{Re} = 20$)}	
 		\label{W20}
@@ -198,13 +199,13 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 	\begin{tabular}{|l|l|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=40$                              & Source                             & \gls{2d}/\gls{3d} & $W^*$ & $C_D$ \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & Dennis et al {[}1970{]}            & \gls{2d}    & $2.35$     & $1.52 $    \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Forberg {[}1980{]}                 & \gls{2d}    & $2.24$     & $1.50 $   \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]}          & \gls{2d}    &$ 2.28$     & $1.54  $   \\ \hline
-		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Coutanceau et al. {[}1978{]}       & -     & $2.13 $  & -     \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Tritton {[}1959{]}                 & -     & -     & $1.59 $    \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage}}     & Brehm et al. {[}2015{]} (Ma = 0.1) & \gls{3d}    & $2.26$     & $1.51 $    \\ \cline{2-5} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & \gls{2d}    & $2.250 $    & $1.605$     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} &\textcite{dennis1970numerical}           & \gls{2d}    & $2.35$     & $1.52 $    \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{fornberg1980numerical}                & \gls{2d}    & $2.24$     & $1.50 $   \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{linnick2005high}          & \gls{2d}    &$ 2.28$     & $1.54  $   \\ \hline
+		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & \textcite{coutanceau1977experimental}      & -     & $2.13 $  & -     \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{tritton1959experiments}                 & -     & -     & $1.59 $    \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage}}     & \textcite{brehm2015locally} (Ma = 0.1) & \gls{3d}    & $2.26$     & $1.51 $    \\ \cline{2-5} 
+		\rule{0pt}{2,3ex}& \textcite{ayers}                  & \gls{2d}    & $2.250 $    & $1.605$     \\ \cline{2-5} 
 		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $2.201$     & $1.608 $    \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $W^*$ and $C_D$, taken from \cite{ayers}, modified}
@@ -219,9 +220,9 @@ In \cref{C_D40,W40}, you can see the results of every simulation. As we did for 
 			\hline
 			\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 			\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-			\multirow{3}{*}{DG}            & 1           &   $1.3729380901298$     &     $1.46072184744588$  &     $1.48507770769867$   \\ \cline{2-5} 
-			& 2           &     $1.60025832690217$   &   $1.59617303474342$    &     $1.6161797186352$   \\ \cline{2-5} 
-			& 3           &      -  &     $1.60757505790039$  &     -   \\ \hline
+			\multirow{3}{*}{DG}            & 1           &   $1.373$     &     $1.461$  &     $1.485$   \\ \cline{2-5} 
+			& 2           &     $1.600$   &   $1.596$    &     $1.616$   \\ \cline{2-5} 
+			& 3           &      -  &     $1.608$  &     -   \\ \hline
 		\end{tabular}
 		\caption[$C_D$ Values for each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 40$)}	
 		\label{C_D40}
@@ -237,9 +238,9 @@ In \cref{C_D40,W40}, you can see the results of every simulation. As we did for 
 			\hline
 			\multicolumn{2}{|c|}{\multirow{2}{*}{$W^*$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 			\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-			\multirow{3}{*}{DG}            & 1           &    $2.341796875$    &    $2.337890625$   &    $2.236328125$    \\ \cline{2-5} 
-			& 2           &     $2.115234375$   &    $2.181640625$   &     $2.181640625$   \\ \cline{2-5} 
-			& 3           &     -   &    $2.201171875$   &    -    \\ \hline
+			\multirow{3}{*}{DG}            & 1           &    $2.342$    &    $2.338$   &    $2.236$    \\ \cline{2-5} 
+			& 2           &     $2.115$   &    $2.182$   &     $2.182$   \\ \cline{2-5} 
+			& 3           &     -   &    $2.201$   &    -    \\ \hline
 		\end{tabular}
 		\caption{Wake Separation Lengths for Each Simulation ($\text{Re} = 40$)}	
 		\label{W40}
@@ -291,32 +292,32 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 \end{figure}
 	\subsection{Unsteady Simulations ($\text{Re}> 40-50$)}
 	After having examined the steady simulations which were very accurate for the coefficient of drag, we will now turn to the unsteady ones with $\text{Re}=100$ and $\text{Re}=200$.
-	In order to compare the unsteady simulations we need the Strouhal number
+	In order to compare the unsteady simulations, we need the Strouhal number
 	\begin{align}
 		\text{St} = \dfrac{f  L_\infty}{V_\infty}.
 	\end{align}
 	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. In order to develop vortex shedding, the flow needs small perturbations that destabilise the flow towards a symmetry breaking state (\textcite{FLM:14223}). In reality those are given by the structure of the cylinder, the influence of the walls or the not completely straight inflow; in our simulations they come from small truncation errors and the computer's round-off errors. 
 	In order to accelerate the process until the wake begins to oscillate, one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not needed in our simulations.
 	\subsubsection{Simulation at Reynolds Number 100}
-	In the following we will compare the coefficients of lift and drag as well as the Strouhal number. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. \todo{Strouhal berechnung überarbeiten}
-\begin{table}[htp]
+	In the following, we will compare the coefficients of lift and drag as well as the Strouhal number. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. All of our results for the best calculation DG3CpD60 lie perfectly in the range that has been given by other studies.  The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. Furthermore we observe that the higher-order results of those with the same \gls{dof}s yield better results than those with a finer mesh.
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|l|p{4cm}|c|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=100$                              & Source                             & \gls{2d}/\gls{3d} & $St$ & $C_D$ & $C_L$\\ \hline
-		\rule{0pt}{2,3ex}\multirow{7}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & Gresho et al. {[}1984{]}            & \gls{2d}    & $0.18$     & $1.76$ & -   \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.056$)                 & \gls{2d}    & $0.169$     & $1.38 \pm 0.010$  &  $\pm  0.337 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.023$)                  & \gls{2d}    & $0.1696 $   & $1.34 \pm 0.009$  & $ \pm 0.333 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & \gls{2d}    & $0.165  $   &$ 1.253 $ & -  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Saiki et al. {[}1996{]}                 & \gls{2d}    &$ 0.171  $   & $1.26 $ &  - \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & \gls{3d}    & $0.164$     & $1.240 $ & -  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Liu et al. {[}1998{]}          & \gls{3d}    &$ 0.165 $    & $1.35 \pm 0.012$  &$ \pm 0.339 $ \\ \hline
-		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Berger et al. {[}1972{]}       & -     &$ 0.16-0.17 $   & -    & -\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Clift et al. {[}1978{]}                 & -    & -     &$ 1.24 $ &  - \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Williamson {[}1996{]}                 & -     &$ 0.164  $  & -   & - \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical -- \newline Compressible\end{minipage}}     & Brehm et al. {[}2015{]} \newline (Ma = 0.1) & \gls{3d}    & $0.165$    &$ 1.32 \pm 0.01  $  & $\pm 0.32 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & \gls{2d}    &$ 0.167$     & $1.371 \pm 0.011 $ &$ \pm 0.333 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & d     & 4  &   \\ \hline
+		\rule{0pt}{2,3ex}\multirow{7}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & \textcite{gresho1984modified}           & \gls{2d}    & $0.18$     & $1.76$ & -   \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{linnick2005high} \newline ($\lambda = 0.056$)                 & \gls{2d}    & $0.169$     & $1.38 \pm 0.010$  &  $\pm  0.337 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{linnick2005high} \newline ($\lambda = 0.023$)                  & \gls{2d}    & $0.1696 $   & $1.34 \pm 0.009$  & $ \pm 0.333 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{FLM:14223}                  & \gls{2d}    & $0.165  $   &$ 1.253 $ & -  \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{saiki1996numerical}                 & \gls{2d}    &$ 0.171  $   & $1.26 $ &  - \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{FLM:14223}                    & \gls{3d}    & $0.164$     & $1.240 $ & -  \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{liu1998preconditioned}          & \gls{3d}    &$ 0.165 $    & $1.35 \pm 0.012$  &$ \pm 0.339 $ \\ \hline
+		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & \textcite{berger1972periodic}     & -     &$ 0.16-0.17 $   & -    & -\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{clift2005bubbles}                & -    & -     &$ 1.24 $ &  - \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{williamson1996vortex}               & -     &$ 0.164  $  & -   & - \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical -- \newline Compressible\end{minipage}}     & \textcite{brehm2015locally} \newline (Ma = 0.1) & \gls{3d}    & $0.165$    &$ 1.32 \pm 0.01  $  & $\pm 0.32 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{ayers}                  & \gls{2d}    &$ 0.167$     & $1.371 \pm 0.011 $ &$ \pm 0.333 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $0.1669$     & $1.3593 \pm 0.00805$  &  $\pm 0.3291$ \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite{ayers}, modified}
 	\label{table100}
@@ -324,7 +325,7 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 
 
 
-\begin{table}[htp]
+\begin{table}[H]
 	\centering
 	\def\arraystretch{1.5}
 	%	\begin{minipage}[b]{0.3\textwidth}	
@@ -334,12 +335,12 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
 		\multirow{3}{*}{DG}            & 1           &   $0.9777\pm 0.0003$     &     $1.2 \pm 0.0834$  &     $1.233 \pm 0.0118$   \\ \cline{2-5} 
 		& 2           &     $1.291 \pm 0.0082$   &   $1.3156 \pm 0.0089$    &     $1.3501 \pm 0.0079$   \\ \cline{2-5} 
-		& 3           &      -  &     $$ \todo{adfd}  &     -   \\ \hline
+		& 3           &      -  &     $1.3593 \pm 0.00805$   &     -   \\ \hline
 	\end{tabular}
 	\caption[$C_D$ Values for Each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 100$)}	
 	\label{C_D100}
 \end{table}
-\begin{table}[htp]
+\begin{table}[H]
 	\centering
 	\def\arraystretch{1.5}
 	%	\end{minipage}
@@ -352,13 +353,13 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
 		\multirow{3}{*}{DG}            & 1           &    $\pm 0.00155$    &    $\pm 0.291$   &    $\pm 0.2789$    \\ \cline{2-5} 
 		& 2           &     $\pm 0.2672$   &    $\pm 0.3154$   &     $\pm 0.3135$   \\ \cline{2-5} 
-		& 3           &     -   &    $$   \todo{asdf}&    -    \\ \hline
+		& 3           &     -   &    $\pm 0.3291$  &    -    \\ \hline
 	\end{tabular}
 	\caption{$C_L$ Values for Each Simulation ($\text{Re} = 100$)}	
 	\label{CL100}
 	%	\end{minipage} 
 \end{table}
-\begin{table}[htp]
+\begin{table}[H]
 	\centering
 	\def\arraystretch{1.5}
 	%	\end{minipage}
@@ -369,50 +370,92 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 		\hline
 		\multicolumn{2}{|c|}{\multirow{2}{*}{St}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-		\multirow{3}{*}{DG}            & 1           &    $0.1$    &    $0.15$   &    $0.15$    \\ \cline{2-5} 
-		& 2           &     $0.1667$   &    $0.1667$   &     $0.1667$   \\ \cline{2-5} 
-		& 3           &     -   &    $as$ \todo{sa}   &    -    \\ \hline
+		\multirow{3}{*}{DG}            & 1           &    $0.1001$    &    $0.1506$   &    $0.1502$    \\ \cline{2-5} 
+		& 2           &     $0.1669$   &    $0.1669$   &     $0.1670$   \\ \cline{2-5} 
+		& 3           &     -   &    $0.1669$   &    -    \\ \hline
 	\end{tabular}
 	\caption{Strouhal Numbers for Each Simulation ($\text{Re} = 100$)}	
 	\label{Str100}
 	%	\end{minipage} 
 \end{table}
+\newpage
+%\cref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher order calculations immediately yield good results. This time, there is no such discordant value for DG2CpD80 which is higher than it should be as appeared for $\text{Re}=20$ and $\text{Re}=40$. 
+%	\begin{figure}[htp]	
+%		\centering
+%		\begin{tikzpicture}
+%		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
+%		\addplot table[ x = ms, y =dg1] {data/re100.dat};
+%		\addlegendentry{$P=1$}
+%		\addplot table[ x = ms, y =dg2] {data/re100.dat};
+%		\addlegendentry{$P=2$}
+%		\addplot table[ x = ms, y =dg3] {data/re100.dat};
+%		\addlegendentry{$P=3$}
+%		%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+%		%		\addlegendentry{Constant Value}
+%		\end{semilogxaxis}	
+%		\end{tikzpicture}
+%		\caption{Graphical Presentation of Table \ref{C_D100} for $\text{Re} = 100$}
+%		\label{fig:C_D100}	
+%	\end{figure}
 
 In \cref{osci100} the coefficient of lift over time is presented. It shows that at around $t=90s$ amplitude and frequency stay the same, though regarding 
-\cref{cdosci100} it reaches the constant oscillation state at around $t=110s$. \todo{cd ab 110}. These plots were produced with the results from DG2CpD60. They also show that the frequency of $C_D$ is twice as high as the frequency of the lift coefficient which is used in order to determine the Strouhal number. 
+\cref{cdosci100} the coefficient of drag reaches the constant oscillation state at around $t=110s$. These plots were produced with the results from DG3CpD60. They also show that the frequency of $C_D$ is twice as high as the frequency of the lift coefficient. 
+\begin{figure}[htp]	
+	\centering
+	\includegraphics[height=8cm]{re100dg3cpd60cl.eps}
+	\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=100$)}
+	\label{osci100}	
+\end{figure}
+\begin{figure}[htp]	
+	\begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[height=6cm]{re100dg3cpd60cl90.eps}
+		\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+		\label{cl10090}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[height=6cm]{re100dg3cpd60cd90.eps}
+		\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+		\label{cdosci100}	
+	\end{minipage}
+\end{figure}
 	
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-				\addplot table[ x = time, y = l, mark=none] {data/re100dg2cpd60cl.dat};
-				\end{axis}	
-			\end{tikzpicture}
-			\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=100$)}
-			\label{osci100}	
-		\end{figure}
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 90, xmax = 150]
-			\addplot table[ x =time, y =l, mark=none] {data/re100dg2cpd60cl.dat};
-			\end{axis}	
-			\end{tikzpicture}
-			\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
-			\label{shijfterror}	
-		\end{figure}
-		\begin{figure}[htp]	
-			\centering
-			\begin{tikzpicture}
-			\begin{axis}[xlabel ={Time}, ylabel ={$C_D$},  grid =major,  legend style = {cells = {anchor=east}, legend pos=outer north east,}, restrict x to domain=90:150, xmin = 90, xmax = 150]
-			\addplot table[ x =time, y =d, mark=none] {data/re100dg2cpd60cd.dat};
-			\end{axis}	
-			\end{tikzpicture}
-			\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
-			\label{cdosci100}	
-		\end{figure}
+%		\begin{figure}[htp]	
+%			\centering
+%			\begin{tikzpicture}
+%				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
+%				\addplot table[ x = time, y = l, mark=none] {data/re100dg2cpd60cl.dat};
+%				\end{axis}	
+%			\end{tikzpicture}
+%			\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=100$)}
+%			\label{osci100}	
+%		\end{figure}
+%\begin{figure}[htp]	
+%	\begin{minipage}[b]{0.45\textwidth}
+%			\centering
+%			\begin{tikzpicture}
+%			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 90, xmax = 150]
+%			\addplot table[ x =time, y =l, mark=none] {data/re100dg2cpd60cl.dat};
+%			\end{axis}	
+%			\end{tikzpicture}
+%			\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+%			\label{shijfterror}	
+%	\end{minipage}
+%	\begin{minipage}[b]{0.45\textwidth}
+%			\centering
+%			\begin{tikzpicture}
+%			\begin{axis}[xlabel ={Time}, ylabel ={$C_D$},  grid =major,  legend style = {cells = {anchor=east}, legend pos=outer north east,}, restrict x to domain=90:150, xmin = 90, xmax = 150]
+%			\addplot table[ x =time, y =d, mark=none] {data/re100dg2cpd60cd.dat};
+%			\end{axis}	
+%			\end{tikzpicture}
+%			\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+%			\label{cdosci100}	
+%	\end{minipage}
+%\end{figure}
 		
-		We will conclude the evaluation of the simulation at Reynolds number 100 with a visualisation of the vorticity for DG2CpD60 in \cref{fig:vorticity100}. As we used a very coarse mesh outside $-2\leq x,y \leq 2$ the vortices get stretched in the wake and there are sharp jumps at the cell edges.
+		We will conclude the evaluation of the simulation at Reynolds number 100 with a visualisation of the vorticity for DG2CpD60 in \cref{fig:vorticity100}. As we used a very coarse mesh outside $-2\leq x,y \leq 2$ the vortices get stretched in the wake and there are sharp jumps at the cell edges. By observing the vorticity over time, we could conclude that the Strouhal number, which describes the frequency of the vortex shedding, can be found from examining the coefficient of lift as vortex shedding and lift changes appeared in the exact same frequency.
 		\begin{figure}[htp]
 			\centering
 			\includegraphics[height=10cm]{re100dg3cpd60.png}
@@ -420,28 +463,29 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 			\label{fig:vorticity100}
 		\end{figure}
 		
+		\newpage
 	\subsubsection{Simulation at Reynolds Number 200}
-	Finally, we will come to the simulation at $\text{Re}=200$. Once again, the results that we received are accurate and in good agreement, as can be seen in \cref{table200}. The frequency of the vortex shedding as well as the amplitude of the coefficient of lift increased compared to $\text{Re}=100$. Compared to the three dimensional simulations by \todo{cite}, our results for the coefficient of drag are slightly higher, as we only did \gls{2d} simulations.  All of our results can be found in \cref{C_D200,CL200,Str200}.
+	Finally, we will come to the simulation at $\text{Re}=200$. Once again, the results that we received are accurate and in good agreement, as can be seen in \cref{table200}. Compared to $\text{Re}=100$ the frequency of the vortex shedding as well as the amplitude of the coefficient of lift increased while the coefficient of drag stayed at about the same.  Compared to the three dimensional simulations by \textcite{brehm2015locally}, our results for the coefficient of drag are slightly higher, as we only did \gls{2d} simulations.  All of our results can be found in \cref{C_D200,CL200,Str200}.
 \begin{table}[htp]
 	\centering
-	\begin{tabular}{|l|p{4cm}|c|c|c|c|}
+	\begin{tabular}{|l|p{3.5cm}|c|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=200$                              & Source                             & \gls{2d}/\gls{3d} & $St$ & $C_D$ & $C_L$\\ \hline
-		\rule{0pt}{2,3ex}\multirow{9}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & Belov et al. {[}1995{]}            & \gls{2d}    & $0.193$     & $1.19 \pm 0.042$ & $\pm 0.64$   \\ \cline{2-6} 
-		\rule{0pt}{2,3ex} & Gresho et al. {[}1984{]}            & \gls{2d}    & $0.21$     & $1.76$ & -   \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.056$)                 & \gls{2d}    & $0.199$     & $1.37 \pm 0.046$  &  $\pm  0.70$\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Linnick et al. {[}2005{]} \newline ($\lambda = 0.023$)                  & \gls{2d}    & $0.197 $   & $1.34 \pm 0.044$  & $ \pm 0.69$\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Miyake et al. {[}1992{]}                 & \gls{2d}    & $0.196$   &$1.34 \pm 0.043 $ & $\pm 0.67$  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & \gls{2d}    & $0.198  $   &$ 1.321 $ & -  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Saiki et al. {[}1996{]}                 & \gls{2d}    &$ 0.197  $   & $1.18 $ &  - \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Persillon et al. {[}1998{]}                 & \gls{3d}    & $0.181$     & $1.306 $ & -  \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Liu et al. {[}1998{]}          & \gls{3d}    &$ 0.192 $    & $1.31 \pm 0.049$  &$ \pm 0.69 $ \\ \hline
-		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & Berger et al. {[}1972{]}       & -     &$ 0.18-0.19 $   & -    & -\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Clift et al. {[}1978{]}                 & -    & -     &$ 1.16 $ &  - \\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Williamson {[}1996{]}                 & -     &$ 0.181  $  & -   & - \\ \hline
-		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage} }    & Brehm et al. {[}2015{]} \newline (Ma = 0.1) & \gls{3d}    & $0.192$    &$ 1.3 \pm 0.04  $  & $\pm 0.66 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& Ayers {[}2015{]}                   & \gls{2d}    &$ 0.201$     & $1.371 \pm 0.011 $ &$ \pm 0.70 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & d     & 4  &   \\ \hline
+		\rule{0pt}{2,3ex}\multirow{9}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & \textcite{belov1995new}            & \gls{2d}    & $0.193$     & $1.19 \pm 0.042$ & $\pm 0.64$   \\ \cline{2-6} 
+		\rule{0pt}{2,3ex} & \textcite{gresho1984modified}             & \gls{2d}    & $0.21$     & $1.76$ & -   \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{linnick2005high} \newline ($\lambda = 0.056$)                 & \gls{2d}    & $0.199$     & $1.37 \pm 0.046$  &  $\pm  0.70$\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{linnick2005high} \newline ($\lambda = 0.023$)                  & \gls{2d}    & $0.197 $   & $1.34 \pm 0.044$  & $ \pm 0.69$\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{miyake1992numerical}               & \gls{2d}    & $0.196$   &$1.34 \pm 0.043 $ & $\pm 0.67$  \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&  \textcite{FLM:14223}               & \gls{2d}    & $0.198  $   &$ 1.321 $ & -  \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{saiki1996numerical}                 & \gls{2d}    &$ 0.197  $   & $1.18 $ &  - \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{FLM:14223}                   & \gls{3d}    & $0.181$     & $1.306 $ & -  \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}&\textcite{liu1998preconditioned}           & \gls{3d}    &$ 0.192 $    & $1.31 \pm 0.049$  &$ \pm 0.69 $ \\ \hline
+		\rule{0pt}{2,3ex}\multirow{2}{*}{Experimental}               & \textcite{berger1972periodic}      & -     &$ 0.18-0.19 $   & -    & -\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{clift2005bubbles}                  & -    & -     &$ 1.16 $ &  - \\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{williamson1996vortex}               & -     &$ 0.181  $  & -   & - \\ \hline
+		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical --\newline Compressible\end{minipage} }    &  \textcite{brehm2015locally} \newline (Ma = 0.1) & \gls{3d}    & $0.192$    &$ 1.3 \pm 0.04  $  & $\pm 0.66 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textcite{ayers}                   & \gls{2d}    &$ 0.201$     & $1.371 \pm 0.011 $ &$ \pm 0.70 $\\ \cline{2-6} 
+		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $0.2002$     & $1.344 \pm 0.0462$  &   $\pm 0.6887$\\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite{ayers}, modified}
 	\label{table200}
@@ -456,8 +500,8 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 		\multicolumn{2}{|c|}{\multirow{2}{*}{$C_D$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
 		\multirow{3}{*}{DG}            & 1           &   $0.8144\pm 0.0028$     &     $1.2427 \pm 0.0281$  &     $1.2256 \pm 0.0309$   \\ \cline{2-5} 
-		& 2           &     $1.2508 \pm 0.0339$   &   $1.2639 \pm 0.0394$    &     $1.3501 \pm 0.0079$   \\ \cline{2-5} 
-		& 3           &      -  &     $s$ \todo{adfd}  &     -   \\ \hline
+		& 2           &     $1.2508 \pm 0.0339$   &   $1.3593 \pm 0.0080$    &     $1.3501 \pm 0.0079$   \\ \cline{2-5} 
+		& 3           &      -  &     $1.344 \pm 0.0462$   &     -   \\ \hline
 	\end{tabular}
 	\caption[$C_D$ Values for Each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 200$)}	
 	\label{C_D200}
@@ -474,8 +518,8 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 		\multicolumn{2}{|c|}{\multirow{2}{*}{$C_L$}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
 		\multirow{3}{*}{DG}            & 1           &    $\pm 3.2629 \cdot 10^{-5}$    &    $\pm 0.5304$   &    $\pm 0.2789$    \\ \cline{2-5} 
-		& 2           &     $\pm 0.5653$   &    $\pm 0.6433$   &     $\pm 0.3135$   \\ \cline{2-5} 
-		& 3           &     -   &    $q$   \todo{asdf}&    -    \\ \hline
+		& 2           &     $\pm 0.5653$   &    $\pm 0.6433$   &     $\pm 0.6376$   \\ \cline{2-5} 
+		& 3           &     -   &    $\pm 0.6887$  &    -    \\ \hline
 	\end{tabular}
 	\caption{$C_L$ Values for Each Simulation ($\text{Re} = 200$)}	
 	\label{CL200}
@@ -492,44 +536,62 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 		\hline
 		\multicolumn{2}{|c|}{\multirow{2}{*}{St}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 		\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
-		\multirow{3}{*}{DG}            & 1           &    $0$    &    $0.1833$   &    $0.1833$    \\ \cline{2-5} 
-		& 2           &     $0.2$   &    $0.2$   &     $0$ \todo{s}   \\ \cline{2-5} 
-		& 3           &     -   &    $as$ \todo{sa}   &    -    \\ \hline
+		\multirow{3}{*}{DG}            & 1           &    $0$    &    $0.1836$   &    $0.1838$    \\ \cline{2-5} 
+		& 2           &     $0.2003$   &    $0.2002$   &     $0.2002$   \\ \cline{2-5} 
+		& 3           &     -   &    $0.2002$   &    -    \\ \hline
 	\end{tabular}
 	\caption{Strouhal Numbers for Each Simulation ($\text{Re} = 200$)}	
 	\label{Str200}
 	%	\end{minipage} 
 \end{table}
-In \cref{osci200} you can see the lift coefficient over time for DG2CpD60. There we observe that the steady state is reached earlier (around $t=70s$) compared to $\text{Re}=100$ and frequency and amplitude are increased.
+\newpage
+In \cref{osci200}, we can see that the steady state is reached earlier compared to $\text{Re}=100$; the coefficient of lift settles into a state of constant amplitude and frequency at around $t=65s$. Figures \ref{cl90} and \ref{cdosci200} show the frequency and amplitude of $C_L$ and $C_D$, respectively, for the steady state from $90s \leq t \leq 150s$. There we can see that frequency and amplitude are higher compared to $\text{Re}=100$.
+%\begin{figure}[htp]	
+%	\centering
+%	\begin{tikzpicture}
+%	\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
+%	\addplot table[ x = ms, y =dg1] {data/re200.dat};
+%	\addlegendentry{$P=1$}
+%	\addplot table[ x = ms, y =dg2] {data/re200.dat};
+%	\addlegendentry{$P=2$}
+%	\addplot table[ x = ms, y =dg3] {data/re200.dat};
+%	\addlegendentry{$P=3$}
+%	%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+%	%		\addlegendentry{Constant Value}
+%	\end{semilogxaxis}	
+%	\end{tikzpicture}
+%	\caption{Graphical Presentation of Table \ref{C_D200} for $\text{Re} = 200$}
+%	\label{fig:C_D200}	
+%\end{figure}
+
 
 \begin{figure}[htp]	
 	\centering
-	\begin{tikzpicture}
-	\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-	\addplot table[ x = time, y = l, mark=none] {data/re200dg2cpd60cl.dat};
-	\end{axis}	
-	\end{tikzpicture}
+	\includegraphics[height=8cm]{re200dg3cpd60cl.eps}
 	\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=200$)}
 	\label{osci200}	
 \end{figure}
 \begin{figure}[htp]	
-	\centering
-	\begin{tikzpicture}
-	\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 90, xmax = 150]
-	\addplot table[ x =time, y =l, mark=none] {data/re200dg2cpd60cl.dat};
-	\end{axis}	
-	\end{tikzpicture}
-	\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
-	\label{cl90}	
+	\begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[height=6cm]{re200dg3cpd60cl90.eps}
+		\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
+		\label{cl90}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[height=6cm]{re200dg3cpd60cd90.eps}
+		\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
+		\label{cdosci200}	
+	\end{minipage}
 \end{figure}
-\begin{figure}[htp]	
+\newpage
+We will conclude the simulation part of this work with the visualisation of the vorticity for $\text{Re}=200$ in \cref{fig:vorticity200}. We can observe that the amount of vortices has increased. Unfortunately the mesh is too coarse to properly show the wake of the cylinder.
+\begin{figure}[htp]
 	\centering
-	\begin{tikzpicture}
-	\begin{axis}[xlabel ={Time}, ylabel ={$C_D$},  grid =major,  legend style = {cells = {anchor=east}, legend pos=outer north east,}, restrict x to domain=90:150, xmin = 90, xmax = 150]
-	\addplot table[ x =time, y =d, mark=none] {data/re200dg2cpd60cd.dat};
-	\end{axis}	
-	\end{tikzpicture}
-	\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
-	\label{cdosci200}	
+	\includegraphics[height=10cm]{re200dg3cpd60.png}
+	\caption{Vorticity for DG3CpD60 for $\text{Re} = 200$}
+	\label{fig:vorticity200}
 \end{figure}
 

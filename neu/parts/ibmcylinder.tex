@@ -56,11 +56,12 @@
 	\section{Convergence Study of Mesh Size and Polynomial Degree}
 	
 	In the second study, we vary the mesh size of our geometry from $32 \times 32$ by $64 \times 64$ to $128 \times 128$ cells. Additionally, we also vary the polynomial degree from $0$ to $4$, consequently regarding fifteen cases in total. The agglomeration factor is at a constant moderate level $\alpha = 0.3$.\\
-	Our aim is the validation of the convergence of the \gls{rkdg} method based solver for the inviscid cylinder. Therefore we hope to achieve an experimental order of convergence that is near the optimal rate $\mathcal{O}(h^{P+1})$. In  \cref{mesherror}, we compared the absolute error entropy to the mesh size logarithmically for each polynomial degree and added the linear regressions $R_P$ with its slopes to each graph. \\
+	Our aim is the validation of the convergence of the \gls{rkdg} method based solver for the inviscid cylinder. Therefore we hope to achieve an experimental order of convergence that is near the optimal rate $\mathcal{O}(h^{P+1})$. In  \cref{mesherror}, we compared the absolute error entropy to the mesh size logarithmically for each polynomial degree and added the linear regressions $R_P$ with its slopes to each graph.
+
 	\begin{figure}[htp]
 		\centering		
 		\begin{tikzpicture}
-			\begin{loglogaxis}[xlabel ={Cells per Direction}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=0$,$P=1$,$P=2$, $P=3$, $P=4$, $R_0$, $R_1$, $R_2$, $R_3$, $R_4$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,} ]
+			\begin{loglogaxis}[xlabel ={Cells per Direction}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=0$,$P=1$,$P=2$, $P=3$, $P=4$, $R_0$, $R_1$, $R_2$, $R_3$, $R_4$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east}]
 				\addplot table[ x =meshSize, y =error0] {data/test.dat};
 				\addplot table[ x =meshSize, y =error1] {data/test.dat};
 				\addplot table[ x =meshSize, y =error2] {data/test.dat};
@@ -116,9 +117,10 @@
 		\caption{Convergence Plot}
 		\label{mesherror}
 	\end{figure}
-	
+
 	As you can see in \cref{mesherror}, each graph has a quite constant slope that is higher with increasing polynomial degree. For $1 < P < 4$ it is approximately of the order $P+1$ as we hoped, only for $P = 0$ the computations converge much more slowly.\\ \indent
 	Again it was necessary to adjust some of the parameters explained in \cref{parameters} in order to stabilise the calculations with higher polynomial degrees. \\ \indent
+	\newpage
 	As an example for the correction of a critical calculation, we visualised the case with mesh size $128 \times 128$ and polynomial degree $P = 3$ before and after the correction in \cref{fig:case14}. Again, we visualised entropy and pressure. The picture in the middle shows a zoomed view of the critical cell where a high amount of entropy was produced and lead to the breakup. Please remark that differently coloured entropy ranges had to be used before and after the correction in order to point out the critical cell.
 	\begin{figure}[htp]
 		\centering
