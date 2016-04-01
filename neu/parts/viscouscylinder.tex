@@ -11,7 +11,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 		\caption{Overview of Base Suction Coefficients over Reynolds Number \cite{williamson1996vortex}}
 		\label{fig:overview}
 	\end{figure} 
-	The second section contains all other Reynolds number $\text{Re}> 40-50$ and thus describes the unsteady flow. It can be subdivided in several subsections \cite{williamson1996vortex}:
+	The second section contains all other Reynolds numbers $\text{Re}> 40-50$ and thus describes the unsteady flow. It can be subdivided into several subsections \cite{williamson1996vortex}:
 	\begin{itemize}
 		\item $40-50 < \text{Re} < 190$: laminar vortex shedding,
 		\item $190 < \text{Re} < 260$: \gls{3d} wake-transition regime,
@@ -20,7 +20,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 		\item $200000 < \text{Re}$: critical transition, supercritical regime and post-critical regime.
 	\end{itemize}
 	
-	As we will only discuss Reynolds numbers up to $\text{Re} = 200$, the important phases for us are the laminar steady regime and the laminar vortex shedding. At around $\text{Re} = 190$, the three dimensionality of the system has an incrementing influence on the flow; for we only analyse the \gls{2d} model of the experiment we stop at $\text{Re} = 200$ expecting slight deflection in our results.
+	As we will only discuss Reynolds numbers up to $\text{Re} = 200$, the important phases for us are the laminar steady regime and the laminar vortex shedding. At around $\text{Re} = 190$, the three dimensionality of the system has an incrementing influence on the flow. As we only analyse the \gls{2d} model of the experiment, we will stop at $\text{Re} = 200$ expecting slight deflection in our results.
 	
 	\subsection{The Laminar Steady Regime}
 	
@@ -81,10 +81,10 @@ The viscous flow around a cylinder has been approached by many papers both exper
 			\begin{figure}[htp]
 				\centering
 				\includegraphics[height=4cm]{steadyFlow_modifiedWilliamson.PNG}
-				\caption{Wake separation length, taken from \cite{williamson1996vortex}, modified }
+				\caption{Wake Separation Length, Taken from \cite{williamson1996vortex}, Modified }
 				\label{fig:wakeSeparation}
 			\end{figure} 
-	It can be found from examining the x-velocity $U$ at $y=0$; the x-position where $U$ changes its sign should be the end position of the wake.
+	It can be found from examining the $x$-velocity $U$ at $y=0$; the $x$-position where $U$ changes its sign should be the end position of the wake.
 
 	\subsubsection{Simulation at Reynolds Number 20}
 	We will now simulate the flow at $\text{Re}=20$ and compare our results to several experimental and numerical results as shown in \cref{tab:table20}. The results are divided into three categories: experimental, numerical incompressible and numerical compressible in order to coincide with the arrangement given by \textcite{ayers}.Furthermore the results are divided into \gls{2d} and \gls{3d} simulations which should not produce large differences as long as we are regarding low Reynolds numbers. The values that were produced by \textcite{brehm2015locally} using $\text{Ma} = 0.1$ as well as those that were simulated as incompressible flows can still be compared as in these low Mach numbers the compressibility does not have a great effect on the flow.
@@ -122,7 +122,7 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 				& 2           &    $2.141$    &    $2.138$   &   $2.197$     \\ \cline{2-5} 
 				& 3           &    $2.136$    &     $2.136$  &   -     \\ \hline
 			\end{tabular}
-			\caption[$C_D$ Values for each simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 20$)}	
+			\caption[$C_D$ Values for Each Simulation]{$C_D$ Values for Each Simulation ($\text{Re} = 20$)}	
 			\label{C_D20}
 		\end{table}
 			\begin{table}[htp]
@@ -144,8 +144,8 @@ In \cref{C_D20,W20} you can see all of the results that we got by our simulation
 		\label{W20}
 %	\end{minipage}
 \end{table}
-We did not simulate DG3CPD80 as it would have taken much longer, being the simulation on the finest mesh with the highest order, than the other simulations. What is striking about our values is the discordant value of DG2CpD80 which should have been the most accurate simulation. 
-Figure \ref{fig:C_D20} graphically presents the values of \cref{C_D20} and shows that higher degrees produce much faster accurate results than finer meshes. \\\indent
+We did not simulate DG3CPD80 as it would have taken much longer than the other simulations, being the simulation on the finest mesh with the highest order. What is striking about our values is the discordant value of DG2CpD80 which should have been the most accurate simulation. 
+Figure \ref{fig:C_D20} graphically presents the values of \cref{C_D20} and shows that higher degrees produce accurate results much faster than finer meshes. \\\indent
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
@@ -163,7 +163,7 @@ Figure \ref{fig:C_D20} graphically presents the values of \cref{C_D20} and shows
 		\caption{Graphical Presentation of Table \ref{C_D20} for $\text{Re} = 20$}
 		\label{fig:C_D20}	
 	\end{figure}
-	In \cref{fig:C_Dt} you can see the behaviour of the coefficient of drag over time for different simulations. The peak at the beginning is produced because the flow reacts to the cylinder that is suddenly put into place at $t=0$. Afterwards the value drops quickly; at around $t=10$ the almost steady state is reached, though the $C_D$ value is still slightly falling. We stopped the simulation at $t=14$ so we could better compare the result to the one of \textcite{ayers}. It is to be assumed that for a longer simulation time the flow would reach the completely steady state and the coefficient of drag would finally converge to the expected value. The examination of its behaviour for a longer simulated physical time shall be subject of future works.\\\indent
+	In \cref{fig:C_Dt} you can see the behaviour of the coefficient of drag over time for different simulations. The peak at the beginning is produced because the flow reacts to the cylinder that is suddenly put into place at $t=0$. Afterwards the value drops quickly; at around $t=10$ the almost steady state is reached, though the $C_D$ value is still slightly falling. We stopped the simulation at $t=14s$ so we could better compare the result to the one of \textcite{ayers}. It is to be assumed that for a longer simulation time the flow would finally reach the steady state and the coefficient of drag would finally converge to the expected value. The examination of its behaviour for a longer simulated physical time shall be subject of future works.\\\indent
 \begin{figure}[htp]	
 	\centering
 	\begin{tikzpicture}
@@ -191,9 +191,9 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 	\caption{Vorticity for DG3CpD60 for $\text{Re} = 20$}
 	\label{fig:vorticity20}
 \end{figure}	
-
+\newpage
 	\subsubsection{Simulation at Reynolds Number 40}
-	As we did for $\text{Re}=20$, we will now compare our results for the wake separation length and the coefficient of drag to those documented before by others. Once again, we compare our result simulated with DG3CpD60 which now is much more accurate than it was for $\text{Re}=20$. Both the coefficient of drag and the wake separation length are in very good agreement with the other values; the coefficient of drag is slightly higher while the wake separation length is slightly lower than the results we are comparing to. As we expected before, we can confirm the theory that higher Reynolds number cause higher wake separation lengths.
+	As we did for $\text{Re}=20$, we will now compare our results for the wake separation length and the coefficient of drag to those documented before by others. Once again, we compare our result simulated with DG3CpD60 which now is much more accurate than it was for $\text{Re}=20$. Both the coefficient of drag and the wake separation length are in very good agreement with the other values. The coefficient of drag is slightly higher while the wake separation length is slightly lower than the results we are comparing to. As we expected before, we can confirm the theory that higher Reynolds numbers cause higher wake separation lengths.
 \begin{table}[htp]
 	\centering
 	\begin{tabular}{|l|l|c|c|c|}
@@ -211,7 +211,7 @@ We will conclude the examination of the flow for $\text{Re} = 20$ with the visua
 	\caption{Comparison of Results for $W^*$ and $C_D$, taken from \cite{ayers}, modified}
 	\label{table40}
 \end{table}
-In \cref{C_D40,W40}, you can see the results of every simulation. As we did for $\text{Re}=20$, we did not simulate DG3CpD80 as it would have taken too long. Unfortunately, we did not get a stable calculation for DG3CpD40 until we reduced the time step by ninety-five per cent. This resulted into a tremendous runtime which made the simulation impossible. \\\indent
+In \cref{C_D40,W40}, you can see the results of every simulation. As we did for $\text{Re}=20$, we did not simulate DG3CpD80 as it would have taken too long. Unfortunately, we did not get a stable calculation for DG3CpD40 until we reduced the time step by ninety-five percent. This resulted into a tremendous runtime which made the simulation impossible. \\\indent
 \begin{table}[htp]
 	\centering
 	\def\arraystretch{1.5}
@@ -246,7 +246,8 @@ In \cref{C_D40,W40}, you can see the results of every simulation. As we did for 
 		\label{W40}
 %	\end{minipage} 
 \end{table}
-In \cref{fig:C_D40} you can see the graphical presentation of \cref{C_D40}; here it is very clear that higher order calculations provide even for coarse meshes very accurate solutions. \\\indent
+\newpage
+In \cref{fig:C_D40} you can see the graphical presentation of \cref{C_D40}; here it is very clear that higher order calculations provide very accurate solutions even for coarse meshes. \\\indent
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
@@ -283,13 +284,14 @@ In \cref{fig:C_D40} you can see the graphical presentation of \cref{C_D40}; here
 	\caption{Coefficient of Drag over Time ($\text{Re} = 40$)}
 	\label{fig:C_Dt40}	
 \end{figure}
-As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag over the physical time is very similar for the simulations plotted. They are more in agreement with each other than they were for $\text{Re = 20}$. In \cref{fig:vorticity40}, you can see the vorticity for DG3CpD60; there we remark that the wake is much longer than it was for $\text{Re}=20$.
+As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag over the physical time is very similar for the plotted simulations. They are more in agreement with each other than they were for $\text{Re = 20}$. In \cref{fig:vorticity40}, you can see the vorticity for DG3CpD60; there we remark that the wake is much longer than it was for $\text{Re}=20$.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[height=10cm]{Re40DG3CpD60.png}
 	\caption{Vorticity for DG3CpD60 for $\text{Re} = 40$}
 	\label{fig:vorticity40}
 \end{figure}
+\newpage
 	\subsection{Unsteady Simulations ($\text{Re}> 40-50$)}
 	After having examined the steady simulations which were very accurate for the coefficient of drag, we will now turn to the unsteady ones with $\text{Re}=100$ and $\text{Re}=200$.
 	In order to compare the unsteady simulations, we need the Strouhal number
@@ -297,9 +299,10 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 		\text{St} = \dfrac{f  L_\infty}{V_\infty}.
 	\end{align}
 	As our initial and boundary conditions give $V_\infty = L_\infty = 1$, we can calculate $\text{St} = f$ with $f$ found from examining the oscillation of $C_L$ over time. In order to develop vortex shedding, the flow needs small perturbations that destabilise the flow towards a symmetry breaking state (\textcite{FLM:14223}). In reality those are given by the structure of the cylinder, the influence of the walls or the not completely straight inflow; in our simulations they come from small truncation errors and the computer's round-off errors. 
-	In order to accelerate the process until the wake begins to oscillate, one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not needed in our simulations.
+	In order to accelerate the process until the wake begins to oscillate, one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not necessary in our simulations.
+	
 	\subsubsection{Simulation at Reynolds Number 100}
-	In the following, we will compare the coefficients of lift and drag as well as the Strouhal number. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. All of our results for the best calculation DG3CpD60 lie perfectly in the range that has been given by other studies.  The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. Furthermore we observe that the higher-order results of those with the same \gls{dof}s yield better results than those with a finer mesh.
+	In the following, we will compare the coefficients of lift and drag as well as the Strouhal number for the simulation at $\text{Re}=100$. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. All of our results for the best calculation DG3CpD60 lie perfectly in the range that has been given by other studies.  The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. Furthermore we observe that the higher-order results of those with the same \gls{dof}s yield better results than those with a finer mesh.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|l|p{4cm}|c|c|c|c|}
@@ -378,84 +381,50 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 	\label{Str100}
 	%	\end{minipage} 
 \end{table}
-\newpage
-%\cref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher order calculations immediately yield good results. This time, there is no such discordant value for DG2CpD80 which is higher than it should be as appeared for $\text{Re}=20$ and $\text{Re}=40$. 
-%	\begin{figure}[htp]	
-%		\centering
-%		\begin{tikzpicture}
-%		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
-%		\addplot table[ x = ms, y =dg1] {data/re100.dat};
-%		\addlegendentry{$P=1$}
-%		\addplot table[ x = ms, y =dg2] {data/re100.dat};
-%		\addlegendentry{$P=2$}
-%		\addplot table[ x = ms, y =dg3] {data/re100.dat};
-%		\addlegendentry{$P=3$}
-%		%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
-%		%		\addlegendentry{Constant Value}
-%		\end{semilogxaxis}	
-%		\end{tikzpicture}
-%		\caption{Graphical Presentation of Table \ref{C_D100} for $\text{Re} = 100$}
-%		\label{fig:C_D100}	
-%	\end{figure}
+Figure \ref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher order calculations immediately yield good results. Once again, DG2CpD80 produces a higher value, though this time it matches the value of DG3CpD60. 
+	\begin{figure}[htp]	
+		\centering
+		\begin{tikzpicture}
+		\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
+		\addplot table[ x = ms, y =dg1] {data/re100.dat};
+		\addlegendentry{$P=1$}
+		\addplot table[ x = ms, y =dg2] {data/re100.dat};
+		\addlegendentry{$P=2$}
+		\addplot table[ x = ms, y =dg3] {data/re100.dat};
+		\addlegendentry{$P=3$}
+		%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+		%		\addlegendentry{Constant Value}
+		\end{semilogxaxis}	
+		\end{tikzpicture}
+		\caption{Graphical Presentation of Table \ref{C_D100} for $\text{Re} = 100$}
+		\label{fig:C_D100}	
+	\end{figure}
 
 In \cref{osci100} the coefficient of lift over time is presented. It shows that at around $t=90s$ amplitude and frequency stay the same, though regarding 
 \cref{cdosci100} the coefficient of drag reaches the constant oscillation state at around $t=110s$. These plots were produced with the results from DG3CpD60. They also show that the frequency of $C_D$ is twice as high as the frequency of the lift coefficient. 
 \begin{figure}[htp]	
 	\centering
 	\includegraphics[height=8cm]{re100dg3cpd60cl.eps}
-	\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=100$)}
+	\caption{Lift Coefficient over Time for $0s<t<150s$ ($\text{Re}=100$)}
 	\label{osci100}	
 \end{figure}
 \begin{figure}[htp]	
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re100dg3cpd60cl90.eps}
-		\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+		\caption{Lift Coefficient over Time for $90s<t<150s$ ($\text{Re}=100$)}
 		\label{cl10090}
 	\end{minipage}
 	\quad
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re100dg3cpd60cd90.eps}
-		\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
+		\caption{Drag Coefficient over Time for $90s<t<150s$ ($\text{Re}=100$)}
 		\label{cdosci100}	
 	\end{minipage}
 \end{figure}
-	
-%		\begin{figure}[htp]	
-%			\centering
-%			\begin{tikzpicture}
-%				\begin{axis}[xlabel ={Time}, ylabel ={$C_L$}]%, grid =major, legend entries ={$P=1$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, xmin = 0, xmax = 120]
-%				\addplot table[ x = time, y = l, mark=none] {data/re100dg2cpd60cl.dat};
-%				\end{axis}	
-%			\end{tikzpicture}
-%			\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=100$)}
-%			\label{osci100}	
-%		\end{figure}
-%\begin{figure}[htp]	
-%	\begin{minipage}[b]{0.45\textwidth}
-%			\centering
-%			\begin{tikzpicture}
-%			\begin{axis}[xlabel ={Time}, ylabel ={$C_L$},  grid =major, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 90, xmax = 150]
-%			\addplot table[ x =time, y =l, mark=none] {data/re100dg2cpd60cl.dat};
-%			\end{axis}	
-%			\end{tikzpicture}
-%			\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
-%			\label{shijfterror}	
-%	\end{minipage}
-%	\begin{minipage}[b]{0.45\textwidth}
-%			\centering
-%			\begin{tikzpicture}
-%			\begin{axis}[xlabel ={Time}, ylabel ={$C_D$},  grid =major,  legend style = {cells = {anchor=east}, legend pos=outer north east,}, restrict x to domain=90:150, xmin = 90, xmax = 150]
-%			\addplot table[ x =time, y =d, mark=none] {data/re100dg2cpd60cd.dat};
-%			\end{axis}	
-%			\end{tikzpicture}
-%			\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=100$)}
-%			\label{cdosci100}	
-%	\end{minipage}
-%\end{figure}
 		
-		We will conclude the evaluation of the simulation at Reynolds number 100 with a visualisation of the vorticity for DG2CpD60 in \cref{fig:vorticity100}. As we used a very coarse mesh outside $-2\leq x,y \leq 2$ the vortices get stretched in the wake and there are sharp jumps at the cell edges. By observing the vorticity over time, we could conclude that the Strouhal number, which describes the frequency of the vortex shedding, can be found from examining the coefficient of lift as vortex shedding and lift changes appeared in the exact same frequency.
+		We will complete the evaluation of the simulation at Reynolds number 100 with a visualisation of the vorticity for DG2CpD60 in \cref{fig:vorticity100}. As we used a very coarse mesh outside $-2\leq x,y \leq 2$ the vortices get stretched in the wake and there are sharp jumps at the cell edges. By observing the vorticity over time, we can conclude that the Strouhal number, which describes the frequency of the vortex shedding, can be found from examining the coefficient of lift as vortex shedding and lift changes appeared in the exact same frequency.
 		\begin{figure}[htp]
 			\centering
 			\includegraphics[height=10cm]{re100dg3cpd60.png}
@@ -545,44 +514,44 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 	%	\end{minipage} 
 \end{table}
 \newpage
+For $\text{Re}=200$, we can observe in \cref{fig:C_D200} that DG2CpD80 yields a matching value unlike it did for the other Reynolds cases. This time, it is confusing that the mesh refinement of DG1CpD60 to DG1CpD80 does not improve the results. For future works, the convergence of \gls{cns} with immersed boundaries should be studied in order to find an explanation for this behaviour.
+\begin{figure}[htp]	
+	\centering
+	\begin{tikzpicture}
+	\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
+	\addplot table[ x = ms, y =dg1] {data/re200.dat};
+	\addlegendentry{$P=1$}
+	\addplot table[ x = ms, y =dg2] {data/re200.dat};
+	\addlegendentry{$P=2$}
+	\addplot table[ x = ms, y =dg3] {data/re200.dat};
+	\addlegendentry{$P=3$}
+	%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+	%		\addlegendentry{Constant Value}
+	\end{semilogxaxis}	
+	\end{tikzpicture}
+	\caption{Graphical Presentation of Table \ref{C_D200} for $\text{Re} = 200$}
+	\label{fig:C_D200}	
+\end{figure}
+
 In \cref{osci200}, we can see that the steady state is reached earlier compared to $\text{Re}=100$; the coefficient of lift settles into a state of constant amplitude and frequency at around $t=65s$. Figures \ref{cl90} and \ref{cdosci200} show the frequency and amplitude of $C_L$ and $C_D$, respectively, for the steady state from $90s \leq t \leq 150s$. There we can see that frequency and amplitude are higher compared to $\text{Re}=100$.
-%\begin{figure}[htp]	
-%	\centering
-%	\begin{tikzpicture}
-%	\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
-%	\addplot table[ x = ms, y =dg1] {data/re200.dat};
-%	\addlegendentry{$P=1$}
-%	\addplot table[ x = ms, y =dg2] {data/re200.dat};
-%	\addlegendentry{$P=2$}
-%	\addplot table[ x = ms, y =dg3] {data/re200.dat};
-%	\addlegendentry{$P=3$}
-%	%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
-%	%		\addlegendentry{Constant Value}
-%	\end{semilogxaxis}	
-%	\end{tikzpicture}
-%	\caption{Graphical Presentation of Table \ref{C_D200} for $\text{Re} = 200$}
-%	\label{fig:C_D200}	
-%\end{figure}
-
-
 \begin{figure}[htp]	
 	\centering
 	\includegraphics[height=8cm]{re200dg3cpd60cl.eps}
-	\caption{Lift coefficient over time for $0s<t<150s$ ($\text{Re}=200$)}
+	\caption{Lift Coefficient over Time for $0s<t<150s$ ($\text{Re}=200$)}
 	\label{osci200}	
 \end{figure}
 \begin{figure}[htp]	
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re200dg3cpd60cl90.eps}
-		\caption{Lift coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
+		\caption{Lift Coefficient over Time for $90s<t<150s$ ($\text{Re}=200$)}
 		\label{cl90}
 	\end{minipage}
 	\quad
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re200dg3cpd60cd90.eps}
-		\caption{Drag coefficient over time for $90s<t<150s$ ($\text{Re}=200$)}
+		\caption{Drag Coefficient over Time for $90s<t<150s$ ($\text{Re}=200$)}
 		\label{cdosci200}	
 	\end{minipage}
 \end{figure}

@@ -2,38 +2,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparison of \gls {fem}, \gls {fvm} and \gls {dg}\relax }}{7}{figure.caption.21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparison of \gls {fem}, \gls {fvm} and \gls {dg}\relax }}{8}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Cut cell with physical (red) and void region (white) \cite {paper}\relax }}{13}{figure.caption.24}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Cell agglomeration, taken from \cite {paper}\relax }}{15}{figure.caption.25}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cut cell with physical (red) and void region (white) \cite {paper}\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cell agglomeration, taken from \cite {paper}\relax }}{16}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Convergence Plot\relax }}{18}{figure.caption.29}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Isolines of pressure\relax }}{18}{figure.caption.30}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Convergence Plot\relax }}{20}{figure.caption.31}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mesh size $128 \times 128$, $P = 3$\relax }}{20}{figure.caption.32}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Convergence Plot\relax }}{19}{figure.caption.29}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Isolines of pressure\relax }}{19}{figure.caption.30}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Convergence Plot\relax }}{21}{figure.caption.31}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mesh size $128 \times 128$, $P = 3$\relax }}{21}{figure.caption.32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Overview of Base Suction Coefficients over Reynolds Number \cite {williamson1996vortex}\relax }}{23}{figure.caption.33}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Recirculation Region \cite {williamson1996vortex}\relax }}{23}{figure.caption.34}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces K\IeC {\'a}rm\IeC {\'a}n Vortex Street \cite {williamson1996vortex}\relax }}{24}{figure.caption.35}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Wake separation length, taken from \cite {williamson1996vortex}, modified \relax }}{25}{figure.caption.37}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Graphical Presentation of Table \ref {C_D20} for $\text {Re} = 20$\relax }}{27}{figure.caption.42}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Coefficient of Drag over Time ($\text {Re} = 20$)\relax }}{28}{figure.caption.43}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 20$\relax }}{28}{figure.caption.44}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Graphical Presentation of Table \ref {C_D40} for $\text {Re} = 40$\relax }}{30}{figure.caption.49}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Coefficient of Drag over Time ($\text {Re} = 40$)\relax }}{30}{figure.caption.50}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 40$\relax }}{31}{figure.caption.51}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Lift coefficient over time for $0s<t<150s$ ($\text {Re}=100$)\relax }}{34}{figure.caption.57}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Lift coefficient over time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{34}{figure.caption.58}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Drag coefficient over time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{34}{figure.caption.58}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 100$\relax }}{35}{figure.caption.59}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Lift coefficient over time for $0s<t<150s$ ($\text {Re}=200$)\relax }}{38}{figure.caption.65}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Lift coefficient over time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{38}{figure.caption.66}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Drag coefficient over time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{38}{figure.caption.66}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 200$\relax }}{39}{figure.caption.67}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Overview of Base Suction Coefficients over Reynolds Number \cite {williamson1996vortex}\relax }}{24}{figure.caption.33}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Recirculation Region \cite {williamson1996vortex}\relax }}{24}{figure.caption.34}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces K\IeC {\'a}rm\IeC {\'a}n Vortex Street \cite {williamson1996vortex}\relax }}{25}{figure.caption.35}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Wake Separation Length, Taken from \cite {williamson1996vortex}, Modified \relax }}{26}{figure.caption.37}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Graphical Presentation of Table \ref {C_D20} for $\text {Re} = 20$\relax }}{28}{figure.caption.41}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Coefficient of Drag over Time ($\text {Re} = 20$)\relax }}{29}{figure.caption.42}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 20$\relax }}{29}{figure.caption.43}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Graphical Presentation of Table \ref {C_D40} for $\text {Re} = 40$\relax }}{31}{figure.caption.47}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Coefficient of Drag over Time ($\text {Re} = 40$)\relax }}{32}{figure.caption.48}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 40$\relax }}{32}{figure.caption.49}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Graphical Presentation of Table \ref {C_D100} for $\text {Re} = 100$\relax }}{35}{figure.caption.54}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Lift Coefficient over Time for $0s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.55}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Lift Coefficient over Time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Drag Coefficient over Time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 100$\relax }}{37}{figure.caption.57}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Graphical Presentation of Table \ref {C_D200} for $\text {Re} = 200$\relax }}{39}{figure.caption.62}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Lift Coefficient over Time for $0s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.63}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Lift Coefficient over Time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Drag Coefficient over Time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 200$\relax }}{41}{figure.caption.65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Mesh Used in the Robustness Study\relax }}{XIV}{figure.caption.74}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mesh for CpD40\relax }}{XIV}{figure.caption.75}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Mesh for CpD60\relax }}{XV}{figure.caption.76}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Mesh for CpD80\relax }}{XV}{figure.caption.77}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Mesh Used in the Robustness Study\relax }}{XIV}{figure.caption.72}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mesh for CpD40\relax }}{XIV}{figure.caption.73}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Mesh for CpD60\relax }}{XV}{figure.caption.74}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Mesh for CpD80\relax }}{XV}{figure.caption.75}

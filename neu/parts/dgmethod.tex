@@ -1,9 +1,9 @@
 \chapter{The Runge-Kutta Discontinuous Galerkin Method}
 \label{rkdgm}
-	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretisation and the \gls{rk} method as an explicit time discretisation. By using an explicit time-marching algorithm, the parallelization is made much easier. \\ \indent
+	This thesis deals with the software \gls{bosss} that uses a \gls{rkdg} method for the numerical approximation of compressible flows. The \gls{rkdg} method is split into the \gls{dg} method for space discretisation and the \gls{rk} method as an explicit time discretisation. By using an explicit time-marching algorithm, the parallelisation is made much easier. \\ \indent
 	In the following sections we will study the DG and RK methods separately, considering simple examples and using the same notation as in \textcite{mueller2014}.
 	\section{DG Space Discretisation}
-		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}), as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \cref{femfvm}.
+		First, we will study the \gls{dg} method which can be seen as combination of the \gls{fvm} and the \gls{fem}. It aims at combining the advantages of both methods, namely high-order accuracy and hp-adaptivity (\gls{fem}), which describes the local refinement of the mesh (h-adaptivity) and of the polynomial degree (p-adaptivity), as well as conservativity (\gls{fvm}), thus allowing the computation of higher order solutions with adjustable order on each element on a conservative grid. The main concept of the \gls{dg} method is visualised in \cref{femfvm}.
 		
 		\begin{figure}[htp]
 			\centering
@@ -39,7 +39,7 @@
 		for the concentration $c = c(\boldsymbol{x}, t)$  with $\mathbf{x} \in \Omega \subset \mathbb{R}^D$ and $t\in \mathbb{R}_0^+$ and a smooth function $\boldsymbol{f}:\mathbb{R} \rightarrow \mathbb{R}^D$ that also contains suitable initial and boundary conditions.\cite{mueller2014} 
 		\subsection{Discrete Weak Formulation}
 		Our first step of the DG method will be transferring the partial differential equation \eqref{pde} into a weak formulation.
-		Priorly to this, we need a discretisation $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
+		Prior to this, we need a discretisation $\Omega_h$ of $\Omega$ consisting of a tesselation of cells $\left\{ \mathcal{K}_i \right\}_{i=1,...,N}$, where $h$ represents a measure for the size of the cells. Each cell $\mathcal{K}_i$ is of dimension $D$ with an outward unit normal vector $\boldsymbol{n}$. \\ \indent 
 		After having discretised our geometry, we need a set of cell-local test functions $\left\{\Phi_{i,j}\right\}_{j=1,...,M} $ with $\Phi_{i,j}=\Phi_{i,j}(\boldsymbol{x}):\mathbb{R}^D\rightarrow\mathbb{R}$ that forms the basis of the polynomials $P_{\mathcal{K}_i}(P)$ with maximum degree $P$. \\ \indent
 		In order to obtain the discrete weak formulation, we will now multiply equation \eqref{pde} by $\Phi_{i,j}$, integrate over a cell $\mathcal{K}_i$ and then integrate by parts:	
 		\begin{gather}	
@@ -80,7 +80,7 @@
 			c_i \mid_{\mathcal{E}_{i,e}}=: c^- \neq c^+ := c_{n(i,e)} \mid_{\mathcal{E}_{i,e}},
 		\end{align}
 		we cannot simply insert the approximation into equation \eqref{schwacheForm}.
-		Therefore, we will introduce a monotone, Lipschitz continuous numerical flux function \todo{erklären} $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
+		Therefore, we will introduce a monotone, Lipschitz continuous numerical flux function $f = f(c^-, c^+, \mathbf{n}):\mathbb{R}^{D+2}\rightarrow\mathbb{R}$ satisfying the consistency property
 		\begin{align}
 			f(c^-, c^+, \mathbf{n}) = - f(c^+, c^-, -\mathbf{n}).
 		\end{align}
@@ -215,13 +215,13 @@
 	A well-known stability criterion according the explicit Euler time discretisation for linear, hyperbolic PDEs, namely the \gls{cfl} criterion, restrains the temporal step-size $\Delta t$:
 	
 	\begin{align}
-		\Delta t \leq c_{CFL} \dfrac{h}{\underline{u}}
+		\Delta t \leq c_{\text{CFL}} \dfrac{h}{\underline{u}}
 	\end{align}
 	
-	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{CFL} \leq 1$ depending on the applied spatial discretisation procedure.
+	with $\underline{u} \in \mathbb{R}^+$ denoting the largest propagation velocity and a positive constant $c_{\text{CFL}} \leq 1$ depending on the applied spatial discretisation procedure.
 	
 	Concerning the Euler equations, the largest propagation velocity is given by $\underline{u} = ||\mathbf{u} || + a$ and by taking the influence of the approximation order $P$ into account, we can use the criterion developed by \textcite{cockburn1991runge}
 	\begin{align}
-		\Delta t \leq \dfrac{c_{CFL}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
+		\Delta t \leq \dfrac{c_{\text{CFL}}}{2P+1} \dfrac{h}{||\mathbf{u} || + a}
 	\end{align}
 	as a sufficiently accurate estimate for the stability criterion in this thesis. 
