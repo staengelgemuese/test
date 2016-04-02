@@ -44,14 +44,14 @@ The viscous flow around a cylinder has been approached by many papers both exper
 \section{Simulations}
 	In this section we will compare the lift and drag coefficients $C_L$ and $C_D$ at different Reynolds numbers and mesh sizes at a constant agglomeration threshold of $0.3$, different polynomial degrees of 1, 2 and 3 and meshes of $40 \times 40$, $60 \times 60$ and $80 \times 80$ cells. The meshes can be found in the appendix. \\\indent
 	The different simulation properties will be abbreviated as DG $+$ \textit{polynomial degree} $+$ CpD $+$ \textit{number of cells per direction}, e.g. DG2CpD80 for a simulation with polynomial degree 2 and $80 \times 80$ cells.\\
-	In \cref{DOF} you can see the total \gls{dof} for each simulation taking into account the \gls{dof}s produced by order 1, 2 and 3 with 3, 6 and 10 \gls{dof}s per cell.
+	In \cref{DOF} you can see the total \glspl{dof} for each simulation taking into account the \glspl{dof} produced by order 1, 2 and 3 with 3, 6 and 10 \glspl{dof}s per cell.
 	
 	\begin{table}[htp]
 		\centering
 		\def\arraystretch{1.5}
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
-				\multicolumn{2}{|c|}{\multirow{2}{*}{DoF}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
+				\multicolumn{2}{|c|}{\multirow{2}{*}{\glspl{dof}}} & \multicolumn{3}{c|}{CpD} \\ \cline{3-5} 
 				\multicolumn{2}{|c|}{}                       & 40     & 60    & 80    \\ \hline
 				\multirow{3}{*}{DG}            & 1           &    4800    &    10800   &    19200    \\ \cline{2-5} 
 				& 2           &    9600    &   21600    &    38400    \\ \cline{2-5} 
@@ -60,7 +60,7 @@ The viscous flow around a cylinder has been approached by many papers both exper
 			\caption{Degrees of Freedom for Different Simulation Properties}	
 			\label{DOF}
 	\end{table}
-	During the evaluation of our results, we will also compare simulations of similar \gls{dof}s like DG2CpD40 and DG1CpD60 or DG3CpD60 and DG2CpD80 in order to inspect the influence of higher order and finer mesh properties.
+	During the evaluation of our results, we will also compare simulations of similar \glspl{dof} like DG2CpD40 and DG1CpD60 or DG3CpD60 and DG2CpD80 in order to inspect the influence of higher order and finer mesh properties.
 	
 	 The drag and lift coefficients are defined as
 	\begin{align}
@@ -302,10 +302,10 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 	In order to accelerate the process until the wake begins to oscillate, one could also start the flow with a vortex that induces a high perturbation much earlier. For it did not take long until the wake began to oscillate it was not necessary in our simulations.
 	
 	\subsubsection{Simulation at Reynolds Number 100}
-	In the following, we will compare the coefficients of lift and drag as well as the Strouhal number for the simulation at $\text{Re}=100$. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. All of our results for the best calculation DG3CpD60 lie perfectly in the range that has been given by other studies.  The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. Furthermore we observe that the higher-order results of those with the same \gls{dof}s yield better results than those with a finer mesh.
+	In the following, we will compare the coefficients of lift and drag as well as the Strouhal number for the simulation at $\text{Re}=100$. As you can see in \cref{table100}, the produced results are once again very accurate and in good agreement with those of other studies. All of our results for the best calculation DG3CpD60 lie perfectly in the range that has been given by other studies.  The overview of all collected values can be found in \cref{CL100,C_D100,Str100}. They are written as mean value plus/minus amplitude in order to show the oscillation of lift and drag. We can clearly observe that DG1CpD40 produces very inaccurate results; as soon as either mesh fineness or \gls{dg} order is increased, we immediately receive very good results. Furthermore we observe that the higher-order results of those with the same \glspl{dof} yield better results than those with a finer mesh.
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|l|p{4cm}|c|c|c|c|}
+	\begin{tabular}{|l|p{3.5cm}|c|c|c|c|}
 		\hline
 		\rule{0pt}{2,3ex}$\text{Re}=100$                              & Source                             & \gls{2d}/\gls{3d} & $St$ & $C_D$ & $C_L$\\ \hline
 		\rule{0pt}{2,3ex}\multirow{7}{*}{\begin{minipage}{2.8cm}Numerical --\newline Incompressible\end{minipage}} & \textcite{gresho1984modified}           & \gls{2d}    & $0.18$     & $1.76$ & -   \\ \cline{2-6} 
@@ -320,7 +320,7 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 		\rule{0pt}{2,3ex}& \textcite{williamson1996vortex}               & -     &$ 0.164  $  & -   & - \\ \hline
 		\rule{0pt}{2,3ex}\multirow{3}{*}{\begin{minipage}{2.8cm}Numerical -- \newline Compressible\end{minipage}}     & \textcite{brehm2015locally} \newline (Ma = 0.1) & \gls{3d}    & $0.165$    &$ 1.32 \pm 0.01  $  & $\pm 0.32 $\\ \cline{2-6} 
 		\rule{0pt}{2,3ex}& \textcite{ayers}                  & \gls{2d}    &$ 0.167$     & $1.371 \pm 0.011 $ &$ \pm 0.333 $\\ \cline{2-6} 
-		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $0.1669$     & $1.3593 \pm 0.00805$  &  $\pm 0.3291$ \\ \hline
+		\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \gls{2d}    & $0.1669$     & $1.359 \pm 0.00805$  &  $\pm 0.3291$ \\ \hline
 	\end{tabular}	
 	\caption{Comparison of Results for $St$, $C_D$ and $C_L$, taken from \cite{ayers}, modified}
 	\label{table100}
@@ -381,7 +381,7 @@ As you can see in \cref{fig:C_Dt40}, the behaviour of the coefficient of drag ov
 	\label{Str100}
 	%	\end{minipage} 
 \end{table}
-Figure \ref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher order calculations immediately yield good results. Once again, DG2CpD80 produces a higher value, though this time it matches the value of DG3CpD60. 
+Figure \ref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher order calculations immediately yield good results. Once again, DG2CpD80 produces a higher $C_D$ value, though this time it matches the value of DG3CpD60. 
 	\begin{figure}[htp]	
 		\centering
 		\begin{tikzpicture}
@@ -400,26 +400,26 @@ Figure \ref{fig:C_D100} graphically presents \cref{C_D100} and shows that higher
 		\label{fig:C_D100}	
 	\end{figure}
 
-In \cref{osci100} the coefficient of lift over time is presented. It shows that at around $t=90s$ amplitude and frequency stay the same, though regarding 
-\cref{cdosci100} the coefficient of drag reaches the constant oscillation state at around $t=110s$. These plots were produced with the results from DG3CpD60. They also show that the frequency of $C_D$ is twice as high as the frequency of the lift coefficient. 
+In \cref{osci100} the coefficient of lift over time is presented. It shows that at around $t=90\,\text{s}$ amplitude and frequency stay the same, though regarding 
+\cref{cdosci100} the coefficient of drag reaches the constant oscillation state at around $t=110\,\text{s}$. These plots were produced with the results from DG3CpD60. They also show that the frequency of $C_D$ is twice as high as the frequency of the lift coefficient. 
 \begin{figure}[htp]	
 	\centering
 	\includegraphics[height=8cm]{re100dg3cpd60cl.eps}
-	\caption{Lift Coefficient over Time for $0s<t<150s$ ($\text{Re}=100$)}
+	\caption{Lift Coefficient over Time for $0\,\text{s}<t<150\,\text{s}$ ($\text{Re}=100$)}
 	\label{osci100}	
 \end{figure}
 \begin{figure}[htp]	
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re100dg3cpd60cl90.eps}
-		\caption{Lift Coefficient over Time for $90s<t<150s$ ($\text{Re}=100$)}
+		\caption{Lift Coefficient over Time for $90\,\text{s}<t<150\,\text{s}$ ($\text{Re}=100$)}
 		\label{cl10090}
 	\end{minipage}
 	\quad
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re100dg3cpd60cd90.eps}
-		\caption{Drag Coefficient over Time for $90s<t<150s$ ($\text{Re}=100$)}
+		\caption{Drag Coefficient over Time for $90\,\text{s}<t<150\,\text{s}$ ($\text{Re}=100$)}
 		\label{cdosci100}	
 	\end{minipage}
 \end{figure}
@@ -427,7 +427,7 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 		We will complete the evaluation of the simulation at Reynolds number 100 with a visualisation of the vorticity for DG2CpD60 in \cref{fig:vorticity100}. As we used a very coarse mesh outside $-2\leq x,y \leq 2$ the vortices get stretched in the wake and there are sharp jumps at the cell edges. By observing the vorticity over time, we can conclude that the Strouhal number, which describes the frequency of the vortex shedding, can be found from examining the coefficient of lift as vortex shedding and lift changes appeared in the exact same frequency.
 		\begin{figure}[htp]
 			\centering
-			\includegraphics[height=10cm]{re100dg3cpd60.png}
+			\includegraphics[height=10cm]{re100dg3cpd60.PNG}
 			\caption{Vorticity for DG3CpD60 for $\text{Re} = 100$}
 			\label{fig:vorticity100}
 		\end{figure}
@@ -514,7 +514,7 @@ In \cref{osci100} the coefficient of lift over time is presented. It shows that 
 	%	\end{minipage} 
 \end{table}
 \newpage
-For $\text{Re}=200$, we can observe in \cref{fig:C_D200} that DG2CpD80 yields a matching value unlike it did for the other Reynolds cases. This time, it is confusing that the mesh refinement of DG1CpD60 to DG1CpD80 does not improve the results. For future works, the convergence of \gls{cns} with immersed boundaries should be studied in order to find an explanation for this behaviour.
+For $\text{Re}=200$, we can observe in \cref{fig:C_D200} that DG2CpD80 yields a matching value unlike it did for the other Reynolds cases. This time, it is odd that the mesh refinement of DG1CpD60 to DG1CpD80 does not improve the results. For future works, the convergence of \gls{cns} with immersed boundaries should be studied in order to find an explanation for this behaviour.
 \begin{figure}[htp]	
 	\centering
 	\begin{tikzpicture}
@@ -533,25 +533,25 @@ For $\text{Re}=200$, we can observe in \cref{fig:C_D200} that DG2CpD80 yields a 
 	\label{fig:C_D200}	
 \end{figure}
 
-In \cref{osci200}, we can see that the steady state is reached earlier compared to $\text{Re}=100$; the coefficient of lift settles into a state of constant amplitude and frequency at around $t=65s$. Figures \ref{cl90} and \ref{cdosci200} show the frequency and amplitude of $C_L$ and $C_D$, respectively, for the steady state from $90s \leq t \leq 150s$. There we can see that frequency and amplitude are higher compared to $\text{Re}=100$.
+In \cref{osci200}, we can see that the steady state is reached earlier compared to $\text{Re}=100$; the coefficient of lift settles into a state of constant amplitude and frequency at around $t=65\,\text{s}$. Figures \ref{cl90} and \ref{cdosci200} show the frequency and amplitude of $C_L$ and $C_D$, respectively, for the steady state from $90\,\text{s} \leq t \leq 150\,\text{s}$. There we can see that frequency and amplitude are higher compared to $\text{Re}=100$.
 \begin{figure}[htp]	
 	\centering
 	\includegraphics[height=8cm]{re200dg3cpd60cl.eps}
-	\caption{Lift Coefficient over Time for $0s<t<150s$ ($\text{Re}=200$)}
+	\caption{Lift Coefficient over Time for $0\,\text{s}<t<150\,\text{s}$ ($\text{Re}=200$)}
 	\label{osci200}	
 \end{figure}
 \begin{figure}[htp]	
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re200dg3cpd60cl90.eps}
-		\caption{Lift Coefficient over Time for $90s<t<150s$ ($\text{Re}=200$)}
+		\caption{Lift Coefficient over Time for $90\,\text{s}<t<150\,\text{s}$ ($\text{Re}=200$)}
 		\label{cl90}
 	\end{minipage}
 	\quad
 	\begin{minipage}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[height=6cm]{re200dg3cpd60cd90.eps}
-		\caption{Drag Coefficient over Time for $90s<t<150s$ ($\text{Re}=200$)}
+		\caption{Drag Coefficient over Time for $90\,\text{s}<t<150\,\text{s}$ ($\text{Re}=200$)}
 		\label{cdosci200}	
 	\end{minipage}
 \end{figure}
@@ -559,7 +559,7 @@ In \cref{osci200}, we can see that the steady state is reached earlier compared 
 We will conclude the simulation part of this work with the visualisation of the vorticity for $\text{Re}=200$ in \cref{fig:vorticity200}. We can observe that the amount of vortices has increased. Unfortunately the mesh is too coarse to properly show the wake of the cylinder.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[height=10cm]{re200dg3cpd60.png}
+	\includegraphics[height=10cm]{re200dg3cpd60.PNG}
 	\caption{Vorticity for DG3CpD60 for $\text{Re} = 200$}
 	\label{fig:vorticity200}
 \end{figure}
