@@ -1,6 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {2}{Einleitung}{3}{0}{1}
-\beamer@sectionintoc {3}{Grundlagen}{6}{0}{2}
-\beamer@sectionintoc {4}{Stand der Forschung}{8}{0}{3}
-\beamer@sectionintoc {5}{Konzept}{18}{0}{4}
-\beamer@sectionintoc {6}{Aktueller Stand und Aussicht}{20}{0}{5}
