@@ -114,7 +114,7 @@
 	\section{RK Time Discretization}
 	After having studied the spatial discretisation, we will now attend to the time discretisation, using the \gls{rk} method.\\\indent
 
-	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled \gls{ode}s.
+	First of all, we need to reformulate equation \eqref{schwacheFormFlux} in order to achieve a system of coupled \glspl{ode}.
 	\begin{align*}
 		\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
 		\underbrace{\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV}_{=:(\mathbf{f_i})_j} = 0.
@@ -136,7 +136,7 @@
 		\dfrac{\partial \mathbf{c_i}}{\partial t} + \mathbf{f_i}&=\mathbf{0}.	
 	\end{align}
 	
-	Using an explicit RK method of order S, we can now advance this system of \gls{ode}s and calculate the new coefficients from
+	Using an explicit RK method of order S, we can now advance this system of \glspl{ode} and calculate the new coefficients from
 	\begin{align}
 		\mathbf{c_i}(t_1) = \mathbf{c_i}(t_0)-\Delta t \sum\limits_{s=1}^{S}\mathbf{(\alpha)_s k_s}, 
 	\end{align}

@@ -23,19 +23,19 @@
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Coefficient of Drag over Time ($\text {Re} = 40$)\relax }}{32}{figure.caption.48}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 40$\relax }}{32}{figure.caption.49}
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Graphical Presentation of Table \ref {C_D100} for $\text {Re} = 100$\relax }}{35}{figure.caption.54}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Lift Coefficient over Time for $0s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.55}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Lift Coefficient over Time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Drag Coefficient over Time for $90s<t<150s$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Lift Coefficient over Time for $0\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=100$)\relax }}{36}{figure.caption.55}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Lift Coefficient over Time for $90\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Drag Coefficient over Time for $90\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=100$)\relax }}{36}{figure.caption.56}
 \contentsline {figure}{\numberline {6.15}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 100$\relax }}{37}{figure.caption.57}
 \contentsline {figure}{\numberline {6.16}{\ignorespaces Graphical Presentation of Table \ref {C_D200} for $\text {Re} = 200$\relax }}{39}{figure.caption.62}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Lift Coefficient over Time for $0s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.63}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Lift Coefficient over Time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Drag Coefficient over Time for $90s<t<150s$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Lift Coefficient over Time for $0\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=200$)\relax }}{40}{figure.caption.63}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Lift Coefficient over Time for $90\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Drag Coefficient over Time for $90\tmspace +\thinmuskip {.1667em}\text {s}<t<150\tmspace +\thinmuskip {.1667em}\text {s}$ ($\text {Re}=200$)\relax }}{40}{figure.caption.64}
 \contentsline {figure}{\numberline {6.20}{\ignorespaces Vorticity for DG3CpD60 for $\text {Re} = 200$\relax }}{41}{figure.caption.65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Mesh Used in the Robustness Study\relax }}{XIV}{figure.caption.72}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Mesh for CpD40\relax }}{XIV}{figure.caption.73}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Mesh for CpD60\relax }}{XV}{figure.caption.74}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Mesh for CpD80\relax }}{XV}{figure.caption.75}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Mesh Used in the Robustness Study\relax }}{XIII}{figure.caption.72}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Mesh for CpD40\relax }}{XIII}{figure.caption.73}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Mesh for CpD60\relax }}{XIV}{figure.caption.74}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Mesh for CpD80\relax }}{XIV}{figure.caption.75}

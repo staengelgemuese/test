@@ -28,7 +28,6 @@
       }
       \strng{namehash}{3553ac4cfdcc042b84fddc410500a0d3}
       \strng{fullhash}{3553ac4cfdcc042b84fddc410500a0d3}
-      \field{labelalpha}{Mül14}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -46,13 +45,12 @@
       }
       \strng{namehash}{53856fbe83a8507bc8c9889150c8e478}
       \strng{fullhash}{53856fbe83a8507bc8c9889150c8e478}
-      \field{labelalpha}{Aye15}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
-      \field{title}{Validation of a discontinuous Galerkin based compressible CFD solver}
+      \field{title}{Validation of a discontinuous {G}alerkin based compressible {CFD} solver}
       \field{type}{Bachelor thesis}
       \field{year}{2015}
       \verb{url}
@@ -65,12 +63,11 @@
       }
       \strng{namehash}{1f74d838ae2afdade98a612123da6d3c}
       \strng{fullhash}{1f74d838ae2afdade98a612123da6d3c}
-      \field{labelalpha}{Krä14}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Notes on the implementation of the viscous terms in CNS: Code Verification, FDY Annual Report 2014}
+      \field{title}{Notes on the implementation of the viscous terms in {CNS}: Code Verification, FDY Annual Report 2014}
       \field{year}{2014}
     \endentry
     \entry{Cockburn1998}{inbook}{}
@@ -88,14 +85,13 @@
       }
       \strng{namehash}{a862e1da6d04641d986b5d3eace69664}
       \strng{fullhash}{a862e1da6d04641d986b5d3eace69664}
-      \field{labelalpha}{Coc98}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{chapter}{An introduction to the Discontinuous Galerkin method for convection-dominated problems}
+      \field{chapter}{An introduction to the {D}iscontinuous {G}alerkin method for convection-dominated problems}
       \field{isbn}{978-3-540-49804-9}
-      \field{title}{Advanced Numerical Approximation of Nonlinear Hyperbolic Equations: Lectures given at the 2nd Session of the Centro Internazionale Matematico Estivo (C.I.M.E.) held in Cetraro, Italy, June 23--28, 1997}
+      \field{title}{Advanced {N}umerical {A}pproximation of {N}onlinear {H}yperbolic {E}quations}
       \field{year}{1998}
       \field{pages}{151\bibrangedash 268}
       \range{pages}{118}
@@ -115,7 +111,6 @@
       }
       \strng{namehash}{fa01bb533c50a3644db770733a52fd74}
       \strng{fullhash}{fa01bb533c50a3644db770733a52fd74}
-      \field{labelalpha}{Tor}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -132,12 +127,11 @@
       }
       \strng{namehash}{c281a88a6909ab6f74f1c19322dae818}
       \strng{fullhash}{c281a88a6909ab6f74f1c19322dae818}
-      \field{labelalpha}{Enr89}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The Numerical Analysis of Ordinary Differential Equations: Runge-Kutta and General Linear Methods (JC Butcher)}
+      \field{title}{The {N}umerical {A}nalysis of {O}rdinary {D}ifferential {E}quations: {R}unge-{K}utta and {G}eneral {L}inear {M}ethods ({JC} {B}utcher)}
       \field{year}{1989}
     \endentry
     \entry{gottlieb}{article}{}
@@ -147,14 +141,13 @@
       }
       \strng{namehash}{9e9f81555007fcdf7790606d484b21a3}
       \strng{fullhash}{9e9f81555007fcdf7790606d484b21a3}
-      \field{labelalpha}{GS98}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematics of computation of the American Mathematical Society}
       \field{number}{221}
-      \field{title}{Total variation diminishing Runge-Kutta schemes}
+      \field{title}{Total variation diminishing {R}unge-{K}utta schemes}
       \field{volume}{67}
       \field{year}{1998}
       \field{pages}{73\bibrangedash 85}
@@ -167,14 +160,13 @@
       }
       \strng{namehash}{a0abf0da9df700b2876975d7b40811c7}
       \strng{fullhash}{a0abf0da9df700b2876975d7b40811c7}
-      \field{labelalpha}{CS91}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{American Institute of Aeronautics and Astronautics}
       \field{number}{3}
-      \field{title}{The Runge-Kutta local projection P1-discontinuous Galerkin finite element method for scalar conservation laws}
+      \field{title}{The {R}unge-{K}utta local projection {P}1-discontinuous {G}alerkin finite element method for scalar conservation laws}
       \field{volume}{25}
       \field{year}{1991}
       \field{pages}{337\bibrangedash 361}
@@ -192,14 +184,13 @@
       }
       \strng{namehash}{265cda1d584512ed8dfbc47b277c88ce}
       \strng{fullhash}{a7c5df382c742f032304261671fbdd63}
-      \field{labelalpha}{Mül+16}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal or Numerical Methods in Engineering}
-      \field{note}{to be published}
-      \field{title}{A high-order Discontinuous Galerkin method for compressible flows with immersed boundaries}
+      \field{note}{submitted}
+      \field{title}{A high-order {D}iscontinuous {G}alerkin method for compressible flows with immersed boundaries}
       \field{volume}{295}
       \field{year}{2016}
       \field{pages}{475\bibrangedash 504}
@@ -214,7 +205,6 @@
       }
       \strng{namehash}{ad766b33915c0d87e6d2ad54b69151c5}
       \strng{fullhash}{ad766b33915c0d87e6d2ad54b69151c5}
-      \field{labelalpha}{Wil96}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -234,7 +224,6 @@
       }
       \strng{namehash}{9afd040bee9648d8cadecdc422d6e3d4}
       \strng{fullhash}{9afd040bee9648d8cadecdc422d6e3d4}
-      \field{labelalpha}{PB98}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -242,7 +231,7 @@
       \field{issn}{1469-7645}
       \field{journaltitle}{Journal of Fluid Mechanics}
       \field{month}{6}
-      \field{title}{Physical analysis of the transition to turbulence in the wake of a circular cylinder by three-dimensional Navier–Stokes simulation}
+      \field{title}{Physical analysis of the transition to turbulence in the wake of a circular cylinder by three-dimensional {N}avier–{S}tokes simulation}
       \field{volume}{365}
       \field{year}{1998}
       \field{pages}{23\bibrangedash 88}
@@ -264,7 +253,6 @@
       }
       \strng{namehash}{621ae944cd3f917384e09794f350cc0e}
       \strng{fullhash}{621ae944cd3f917384e09794f350cc0e}
-      \field{labelalpha}{CT15}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -276,6 +264,28 @@
       \field{pages}{349\bibrangedash 371}
       \range{pages}{23}
     \endentry
+    \entry{brehm2015locally}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eaf834fe8f9cd34cf19261f7984cd579}{Brehm}{B\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=e78aacb2825615ed9fd63ecb7665178e}{Hader}{H\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=3793cf33b811943b11b502022f8e4e50}{Fasel}{F\bibinitperiod}{Hermann\bibnamedelima F}{H\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1ab10efca133e6909533cd835403f30d}
+      \strng{fullhash}{1ab10efca133e6909533cd835403f30d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A locally stabilized immersed boundary method for the compressible {N}avier--{S}tokes equations}
+      \field{volume}{295}
+      \field{year}{2015}
+      \field{pages}{475\bibrangedash 504}
+      \range{pages}{30}
+    \endentry
     \entry{dennis1970numerical}{article}{}
       \name{author}{2}{}{%
         {{hash=1d543400b9511ecc332a40368ff28563}{Dennis}{D\bibinitperiod}{SCR}{S\bibinitperiod}{}{}{}{}}%
@@ -286,14 +296,13 @@
       }
       \strng{namehash}{5d7d1d9626d3006e086f5b87f4d08b79}
       \strng{fullhash}{5d7d1d9626d3006e086f5b87f4d08b79}
-      \field{labelalpha}{DC70}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Fluid Mech}
       \field{number}{3}
-      \field{title}{Numerical solutions for steady flow past a circular cylinder at Reynolds numbers up to 100}
+      \field{title}{Numerical solutions for steady flow past a circular cylinder at {R}eynolds numbers up to 100}
       \field{volume}{42}
       \field{year}{1970}
       \field{pages}{471\bibrangedash 489}
@@ -308,7 +317,6 @@
       }
       \strng{namehash}{05a97358cd8e8361e7ed51110b0006f5}
       \strng{fullhash}{05a97358cd8e8361e7ed51110b0006f5}
-      \field{labelalpha}{For80}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -331,7 +339,6 @@
       }
       \strng{namehash}{01ae35099574b37c4d8d169064073648}
       \strng{fullhash}{01ae35099574b37c4d8d169064073648}
-      \field{labelalpha}{LF05}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -354,14 +361,13 @@
       }
       \strng{namehash}{1a945629204482869612cbeb8c7861a5}
       \strng{fullhash}{1a945629204482869612cbeb8c7861a5}
-      \field{labelalpha}{CB77}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
       \field{number}{02}
-      \field{title}{Experimental determination of the main features of the viscous flow in the wake of a circular cylinder in uniform translation. Part 1. Steady flow}
+      \field{title}{Experimental determination of the main features of the viscous flow in the wake of a circular cylinder in uniform translation. {P}art 1. {S}teady flow}
       \field{volume}{79}
       \field{year}{1977}
       \field{pages}{231\bibrangedash 256}
@@ -376,42 +382,17 @@
       }
       \strng{namehash}{809052f616c5039a7324988ff5e8071e}
       \strng{fullhash}{809052f616c5039a7324988ff5e8071e}
-      \field{labelalpha}{Tri59}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
       \field{number}{04}
-      \field{title}{Experiments on the flow past a circular cylinder at low Reynolds numbers}
+      \field{title}{Experiments on the flow past a circular cylinder at low {R}eynolds numbers}
       \field{volume}{6}
       \field{year}{1959}
       \field{pages}{547\bibrangedash 567}
       \range{pages}{21}
-    \endentry
-    \entry{brehm2015locally}{article}{}
-      \name{author}{3}{}{%
-        {{hash=eaf834fe8f9cd34cf19261f7984cd579}{Brehm}{B\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=e78aacb2825615ed9fd63ecb7665178e}{Hader}{H\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=3793cf33b811943b11b502022f8e4e50}{Fasel}{F\bibinitperiod}{Hermann\bibnamedelima F}{H\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{1ab10efca133e6909533cd835403f30d}
-      \strng{fullhash}{1ab10efca133e6909533cd835403f30d}
-      \field{labelalpha}{BHF15}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{extraalpha}{1}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{title}{A locally stabilized immersed boundary method for the compressible Navier--Stokes equations}
-      \field{volume}{295}
-      \field{year}{2015}
-      \field{pages}{475\bibrangedash 504}
-      \range{pages}{30}
     \endentry
     \entry{gresho1984modified}{article}{}
       \name{author}{4}{}{%
@@ -425,14 +406,13 @@
       }
       \strng{namehash}{47d2b13c4a7f90a0ed065e5ac167de91}
       \strng{fullhash}{0ba99e1b0b265658959d46bae0bbb9df}
-      \field{labelalpha}{Gre+84}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for Numerical Methods in Fluids}
       \field{number}{6}
-      \field{title}{A modified finite element method for solving the time-dependent, incompressible Navier-Stokes equations. Part 1: Theory}
+      \field{title}{A modified finite element method for solving the time-dependent, incompressible {N}avier-{S}tokes equations. {P}art 1: {T}heory}
       \field{volume}{4}
       \field{year}{1984}
       \field{pages}{557\bibrangedash 598}
@@ -448,7 +428,6 @@
       }
       \strng{namehash}{ff55722f06fb55059b3d559d8d08eb80}
       \strng{fullhash}{ff55722f06fb55059b3d559d8d08eb80}
-      \field{labelalpha}{SB96}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -472,7 +451,6 @@
       }
       \strng{namehash}{796aa0b210b59bed5192f8e8dc876d2c}
       \strng{fullhash}{796aa0b210b59bed5192f8e8dc876d2c}
-      \field{labelalpha}{LZS98}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -495,7 +473,6 @@
       }
       \strng{namehash}{f70e15fb5a63c654807f6016cbde2977}
       \strng{fullhash}{f70e15fb5a63c654807f6016cbde2977}
-      \field{labelalpha}{BW72}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -519,7 +496,6 @@
       }
       \strng{namehash}{ede81ba583870c2f953bf4deba737a80}
       \strng{fullhash}{ede81ba583870c2f953bf4deba737a80}
-      \field{labelalpha}{CGW05}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -535,7 +511,6 @@
       }
       \strng{namehash}{c0370516fcc0833730b6c80495b8f1ea}
       \strng{fullhash}{c0370516fcc0833730b6c80495b8f1ea}
-      \field{labelalpha}{BMJ95}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -556,40 +531,15 @@
       }
       \strng{namehash}{e0a57e5bcad02fb8df0c11e6760a1f70}
       \strng{fullhash}{b2620ec6d10452b10e4f091857a420c5}
-      \field{labelalpha}{Miy+92}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{1st European Computational Fluid Dynamics Conference, Brussels, Belgium}
-      \field{title}{Numerical Solution of Incompressible Flow Using Two-Step, One-Stage Runge-Kutta Time Integration Scheme,"}
+      \field{title}{Numerical {S}olution of {I}ncompressible {F}low {U}sing {T}wo-{S}tep, {O}ne-{S}tage {R}unge-{K}utta {T}ime {I}ntegration {S}cheme,"}
       \field{year}{1992}
       \field{pages}{7\bibrangedash 11}
       \range{pages}{5}
-    \endentry
-    \entry{brehm2015}{article}{}
-      \name{author}{3}{}{%
-        {{hash=eaf834fe8f9cd34cf19261f7984cd579}{Brehm}{B\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=e78aacb2825615ed9fd63ecb7665178e}{Hader}{H\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=3793cf33b811943b11b502022f8e4e50}{Fasel}{F\bibinitperiod}{Hermann\bibnamedelima F}{H\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{1ab10efca133e6909533cd835403f30d}
-      \strng{fullhash}{1ab10efca133e6909533cd835403f30d}
-      \field{labelalpha}{BHF15}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{title}{A locally stabilized immersed boundary method for the compressible Navier--Stokes equations}
-      \field{volume}{295}
-      \field{year}{2015}
-      \field{pages}{475\bibrangedash 504}
-      \range{pages}{30}
     \endentry
     \entry{hartmann}{incollection}{}
       \name{author}{1}{}{%
@@ -603,13 +553,12 @@
       }
       \strng{namehash}{8494fbdc99ed794470c65bd548bffcd0}
       \strng{fullhash}{8494fbdc99ed794470c65bd548bffcd0}
-      \field{labelalpha}{Har08}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{VKI LS 2008-08: CFD - ADIGMA course on very high order discretization methods, Oct. 13-17, 2008}
-      \field{title}{Numerical Analysis of Higher Order Discontinuous {G}alerkin Finite Element Methods}
+      \field{title}{Numerical {A}nalysis of {H}igher {O}rder {D}iscontinuous {G}alerkin {F}inite {E}lement {M}ethods}
       \field{year}{2008}
     \endentry
   \endsortlist

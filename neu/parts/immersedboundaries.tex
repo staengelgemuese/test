@@ -78,6 +78,7 @@ IBMs are characteristic in the way of creating the calculation mesh as they do n
 	For the neighbouring cells are weakly coupled via fluxes, the basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell. Therefore the source cell can formally be deleted from the discretisation mesh, reducing it to $\left\{\mathcal{K}_s^\text{agg} \right\}_{i=1,...,N-S}$.
 	However, as can be found in \textcite{paper}, it does not reflect the actual implementation in \gls{bosss} which only requires few cell-local matrix-vector products per time-step, thus not affecting the parallel efficiency. For more information on the implementation in \gls{bosss}, please refer to \cite{paper}.
 	
+	\newpage
 	\section{Simulation Parameters Concerning Stability and Runtime in \glsentrytext{bosss}}
 	\label{parameters}
 	

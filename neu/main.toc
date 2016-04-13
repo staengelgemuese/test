@@ -24,14 +24,14 @@
 \contentsline {section}{\numberline {4.1}The DG Scheme with Immersed Boundaries}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}RK Time Discretisation with Immersed Boundaries}{15}{section.4.2}
 \contentsline {section}{\numberline {4.3}Cell Agglomeration}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Simulation Parameters Concerning Stability and Runtime in BoSSS}{16}{section.4.4}
+\contentsline {section}{\numberline {4.4}Simulation Parameters Concerning Stability and Runtime in BoSSS}{17}{section.4.4}
 \contentsline {paragraph}{LevelSetQuadratureOrder}{17}{paragraph*.26}
 \contentsline {paragraph}{SIPGPenaltyConstant}{17}{paragraph*.27}
 \contentsline {paragraph}{NodeCountSafetyFactor}{17}{paragraph*.28}
 \contentsline {chapter}{\numberline {5}Verification of BoSSS for Inviscid Flows}{18}{chapter.5}
 \contentsline {section}{\numberline {5.1}Robustness Study}{18}{section.5.1}
 \contentsline {section}{\numberline {5.2}Convergence Study of Mesh Size and Polynomial Degree}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Conclusion}{21}{section.5.3}
+\contentsline {section}{\numberline {5.3}Conclusion}{22}{section.5.3}
 \contentsline {chapter}{\numberline {6}Evaluation of BoSSS for Viscid Flows}{23}{chapter.6}
 \contentsline {section}{\numberline {6.1}Theory}{23}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}The Laminar Steady Regime}{24}{subsection.6.1.1}
@@ -45,9 +45,9 @@
 \contentsline {subsubsection}{\numberline {6.2.2.2}Simulation at Reynolds Number 200}{37}{subsubsection.6.2.2.2}
 \contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary}{42}{section.7.1}
-\contentsline {section}{\numberline {7.2}Outlook}{42}{section.7.2}
+\contentsline {section}{\numberline {7.2}Outlook}{43}{section.7.2}
 \contentsline {chapter}{\numberline {8}Bibliography}{IX}{chapter.8}
-\contentsline {chapter}{\nonumberline List of Figures}{XII}{section*.68}
-\contentsline {chapter}{\nonumberline List of Tables}{XIII}{section*.71}
-\contentsline {chapter}{\numberline {A}Appendix}{XIV}{appendix.A}
-\contentsline {section}{\numberline {A.1}Mesh properties}{XIV}{section.A.1}
+\contentsline {chapter}{\nonumberline List of Figures}{XI}{section*.68}
+\contentsline {chapter}{\nonumberline List of Tables}{XII}{section*.71}
+\contentsline {chapter}{\numberline {A}Appendix}{XIII}{appendix.A}
+\contentsline {section}{\numberline {A.1}Mesh Properties}{XIII}{section.A.1}
