@@ -1,0 +1,121 @@
+\documentclass[accentcolor=tud1b,colorbacktitle,inverttitle,landscape,german,
+presentation]{tudbeamer}
+\usepackage{graphicx} 
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{listings}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{multimedia}
+%\usepackage{movie9}
+
+
+%\hypersetup{ colorlinks, citecolor=green, filecolor=black, linkcolor=blue, urlcolor=blue } 
+
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+% \setbeamercolor{example text}{fg=green!50!black}
+% \setbeamercolor{block alerted  item}{fg=red}
+
+\setbeamercolor{block title alerted}{fg=red}
+%body
+%\setbeamercolor{block body alerted}{fg=black!90,bg=brown!60!yellow}
+% parent of all alerts default is red
+\setbeamercolor{alerted text}{fg=red}
+
+%\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+
+%Activate captions
+\setbeamertemplate{caption}{\color{tudtextaccent} Abb.: \color{black}\insertcaption} 
+
+
+%\graphicspath{{bilder/}}
+\begin{document}
+  
+  \title[]{Entwicklung eines Sensorfusions-Frameworks zur Umgebungsmodellierung}
+  \subtitle{Zwischenvortrag Bachelorthesis\\
+  Marius Schnaubelt}
+  
+  \author[M. Schnaubelt]{Marius Schnaubelt}
+  \institute[SIM TU Darmstadt]{Fachgebiet Simulation, Systemoptimierung und Robotik, TU Darmstadt}
+  
+  % \logo{\color{tudtextaccent}\large IFP}
+  
+  \date{\today}
+  
+  \begin{titleframe}
+%     \begin{figure}[htbp] 
+%       \centering
+%       
+%       \includegraphics[height=0.5\textwidth]{gesamtbild_roboter} 
+%       
+%     \end{figure}
+  \end{titleframe}
+  
+  \section*{Inhalte}
+  
+  \begin{frame}
+    \frametitle{Inhalte}
+    \small{\tableofcontents}
+  \end{frame}
+  
+  
+  \include{pres_Einleitung}
+  \include{pres_Grundlagen}
+  \include{pres_Stand_der_Forschung} 
+  \include{pres_Konzept}
+   
+
+  \section*{Quellen}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Referenzen}
+\begin{thebibliography}{8}
+\bibitem{niessner2013real}[Nie{\ss}ner, 2013]
+M. Nie{\ss}ner, M. Zollhöfer, S. Izadi, et al.
+\newblock Real-time 3d reconstruction at scale using voxel hashing
+\newblock ACM Transactions on Graphics (TOG), 2013.
+
+\bibitem{fallon15humanoids}[Fallon, 2015]
+M. Fallon, P. Marion, R. Deits , et al.
+\newblock Continuous Humanoid Locomotion Over Uneven Terrain Using Stereo Fusion
+\newblock International Conference on Humanoid Robots, 2015.
+\newblock Video: \small{\url{https://www.youtube.com/watch?v=_6WQxXH-bB4}}
+
+\bibitem{Fankhauser2014RobotCentricElevationMapping}[Fankhauser, 2014]
+P. Fankhauser, M. Bloesch, C. Gehring, et al.
+\newblock Robot-Centric Elevation Mapping with Uncertainty Estimates
+\newblock International Conference on Climbing and Walking Robots (CLAWAR), 2014.
+\newblock Video: \small{\url{https://www.youtube.com/watch?v=I9eP8GrMyNQ}}
+
+\bibitem{niessner2013real}[zuhause.de]
+\newblock \small{ \url{http://bilder.zuhause.de/b/56/21/79/18/id_56217918/tid_da/den-raum-unter-der-treppe-nutzen.jpg}}
+
+\bibitem{may2014generalized}[May, 2014]
+S. May, P. Koch, R. Koch, et al.
+\newblock A Generalized 2D and 3D Multi-Sensor Data Integration Approach based on Signed Distance Functions for Multi-Modal Robotic Mapping
+\newblock VMV, 2014.
+
+\bibitem{stumpf}[Stumpf]
+A. Stumpf
+\newblock Vigir Terrain Classifier
+
+\bibitem{klingensmithchisel}[Klingensmith, 2015]
+M. Klingensmith, I. Dryanovski, S. S. Srinivasa, et al.
+\newblock Chisel: real time large scale 3d reconstruction onboard a
+mobile device using spatially-hashed signed distance fields,
+\newblock Robotics Science and Systems, 2015.
+\newblock Video: \small{\url{https://vimeo.com/117544631}}
+
+
+\end{thebibliography}
+\end{frame}
+  
+\end{document}

@@ -1,0 +1,17 @@
+[0] Config.pm:327> INFO - This is Biber 2.3
+[0] Config.pm:330> INFO - Logfile is 'main.blg'
+[99] biber-MSWIN:284> INFO - === 
+[205] Biber.pm:346> INFO - Reading 'main.bcf'
+[306] Utils.pm:147> WARN - Warning: Found biblatex control file version 2.8, expected version 2.9
+[306] Biber.pm:686> INFO - Using all citekeys in bib section 0
+[312] Biber.pm:3066> INFO - Processing section 0
+[461] Biber.pm:3206> INFO - Looking for bibtex format file 'main.bib' for section 0
+[466] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[470] bibtex.pm:923> INFO - Found BibTeX data source 'main.bib'
+[944] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[945] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[945] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[945] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
+[977] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[981] bbl.pm:596> INFO - Output to main.bbl
+[981] Biber.pm:107> INFO - WARNINGS: 1

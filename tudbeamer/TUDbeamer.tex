@@ -1,0 +1,73 @@
+\documentclass[accentcolor=tud7b,colorbacktitle,inverttitle,landscape,german,presentation,t]{tudbeamer}
+\usepackage{graphicx} 
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{listings}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{multimedia}
+%\usepackage{movie9}
+
+
+%\hypersetup{ colorlinks, citecolor=green, filecolor=black, linkcolor=blue, urlcolor=blue } 
+
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+% \setbeamercolor{example text}{fg=green!50!black}
+% \setbeamercolor{block alerted  item}{fg=red}
+
+\setbeamercolor{block title alerted}{fg=red}
+%body
+%\setbeamercolor{block body alerted}{fg=black!90,bg=brown!60!yellow}
+% parent of all alerts default is red
+\setbeamercolor{alerted text}{fg=red}
+
+\begin{document}
+
+\title{Numerical Simulation of Compressible Flows with Immersed Boundaries Using Discontinuous Galerkin Methods}
+\subtitle{Bachelor thesis by Simone Stange\\Prof. Dr.-Ing. habil. Martin Oberlack\\Betreuer: Dr.-Ing Björn Müller}
+
+\author[Simone Stange]{Simone Stange}
+\institute[fdy TUD]{Institut für Strömungsdynamik, TU Darmstadt}
+
+\logo{\includegraphics{img/fdy}}
+% \logo{\color{tudtextaccent}\large IFP}
+
+\date{\today}
+
+\begin{titleframe}
+	\begin{figure}[htbp] 
+	    \centering
+		\includegraphics[height=0.38\textwidth]{img/Re40DG3CpD60} 
+	\end{figure}
+\end{titleframe}
+
+\section*{Outline}
+\begin{frame}
+	\frametitle{Outline}
+	\tableofcontents
+\end{frame}
+\include{fundamentals}
+\include{inviscid}
+\include{viscid}
+\include{conclusion}
+
+\appendix
+%\newcounter{finalframe}
+%\setcounter{finalframe}{\value{framenumber}}
+%% Backup frames
+%\setcounter{framenumber}{\value{finalframe}}
+		\begin{frame}
+			alle tabellen und graphen die man brauchen könnte in anhang
+		\end{frame}		
+\begin{frame}
+
+\end{frame}
+\end{document}
+

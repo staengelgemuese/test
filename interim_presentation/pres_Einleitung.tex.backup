@@ -1,0 +1,71 @@
+\section{Einleitung}
+
+\begin{frame}[t]
+    \frametitle{Einleitung}
+
+    \begin{itemize}
+      \item Mobile Roboter besitzen unterschiedliche Sensorsysteme
+      \begin{itemize}
+       \item RGB-D Kameras
+       \item Stereo Kamera
+       \item 2D/3D Laserscanner
+      \end{itemize}
+      \item Verschiedene Sensoren $\rightarrow$ verschiedene Eigenschaften
+      \item generate world models based on different sensor information
+      \item combine strengths of different sensors
+      \item ability to confirm the data of another sensor
+      \item fusion can increase reliability of the robot's mapping
+
+\end{itemize}
+\end{frame}
+
+
+\subsection{Motivation}
+\begin{frame}[t]
+    \frametitle{Motivation}
+
+    \begin{itemize}
+      \item very different sensor capabilities have to be considered
+      \item generate world models based on different sensor information
+      \item combine strengths of different sensors
+      \item ability to confirm the data of another sensor
+      \item fusion can increase reliability of the robot's mapping
+      \item a good (3D) world model enables robot to do many tasks
+      \begin{itemize}
+	\item footstep planning
+	\item collision avoidance
+	\item path planning
+	\item manipulation tasks
+	\item creation of a situational awareness when remote controlling the robot
+      \end{itemize}
+
+\end{itemize}
+\end{frame}
+
+
+\subsection{Anforderungen}
+
+\begin{frame}[t]
+  \frametitle{Anforderungen}
+      
+  \begin{itemize}
+      \item Sensorfusions-Framework
+      \item Modellierung der Umgebung des Roboters
+      \item real-time 
+      \item Generierung von verschiedenen Umgebungsrepräsentationen
+      \begin{itemize}
+	\item Höhenfeld
+	\item Oberflächennormalen-Schätzung
+      \end{itemize}
+
+      \item Effiziente CPU- und Speichernutzung
+      \item Anwendbar für verschiedene Roboter
+  \end{itemize}
+
+     
+
+\end{frame}    
+
+
+
+
