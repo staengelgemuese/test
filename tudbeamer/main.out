@@ -1,7 +1,7 @@
 \BOOKMARK [2][]{Outline0.2}{Introduction and Fundamentals}{}% 1
 \BOOKMARK [3][]{Outline0.2.1.4}{Introduction}{Outline0.2}% 2
-\BOOKMARK [3][]{Outline0.2.2.7}{The Runge-Kutta Discontinuous Galerkin Method}{Outline0.2}% 3
-\BOOKMARK [3][]{Outline0.2.3.9}{The Immersed Boundary Method}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.2.7}{The Discontinuous Galerkin Method}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.3.8}{The Immersed Boundary Method}{Outline0.2}% 4
 \BOOKMARK [2][]{Outline0.3}{Verification of BoSSS for Inviscid Flows}{}% 5
 \BOOKMARK [3][]{Outline0.3.1.12}{Robustness}{Outline0.3}% 6
 \BOOKMARK [3][]{Outline0.3.2.14}{Convergence}{Outline0.3}% 7

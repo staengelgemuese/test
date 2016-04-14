@@ -12,18 +12,17 @@ Gitter, Bild, domain, level set, isentropic inviscid flow mit gleichung -> s=0
 	\end{frame}
 	\begin{frame}
 		\frametitle{Robustness Study -- Evaluation}
+		\begin{columns}[t]
+	\column[]{4cm}
+	\column[]{8cm}
 			\begin{figure}[htp]	
+				\vspace{-1cm}
 				\centering
-				\begin{tikzpicture}
-				\begin{semilogyaxis}[xlabel ={Position of Centre Point of the Cylinder}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=1$,$P=2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false]
-				\addplot table[ x =shift, y =error1] {data/shift.dat};
-				\addplot table[ x =shift, y =error2] {data/shift.dat};
-				\addplot table[ x =shift, y =error3] {data/shift.dat};
-				\end{semilogyaxis}	
-				\end{tikzpicture}
+				\includestandalone[width=\textwidth]{shift}
 				\caption{Convergence Plot}
 				\label{shifterror}
 			\end{figure}
+		\end{columns}
 		Ergebnisse, Plot, komischer punkt wird angeschaut
 	\end{frame}
 	\subsection{Convergence}
@@ -33,64 +32,16 @@ Gitter, Bild, domain, level set, isentropic inviscid flow mit gleichung -> s=0
 	\end{frame}
 	\begin{frame}
 		\frametitle{Convergence Study -- Evaluation}
+		\begin{columns}[t]
+			\column[]{4cm}
+			\column[]{8cm}
 		\begin{figure}[htp]
+			\vspace{-1cm}
 			\centering		
-			\begin{tikzpicture}
-			\begin{loglogaxis}[xlabel ={Cells per Direction}, ylabel ={$L_2$ Error of Entropy}, grid =major, legend entries ={$P=0$,$P=1$,$P=2$, $P=3$, $P=4$, $R_0$, $R_1$, $R_2$, $R_3$, $R_4$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east}]
-			\addplot table[ x =meshSize, y =error0] {data/test.dat};
-			\addplot table[ x =meshSize, y =error1] {data/test.dat};
-			\addplot table[ x =meshSize, y =error2] {data/test.dat};
-			\addplot table[ x =meshSize, y =error3] {data/test.dat};
-			\addplot table[ x =meshSize, y =error4] {data/test.dat};
-			\addplot table[
-			x=meshSize,
-			y={create col/linear regression={						y=error0,}}	]
-			{data/test.dat}
-			coordinate[pos=0.6] (A)
-			coordinate[pos=0.75] (B);
-			\xdef\nullslope{\pgfplotstableregressiona}
-			\draw (A) -| (B)
-			node [pos=0.75, anchor = south west] {\pgfmathprintnumber[fixed]{\nullslope}};
-			\addplot table[
-			x=meshSize,
-			y={create col/linear regression={						y=error1,}}	]
-			{data/test.dat}
-			coordinate[pos=0.6] (A)
-			coordinate[pos=0.75] (B);
-			\xdef\einsslope{\pgfplotstableregressiona}
-			\draw (A) -| (B)
-			node [pos=0.75, anchor = west] {\pgfmathprintnumber{\einsslope}};
-			\addplot table[
-			x=meshSize,
-			y={create col/linear regression={						y=error2,}}	]
-			{data/test.dat}
-			coordinate[pos=0.6] (A)
-			coordinate[pos=0.75] (B);
-			\xdef\zweislope{\pgfplotstableregressiona}
-			\draw (A) -| (B)
-			node [pos=0.75, anchor = west] {\pgfmathprintnumber{\zweislope}};
-			\addplot table[
-			x=meshSize,
-			y={create col/linear regression={						y=error3,}}	]
-			{data/test.dat}
-			coordinate[pos=0.6] (A)
-			coordinate[pos=0.75] (B);
-			\xdef\dreislope{\pgfplotstableregressiona}
-			\draw (A) -| (B)
-			node [pos=0.75, anchor = west] {\pgfmathprintnumber{\dreislope}};
-			\addplot table[
-			x=meshSize,
-			y={create col/linear regression={						y=error4,}}	]
-			{data/test.dat}
-			coordinate[pos=0.6] (A)
-			coordinate[pos=0.75] (B);
-			\xdef\vierslope{\pgfplotstableregressiona}
-			\draw (A) -| (B)
-			node [pos=0.75, anchor = west] {\pgfmathprintnumber{\vierslope}};
-			\end{loglogaxis}	
-			\end{tikzpicture}	
+			\includestandalone[width=\textwidth]{convergence}
 			\caption{Convergence Plot}
 			\label{mesherror}
 		\end{figure}
+		\end{columns}
 		Ergebnisse, Plot
 	\end{frame}

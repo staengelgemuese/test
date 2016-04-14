@@ -18,6 +18,9 @@
 %\usepackage{movie9}
 \usepackage{multirow}
 \usepackage{rotating}
+\usepackage[mode=buildnew]{standalone}% requires -shell-escape
+\usepackage{tikz}
+
 
 
 %\hypersetup{ colorlinks, citecolor=green, filecolor=black, linkcolor=blue, urlcolor=blue } 
@@ -33,6 +36,8 @@
 %\setbeamercolor{block body alerted}{fg=black!90,bg=brown!60!yellow}
 % parent of all alerts default is red
 \setbeamercolor{alerted text}{fg=red}
+
+\setbeamertemplate{caption}{\color{tudtextaccent} Fig.: \color{black}\insertcaption} 
 
 \begin{document}
 
@@ -69,11 +74,34 @@
 %\setcounter{finalframe}{\value{framenumber}}
 %% Backup frames
 %\setcounter{framenumber}{\value{finalframe}}
-		\begin{frame}
-			alle tabellen und graphen die man brauchen könnte in anhang
-		\end{frame}		
-\begin{frame}
-
+	
+\begin{frame}[allowframebreaks]
+	\frametitle{Bibliography}
+\begin{thebibliography}{8}
+	\bibitem{muller2014}[Müller, 2014]
+	B. Müller
+	\newblock Methods for higher order numerical simulations of complex inviscid fluids with immersed boundaries
+	\newblock PhD thesis, TU Darmstadt, 2014.
+	
+	\bibitem{ayers2015}[Ayers, 2015]
+	L. F. Ayers
+	\newblock Validation of a discontinuous Galerkin based compressible CFD solver
+	\newblock Bachelor thesis, TU Darmstadt, 2015.
+	
+	\bibitem{paper}[Müller, 2016]
+	B. Müller, S. Krämer-Eis, F. Kummer et al.
+	\newblock A high-order Discontinuous Galerkin method for compressible flows with immersed boundaries
+	\newblock International Journal of Numerical Methods in Engineering, 2016, submitted.
+	
+	\bibitem{williamson}[Williamson, 1996]
+	C. H. Williamson
+	\newblock Vortex dynamics in the cylinder wake
+	\newblock Annual review of fluid mechanics, 1996.
+	
+\end{thebibliography}
 \end{frame}
+\begin{frame}
+	alle tabellen und graphen die man brauchen könnte in anhang
+	\end{frame}	
 \end{document}
 

@@ -18,8 +18,9 @@
 		conserved flow variables density, momentum, energy\\
 		dimensionless variables\\
 		gleichung, aufgeteilt in temporal derivative, convective fluxes, viscous fluxes\\
+		time discretisation durch Runge-Kutta erster Ordnung -> expliziter Euler
 	\end{frame}
-	\subsection{The Runge-Kutta Discontinuous Galerkin Method}
+	\subsection{The Discontinuous Galerkin Method}
 	\begin{frame}
 		\frametitle{The Discontinuous Galerkin Space Discretisation}
 		\begin{figure}
@@ -33,13 +34,47 @@
 
 		DG space discretisation Vorgehen, Bildchen, fluxes
 	\end{frame}
-	\begin{frame}
-		\frametitle{The Runge-Kutta Time Discretisation }
-		RK time discretisation Endformel, Tabelle, cfl criterion
-	\end{frame}
 	\subsection{The Immersed Boundary Method}
 	\begin{frame}
 		\frametitle{The Immersed Boundary Method}
+		\begin{columns}[t]
+			\column[]{7cm}
+			\column[]{5cm}
+			\begin{figure}[htbp]
+				\vspace{-1cm}
+				\includegraphics[width=\textwidth]{img/ibmcut.PNG}
+				\caption{Cut cell with physical (red) and void region (white) [4]}\label{fig:cutcell}
+			\end{figure} 
+		\end{columns}
+		regions mit Bild, Aufteilung Integrale
+		mass matrix
+		rk time discretisation formel
+		cell agglomeration
+	\end{frame}
+	\begin{frame}
+		\frametitle{Cell Agglomeration}
+		\begin{columns}[t]
+			\column[]{7cm}
+			\column[]{5cm}
+			\begin{figure}[htbp]
+				\vspace{-1cm}
+				\includegraphics[height=0.3\textheight]{img/ibminitmesh.PNG}
+				\caption*{(a) Initial mesh partitioning}
+				\label{fig:init}
+			\end{figure} 
+			\begin{figure}[htbp]
+				\vspace{-1cm}
+				\includegraphics[height=0.3\textheight]{img/ibmagglomklein.PNG}
+				\caption*{(b) Cell agglomeration with small agglomeration threshold}
+				\label{fig:ineit}
+			\end{figure} 
+			\begin{figure}[htbp]
+				\vspace{-1cm}
+				\includegraphics[height=0.3\textheight]{img/ibmagglomgross.PNG}
+				\caption*{(c) Cell agglomeration with bigger agglomeration threshold}
+				\label{fig:iwnit}
+			\end{figure} 
+		\end{columns}
 		regions mit Bild, Aufteilung Integrale
 		mass matrix
 		rk time discretisation formel

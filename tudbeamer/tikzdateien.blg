@@ -1,0 +1,17 @@
+[0] Config.pm:327> INFO - This is Biber 2.3
+[0] Config.pm:330> INFO - Logfile is 'tikzdateien.blg'
+[35] biber-MSWIN:284> INFO - === 
+[58] Biber.pm:346> INFO - Reading 'tikzdateien.bcf'
+[154] Utils.pm:147> WARN - Warning: Found biblatex control file version 2.8, expected version 2.9
+[154] Biber.pm:689> INFO - Found 7 citekeys in bib section 0
+[159] Biber.pm:3066> INFO - Processing section 0
+[360] Biber.pm:3206> INFO - Looking for bibtex format file 'main.bib' for section 0
+[369] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[375] bibtex.pm:923> INFO - Found BibTeX data source 'main.bib'
+[561] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[561] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[561] Biber.pm:2943> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[561] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
+[594] bbl.pm:505> INFO - Writing 'tikzdateien.bbl' with encoding 'UTF-8'
+[597] bbl.pm:596> INFO - Output to tikzdateien.bbl
+[597] Biber.pm:107> INFO - WARNINGS: 1

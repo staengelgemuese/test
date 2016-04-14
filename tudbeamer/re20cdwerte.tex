@@ -1,0 +1,24 @@
+\documentclass[crop,tikz,border={0 0pt 3pt 5pt}]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\input{header}
+\usepgfplotslibrary{fillbetween}
+\begin{document}
+\begin{tikzpicture}
+\begin{semilogxaxis}[xlabel ={Cells per Direction}, ylabel ={$C_D$},  grid =major, legend entries ={$P=1$, $P = 2$, $P=3$}, unbounded coords=jump, legend style = {cells = {anchor=east}, legend pos=outer north east,}, scaled x ticks = false, scaled y ticks = false, xmin = 40, xmax = 80]
+		\addplot table[ x = ms, y =dg1] {data/re20.dat};
+		\addlegendentry{$P=1$}
+		\addplot table[ x = ms, y =dg2] {data/re20.dat};
+		\addlegendentry{$P=2$}
+		\addplot table[ x = ms, y =dg3] {data/re20.dat};
+		\addlegendentry{$P=3$}
+\addplot[domain=40:80,name path=A] {2.00};
+\addplot[domain=40:80,name path=B] {2.09};
+%\addplot[domain=40:80,name path=C] {1.38};
+\addplot[yellow!30] fill between[of=A and B];
+%\addplot[yellow!30] fill between[of=A and C];
+
+%		\addplot[mark=none, red] coordinates {(32, 1.6) (128, 1.6)};
+%		\addlegendentry{Constant Value}
+\end{semilogxaxis}	
+\end{tikzpicture}
+\end{document}
