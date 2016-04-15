@@ -20,6 +20,22 @@
 \usepackage{rotating}
 \usepackage[mode=buildnew]{standalone}% requires -shell-escape
 \usepackage{tikz}
+\usepackage[skins,theorems]{tcolorbox}
+\tcbset{highlight math style={enhanced,
+		colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+\usepackage[customcolors]{hf-tikz}
+\usepackage{marvosym}
+
+\usepackage{pifont}
+\usepackage{xcolor}
+\definecolor{myblue}{RGB}{0,0,205}
+\definecolor{mygreen}{RGB}{34,139,34}
+\definecolor{myred}{RGB}{220,20,60}
+
+
+\newcommand{\bluedot}{\item[\color{myblue}\ding{228}]} 
+\newcommand{\greendot}{\item[\color{mygreen}\ding{228}]}
+\newcommand{\reddot}{\item[\color{myred}\ding{228}]}
 
 
 
