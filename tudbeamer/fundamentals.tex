@@ -85,44 +85,66 @@
 		\frametitle{The Immersed Boundary Method}
 		\begin{columns}[t]
 			\column[]{7cm}
+			\vspace{-0.5cm}
+			\begin{itemize}
+				\item Division into
+					\begin{itemize}
+						\item the physical region:  $\mathcal{A} = \left\{\vec{x} \in \Omega_h : \varphi (\vec{x}) > 0 \right\}$,
+						\item the void region:  $\mathcal{B} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) < 0 \right\}$, 
+						\item the immersed boundary: $\mathcal{I} = \left\{ \vec{x}\in \Omega_h : \varphi (\vec{x}) = 0 \right\}$
+					\end{itemize} 
+			\end{itemize}
 			\column[]{5cm}
 			\begin{figure}[htbp]
 				\vspace{-1cm}
 				\includegraphics[width=\textwidth]{img/ibmcut.PNG}
-				\caption{Cut cell with physical (red) and void region (white) [4]}\label{fig:cutcell}
+				\caption{Cut cell with physical (red) and void region (white) \cite{paper}}\label{fig:cutcell}
 			\end{figure} 
 		\end{columns}
-		regions mit Bild, Aufteilung Integrale
-		mass matrix
-		rk time discretisation formel
-		cell agglomeration
+		\begin{itemize}
+			\item Restrict problem domain to physical region:
+		\end{itemize}
+		\vspace{-0.3cm}
+		\scalebox{0.9}{
+			\begin{minipage}{\the\textwidth}			
+				\begin{align*}
+				\int\limits_{\mathcal{A}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+				\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}^\mathcal{A}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA + \int\limits_{\mathcal{I}_{i}} f \left( c^-, c^+, \mathbf{n}_\mathcal{I} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{A}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV = 0 
+				\end{align*}
+			\end{minipage}
+			}\\
+			\begin{itemize}
+				\item Solution via explicit Euler time discretisation
+					\begin{itemize}
+						\item Time step size depends on cell with smallest volume \\
+						\MVRightarrow \, Cell agglomeration
+					\end{itemize}
+			\end{itemize}
+%		regions mit Bild, Aufteilung Integrale
+%		mass matrix
+%		rk time discretisation formel
+%		cell agglomeration
 	\end{frame}
 	\begin{frame}
 		\frametitle{Cell Agglomeration}
+
 		\begin{columns}[t]
-			\column[]{7cm}
 			\column[]{5cm}
+			\vspace{-0.5cm}
+			\begin{itemize}
+				\item Agglomeration threshold  $0 \leq \alpha \leq 1$
+				\item Cells $\mathcal{K}_s^\text{src}$ with $\text{frac}(\mathcal{A}_i) = \tfrac{\text{meas}(\mathcal{A}_i)}{\text{meas}(\mathcal{K}_i)} \leq \alpha$ get agglomerated to neighbouring cell $\mathcal{K}_s^\text{tar}$
+				\item Neighbouring cells are weakly coupled via fluxes \newline \MVRightArrow \, basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell
+			\end{itemize}
+			\column[]{7cm}
 			\begin{figure}[htbp]
 				\vspace{-1cm}
-				\includegraphics[height=0.3\textheight]{img/ibminitmesh.PNG}
-				\caption*{(a) Initial mesh partitioning}
-				\label{fig:init}
-			\end{figure} 
-			\begin{figure}[htbp]
-				\vspace{-1cm}
-				\includegraphics[height=0.3\textheight]{img/ibmagglomklein.PNG}
-				\caption*{(b) Cell agglomeration with small agglomeration threshold}
-				\label{fig:ineit}
-			\end{figure} 
-			\begin{figure}[htbp]
-				\vspace{-1cm}
-				\includegraphics[height=0.3\textheight]{img/ibmagglomgross.PNG}
-				\caption*{(c) Cell agglomeration with bigger agglomeration threshold}
-				\label{fig:iwnit}
+				\includegraphics[width=\textwidth]{img/agglom.PNG}
+				\caption{Cell agglomeration for $\alpha = 0.3$}
 			\end{figure} 
 		\end{columns}
-		regions mit Bild, Aufteilung Integrale
-		mass matrix
-		rk time discretisation formel
-		cell agglomeration
+%		regions mit Bild, Aufteilung Integrale
+%		mass matrix
+%		rk time discretisation formel
+%		cell agglomeration
 	\end{frame}

@@ -2,59 +2,131 @@
 \frame{\tableofcontents[currentsection]}
 	\subsection{Theory}
 	\begin{frame}
-		\frametitle{Theory -- Differentiation into Flow Regimes}
+		\frametitle{Theory -- Viscid Flow Around a Cylinder}
 		\begin{columns}[t]
-			\column[]{5cm}
+			\column[]{6cm}
+			\vspace{-0.5cm}
 			\begin{itemize}
-				\item $40-50 < \text{Re} < 190$: laminar vortex shedding,
-				\item $190 < \text{Re} < 260$: 3D wake-transition regime,
+				\item $\text{Re} \leq 40-50$: laminar steady regime
+				\item $40-50 \leq \text{Re} \leq 190$: laminar vortex shedding (Kármán vortex street)
+				\item $190 \leq \text{Re}$: increasing 3D effects
+				\item Characteristic values:
+				\begin{itemize}
+					\item Coefficient of drag $C_D$
+					\item Coefficient of lift $C_L$
+					\item Wake separation length $W^*$
+					\item Strouhal number (frequency of vortex shedding)
+				\end{itemize}
 			\end{itemize}
-			\column[]{7cm}
+			\column[]{6cm}
 			\begin{figure}[ht]
 				%\centering
 				 \vspace{-1cm}
-				\includegraphics[width=\textwidth]{img/overviewCylinderReynolds_Williamson.PNG}
-				\caption{Base Suction Coefficient over Reynolds Numbers \cite{williamson}}
+				\includegraphics[width=0.6\textwidth]{img/steadyFlow_modifiedWilliamson.PNG}
+				\caption{Laminar steady regime \cite{williamson} }
 			\end{figure}
-		\end{columns}
-	\end{frame}
-	\begin{frame}
-		\frametitle{Theory -- Laminar Steady Regime}
-		laminar steady regime
-		Bild
-		\begin{columns}[t]
-		\column[]{7cm}
-		\column[]{5cm}
-		\begin{figure}[htbp]
-			\vspace{-1cm}
-			\includegraphics[width=\textwidth]{img/steadyFlow_modifiedWilliamson.PNG}
-			\caption{Recirculation Area \cite{williamson}}
-		
-		\end{figure} 
-		\end{columns}
-
-	\end{frame}	
-	\begin{frame}
-		\frametitle{Theory -- Laminar Vortex Shedding}
-		Bild
-		\begin{columns}[t]
-			\column[]{5cm}
-			\column[]{7cm}
 			\begin{figure}[htbp]
-				\vspace{-1cm}
 				\includegraphics[width=\textwidth]{img/unsteady_Williamson.PNG}
 				\caption{Kármán Vortex Street \cite{williamson} }
 			\end{figure} 
 		\end{columns}
-		Karman vortex street
-		frequency /strouhal
-	\end{frame}	
+	\end{frame}
+%	\begin{frame}
+%		\frametitle{Theory -- Laminar Steady Regime}
+%		laminar steady regime
+%		Bild
+%		\begin{columns}[t]
+%		\column[]{7cm}
+%		\column[]{5cm}
+%		\begin{figure}[htbp]
+%			\vspace{-1cm}
+%			\includegraphics[width=\textwidth]{img/steadyFlow_modifiedWilliamson.PNG}
+%			\caption{Recirculation Area \cite{williamson}}
+%		
+%		\end{figure} 
+%		\end{columns}
+%
+%	\end{frame}	
+%	\begin{frame}
+%		\frametitle{Theory -- Laminar Vortex Shedding}
+%		Bild
+%		\begin{columns}[t]
+%			\column[]{5cm}
+%			\column[]{7cm}
+%			\begin{figure}[htbp]
+%				\vspace{-1cm}
+%				\includegraphics[width=\textwidth]{img/unsteady_Williamson.PNG}
+%				\caption{Kármán Vortex Street \cite{williamson} }
+%			\end{figure} 
+%		\end{columns}
+%		Karman vortex street
+%		frequency /strouhal
+%	\end{frame}	
 	\subsection{Simulations}
 		\begin{frame}
 			\frametitle{Simulation Properties}
-			simulation parameter
-			gitter
-			cD, CL, W*, St
+			\begin{columns}[t]
+				\column[]{7cm}
+				\vspace{-0.5cm}
+			\begin{itemize}
+				\item Domain:
+				\begin{itemize}
+					\item $-20 \leq x \leq 20$
+					\item $-20 \leq y \leq 20$
+					\item Cylinder with radius $r=0.5$ at $(0,0)$ \newline \MVRightarrow \, Level set $\varphi  = x^2 + y^2 -0.25$ set as  \color{myred} isothermal wall \color{black}
+				\end{itemize}
+				
+				\item Variation of mesh size: 40, 60 and 80 cells per direction
+				\item Variation of polynomial degree $1 \leq P \leq 3$
+				\item Constant agglomeration threshold $\alpha = 0.3$ \\[10pt]
+				\bluedot Supersonic inlet
+				\reddot Isothermal wall
+			\end{itemize}
+			\column[]{5.5cm}
+			\vspace{-0.8cm}
+			\begin{figure}[htbp]
+				\includegraphics[width=\textwidth]{img/mesh40.PNG}
+				\caption{Coarsest mesh with $40 \times 40$ cells}
+			\end{figure} 
+%			\begin{itemize}
+%				\bluedot Supersonic inlet
+%				\reddot Isothermal wall
+%			\end{itemize}
+		\end{columns}
+%			simulation parameter
+%			gitter
+%			cD, CL, W*, St
+		\end{frame}
+		\begin{frame}
+			\frametitle{Compared Values}
+				\begin{columns}
+					\column[]{8cm}
+			
+			\begin{itemize}			
+				\item Steady flow simulations for $\text{Re = 20}$ and $\text{Re = 40}$:
+				\begin{itemize}
+					\item Coefficient of drag $C_D$
+					\item Wake separation length $W^*$ \newline \MVRightArrow \, found from evaluating $x$ at $y=0$ where $x$-velocity $u=0$
+				\end{itemize}
+				\item Unsteady flow simulations for $\text{Re = 100}$ and $\text{Re = 200}$:
+				\begin{itemize}
+					\item Coefficient of drag $C_D$
+					\item Coefficient of lift $C_L$
+					\item $\text{St}$ found from evaluating frequency of $C_L$
+				\end{itemize}	
+			\end{itemize}	
+			\column[]{4cm}
+			\begin{flalign*}
+				C_D &= \tfrac{d}{q_\infty L_\infty}\\
+				C_L &= \tfrac{l}{q_\infty L_\infty}\\
+				\text{St} &= \dfrac{f L_\infty}{V_\infty}\\
+				d&: 	\text{drag force}\\
+				l&:	\text{lift force}\\
+				q_\infty&:	\text{dynamic pressure}\\
+				L_\infty&: \text{cylinder diameter}\\
+				V_\infty&: \text{flow velocity}\\
+			\end{flalign*}
+			\end{columns}
 		\end{frame}
 		\begin{frame}[allowframebreaks]
 			\frametitle{Simulation at $\text{Re = 20}$}
@@ -130,6 +202,8 @@
 		\end{frame}
 		\begin{frame}
 			\frametitle{Comparison of $\text{Re = 20}$ and $\text{Re = 40}$}
+			\begin{center}
+		
 			\scalebox{0.8}{
 				\begin{minipage}{\the\textwidth}
 			\begin{table}[htp]
@@ -142,6 +216,7 @@
 			\end{table}
 		\end{minipage}
 		}
+	\end{center}
 			\begin{figure}
 				\vspace{-0.5cm}
 				\centering
@@ -268,6 +343,7 @@
 					\includegraphics[width=\textwidth]{img/re200dg3cpd60.png}
 				\end{figure}
 			\end{columns}
+			\begin{center}
 			\scalebox{0.8}{
 				\begin{minipage}{\the\textwidth}
 					\begin{table}[htp]
@@ -280,4 +356,5 @@
 					\end{table}
 				\end{minipage}
 			}
+		\end{center}
 		\end{frame}

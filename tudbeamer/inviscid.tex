@@ -39,14 +39,32 @@
 	\subsection{Robustness}
 	\begin{frame}
 		\frametitle{Robustness Study -- Preparation}
-		shift, degree 1 bis 3, agglo 0.5, 64 mal 64 cells
-		Parameter, was wird getan
+		\begin{itemize}
+			\item Variation of polynomial degree $ 1 \leq P \leq 3$
+			\item Variation of position of the cylinder's centre point from $-0.075$ to $+0.075$ with step size $0.015$ \newline \MVRightArrow \, Level set $\varphi  = (x-\text{shift)}^2 + y^2 -1$
+			\item Mesh as shown before (64 cells per direction)
+			\item Constant agglomeration threshold $\alpha = 0.5$  \newline \MVRightArrow \, several different cell agglomerations occur			
+		\end{itemize}
+		\vspace{0.5cm}
+		\begin{center}
+			\large
+			\textbf{Aim:} Proving the robustness of the solver
+		\end{center}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Robustness Study -- Evaluation}
 		\begin{columns}[t]
-	\column[]{4cm}
-	\column[]{8cm}
+	\column[]{6cm}
+		\vspace{-0.5cm}
+	\begin{itemize}
+		\item Constant error of entropy for degrees 1 and 2 \newline \MVRightarrow \, Only slight influence by cell agglomeration
+		\item Large error differences for degree 3
+		\begin{itemize}
+			\item For some cases huge effort in getting calculations to work (early breakup)
+			\item Discordant cases should be examined more closely
+		\end{itemize}
+	\end{itemize}
+	\column[]{6cm}
 			\begin{figure}[htp]	
 				\vspace{-1cm}
 				\centering
@@ -55,12 +73,26 @@
 				\label{shifterror}
 			\end{figure}
 		\end{columns}
-		Ergebnisse, Plot, komischer punkt wird angeschaut
+	\begin{center}
+		\large
+		\MVRightarrow \, Sufficiently robust for lower degrees, higher degree calculations strongly influenced by cell agglomeration
+	\end{center}
+%		Ergebnisse, Plot, komischer punkt wird angeschaut
 	\end{frame}
 	\subsection{Convergence}
 	\begin{frame}
 		\frametitle{Comvergence Study -- Preparation}
-		Parameter, was wird getan
+		\begin{itemize}
+			\item Variation of polynomial degree $ 0 \leq P \leq 4$
+			\item Variation of mesh size: 32, 64 and 128 cells per direction
+			\item Constant level set $\varphi  = x^2 + y^2 -1$
+			\item Constant agglomeration threshold $\alpha = 0.3$
+		\end{itemize}
+		\vspace{0.5cm}
+		\begin{center}
+			\large
+			\textbf{Aim:} Proving convergence rate of $\mathcal{O}(h^{P+1})$
+		\end{center}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Convergence Study -- Evaluation}
