@@ -3,14 +3,14 @@
     <Field name="Version" type="string">2.9.1</Field>
     <Object name="GUI">
         <Object name="FileServerList">
-            <Field name="path" type="string">C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\c96e2676-b061-4368-8c74-1b8b6ecc5be3</Field>
+            <Field name="path" type="string">C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8</Field>
             <Field name="filter" type="string">*</Field>
             <Field name="useCurrentDir" type="bool">false</Field>
             <Field name="automaticFileGrouping" type="bool">true</Field>
             <Field name="smartFileGrouping" type="bool">true</Field>
             <Field name="showDotFiles" type="bool">false</Field>
             <Object name="recentpaths">
-                <Field name="localhost" type="stringVector">"C:\\Program%32Files\\LLNL\\VisIt%322.9.1" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d16d04c4-9e87-4fcb-b610-8857b720ce1b" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\5bbb6c3c-470b-4297-9385-cf642695173f" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\7ff7929e-9c90-47f8-82a9-8a8dfd1015be" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\9c778114-f065-4821-8c83-4ccab7390116" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\c96e2676-b061-4368-8c74-1b8b6ecc5be3" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\0653254e-f990-42d1-a17c-8a72cecb9422" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\1ae1bf01-8e5e-4cf7-8734-b42f23092521" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\6370fc19-9541-4a8a-8c5c-afabf460bc95" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8" </Field>
+                <Field name="localhost" type="stringVector">"C:\\Program%32Files\\LLNL\\VisIt%322.9.1" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d16d04c4-9e87-4fcb-b610-8857b720ce1b" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\5bbb6c3c-470b-4297-9385-cf642695173f" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\7ff7929e-9c90-47f8-82a9-8a8dfd1015be" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\9c778114-f065-4821-8c83-4ccab7390116" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\c96e2676-b061-4368-8c74-1b8b6ecc5be3" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\0653254e-f990-42d1-a17c-8a72cecb9422" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\1ae1bf01-8e5e-4cf7-8734-b42f23092521" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\6370fc19-9541-4a8a-8c5c-afabf460bc95" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\60391d51-6c40-4e77-9a26-f97bd83c1593" "C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\9d226da8-b5b4-4eca-a562-763ec21b1173" </Field>
             </Object>
         </Object>
         <Object name="AppearanceAttributes">
@@ -26,17 +26,25 @@
             <Field name="defaultStyle" type="string">windowsvista</Field>
             <Field name="defaultOrientation" type="int">0</Field>
         </Object>
+        <Object name="Appearance">
+            <Field name="x" type="int">484</Field>
+            <Field name="y" type="int">349</Field>
+            <Field name="width" type="int">257</Field>
+            <Field name="height" type="int">239</Field>
+            <Field name="visible" type="bool">false</Field>
+            <Field name="posted" type="bool">false</Field>
+        </Object>
         <Field name="postWhenShown" type="bool">false</Field>
         <Object name="Information">
-            <Field name="x" type="int">479</Field>
-            <Field name="y" type="int">344</Field>
+            <Field name="x" type="int">487</Field>
+            <Field name="y" type="int">394</Field>
             <Field name="width" type="int">407</Field>
             <Field name="height" type="int">296</Field>
             <Field name="visible" type="bool">false</Field>
         </Object>
         <Object name="Pick">
-            <Field name="x" type="int">425</Field>
-            <Field name="y" type="int">220</Field>
+            <Field name="x" type="int">433</Field>
+            <Field name="y" type="int">270</Field>
             <Field name="width" type="int">305</Field>
             <Field name="height" type="int">731</Field>
             <Field name="visible" type="bool">false</Field>
@@ -46,16 +54,40 @@
             <Field name="userMaxTabs" type="int">8</Field>
             <Field name="activeOptionsTab" type="int">0</Field>
         </Object>
+        <Object name="Preferences">
+            <Field name="x" type="int">475</Field>
+            <Field name="y" type="int">171</Field>
+            <Field name="width" type="int">449</Field>
+            <Field name="height" type="int">748</Field>
+            <Field name="visible" type="bool">false</Field>
+            <Field name="posted" type="bool">false</Field>
+        </Object>
+        <Object name="Set save options">
+            <Field name="x" type="int">476</Field>
+            <Field name="y" type="int">319</Field>
+            <Field name="width" type="int">476</Field>
+            <Field name="height" type="int">624</Field>
+            <Field name="visible" type="bool">true</Field>
+            <Field name="posted" type="bool">false</Field>
+        </Object>
         <Object name="MainWin">
             <Field name="x" type="int">0</Field>
             <Field name="y" type="int">0</Field>
-            <Field name="width" type="int">352</Field>
-            <Field name="height" type="int">1011</Field>
-            <Field name="SPLITTER_VALUES_V2" type="floatVector">0 0.6692825 0.3251121 </Field>
+            <Field name="width" type="int">445</Field>
+            <Field name="height" type="int">981</Field>
+            <Field name="SPLITTER_VALUES_V2" type="floatVector">0 0.6693736 0.324826 </Field>
+        </Object>
+        <Object name="Mesh plot attributes">
+            <Field name="x" type="int">484</Field>
+            <Field name="y" type="int">349</Field>
+            <Field name="width" type="int">354</Field>
+            <Field name="height" type="int">523</Field>
+            <Field name="visible" type="bool">false</Field>
+            <Field name="posted" type="bool">false</Field>
         </Object>
         <Object name="Pseudocolor plot attributes">
             <Field name="x" type="int">505</Field>
-            <Field name="y" type="int">503</Field>
+            <Field name="y" type="int">523</Field>
             <Field name="width" type="int">480</Field>
             <Field name="height" type="int">450</Field>
             <Field name="visible" type="bool">false</Field>
@@ -63,21 +95,29 @@
         </Object>
         <Object name="Scatter plot attributes">
             <Field name="x" type="int">428</Field>
-            <Field name="y" type="int">365</Field>
+            <Field name="y" type="int">385</Field>
             <Field name="width" type="int">522</Field>
             <Field name="height" type="int">514</Field>
             <Field name="visible" type="bool">false</Field>
             <Field name="posted" type="bool">false</Field>
         </Object>
         <Object name="Clip operator attributes">
-            <Field name="x" type="int">479</Field>
-            <Field name="y" type="int">344</Field>
+            <Field name="x" type="int">487</Field>
+            <Field name="y" type="int">394</Field>
             <Field name="width" type="int">338</Field>
             <Field name="height" type="int">254</Field>
             <Field name="visible" type="bool">false</Field>
             <Field name="posted" type="bool">false</Field>
         </Object>
-        <Field name="plotDatabases" type="stringVector">"localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8\\state_*.plt database" "localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\c96e2676-b061-4368-8c74-1b8b6ecc5be3\\agglomerationsPairs0.txt" </Field>
+        <Object name="External Surface operator attributes">
+            <Field name="x" type="int">484</Field>
+            <Field name="y" type="int">349</Field>
+            <Field name="width" type="int">338</Field>
+            <Field name="height" type="int">128</Field>
+            <Field name="visible" type="bool">false</Field>
+            <Field name="posted" type="bool">false</Field>
+        </Object>
+        <Field name="plotDatabases" type="stringVector">"localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\9d226da8-b5b4-4eca-a562-763ec21b1173\\state_*.plt database" "localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8\\agglomerationsPairs*.txt database" </Field>
         <Object name="TimeFormat">
             <Field name="displayMode" type="string">Cycles</Field>
             <Field name="precision" type="int">5</Field>

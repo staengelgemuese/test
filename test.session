@@ -32,18 +32,18 @@
                 <Field name="fileName" type="string">visit</Field>
                 <Field name="family" type="bool">true</Field>
                 <Field name="format" type="string">PNG</Field>
-                <Field name="width" type="int">1024</Field>
-                <Field name="height" type="int">1024</Field>
+                <Field name="width" type="int">4096</Field>
+                <Field name="height" type="int">4096</Field>
                 <Field name="screenCapture" type="bool">false</Field>
                 <Field name="saveTiled" type="bool">false</Field>
                 <Field name="quality" type="int">80</Field>
                 <Field name="progressive" type="bool">false</Field>
                 <Field name="binary" type="bool">false</Field>
-                <Field name="lastRealFilename" type="string"></Field>
+                <Field name="lastRealFilename" type="string">"C:\\Users\\stange\\Documents\\VisIt\\My images\\visit2852.png"</Field>
                 <Field name="stereo" type="bool">false</Field>
                 <Field name="compression" type="string">PackBits</Field>
                 <Field name="forceMerge" type="bool">false</Field>
-                <Field name="resConstraint" type="string">ScreenProportions</Field>
+                <Field name="resConstraint" type="string">EqualWidthHeight</Field>
                 <Field name="advancedMultiWindowSave" type="bool">false</Field>
                 <Object name="subWindowAtts">
                     <Object name="SaveSubWindowsAttributes">
@@ -5403,7 +5403,7 @@
                 <Field name="generationMethod" type="string">NowCurrentInstance</Field>
                 <Field name="movieType" type="string">Simple</Field>
                 <Field name="outputDirectory" type="string">C:\\Users\\stange\\Documents\\VisIt\\</Field>
-                <Field name="outputName" type="string">movien</Field>
+                <Field name="outputName" type="string">schoenunsteady</Field>
                 <Field name="fileFormats" type="stringVector">"mpeg" "mpeg" </Field>
                 <Field name="useCurrentSize" type="unsignedCharVector">1 1 </Field>
                 <Field name="widths" type="intVector">1219 1219 </Field>
@@ -5416,7 +5416,7 @@
                 <Field name="emailAddress" type="string"></Field>
                 <Field name="fps" type="int">40</Field>
                 <Field name="startIndex" type="int">0</Field>
-                <Field name="endIndex" type="int">1423</Field>
+                <Field name="endIndex" type="int">5928</Field>
                 <Field name="stride" type="int">1</Field>
                 <Field name="initialFrameValue" type="int">0</Field>
             </Object>
@@ -8418,19 +8418,22 @@
         </Object>
         <Object name="ViewerSubject">
             <Object name="SourceMap">
-                <Field name="SOURCE00" type="string">"localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8\\state_*.plt database"</Field>
-                <Field name="SOURCE01" type="string">localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\c96e2676-b061-4368-8c74-1b8b6ecc5be3\\agglomerationsPairs0.txt</Field>
+                <Field name="SOURCE00" type="string">"localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\9d226da8-b5b4-4eca-a562-763ec21b1173\\state_*.plt database"</Field>
+                <Field name="SOURCE01" type="string">"localhost:C:\\Users\\stange\\AppData\\Local\\BoSSS\\plots\\sessions\\d6a3d7e6-6418-4edf-8501-71c177a66ab8\\agglomerationsPairs*.txt database"</Field>
             </Object>
             <Object name="SourcePlugins">
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\1ae1bf01-8e5e-4cf7-8734-b42f23092521\state_240000.plt" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\5bbb6c3c-470b-4297-9385-cf642695173f\state_0.plt" type="string">Tecplot_1.0</Field>
+                <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\60391d51-6c40-4e77-9a26-f97bd83c1593\state_292661.plt" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\6370fc19-9541-4a8a-8c5c-afabf460bc95\state_209800.plt" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\7ff7929e-9c90-47f8-82a9-8a8dfd1015be\state_0.plt" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\9c778114-f065-4821-8c83-4ccab7390116\agglomerationsPairs0.txt" type="string">PlainText_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\9c778114-f065-4821-8c83-4ccab7390116\state_0.plt" type="string">Tecplot_1.0</Field>
+                <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\9d226da8-b5b4-4eca-a562-763ec21b1173\state_*.plt database" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\c96e2676-b061-4368-8c74-1b8b6ecc5be3\agglomerationsPairs0.txt" type="string">PlainText_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\c96e2676-b061-4368-8c74-1b8b6ecc5be3\state_0.plt" type="string">Tecplot_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\d16d04c4-9e87-4fcb-b610-8857b720ce1b\state_*.plt database" type="string">Tecplot_1.0</Field>
+                <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\d6a3d7e6-6418-4edf-8501-71c177a66ab8\agglomerationsPairs*.txt database" type="string">PlainText_1.0</Field>
                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\d6a3d7e6-6418-4edf-8501-71c177a66ab8\state_*.plt database" type="string">Tecplot_1.0</Field>
             </Object>
             <Object name="DatabaseCorrelationList">
@@ -8451,7 +8454,7 @@
                     <Object name="ViewerWindow">
                         <Field name="windowSize" type="intArray" length="2">1219 972 </Field>
                         <Field name="windowImageSize" type="intArray" length="2">1219 912 </Field>
-                        <Field name="windowLocation" type="intArray" length="2">509 0 </Field>
+                        <Field name="windowLocation" type="intArray" length="2">445 0 </Field>
                         <Field name="cameraView" type="bool">false</Field>
                         <Field name="maintainView" type="bool">false</Field>
                         <Field name="viewExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
@@ -9198,8 +9201,10 @@
                         </Object>
                         <Object name="ViewerPlotList">
                             <Object name="timeSliders">
+                                <Field name="SOURCE00" type="int">5928</Field>
                                 <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\d16d04c4-9e87-4fcb-b610-8857b720ce1b\state_*.plt database" type="int">0</Field>
-                                <Field name="SOURCE00" type="int">0</Field>
+                                <Field name="SOURCE01" type="int">0</Field>
+                                <Field name="localhost:C:\Users\stange\AppData\Local\BoSSS\plots\sessions\d6a3d7e6-6418-4edf-8501-71c177a66ab8\state_*.plt database" type="int">0</Field>
                             </Object>
                             <Field name="activeTimeSlider" type="string">SOURCE00</Field>
                             <Object name="plot00">
@@ -9212,7 +9217,7 @@
                                 <Field name="realized" type="bool">true</Field>
                                 <Object name="ViewerPlot">
                                     <Field name="plotDescription" type="string"></Field>
-                                    <Field name="cacheIndex" type="int">0</Field>
+                                    <Field name="cacheIndex" type="int">5928</Field>
                                     <Field name="spatialExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
                                     <Field name="bgColor" type="doubleArray" length="3">1 1 1 </Field>
                                     <Field name="fgColor" type="doubleArray" length="3">0 0 0 </Field>
@@ -9345,13 +9350,13 @@
                                     </Object>
                                     <Object name="databaseKeyframes">
                                         <Object name="AttributeSubjectMap">
-                                            <Field name="indices" type="intVector">0 1423 </Field>
+                                            <Field name="indices" type="intVector">0 5928 </Field>
                                             <Object name="attributes">
                                                 <Object name="DatabaseAttributes">
                                                     <Field name="state" type="int">0</Field>
                                                 </Object>
                                                 <Object name="DatabaseAttributes">
-                                                    <Field name="state" type="int">1423</Field>
+                                                    <Field name="state" type="int">5928</Field>
                                                 </Object>
                                             </Object>
                                         </Object>
@@ -9373,14 +9378,14 @@
                                 <Field name="realized" type="bool">true</Field>
                                 <Object name="ViewerPlot">
                                     <Field name="plotDescription" type="string"></Field>
-                                    <Field name="cacheIndex" type="int">0</Field>
+                                    <Field name="cacheIndex" type="int">5928</Field>
                                     <Field name="spatialExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
                                     <Field name="bgColor" type="doubleArray" length="3">1 1 1 </Field>
                                     <Field name="fgColor" type="doubleArray" length="3">0 0 0 </Field>
                                     <Field name="expandedFlag" type="bool">true</Field>
                                     <Field name="followsTime" type="bool">true</Field>
                                     <Object name="MeshAttributes">
-                                        <Field name="legendFlag" type="bool">true</Field>
+                                        <Field name="legendFlag" type="bool">false</Field>
                                         <Field name="lineStyle" type="int">0</Field>
                                         <Field name="lineWidth" type="int">0</Field>
                                         <Object name="meshColor">
@@ -9425,7 +9430,7 @@
                                             <Field name="indices" type="intVector">0 </Field>
                                             <Object name="attributes">
                                                 <Object name="MeshAttributes">
-                                                    <Field name="legendFlag" type="bool">true</Field>
+                                                    <Field name="legendFlag" type="bool">false</Field>
                                                     <Field name="lineStyle" type="int">0</Field>
                                                     <Field name="lineWidth" type="int">0</Field>
                                                     <Object name="meshColor">
@@ -9458,13 +9463,13 @@
                                     </Object>
                                     <Object name="databaseKeyframes">
                                         <Object name="AttributeSubjectMap">
-                                            <Field name="indices" type="intVector">0 1423 </Field>
+                                            <Field name="indices" type="intVector">0 5928 </Field>
                                             <Object name="attributes">
                                                 <Object name="DatabaseAttributes">
                                                     <Field name="state" type="int">0</Field>
                                                 </Object>
                                                 <Object name="DatabaseAttributes">
-                                                    <Field name="state" type="int">1423</Field>
+                                                    <Field name="state" type="int">5928</Field>
                                                 </Object>
                                             </Object>
                                         </Object>
@@ -9490,7 +9495,7 @@
                                     <Field name="spatialExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
                                     <Field name="bgColor" type="doubleArray" length="3">1 1 1 </Field>
                                     <Field name="fgColor" type="doubleArray" length="3">0 0 0 </Field>
-                                    <Field name="expandedFlag" type="bool">false</Field>
+                                    <Field name="expandedFlag" type="bool">true</Field>
                                     <Field name="followsTime" type="bool">true</Field>
                                     <Object name="ScatterAttributes">
                                         <Field name="var1" type="string">var01</Field>
@@ -9595,10 +9600,13 @@
                                     </Object>
                                     <Object name="databaseKeyframes">
                                         <Object name="AttributeSubjectMap">
-                                            <Field name="indices" type="intVector">0 </Field>
+                                            <Field name="indices" type="intVector">0 15 </Field>
                                             <Object name="attributes">
                                                 <Object name="DatabaseAttributes">
                                                     <Field name="state" type="int">0</Field>
+                                                </Object>
+                                                <Object name="DatabaseAttributes">
+                                                    <Field name="state" type="int">15</Field>
                                                 </Object>
                                             </Object>
                                         </Object>

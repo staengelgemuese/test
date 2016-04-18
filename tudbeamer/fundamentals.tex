@@ -3,7 +3,20 @@
 	\subsection{Introduction}
 	\begin{frame}
 		\frametitle{Introduction}
-		kurzes blabla
+		\begin{itemize}
+			\item Aim of this thesis:
+		\begin{itemize}
+			\item Verification of CNS extension for BoSSS for inviscid flows
+			\item Validation for viscid flows
+			\item Both using immersed boundaries
+		\end{itemize}
+		\item CNS extension of BoSSS (Bounded Support Spectral Solver) numerically solves the Compressible Navier-Stokes equations using a Discontinuous Galerkin method
+		\item CNS has already been verified and validated for:
+		\begin{itemize}
+			\item Inviscid flows using immersed boundaries by \cite[Müller 2014]{muller2014}, though not for the flow around a cylinder
+			\item Viscid flows using curved elements by \cite[Ayers 2015]{ayers2015}
+		\end{itemize}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Flow Properties}
@@ -69,17 +82,65 @@
 	\subsection{The Discontinuous Galerkin Method}
 	\begin{frame}
 		\frametitle{The Discontinuous Galerkin Space Discretisation}
-		\begin{figure}
-			\centering
-			\subfloat[First order FEM \label{fig:a}]{\includegraphics[width=0.28\textwidth]{img/fem.eps}}
-			\subfloat[Zeroth order DG (FVM)\label{fig:b}]{\includegraphics[width=0.28\textwidth]{img/fvm.eps}}
-			\subfloat[First order DG \label{fig:c}]{\includegraphics[width=0.28\textwidth]{img/dg.eps}}
-			\caption{Comparison of FEM, FVM and DG}
-			\label{fig:1}
-		\end{figure}
-
-		DG space discretisation Vorgehen, Bildchen, fluxes
+		\begin{columns}[t]
+			\column[]{8.2cm}
+			\vspace{-0.5cm}
+			\begin{itemize}
+				\item Discrete weak formulation of $\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0 $
+				\item Discretisation $\Omega_h$ of $\Omega$
+				\item Multiplication of PDE by set of cell-local test functions $\Phi_{i,j}$
+				\item Integration over cell $\mathcal{K}_i$ and integration by parts
+				\item Modal approximation for $c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})$ with Galerkin approach (identical Ansatz and test functions)
+				\item Discontinuous approach \MVRightArrow \, flux function $f = f(c^-, c^+, \mathbf{n})$
+			\end{itemize}
+			\vspace{-0.3cm}
+			\scalebox{0.8}{
+			\begin{minipage}{\the\textwidth}
+			\begin{align*}
+			\Rightarrow \int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+			\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV = 0
+			\end{align*}
+		\end{minipage}
+	}
+			\column[]{3.8cm}
+			\begin{figure}[ht]
+				%\centering
+				\vspace{-1cm}
+				\includegraphics[height=0.31\textheight]{img/fem_cropped.pdf}
+			%	\caption{First order FEM}
+			\end{figure}
+			\begin{figure}[htbp]
+				\vspace{-0.6cm}
+				\includegraphics[height=0.31\textheight]{img/fvm.pdf}
+				%\caption{Zeroth order DG (FVM) }
+			\end{figure} 
+			\begin{figure}[htbp]
+				\vspace{-0.6cm}
+				\includegraphics[height=0.31\textheight]{img/dg.pdf}
+				\vspace{-0.1cm}
+				\caption{Adapted from \cite{muller2014}}
+			\end{figure} 
+		\end{columns}
 	\end{frame}
+%		\begin{figure}
+%			\centering
+%			\subfloat[First order FEM \label{fig:a}]{\includegraphics[width=0.28\textwidth]{img/fem.eps}}
+%			\subfloat[Zeroth order DG (FVM)\label{fig:b}]{\includegraphics[width=0.28\textwidth]{img/fvm.eps}}
+%			\subfloat[First order DG \label{fig:c}]{\includegraphics[width=0.28\textwidth]{img/dg.eps}}
+%			\caption{Comparison of FEM, FVM and DG}
+%			\label{fig:1}
+%		\end{figure}
+%		\begin{itemize}
+%			\item Discrete weak formulation of $\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) &= 0 $
+%			\item Discretisation $\Omega_h$ of $\Omega$
+%			\item Multiplication of PDE by set of cell-local test functions
+%			\item Integration over cell $\mathcal{K}_i$ and integration by parts
+%			\item Modal approximation for $c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})$ with Galerkin approach (identical Ansatz and test functions)
+%			\item Discontinuous approach \MVRightArrow \, flux function $f = f(c^-, c^+, \mathbf{n})$
+%		\end{itemize}
+
+%		DG space discretisation Vorgehen, Bildchen, fluxes
+
 	\subsection{The Immersed Boundary Method}
 	\begin{frame}
 		\frametitle{The Immersed Boundary Method}

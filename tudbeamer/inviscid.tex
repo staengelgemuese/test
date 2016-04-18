@@ -69,8 +69,6 @@
 				\vspace{-1cm}
 				\centering
 				\includestandalone[width=\textwidth]{shift}
-				\caption{Convergence Plot}
-				\label{shifterror}
 			\end{figure}
 		\end{columns}
 	\begin{center}
@@ -98,14 +96,19 @@
 		\frametitle{Convergence Study -- Evaluation}
 		\begin{columns}[t]
 			\column[]{4cm}
+			\begin{itemize}
+				\item Bad convergence rate for $P=0$
+				\item Convergence of roughly $\mathcal{O}(h^{P+1})$ for $ 1 \leq P \leq 4$
+			\end{itemize}
 			\column[]{8cm}
 		\begin{figure}[htp]
 			\vspace{-1cm}
 			\centering		
 			\includestandalone[width=\textwidth]{convergence}
-			\caption{Convergence Plot}
-			\label{mesherror}
 		\end{figure}
 		\end{columns}
-		Ergebnisse, Plot
+			\begin{center}
+				\large
+				Convergence rate for higher degrees as expected \newline \MVRightarrow \, Convergence verified
+			\end{center}
 	\end{frame}

@@ -146,18 +146,22 @@
 					\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \textbf{2D}    & $\mathbf{0.928}$     & $\mathbf{2.136}$     \\ \hline
 				\end{tabular}	
 			\end{table}
+			\begin{itemize}
+				\item $W^*$ coincides with literature, $C_D$ much too high
+			\end{itemize}
 		%	re 20 tabelle, plot, drag over time, vorticity
 %		\end{frame}
 %		\begin{frame}
 \vspace{4cm}
 			\begin{columns}[t]
-				\column[]{4cm}
+				\column[]{5cm}
 				\begin{itemize}
-					\item hier
-					\item kommt
-					\item beschreibung hin
+					\item None of the values lies in the range found in literature
+					\item Simulation for $P=2$, $\text{CpD}=80$ should be examined again
+					\newline \MVRightArrow \, perhaps mistake during simulation (e.g. at restart)
+					\item Overall, $P=1$ behaviour as expected,  $P=2$ and $3$ yield much too high results
 				\end{itemize}
-				\column[]{8cm}
+				\column[]{7cm}
 				\begin{figure}[htp]
 					\centering		
 					\includestandalone[width=\textwidth]{re20cdwerte}
@@ -182,18 +186,21 @@
 					\rule{0pt}{2,3ex}& \textbf{Present Results:}                   & \textbf{2D}    & $\mathbf{2.201}$     & $\mathbf{1.608} $    \\ \hline
 				\end{tabular}	
 			\end{table}
+			\begin{itemize}
+				\item $W^*$ coincides with literature, $C_D$ slightly high
+			\end{itemize}
 %			re 40 tabelle, plot, drag over time, vorticity 
 %		\end{frame}
 %		\begin{frame}
 \vspace{1cm}
 			\begin{columns}[t]
-				\column[]{4cm}
+				\column[]{5cm}
 				\begin{itemize}
-					\item hier
-					\item kommt
-					\item beschreibung hin
+					\item Better results than for $\text{Re=20}$
+					\item Simulation for $P=2$, $\text{CpD}=80$ once again yields discordant values
+					\item $P=2$ and $P=3$ quite high compared to literature
 				\end{itemize}
-				\column[]{8cm}
+				\column[]{7cm}
 				\begin{figure}[htp]
 					\centering		
 					\includestandalone[width=\textwidth]{re40cdwerte}
@@ -203,7 +210,7 @@
 		\begin{frame}
 			\frametitle{Comparison of $\text{Re = 20}$ and $\text{Re = 40}$}
 			\begin{center}
-		
+		\vspace{-0.3cm}
 			\scalebox{0.8}{
 				\begin{minipage}{\the\textwidth}
 			\begin{table}[htp]
@@ -226,7 +233,8 @@
 	\end{frame}
 		\begin{frame}[allowframebreaks]
 			\frametitle{Simulation at $\text{Re = 100}$}
-				\scalebox{0.7}{
+			\vspace{-0.3cm}
+			\scalebox{0.7}{
 					\begin{minipage}{\the\textwidth}
 			\begin{table}[htp]
 				\centering
@@ -250,21 +258,24 @@
 			\end{table}
 				\end{minipage}
 			}
-			\vspace{2cm}
+			\vspace{-0.1cm}
+			\begin{itemize}
+				\item All values coincides with literature
+			\end{itemize}
+%			
 			\begin{columns}[t]
-				\column[]{4cm}
+				\column[]{5cm}
 				\begin{itemize}
-					\item hier
-					\item kommt
-					\item beschreibung hin
+					\item Higher degree values lie in expected range
+					\item Values which should be most accurate ($P=2$, $\text{CpD}=80$ and $P=3$, $\text{CpD}=60$) produce rather high results
+					\item $P=2$ seems to converge against $P=3$, $\text{CpD}=60$ value
 				\end{itemize}
-				\column[]{8cm}
+				\column[]{7cm}
 				\begin{figure}[htp]
 					\centering		
 					\includestandalone[width=\textwidth]{re100cdwerte}
 				\end{figure}
 			\end{columns}
-%			re 100 tabelle, plot, lift over time, vorticity
 			
 		\end{frame}
 		\begin{frame}[allowframebreaks]
@@ -296,19 +307,19 @@
 		\end{minipage}
 		}
 			\begin{columns}[t]
-				\column[]{4cm}
+				\column[]{5cm}
 				\begin{itemize}
-					\item hier
-					\item kommt
-					\item beschreibung hin
+					\item All values seen in table coincide with literature
+					\item Compared to 3D results by \cite[Brehm et al.]{brehm} all values slightly higher
+					\item All $C_D$ values (except for the least accurate one) lie in expected range
+					\item $P=2$ seems to converge against higher value than $P=1$
 				\end{itemize}
-				\column[]{8cm}
+				\column[]{7cm}
 				\begin{figure}[htp]
 					\centering		
 					\includestandalone[width=\textwidth]{re200cdwerte}
 				\end{figure}
 			\end{columns}
-			re 200 tabelle, plot, lift over time, vorticity
 		\end{frame}
 		\begin{frame}[allowframebreaks]
 			\frametitle{Comparison of $\text{Re = 100}$ and $\text{Re = 200}$}
@@ -328,6 +339,10 @@
 				\includegraphics[width=\textwidth]{img/re200dg3cpd60cl.eps}
 			\end{figure}
 			\end{columns}
+			\begin{itemize}
+				\item Higher amplitude and frequency for $C_L$ at $\text{Re}=200$ compared to $\text{Re}=100$
+				\item Steady state is reached earlier
+			\end{itemize}
 			\vspace{5cm}
 			\begin{columns}[t]
 				\column[]{6cm}
