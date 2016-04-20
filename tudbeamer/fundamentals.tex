@@ -10,7 +10,9 @@
 			\item Validation for viscid flows
 			\item Both using immersed boundaries
 		\end{itemize}
+		\pause
 		\item CNS extension of BoSSS (Bounded Support Spectral Solver) numerically solves the Compressible Navier-Stokes equations using a Discontinuous Galerkin method
+		\pause
 		\item CNS has already been verified and validated for:
 		\begin{itemize}
 			\item Inviscid flows using immersed boundaries by \cite[Müller 2014]{muller2014}, though not for the flow around a cylinder
@@ -53,6 +55,7 @@
 	\end{minipage}
 	}
 	\begin{columns}[t]
+		\pause
 		\begin{column}{0.6\textwidth}
 			%\column[t]{7cm}
 			\scalebox{0.75}{
@@ -68,6 +71,7 @@
 	}
 	\end{column}
 	\begin{column}{0.35\textwidth}
+		\onslide
 		%	\column[t]{5cm}
 	\vspace{-2cm}
 	\begin{itemize}
@@ -86,22 +90,27 @@
 			\column[]{8.2cm}
 			\vspace{-0.5cm}
 			\begin{itemize}
-				\item Discrete weak formulation of $\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0 $
-				\item Discretisation $\Omega_h$ of $\Omega$
-				\item Multiplication of PDE by set of cell-local test functions $\Phi_{i,j}$
-				\item Integration over cell $\mathcal{K}_i$ and integration by parts
-				\item Modal approximation for $c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})$ with Galerkin approach (identical Ansatz and test functions)
-				\item Discontinuous approach \MVRightArrow \, flux function $f = f(c^-, c^+, \mathbf{n})$
+				\item Combines advantages of FEM and FVM
+				\item Discrete weak formulation analogously to FEM
+				\item Discontinuous modal approximation \newline \MVRightArrow \, flux function $f = f(c^-, c^+, \mathbf{n})$
+				\pause
+				\item E.g. discrete weak formulation of $\dfrac{\partial c}{\partial t} + \nabla \cdot \boldsymbol{f}(c) = 0 $:
+%				\item Discretisation $\Omega_h$ of $\Omega$
+%				\item Multiplication of PDE by set of cell-local test functions $\Phi_{i,j}$
+%				\item Integration over cell $\mathcal{K}_i$ and integration by parts
+%				\item Modal approximation for $c(\mathbf{x} , t)\mid _{\mathcal{K}_i} \approx \sum_{k = 0}^{M}c_{i,k}(t) \Phi_{i,k}(\mathbf{x})$ with Galerkin approach (identical Ansatz and test functions)
+%				\item Discontinuous approach \MVRightArrow \, flux function $f = f(c^-, c^+, \mathbf{n})$
 			\end{itemize}
 			\vspace{-0.3cm}
 			\scalebox{0.8}{
 			\begin{minipage}{\the\textwidth}
 			\begin{align*}
-			\Rightarrow \int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
+			\int\limits_{\mathcal{K}_i} \dfrac{\partial c_i}{\partial t}\Phi_{i,j} \, dV +
 			\sum_{e=1}^{E_i}\int\limits_{\mathcal{E}_{i,e}} f \left( c^-, c^+, \mathbf{n} \right) \Phi_{i,j} \, dA - \int\limits_{\mathcal{K}_i} \boldsymbol{f}\left(c_i\right) \cdot \nabla\Phi_{i,j} \, dV = 0
 			\end{align*}
 		\end{minipage}
 	}
+	\onslide
 			\column[]{3.8cm}
 			\begin{figure}[ht]
 				%\centering
@@ -156,12 +165,14 @@
 					\end{itemize} 
 			\end{itemize}
 			\column[]{5cm}
+			\onslide
 			\begin{figure}[htbp]
 				\vspace{-1cm}
 				\includegraphics[width=\textwidth]{img/ibmcut.PNG}
 				\caption{Cut cell with physical (red) and void region (white) \cite{paper}}\label{fig:cutcell}
 			\end{figure} 
 		\end{columns}
+		\pause
 		\begin{itemize}
 			\item Restrict problem domain to physical region:
 		\end{itemize}
@@ -174,6 +185,7 @@
 				\end{align*}
 			\end{minipage}
 			}\\
+			\pause
 			\begin{itemize}
 				\item Solution via explicit Euler time discretisation
 					\begin{itemize}
@@ -194,7 +206,7 @@
 			\vspace{-0.5cm}
 			\begin{itemize}
 				\item Agglomeration threshold  $0 \leq \alpha \leq 1$
-				\item Cells $\mathcal{K}_s^\text{src}$ with $\text{frac}(\mathcal{A}_i) = \tfrac{\text{meas}(\mathcal{A}_i)}{\text{meas}(\mathcal{K}_i)} \leq \alpha$ get agglomerated to neighbouring cell $\mathcal{K}_s^\text{tar}$
+				\item Small cells $\mathcal{K}_s^\text{src}$ get agglomerated to neighbouring cell $\mathcal{K}_s^\text{tar}$
 				\item Neighbouring cells are weakly coupled via fluxes \newline \MVRightArrow \, basis $\vec{\Phi}_i$ can be extended from the target cell into the source cell
 			\end{itemize}
 			\column[]{7cm}

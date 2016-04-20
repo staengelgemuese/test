@@ -8,10 +8,12 @@
 					\item Satisfying for lower degrees
 					\item Improvable for high-order degrees 
 				\end{itemize}
+				\pause
 				\item Inviscid flow -- Convergence:
 				\begin{itemize}
 					\item Convergence rate of $\mathcal{O}(h^{P+1})$ proven
 				\end{itemize}
+				\pause
 				\item Viscid flow -- Laminar steady regime
 				\begin{itemize}
 					\item Wake separation length accurate
@@ -19,6 +21,7 @@
 					\item $\text{Re}=40$ has yielded better results than $\text{Re}=20$
 					\item Comparison showed physically correct behaviour
 				\end{itemize}
+				\pause
 				\item Viscid flow -- Laminar vortex shedding
 				\begin{itemize}
 					\item Accurate results
@@ -32,14 +35,59 @@
 		
 				\begin{itemize}
 					\item Improvement of robustness
+					\pause
 					\item Examination of agglomeration error
+					\pause
 					\item Detailed convergence study for viscid flows
+					\pause
 					\item Examination of 3D influences at higher Reynolds numbers
 				\end{itemize}
 		\end{frame}
 		
 		\begin{frame}
 			\frametitle{The End}
+			\begin{center}
+				\vspace{-0.5cm}
+				\Large
+				\textbf{Questions?}
+			\end{center}
+			\vspace{0.5cm}
+				\begin{columns}[t]
+					\column[]{6cm}
+						\begin{minipage}{\the\textwidth}
+								\includemedia[
+								label=vidA,
+								addresource=img/steady.mp4,
+								activate=pageopen,
+								width=5.5cm, height=4.4cm,
+								flashvars={
+									source=img/steady.mp4
+									&loop=true
+								}
+								]{}{VPlayer9.swf}
+						\end{minipage}
+		\column[]{6cm}
+			\begin{minipage}{\the\textwidth}
+			
+			\includemedia[
+			label=vidB,
+			addresource=img/unsteady.mp4,
+			activate=pageopen,
+			width=5.5cm, height=4.4cm,
+			flashvars={
+				source=img/unsteady.mp4
+				&loop=true
+			}
+			]{}{VPlayer9.swf}
+		\end{minipage}
+	\end{columns}
+	
+	\begin{center}		
+		\mediabutton[
+		mediacommand=vidA:playPause,
+		mediacommand=vidB:playPause
+		]{\fbox{Play/Pause}}
+	\end{center}
 %			\includemedia[
 %			width=0.4\linewidth,
 %			height=0.3\linewidth,
@@ -47,28 +95,28 @@
 %			addresource=img/steady.mp4,
 %			flashvars={source=img/steady.mp4}
 %			]{}{VPlayer.swf}
-			\includemedia[
-			width=0.4\linewidth,
-			height=0.3\linewidth,
-			activate=pageopen,
-			addresource=img/unsteady.mpg,
-			flashvars={source=img/unsteady.mpg}
-			]{}{VPlayer.swf}
-			\includemedia[
-			label=myVidPlayer,
-			width=6cm,height=6cm,
-			activate=pageopen,
-			addresource=img/unsteady.mpg,
-			addresource=img/steady.mpg,
-			flashvars={
-				source=steady.mpg %video to be shown at first
-				&autoPlay=true
-				&scaleMode=letterbox %useful, if videos are of different aspect ratio
-			}
-			]{}{VPlayer.swf}
-			
-			\mediabutton[mediacommand=myVidPlayer:setSource [(img/steady.mpg)]]{Steady}
-			\mediabutton[mediacommand=myVidPlayer:setSource [(img/unsteady.mpg)]]{Unsteady}
+%			\includemedia[
+%			width=0.4\linewidth,
+%			height=0.3\linewidth,
+%			activate=pageopen,
+%			addresource=img/unsteady.mpg,
+%			flashvars={source=img/unsteady.mpg}
+%			]{}{VPlayer.swf}
+%			\includemedia[
+%			label=myVidPlayer,
+%			width=6cm,height=6cm,
+%			activate=pageopen,
+%			addresource=img/unsteady.mpg,
+%			addresource=img/steady.mpg,
+%			flashvars={
+%				source=steady.mpg %video to be shown at first
+%				&autoPlay=true
+%				&scaleMode=letterbox %useful, if videos are of different aspect ratio
+%			}
+%			]{}{VPlayer.swf}
+%			
+%			\mediabutton[mediacommand=myVidPlayer:setSource [(img/steady.mpg)]]{Steady}
+%			\mediabutton[mediacommand=myVidPlayer:setSource [(img/unsteady.mpg)]]{Unsteady}
 %			videos
 %			ende, fragen
 		\end{frame}

@@ -1,12 +1,12 @@
 \BOOKMARK [2][]{Outline0.2}{Introduction and Fundamentals}{}% 1
 \BOOKMARK [3][]{Outline0.2.1.4}{Introduction}{Outline0.2}% 2
-\BOOKMARK [3][]{Outline0.2.2.7}{The Discontinuous Galerkin Method}{Outline0.2}% 3
-\BOOKMARK [3][]{Outline0.2.3.8}{The Immersed Boundary Method}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.2.10}{The Discontinuous Galerkin Method}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.3.12}{The Immersed Boundary Method}{Outline0.2}% 4
 \BOOKMARK [2][]{Outline0.3}{Verification of BoSSS for Inviscid Flows}{}% 5
-\BOOKMARK [3][]{Outline0.3.1.12}{Robustness}{Outline0.3}% 6
-\BOOKMARK [3][]{Outline0.3.2.14}{Convergence}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.1.18}{Robustness}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.2.26}{Convergence}{Outline0.3}% 7
 \BOOKMARK [2][]{Outline0.4}{Evaluation of BoSSS for Viscid Flows}{}% 8
-\BOOKMARK [3][]{Outline0.4.1.17}{Theory}{Outline0.4}% 9
-\BOOKMARK [3][]{Outline0.4.2.18}{Simulations}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.1.35}{Theory}{Outline0.4}% 9
+\BOOKMARK [3][]{Outline0.4.2.37}{Simulations}{Outline0.4}% 10
 \BOOKMARK [2][]{Outline0.5}{Conclusion and Outlook}{}% 11
 \BOOKMARK [1][]{Outline1}{Appendix}{}% 12

@@ -41,11 +41,15 @@
 		\frametitle{Robustness Study -- Preparation}
 		\begin{itemize}
 			\item Variation of polynomial degree $ 1 \leq P \leq 3$
+			\pause
 			\item Variation of position of the cylinder's centre point from $-0.075$ to $+0.075$ with step size $0.015$ \newline \MVRightArrow \, Level set $\varphi  = (x-\text{shift)}^2 + y^2 -1$
+			\pause
 			\item Mesh as shown before (64 cells per direction)
+			\pause
 			\item Constant agglomeration threshold $\alpha = 0.5$  \newline \MVRightArrow \, several different cell agglomerations occur			
 		\end{itemize}
 		\vspace{0.5cm}
+		\pause
 		\begin{center}
 			\large
 			\textbf{Aim:} Proving the robustness of the solver
@@ -58,6 +62,7 @@
 		\vspace{-0.5cm}
 	\begin{itemize}
 		\item Constant error of entropy for degrees 1 and 2 \newline \MVRightarrow \, Only slight influence by cell agglomeration
+		\pause
 		\item Large error differences for degree 3
 		\begin{itemize}
 			\item For some cases huge effort in getting calculations to work (early breakup)
@@ -65,12 +70,14 @@
 		\end{itemize}
 	\end{itemize}
 	\column[]{6cm}
+	\onslide
 			\begin{figure}[htp]	
 				\vspace{-1cm}
 				\centering
 				\includestandalone[width=\textwidth]{shift}
 			\end{figure}
 		\end{columns}
+		\pause
 	\begin{center}
 		\large
 		\MVRightarrow \, Sufficiently robust for lower degrees, higher degree calculations strongly influenced by cell agglomeration
@@ -79,14 +86,18 @@
 	\end{frame}
 	\subsection{Convergence}
 	\begin{frame}
-		\frametitle{Comvergence Study -- Preparation}
+		\frametitle{Convergence Study -- Preparation}
 		\begin{itemize}
 			\item Variation of polynomial degree $ 0 \leq P \leq 4$
+			\pause
 			\item Variation of mesh size: 32, 64 and 128 cells per direction
+			\pause
 			\item Constant level set $\varphi  = x^2 + y^2 -1$
+			\pause
 			\item Constant agglomeration threshold $\alpha = 0.3$
 		\end{itemize}
 		\vspace{0.5cm}
+		\pause
 		\begin{center}
 			\large
 			\textbf{Aim:} Proving convergence rate of $\mathcal{O}(h^{P+1})$
@@ -98,15 +109,18 @@
 			\column[]{4cm}
 			\begin{itemize}
 				\item Bad convergence rate for $P=0$
+				\pause
 				\item Convergence of roughly $\mathcal{O}(h^{P+1})$ for $ 1 \leq P \leq 4$
 			\end{itemize}
 			\column[]{8cm}
+			\onslide
 		\begin{figure}[htp]
 			\vspace{-1cm}
 			\centering		
 			\includestandalone[width=\textwidth]{convergence}
 		\end{figure}
 		\end{columns}
+		\pause
 			\begin{center}
 				\large
 				Convergence rate for higher degrees as expected \newline \MVRightarrow \, Convergence verified

@@ -10,6 +10,7 @@
 				\item $\text{Re} \leq 40-50$: laminar steady regime
 				\item $40-50 \leq \text{Re} \leq 190$: laminar vortex shedding (Kármán vortex street)
 				\item $190 \leq \text{Re}$: increasing 3D effects
+				\pause
 				\item Characteristic values:
 				\begin{itemize}
 					\item Coefficient of drag $C_D$
@@ -19,6 +20,7 @@
 				\end{itemize}
 			\end{itemize}
 			\column[]{6cm}
+			\onslide
 			\begin{figure}[ht]
 				%\centering
 				 \vspace{-1cm}
@@ -75,14 +77,18 @@
 					\item $-20 \leq y \leq 20$
 					\item Cylinder with radius $r=0.5$ at $(0,0)$ \newline \MVRightarrow \, Level set $\varphi  = x^2 + y^2 -0.25$ set as  \color{myred} isothermal wall \color{black}
 				\end{itemize}
-				
+				\pause
 				\item Variation of mesh size: 40, 60 and 80 cells per direction
+				\pause
 				\item Variation of polynomial degree $1 \leq P \leq 3$
+				\pause
 				\item Constant agglomeration threshold $\alpha = 0.3$ \\[10pt]
+				\onslide
 				\bluedot Supersonic inlet
 				\reddot Isothermal wall
 			\end{itemize}
 			\column[]{5.5cm}
+			\onslide
 			\vspace{-0.8cm}
 			\begin{figure}[htbp]
 				\includegraphics[width=\textwidth]{img/mesh40.PNG}
@@ -108,6 +114,7 @@
 					\item Coefficient of drag $C_D$
 					\item Wake separation length $W^*$ \newline \MVRightArrow \, found from evaluating $x$ at $y=0$ where $x$-velocity $u=0$
 				\end{itemize}
+				\pause
 				\item Unsteady flow simulations for $\text{Re = 100}$ and $\text{Re = 200}$:
 				\begin{itemize}
 					\item Coefficient of drag $C_D$
@@ -116,6 +123,7 @@
 				\end{itemize}	
 			\end{itemize}	
 			\column[]{4cm}
+			\onslide
 			\begin{flalign*}
 				C_D &= \tfrac{d}{q_\infty L_\infty}\\
 				C_L &= \tfrac{l}{q_\infty L_\infty}\\
@@ -158,7 +166,6 @@
 				\begin{itemize}
 					\item None of the values lies in the range found in literature
 					\item Simulation for $P=2$, $\text{CpD}=80$ should be examined again
-					\newline \MVRightArrow \, perhaps mistake during simulation (e.g. at restart)
 					\item Overall, $P=1$ behaviour as expected,  $P=2$ and $3$ yield much too high results
 				\end{itemize}
 				\column[]{7cm}
@@ -260,7 +267,7 @@
 			}
 			\vspace{-0.1cm}
 			\begin{itemize}
-				\item All values coincides with literature
+				\item All values coincide with literature
 			\end{itemize}
 %			
 			\begin{columns}[t]
