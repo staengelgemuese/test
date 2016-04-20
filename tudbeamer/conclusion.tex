@@ -44,25 +44,32 @@
 %			width=0.4\linewidth,
 %			height=0.3\linewidth,
 %			activate=pageopen,
-%			addresource=img/test.mpg,
-%			flashvars={source=img/test.mpg}
+%			addresource=img/steady.mp4,
+%			flashvars={source=img/steady.mp4}
 %			]{}{VPlayer.swf}
-%			\includemedia[
-%			label=myVidPlayer,
-%			width=6cm,height=6cm,
-%			activate=pageopen,
-%			addresource=test.mpg,
-%			addresource=steady.mpg,
-%			flashvars={
-%				source=steady.mpg %video to be shown at first
-%				&autoPlay=true
-%				&scaleMode=letterbox %useful, if videos are of different aspect ratio
-%			}
-%			]{}{VPlayer.swf}
-%			
-%			\mediabutton[mediacommand=myVidPlayer:setSource [(steady.mpg)]]{Steady}
-%			\mediabutton[mediacommand=myVidPlayer:setSource [(test.mpg)]]{Test}
-			videos
-			ende, fragen
+			\includemedia[
+			width=0.4\linewidth,
+			height=0.3\linewidth,
+			activate=pageopen,
+			addresource=img/unsteady.mpg,
+			flashvars={source=img/unsteady.mpg}
+			]{}{VPlayer.swf}
+			\includemedia[
+			label=myVidPlayer,
+			width=6cm,height=6cm,
+			activate=pageopen,
+			addresource=img/unsteady.mpg,
+			addresource=img/steady.mpg,
+			flashvars={
+				source=steady.mpg %video to be shown at first
+				&autoPlay=true
+				&scaleMode=letterbox %useful, if videos are of different aspect ratio
+			}
+			]{}{VPlayer.swf}
+			
+			\mediabutton[mediacommand=myVidPlayer:setSource [(img/steady.mpg)]]{Steady}
+			\mediabutton[mediacommand=myVidPlayer:setSource [(img/unsteady.mpg)]]{Test}
+%			videos
+%			ende, fragen
 		\end{frame}
 	
